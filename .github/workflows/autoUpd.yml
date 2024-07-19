@@ -3,25 +3,29 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - yuanDaiMa # 当源码仓库的主分支有变动时触发
+      - yuanDaiMa # 假设源码变更发生在'yuanDaiMa'分支
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
+    - name: Checkout Source Branch
       uses: actions/checkout@v2
+      with:
+        ref: 'yuanDaiMa' # 检出'yuanDaiMa'分支
+        submodules: true
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: 'latest'
 
-    - name: Build
-      run: hugo --minify
+    - name: Build Hugo Site
+      run: hugo --minify --baseURL "https://yourusername.github.io"
 
-    - name: Deploy
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
+        publish_branch: buShu # 部署到'buShu'分支
         publish_dir: ./public
         github_token: ${{ secrets.TRDWBST_PAGES_BLOG_AUTOUPD }}
