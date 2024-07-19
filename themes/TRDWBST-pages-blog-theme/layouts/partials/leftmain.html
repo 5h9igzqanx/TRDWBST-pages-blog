@@ -1,0 +1,73 @@
+<style>
+    .leftMainBox{
+        background-color:#a3c6da;
+        border-radius:15px;
+        margin-left:10px;
+        margin-right:20px;
+        padding-left:8px;
+        padding-right:8px;
+        padding-top:20px;
+        padding-bottom:4px;
+        overflow-y:auto;
+    }
+    .avatar{
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin: 0px auto;
+        padding: 0px;
+    }
+    .avatar img{
+        width: 90%;
+        height: auto;
+        border: 4px solid #75aac8;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .ownerName,.siteName{
+        text-align: center;
+    }
+    /* .navList ul{display: flex;list-style-type: none;}
+    .navList ul>li{padding-left: 10px;padding-right: 10px;} */
+    .navList li{
+        margin: 10px;
+        padding: 20px;
+        border-radius: 25px;
+        font-weight: bold;
+    }
+    .navList li:hover{
+        background-color: #75aac8;
+    }
+    .navList li a{
+        width: 100%;
+    }
+    @media screen and (max-width:1000px) {
+        .siteName{
+            font-size:medium;
+        }
+        #owner{
+            display: none;
+        }
+    }
+</style>
+<div class="leftMainBox">
+    <br>
+    <h3 class="siteName">{{site.Title}}</h3>
+    <br>
+</div>
+<br>
+<div class="leftMainBox" id="owner">
+    <br>
+    <div class="avatar">
+        <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/LOGO/LOGO.gif" title="5h9igzqanx" alt="头像" class="avatar">
+    </div>
+    <br>
+    <h3 class="ownerName">5h9igzqanx</h3>
+    <br>
+    <br>
+</div>
+<br>
+<div class="leftMainBox">
+    <div class="navList">{{ partial "menu.html" (dict "menuID" "main" "page" .) }}</div>
+</div>

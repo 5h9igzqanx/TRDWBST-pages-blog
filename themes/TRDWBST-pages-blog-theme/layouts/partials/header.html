@@ -1,0 +1,6 @@
+<style>
+    .navList ul{display: flex;list-style-type: none;}
+    .navList ul>li{padding-left: 10px;padding-right: 10px;}
+</style>
+<h1>{{ site.Title }}</h1>
+<div class="navList">{{ partial "menu.html" (dict "menuID" "main" "page" .) }}</div>

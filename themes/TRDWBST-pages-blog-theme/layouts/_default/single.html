@@ -1,0 +1,48 @@
+{{ define "main" }}
+  <style>
+    .cnt{
+      background-color:#a3c6da;
+      border-radius: 25px;
+      padding: 10px;
+    }
+    .cntTitle{
+      background-color: #cadeea;
+      border-radius: 25px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 10px;
+    }
+    .tagsBox ul{
+      display: flex;list-style-type: none;
+    }
+    .tagsBox ul>li{
+      /* padding-left: 10px; */
+      margin-right: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border: solid 1px #75aac8;
+      border-radius: 25px;
+      background-color: #a3c6da;
+    }
+    .tagsBox ul>li:hover{
+      background-color: #75aac8;
+    }
+    .cntBody{
+      margin: 10px;
+    }
+  </style>
+  
+  <div class="cnt">
+    <div class="cntTitle">
+    <h1>{{ .Title }}</h1>
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    <p><span>{{ $dateHuman }}</span>&emsp;作者:&ensp;<span>{{.Params.author}}</span></p>
+    <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
+    </div>
+    <br>
+    <div class="cntBody">{{ .Content }}</div>
+  </div>
+
+{{ end }}
