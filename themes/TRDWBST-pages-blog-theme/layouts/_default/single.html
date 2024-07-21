@@ -109,8 +109,10 @@
       <h1>{{ .Title }}</h1>
       {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
       {{ $dateHuman := .Date | time.Format ":date_long" }}
-      <p><span>{{ $dateHuman }}</span>&emsp;作者:&ensp;<span>{{.Params.author}}</span></p>
+      {{ $author := .Params.author |default "佚名"}}
+      <p><span>{{ $dateHuman }}</span>&emsp;作者:&ensp;<span>{{ $author }}</span></p>
       <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
+      <p>{{ .Params.description }}</p>
     </div>
   </div>
   <br>
