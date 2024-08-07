@@ -2,6 +2,25 @@
   <h1>{{ .Title }}</h1>
   {{ $style := resources.Get "css/postList.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+  {{ if eq .Section "post" }}
+    <style>
+      .tagsBox ul{
+        display: flex;list-style-type: none;
+      }
+      .tagsBox ul>li{
+        /* padding-left: 10px; */
+        margin-right: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: solid 1px #75aac8;
+        border-radius: 25px;
+        background-color: #a3c6da;
+      }
+      .tagsBox ul>li:hover{
+        background-color: #75aac8;
+      }
+    </style>
+  {{ end }}
   {{ range .Pages }}
     <div class="postList">
       {{ if eq .Section "post" }}
@@ -12,28 +31,11 @@
       {{ $dateHuman := .Date | time.Format ":date_long" }}
       {{ $description := .Params.description | default (printf "%s" (.Plain | truncate 150))}}
       {{ $author := .Params.author |default "佚名"}}
-      {{if eq .Section "post"}}
+      {{ if eq .Section "post" }}
         <p>{{$description}}</p>
         <p><span>{{ $dateHuman }}</span>&emsp;作者:&ensp;<span>{{$author}}</span></p>
-        <style>
-          .tagsBox ul{
-            display: flex;list-style-type: none;
-          }
-          .tagsBox ul>li{
-            /* padding-left: 10px; */
-            margin-right: 10px;
-            padding-left: 5px;
-            padding-right: 5px;
-            border: solid 1px #75aac8;
-            border-radius: 25px;
-            background-color: #a3c6da;
-          }
-          .tagsBox ul>li:hover{
-            background-color: #75aac8;
-          }
-        </style>
         <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
-      {{end}}
+      {{ end }}
     </div>
   {{ end }}
 {{ end }}
