@@ -5,6 +5,11 @@
       border-radius: 25px;
       padding: 10px;
     }
+    .backgroundImg{
+      margin: 10px;
+      margin-bottom: -20px !important;
+      width: 100%;/* 16:9 */
+    }
     .cntTitle{
       background-color: #cadeea;
       border-radius: 25px;
@@ -105,6 +110,10 @@
     }
   </style>
   <div class="cnt">
+    <div class="backgroundImg">
+      {{ $bgImgSrc := .Params.backgroundImage |default "https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" }}
+      <img src="{{ $bgImgSrc }}" alt="" title="">
+    </div>
     <div class="cntTitle">
       {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
       {{ $dateHuman := .Date | time.Format ":date_long" }}
