@@ -26,6 +26,10 @@ pageRef = '/tags'
 url   = '/tags'
 weight = 40
 
+[blackfriday]
+toc=true
+toc_depth=5
+
 [module]
   [module.hugoVersion]
     extended = false

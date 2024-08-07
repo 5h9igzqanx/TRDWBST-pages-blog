@@ -72,3 +72,13 @@
     <div class="navList">{{ partial "menu.html" (dict "menuID" "main" "page" .) }}</div>
 </div>
 <br>
+<script>
+    let url=window.location.href;if(url.indexOf("post")){;}else{document.getElementById("contentOfPost").parentNode.removeChild(document.getElementById("contentOfPost"))}
+</script>
+<div class="leftMainBox">
+    {{ if .TableOfContents }}
+        <div class="toc" id="contentOfPost">
+            {{ .TableOfContents }}
+        </div>
+    {{ end }}
+</div>
