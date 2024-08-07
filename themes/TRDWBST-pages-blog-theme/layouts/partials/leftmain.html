@@ -77,6 +77,14 @@
 </script>
 <div class="leftMainBox">
     {{ if .TableOfContents }}
+    <style>
+        .toc{
+            height: 350px;
+        }
+        .toc>nav.TableOfContents ul>li{
+            padding-left: 5px;
+        }
+    </style>
         <div class="toc" id="contentOfPost">
             {{ .TableOfContents }}
         </div>
