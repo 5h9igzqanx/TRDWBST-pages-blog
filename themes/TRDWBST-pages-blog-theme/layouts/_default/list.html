@@ -2,25 +2,23 @@
   <h1>{{ .Title }}</h1>
   {{ $style := resources.Get "css/postList.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
-  {{ if eq .Section "post" }}
-    <style>
-      .tagsBox ul{
-        display: flex;list-style-type: none;
-      }
-      .tagsBox ul>li{
-        /* padding-left: 10px; */
-        margin-right: 10px;
-        padding-left: 5px;
-        padding-right: 5px;
-        border: solid 1px #75aac8;
-        border-radius: 25px;
-        background-color: #a3c6da;
-      }
-      .tagsBox ul>li:hover{
-        background-color: #75aac8;
-      }
-    </style>
-  {{ end }}
+  <style>
+    .tagsBox ul{
+      display: flex;list-style-type: none;
+    }
+    .tagsBox ul>li{
+      /* padding-left: 10px; */
+      margin-right: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border: solid 1px #75aac8;
+      border-radius: 25px;
+      background-color: #a3c6da;
+    }
+    .tagsBox ul>li:hover{
+      background-color: #75aac8;
+    }
+  </style>
   {{ range .Pages }}
     <div class="postList">
       {{ if eq .Section "post" }}
