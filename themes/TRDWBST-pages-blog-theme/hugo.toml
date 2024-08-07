@@ -3,16 +3,22 @@ languageCode = 'zh-cn'
 title = 'TRDWBST-pages-blog'
 
 [[menus.main]]
+name = '主页'
+pageRef = 'https://5h9igzqanx.github.io/TRDWBST/'
+url = 'https://5h9igzqanx.github.io/TRDWBST/'
+weight =10
+
+[[menus.main]]
 name = '投稿'
 pageRef = '/'
 url = '/'
-weight = 10
+weight = 20
 
 [[menus.main]]
 name = '标签'
 pageRef = '/tags'
 url   = '/tags'
-weight = 20
+weight = 30
 
 [module]
   [module.hugoVersion]
