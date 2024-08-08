@@ -42,9 +42,9 @@ Renders a menu for the given menu ID.
         {{- end -}}
       >{{ $name }}</a>
       {{- with .Children }}
-        <ol>
+        <ul>
           {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-        </ol>
+        </ul>
       {{- end }}
     </li>
   {{- end }}
