@@ -93,22 +93,23 @@
 <br>
 <div class="leftMainBox" id="ParentBoxOfContentOfPost">
     {{ if .TableOfContents }}
-    <h3 style="text-align: center;">目录</h3>
-    <style>
-        .toc{
-            height: 350px;
-        }
-        .toc ul{
-            list-style-type: none;
-        }
-        .toc li{
-            margin-bottom: 2px;
-        }
-        .toc li ul{
-            margin-left: 4px;
-        }
-        
-    </style>
+        <h3 style="text-align: center;">目录</h3>
+        <style>
+            .toc{
+                height: 350px;
+            }
+            .toc ul{
+                list-style-type: none;
+            }
+            .toc li{
+                margin-bottom: 2px;
+            }
+            .toc li ul{
+                margin-left: 10px;
+            }
+            
+        </style>
+        <br>
         <div class="toc" id="contentOfPost">
             {{ .TableOfContents }}
         </div>
