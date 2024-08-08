@@ -89,10 +89,6 @@
     </footer>
 </div>
 <br>
-<script>
-    let url=window.location.href;
-    if(url.indexOf("post")){;}else{document.getElementById("ParentBoxOfContentOfPost").parentNode.removeChild(document.getElementById("ParentBoxOfContentOfPost"));}
-</script>
 <div class="leftMainBox" id="ParentBoxOfContentOfPost">
     {{ if .TableOfContents }}
     <h3 style="text-align: center;">目录</h3>
@@ -109,4 +105,8 @@
         </div>
     {{ end }}
 </div>
+<script>
+    let url=window.location.href;
+    if(url.indexOf("post")===-1){if(document.getElementById("ParentBoxOfContentOfPost")){document.getElementById("ParentBoxOfContentOfPost").remove();};}
+</script>
 <br>
