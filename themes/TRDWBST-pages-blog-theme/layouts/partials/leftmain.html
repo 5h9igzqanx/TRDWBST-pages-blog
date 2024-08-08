@@ -73,16 +73,14 @@
 </div>
 <br>
 <script>
-    let url=window.location.href;if(url.indexOf("post")){;}else{document.getElementById("contentOfPost").parentNode.removeChild(document.getElementById("contentOfPost"));}
+    let url=window.location.href;if(url.indexOf("post")){;}else{document.getElementById("ParentBoxOfContentOfPost").parentNode.removeChild(document.getElementById("ParentBoxOfContentOfPost"));}
 </script>
-<div class="leftMainBox">
+<div class="leftMainBox" id="ParentBoxOfContentOfPost">
     {{ if .TableOfContents }}
     <h3 style="text-align: center;">目录</h3>
     <style>
         .toc{
             height: 350px;
-            background-color: #cadeea;
-            border-radius: 25px;
         }
         .TableOfContents ul>li{
             margin-left: 5px;
