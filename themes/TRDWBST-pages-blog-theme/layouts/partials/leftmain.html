@@ -90,7 +90,8 @@
 </div>
 <br>
 <script>
-    let url=window.location.href;if(url.indexOf("post")){;}else{document.getElementById("ParentBoxOfContentOfPost").parentNode.removeChild(document.getElementById("ParentBoxOfContentOfPost"));}
+    let url=window.location.href;
+    if(url.indexOf("post")){;}else{document.getElementById("ParentBoxOfContentOfPost").parentNode.removeChild(document.getElementById("ParentBoxOfContentOfPost"));}
 </script>
 <div class="leftMainBox" id="ParentBoxOfContentOfPost">
     {{ if .TableOfContents }}
