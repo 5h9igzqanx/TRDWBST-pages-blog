@@ -96,7 +96,12 @@
         <h3 style="text-align: center;">目录</h3>
         <style>
             .toc{
-                height: 350px;
+                /* height: 350px; */
+                font-weight: bold;
+                color: gray;
+                padding-left: 4px;
+                padding-right: 4px;
+
             }
             .toc ul{
                 list-style-type: none;
@@ -115,6 +120,7 @@
         </div>
     {{ end }}
 </div>
+<br>
 <script>
     let url=window.location.href;
     if(url.indexOf("post")===-1){if(document.getElementById("ParentBoxOfContentOfPost")){document.getElementById("ParentBoxOfContentOfPost").remove();};}
