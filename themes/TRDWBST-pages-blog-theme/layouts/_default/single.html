@@ -81,7 +81,7 @@
     .cntBody pre{
       border: solid 1px #75aac8;
       border-radius: 25px;
-      font-family: "ZX-E-FiraCode";
+      font-family: "ZX-E-FiraCode","monospace" !important;
       /* padding-top: 25px; */
       padding-bottom: 10px;
       padding-right: 25px;
@@ -91,6 +91,9 @@
     .cntBody pre code::before{
       content: attr(data-lang);
       background-color: #75aac8;
+      color: black;
+      padding-left: 25px;
+      font-family: "ZX-E-FiraCode","sans-serif" !important;
       display: block;
       width: 100%;
       height: 25px;
