@@ -118,6 +118,9 @@
             .toc li ul{
                 margin-left: 20px;
             }
+            #ParentBoxOfContentOfPost{
+                transition: top 0.3s;
+            }
         </style>
         <br>
         <div class="toc" id="contentOfPost">
@@ -136,7 +139,7 @@
     var stickyTop=contentEle.getBoundingClientRect().top + window.pageYOffset;
     window.addEventListener("scroll",function(){
         var scrollPosition=window.pageYOffset||document.documentElement.scrollTop;
-        if(scrollPosition>stickyTop){
+        if((scrollPosition>stickyTop)&&(window.innerWidth>1000)){
             console.log("设置开始1");contentEle.style.position='fixed';contentEle.style.top='90px';console.log("设置结束1");
         }else{
             console.log("设置开始0");contentEle.style.position='';contentEle.style.top='';console.log("设置结束0");
