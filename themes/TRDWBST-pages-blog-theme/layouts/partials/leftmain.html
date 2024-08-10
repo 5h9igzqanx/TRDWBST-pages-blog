@@ -135,7 +135,7 @@
     var parentOfcnt=contentEle.parentElement;
     var stickyTop=contentEle.getBoundingClientRect().top + window.pageYOffset;
     window.addEventListener("scroll",function(){
-        var ScrollPostion=window.pageYOffset || document.documentElement.scrollTop;
+        var ScrollPosition=window.pageYOffset || document.documentElement.scrollTop;
         if(scrollPosition>stickyTop){
             console.log("设置开始1");stickyElement.style.position='fixed';stickyElement.style.top='90';console.log("设置结束1");
         }else{
