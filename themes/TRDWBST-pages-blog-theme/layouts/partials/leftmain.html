@@ -91,58 +91,50 @@
     </footer>
 </div>
 <br>
-<div id="GrandparentBoxOfContentOfPost">
-    <div class="leftMainBox" id="ParentBoxOfContentOfPost">
-        {{ if .TableOfContents }}
-            <h3 style="text-align: center;">目录</h3>
-            <style>
-                .toc{
-                    /* height: 350px; */
-                    font-weight: bold;
-                    color: gray !important;
-                    padding-left: 8px;
-                    padding-right: 8px;
+<div class="leftMainBox" id="ParentBoxOfContentOfPost">
+    {{ if .TableOfContents }}
+        <h3 style="text-align: center;">目录</h3>
+        <style>
+            .toc{
+                /* height: 350px; */
+                font-weight: bold;
+                color: gray !important;
+                padding-left: 8px;
+                padding-right: 8px;
 
-                }
-                .toc ul{
-                    list-style-type: none;
-                }
-                .toc li{
-                    margin-bottom: 2px;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical;
-                    -webkit-line-clamp:1; /* 这里的数字定义了显示的行数 */
-                    line-clamp: 1;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-                .toc li ul{
-                    margin-left: 20px;
-                }
-                #GrandparentBoxOfContentOfPost{
-                    position: relative;
-                }
-                #ParentBoxOfContentOfPost{
-                    position: -webkit-sticky;
-                    position: sticky;
-                    top: 90px;
-                }
-                @media screen and (max-width:1000px){
-                    #ParentBoxOfContentOfPost{
-                        position: static;
-                    }
-                }
-            </style>
-            <br>
-            <div class="toc" id="contentOfPost">
-                {{ .TableOfContents }}
-            </div>
-        {{ end }}
-    </div>
+            }
+            .toc ul{
+                list-style-type: none;
+            }
+            .toc li{
+                margin-bottom: 2px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp:1; /* 这里的数字定义了显示的行数 */
+                line-clamp: 1;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .toc li ul{
+                margin-left: 20px;
+            }
+        </style>
+        <br>
+        <div class="toc" id="contentOfPost">
+            {{ .TableOfContents }}
+        </div>
+    {{ end }}
 </div>
 <br>
 <script>
     let url=window.location.href;
-    if(url.indexOf("post")===-1){if(document.getElementById("ParentBoxOfContentOfPost")){document.getElementById("ParentBoxOfContentOfPost").remove();};}
+    if(url.indexOf("post")===-1){if(document.getElementById("ParentBoxOfContentOfPost")){document.getElementById("ParentBoxOfContentOfPost").remove();};}else{
+        var contentEle=document.getElementById("ParentBoxOfContentOfPost");
+        var parentOfcnt=contentEle.parentElement;
+        var stickyTop=contentEle.offsetTop
+        window.addEventListener("scroll",function(){
+            var ScrollPostion=window.pageYOffset||document.documentElement.scrollTop;if(scrollPosition>stickyTop){stickyElement.style.position='fixed';stickyElement.style.top='90';}else{stickyElement.style.position='';stickyElement.style.top='';}
+        })
+    }
 </script>
 <br id="ParentBoxOfContentOfPost">
