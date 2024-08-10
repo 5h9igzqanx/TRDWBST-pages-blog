@@ -140,9 +140,9 @@
     window.addEventListener("scroll",function(){
         var scrollPosition=window.pageYOffset||document.documentElement.scrollTop;
         if((scrollPosition>stickyTop)&&(window.innerWidth>1000)){
-            console.log("设置开始1");contentEle.style.position='fixed';contentEle.style.top='90px';contentEle.style.width=(String((document.getElementById("leftMain").offsetWidth)-46)+"px");console.log(document.getElementById("leftMain").offsetWidth);console.log("设置结束1");
+            console.log("设置开始1");contentEle.style.position='fixed';contentEle.style.top='90px';contentEle.style.width=(String((document.getElementById("leftMain").offsetWidth)-46)+"px");
         }else{
-            console.log("设置开始0");contentEle.style.position='';contentEle.style.top='';contentEle.style.width='';console.log("设置结束0");
+            contentEle.style.position='';contentEle.style.top='';contentEle.style.width='';
         };
     });
 </script>
