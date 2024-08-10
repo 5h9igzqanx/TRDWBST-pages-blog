@@ -118,7 +118,14 @@
             .toc li ul{
                 margin-left: 20px;
             }
-            
+            #ParentBoxOfContentOfPost{
+                position: sticky;
+            }
+            @media screen and (max-width:1000px){
+                #ParentBoxOfContentOfPost{
+                    position: static;
+                }
+            }
         </style>
         <br>
         <div class="toc" id="contentOfPost">
