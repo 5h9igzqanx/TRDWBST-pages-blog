@@ -128,13 +128,12 @@
 <br>
 <script>
     let url=window.location.href;
-    if(url.indexOf("post")===-1){if(document.getElementById("ParentBoxOfContentOfPost")){document.getElementById("ParentBoxOfContentOfPost").remove();};}else{
-        var contentEle=document.getElementById("ParentBoxOfContentOfPost");
-        var parentOfcnt=contentEle.parentElement;
-        var stickyTop=contentEle.offsetTop
-        window.addEventListener("scroll",function(){
-            var ScrollPostion=window.pageYOffset||document.documentElement.scrollTop;if(scrollPosition>stickyTop){stickyElement.style.position='fixed';stickyElement.style.top='90';}else{stickyElement.style.position='';stickyElement.style.top='';}
-        })
-    }
+    if(url.indexOf("post")===-1){if(document.getElementById("ParentBoxOfContentOfPost")){document.getElementById("ParentBoxOfContentOfPost").remove();};}
+    var contentEle=document.getElementById("ParentBoxOfContentOfPost");
+    var parentOfcnt=contentEle.parentElement;
+    var stickyTop=contentEle.offsetTop
+    window.addEventListener("scroll",function(){
+        var ScrollPostion=window.pageYOffset||document.documentElement.scrollTop;if(scrollPosition>stickyTop){stickyElement.style.position='fixed';stickyElement.style.top='90';console.log("滚动")}else{stickyElement.style.position='';stickyElement.style.top='';}
+    })
 </script>
-<br id="ParentBoxOfContentOfPost">
+<br>
