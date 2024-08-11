@@ -3,18 +3,18 @@
 不用担心！这不，我就把教程放出来了
 不啰嗦了，开始吧
 教程-制作本地网站 材料准备 一台搭载任意系统的电脑 the Internet Hugo软件（如果没有请看下面） Visual Studio Code（或其他任意代码编辑器和能编写Markdown文件的编辑器） 能加速Github的任意加速器（如果不用加速可以跳过） 配置Hugo环境 如果是MacOS或Linux系统且安装了Homebrew包管理器的话，直接在命令行输入
-brew install hugo 如果像我一样是Windows系统的话，可以先去Hugo的Github仓库下载Hugo主程序，然后把这个程序放在一个容易记住的目录里（放在你经常安装软件的那个目录就行，建议路径不要有中文名），复制这个目录的绝对路径
-接着右键任务栏上的Windows徽标，点击“系统”，在弹出的设置界面选择“高级系统设置”（没有的往下拉），点击“环境变量”
-在“系统变量”中选中“Path”并点击“编辑”，在弹出窗口中点击“新建”，把刚刚复制的路径粘贴进去，点击“确定”、“确定”和“确定”
+brew install hugo 如果像我一样是Windows系统的话，可以先去Hugo的Github仓库下载Hugo主程序，然后把这个程序放在一个容易记住的目录里（放在你经常安装软件的那个目录就行，建议路径不要有中文名），复制这个目录的绝对路径，
+接着右键任务栏上的Windows徽标，点击“系统”，在弹出的设置界面选择“高级系统设置”（没有的往下拉），点击“环境变量”，
+在“系统变量”中选中“Path”并点击“编辑”，在弹出窗口中点击“新建”，把刚刚复制的路径粘贴进去，点击“确定”、“确定”和“确定”，
 最后，如果你想验证你安装好了没有的话，可以在命令行输入
 hugo version 如果你在命令行看到了他的版本号，说明你已经跨过了创建博客网站的第一道坎儿，恭喜你！
 创建本地站点 在你想创建站点的上一个目录下打开命令行，或使用cd命令跳转到那里。但是要确保这个目录下没有和你想创建的站点名字一样的目录。即使有也要保证里面什么也没有，否则会出现错误。
 然后在命令行里输入
-hugo new site your-sites-name 其中的“your-sites-name”要换成你的站点的名字
+hugo new site your-sites-name 其中的“your-sites-name”要换成你的站点的名字。
 然后你就会发现目录下面出现了很多文件，具体如下
-. │ .hintrc │ .hugo_build.lock │ hugo.toml │ ├─archetypes │ default.md │ ├─assets ├─content ├─data ├─i18n ├─layouts ├─public ├─static └─themes 现在你已经创建好了本地站点，来看看下一步吧
-选择并加载主题 首先，你需要前往Hugo主题页面相中一个主题，点击那个主题，点“Download”
-在跳转到的Github仓库点击Code按钮，点击&amp;quot;Download ZIP&amp;quot;
-下载解压后，把解压后得到的目录复制到刚刚你创建的站点目录下的“themes”目录里
+. │ .hintrc │ .hugo_build.lock │ hugo.toml │ ├─archetypes │ default.md │ ├─assets ├─content ├─data ├─i18n ├─layouts ├─public ├─static └─themes 现在你已经创建好了本地站点，来看看下一步吧。
+选择并加载主题 首先，你需要前往Hugo主题页面相中一个主题，点击那个主题，点“Download”，
+在跳转到的Github仓库点击Code按钮，点击&amp;quot;Download ZIP&amp;quot;，
+下载解压后，把解压后得到的目录复制到刚刚你创建的站点目录下的“themes”目录里，
 返回上一个目录，找到“hugo.toml”并打开，在里面按照以下例子来设置
-baseURL = &amp;#34;your site&amp;#39;s URL&amp;#34; #你网站的网址 languageCode = &amp;#39;en-us&amp;#39; #你网站的语言代码 title = &amp;#39;your site&amp;#39;s name&amp;#39; #你网站的名字 theme = &amp;#39;the name of the downloaded theme&amp;#39; #你网站使用的主题，直接把刚刚复制到“themes”的目录名字写上去就行 把第一、三、四行等号后的内容按照实际情况来设置</description></item></channel></rss>
+baseURL = &amp;#34;your site&amp;#39;s URL&amp;#34; #你网站的网址 languageCode = &amp;#39;en-us&amp;#39; #你网站的语言代码 title = &amp;#39;your site&amp;#39;s name&amp;#39; #你网站的名字 theme = &amp;#39;the name of the downloaded theme&amp;#39; #你网站使用的主题，直接把刚刚复制到“themes”的目录名字写上去就行 把第一、三、四行等号后的内容按照实际情况来设置。</description></item></channel></rss>
