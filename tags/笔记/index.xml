@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>笔记 on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E7%AC%94%E8%AE%B0/</link><description>Recent content in 笔记 on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 20 Jul 2024 12:09:17 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>通过Hugo建造博客网站</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</link><pubDate>Sat, 20 Jul 2024 12:09:17 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</guid><description>通过Hugo建造博客网站 概述 大家好，因为这个网站的建成，我终于可以在属于我自己的地方写东西了。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>笔记 on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E7%AC%94%E8%AE%B0/</link><description>Recent content in 笔记 on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 29 Jul 2024 21:40:38 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>如何使用Lua语言</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072901/</link><pubDate>Mon, 29 Jul 2024 21:40:38 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072901/</guid><description>如何使用Lua语言 简介 Lua 是一种强大、高效、轻量级、可嵌入的脚本语言。 它支持 程序规划， 面向对象编程， 函数式编程， 数据驱动的编程，以及 数据描述。
+Lua 将简单的过程语法与 基于的强大数据描述构造 关联数组和可扩展语义。 卢阿 是动态类型的， 通过使用基于寄存器的虚拟机解释字节码来运行， 并具有自动内存管理与增量垃圾回收， 使其成为理想的选择 配置 脚本 和 快速原型制作。
+Lua 的设计、实现和维护由 PUC-Rio的一个团队， 巴西里约热内卢天主教大学。 Lua在Tecgraf出生和长大， 前身为PUC-Rio的计算机图形技术组。 Lua 现在被安置在 LabLua， 里约热内卢大学计算机科学系的实验室。
+（来自Lua官网）
+总而言之，Lua是一种快速轻量的脚本语言，而且很适合嵌入到其他程序中。
+Lua的学习难度很小（只有21个关键字和1种数据结构机制），并且生态系统相对完善。 反正，比Python简单。
+教程 前期准备 首先，我们要下载Lua，转到Lua的Github仓库获取Lua的安装包（Windows）或者直接在其官网下载源码
+安装它，路径尽量不要有中文，中文路径是编程的大忌！
+在命令行中输入lua，如果出现以下信息就代表你成功安装了Lua
+Lua 5.1.5 Copyright (C) 1994-2012 Lua.org, PUC-Rio &amp;gt; 于是你就可以在“&amp;gt;”后直接运行代码了，例如
+print(&amp;#34;Hello world!&amp;#34;) 开始吧 变量设置 Lua的变量设置遵循“变量名=变量值”的语法，如果你想创建局部函数，使用“local”关键字放在变量名前，就像这样
+QuanJvBianLiang1=&amp;#34;全局变量1&amp;#34; QuanJvBianLiang2=114514 function SheZhiJvBuBianLiang() local jvBuBianLiang1=&amp;#34;局部变量1，只能在这个函数内使用&amp;#34; local jvBuBianLiang2=1919810 QuanJvBianLiang2=jvBuBianLiang2 print(jvBuBianLiang1) print(QuanJvBianLiang1) end SheZhiJvBuBianLiang() print(jvBuBianLiang1) print(QuanJvBianLiang2) 运行结果是</description></item><item><title>通过Hugo建造博客网站</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</link><pubDate>Sat, 20 Jul 2024 12:09:17 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</guid><description>通过Hugo建造博客网站 概述 大家好，因为这个网站的建成，我终于可以在属于我自己的地方写东西了。
 但是，在看文章的大家又该怎么办呢？
 不用担心！这不，我就把教程放出来了
 不啰嗦了，开始吧
