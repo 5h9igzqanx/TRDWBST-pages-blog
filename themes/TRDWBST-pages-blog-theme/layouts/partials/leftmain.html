@@ -138,7 +138,7 @@
     var parentOfcnt=contentEle.parentElement;
     var stickyTop=contentEle.getBoundingClientRect().top + window.pageYOffset;
     window.addEventListener("scroll",function(){
-        var scrollPosition=window.pageYOffset||document.documentElement.scrollTop;
+        var scrollPosition=(window.pageYOffset||document.documentElement.scrollTop)+90;
         if((scrollPosition>stickyTop)&&(window.innerWidth>1000)){
             contentEle.style.position='fixed';contentEle.style.top='90px';contentEle.style.width=(String((document.getElementById("leftMain").offsetWidth)-46)+"px");
         }else{
