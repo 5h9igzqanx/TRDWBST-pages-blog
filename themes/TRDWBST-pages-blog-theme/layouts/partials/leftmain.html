@@ -25,7 +25,7 @@
         border-radius: 50%;
         object-fit: cover;
     }
-    .ownerName,.siteName{
+    .center{
         text-align: center;
     }
     /* .navList ul{display: flex;list-style-type: none;}
@@ -38,8 +38,11 @@
         border-radius: 25px;
         font-weight: bold;
     } */
+    .navList{
+        font-family: "黑体";
+    }
     .navList li::before{
-        content: ".&ensp;";
+        content: "· ";
     }
     .navList li::before:hover{
         color: #75aac8;
@@ -61,7 +64,7 @@
 </style>
 <div class="leftMainBox">
     <br>
-    <h3 class="siteName">{{site.Title}}</h3>
+    <h3 class="center">{{site.Title}}</h3>
     <br>
 </div>
 <br>
@@ -71,18 +74,19 @@
         <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/LOGO/LOGO.gif" title="5h9igzqanx" alt="头像" class="avatar">
     </div>
     <br>
-    <h3 class="ownerName">5h9igzqanx</h3>
+    <h3 class="center">5h9igzqanx</h3>
     <br>
     <br>
 </div>
 <br>
 <div class="leftMainBox">
+    <h3 class="center">本页目录</h3>
     <div class="navList">{{ partial "menu.html" (dict "menuID" "main" "page" .) }}</div>
 </div>
 <br>
 <div class="leftMainBox">
     <footer>
-        <center style="text-align: center;">
+        <center class="center">
             <h3>版权声明</h3>
             <br>
             <p style="font-size: x-small;">Copyrignt© 2024 - 2025 5h9igzqanx</p>
@@ -99,7 +103,7 @@
 <br>
 <div class="leftMainBox" id="ParentBoxOfContentOfPost">
     {{ if .TableOfContents }}
-        <h3 style="text-align: center;">目录</h3>
+        <h3 class="center">本篇目录</h3>
         <style>
             .toc{
                 /* height: 350px; */
