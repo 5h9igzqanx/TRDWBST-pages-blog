@@ -1,6 +1,7 @@
 {{ define "main" }}
   {{ .Content }}
   {{ $style := resources.Get "css/postList.css" | minify | fingerprint }}
+  <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
   <style>
     .tagsBox ul{

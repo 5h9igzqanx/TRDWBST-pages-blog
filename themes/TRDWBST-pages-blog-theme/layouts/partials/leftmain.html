@@ -30,20 +30,26 @@
     }
     /* .navList ul{display: flex;list-style-type: none;}
     .navList ul>li{padding-left: 10px;padding-right: 10px;} */
-    .navList li{
+    /* .navList li{
         margin: 10px;
         padding: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
         border-radius: 25px;
         font-weight: bold;
+    } */
+    .navList li::before{
+        content: ".&ensp;";
     }
-    .navList li:hover{
-        background-color: #75aac8;
+    .navList li::before:hover{
+        color: #75aac8;
     }
-    .navList li a{
+    .navList li a:hover{
+        color: #75aac8;
+    }
+    /* .navList li a{
         width: 100%;
-    }
+    } */
     @media screen and (max-width:1000px) {
         .siteName{
             font-size:medium;
