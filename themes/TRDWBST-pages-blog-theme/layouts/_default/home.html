@@ -3,9 +3,6 @@
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
   <style>
-    .postlist:first-child{
-      margin-top: 0px;
-    }
     .tagsBox ul{
       display: flex;list-style-type: none;
     }
@@ -34,5 +31,6 @@
     <p><span>{{ $dateHuman }}</span>&emsp;作者:&ensp;<span>{{$author}}</span></p>
     <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
   </div>
+  <br>
   {{ end }}
 {{ end }}
