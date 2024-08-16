@@ -155,7 +155,7 @@
       {{ $bgImgSrc := .Params.backgroundImage |default "https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" }}
       <img src="{{ $bgImgSrc }}" alt="" title="">
     </div>
-    <div class="cntTitle">
+    <header class="cntTitle">
       {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
       {{ $dateHuman := .Date | time.Format ":date_long" }}
       {{ $author := .Params.author |default "佚名"}}
@@ -163,7 +163,7 @@
       <p>{{ .Params.description }}</p>
       <p><span>{{ $dateHuman }}</span>&emsp;作者:&ensp;<span>{{ $author }}</span></p>
       <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
-    </div>
+    </header>
   </div>
   <br>
   <div class="cnt">
