@@ -39,7 +39,7 @@
         font-weight: bold;
     } */
     .navList{
-        font-family: "黑体";
+        font-family: "幼圆";
         font-weight: bold;
         padding-left: 20px;
         padding-right: 20px;
@@ -67,7 +67,7 @@
 </style>
 <div class="leftMainBox">
     <br>
-    <h3 class="center">{{site.Title}}</h3>
+    <h2 class="center">{{site.Title}}</h2>
     <br>
 </div>
 <br>
@@ -83,14 +83,14 @@
 </div>
 <br>
 <div class="leftMainBox">
-    <h3 class="center">本页目录</h3>
+    <h2 class="center">本页目录</h2>
     <div class="navList">{{ partial "menu.html" (dict "menuID" "main" "page" .) }}</div>
 </div>
 <br>
 <div class="leftMainBox">
     <footer>
         <center class="center">
-            <h3>版权声明</h3>
+            <h2>版权声明</h2>
             <br>
             <p style="font-size: x-small;">Copyrignt© 2024 - 2025 5h9igzqanx</p>
             <p style="font-size: x-small;">All Rights Reserved</p>
@@ -106,7 +106,7 @@
 <br>
 <div class="leftMainBox" id="ParentBoxOfContentOfPost">
     {{ if .TableOfContents }}
-        <h3 class="center">本篇目录</h3>
+        <h2 class="center">本篇目录</h2>
         <style>
             .toc{
                 /* height: 350px; */
