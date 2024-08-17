@@ -3,6 +3,28 @@
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
   <style>
+    .selfIntroduction{
+      padding: 10px;
+      background-color: #a3c6da;
+      border-radius: 25px;
+    }
+    .bgImgIn1st{
+      margin: 10px;
+      margin-bottom: -40px !important;
+      width: calc(100% - 20px);
+      position: relative;
+      z-index: 1;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+    .selfIntroductionChild{
+      padding: 10px;
+      margin: 10px;
+      background-color: #cadeea;
+      border-radius: 25px;
+      position: relative;
+      z-index: 2;
+    }
     .tagsBox ul{
       display: flex;list-style-type: none;
     }
@@ -19,6 +41,16 @@
       background-color: #75aac8;
     }
   </style>
+  <div class="selfIntroduction">
+    <div class="bgImgIn1st">
+      <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" alt="" title="">
+    </div>
+    <div class="selfIntroductionChild">
+      <h2>{{site.Title}}</h2>
+      <p>………………</p>
+    </div>
+  </div>
+  <br>
   {{ range site.RegularPages }}
   <div class="postList">
     <br>
