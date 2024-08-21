@@ -3,7 +3,7 @@ a │ aa.py │ __init__.py │ ├─b │ │ bb.py │ │ __init__.py │ �
 def TestFuncInDD(): print(&amp;#34;在dd.py中的函数&amp;#34;) 又在cc.py中写以下代码意欲导入此文件：
 from ..b.d import dd dd.TestFuncInDD() 但是运行之后出现以下错误：
 Traceback (most recent call last): File &amp;#34;\a\c\cc.py&amp;#34;, line 2, in &amp;lt;module&amp;gt; from ..b import d ImportError: attempted relative import with no known parent package 该如何做才能够在必须运行cc.py的情况下在其中正确导入dd.py？
-类似情况见以下链接： 《Python 包：相对导入》来自StackOverflow</description></item><item><title>空调下的手</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</link><pubDate>Tue, 20 Aug 2024 20:05:03 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</guid><description>空调下的手 每当夏天，当我在空调下玩游戏玩腻了，
+类似情况见以下链接： 《Python 包：相对导入》来自Stack Overflow</description></item><item><title>空调下的手</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</link><pubDate>Tue, 20 Aug 2024 20:05:03 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</guid><description>空调下的手 每当夏天，当我在空调下玩游戏玩腻了，
 我都会看向我的手。
 此时我不敢乱动，
 因为我害怕我手上的寒气把我冻亖。
