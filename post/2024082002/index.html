@@ -20,7 +20,7 @@
 </span></span><span style=display:flex><span>dd<span style=color:#f92672>.</span>TestFuncInDD()
 </span></span></code></pre></div><p>但是运行之后出现以下错误：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>Traceback (most recent call last):
 </span></span><span style=display:flex><span>  File &#34;\a\c\cc.py&#34;, line 1, in &lt;module&gt;    
-</span></span><span style=display:flex><span>    from ..b import d
+</span></span><span style=display:flex><span>    from ..b.d import dd
 </span></span><span style=display:flex><span>ImportError: attempted relative import with no known parent package
 </span></span></code></pre></div><p>该如何做才能够在必须运行<code>cc.py</code>的情况下在其中正确导入<code>dd.py</code>？</p><blockquote><p>类似情况见以下链接：
 <a href=https://stackoverflow.com/questions/10059002/python-packages-relative-imports>《Python 包：相对导入》来自Stack Overflow</a></p></blockquote></div><br></div><br><div class=cnt><script>var idcomments_post_id,idcomments_post_url,idcomments_acct="ac62fc037019c315b1b48a7494e77f84"</script><span id=IDCommentsPostTitle style=display:none></span>
