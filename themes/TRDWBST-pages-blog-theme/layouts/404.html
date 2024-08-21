@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ $style := resources.Get "css/postList.css" | minify | fingerprint }}
+  <meta name="robots" content="noindex nofollow">
+  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+  <style>
+    .cntIR{
+        color: #a3c6da;
+        border-radius: 25px;
+        width: 100%;
+    }
+  </style>
+  <div class="cntIR">
+    <br>
+    <h2>404 - 页面没找到 - {{site.Title}}</h2>
+    <p>位于layouts</p>
+  </div>
+{{ end }}
