@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>笔记 on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E7%AC%94%E8%AE%B0/</link><description>Recent content in 笔记 on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Aug 2024 20:08:51 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>关于python相对导入的问题 问题重现 我有以下文件：
 a │ aa.py │ __init__.py │ ├─b │ │ bb.py │ │ __init__.py │ │ │ └─d │ dd.py │ __init__.py │ └─c cc.py __init__.py 现我在dd.py中写下以下函数：
 def TestFuncInDD(): print(&amp;#34;在dd.py中的函数&amp;#34;) 又在cc.py中写以下代码意欲导入此文件：
-from ..b import d d.dd() 但是运行之后出现以下错误：
-Traceback (most recent call last): File &amp;#34;\a\c\cc.py&amp;#34;, line 2, in &amp;lt;module&amp;gt; from ..b import d ImportError: attempted relative import with no known parent package 该如何做才能够正确导入dd.py？</description></item><item><title>化学元素周期表</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</link><pubDate>Wed, 14 Aug 2024 12:40:48 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</guid><description>化学元素周期表 全表 全表暂略，先看图
+from ..b.d import dd dd.TestFuncInDD() 但是运行之后出现以下错误：
+Traceback (most recent call last): File &amp;#34;\a\c\cc.py&amp;#34;, line 2, in &amp;lt;module&amp;gt; from ..b import d ImportError: attempted relative import with no known parent package 该如何做才能够在必须运行cc.py的情况下在其中正确导入dd.py？
+类似情况见以下链接： 《Python 包：相对导入》来自StackOverflow</description></item><item><title>化学元素周期表</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</link><pubDate>Wed, 14 Aug 2024 12:40:48 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</guid><description>化学元素周期表 全表 全表暂略，先看图
 口诀 青海离皮蓬，叹淡养夫奈
 那美女贵林，留绿芽加盖
 扛胎凡个猛，铁骨捏通心

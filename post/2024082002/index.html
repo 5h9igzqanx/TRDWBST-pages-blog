@@ -16,11 +16,12 @@
 </span></span><span style=display:flex><span>    __init__.py
 </span></span></code></pre></div><p>现我在<code>dd.py</code>中写下以下函数：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>TestFuncInDD</span>():
 </span></span><span style=display:flex><span>    print(<span style=color:#e6db74>&#34;在dd.py中的函数&#34;</span>)
-</span></span></code></pre></div><p>又在<code>cc.py</code>中写以下代码意欲导入此文件：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> ..b <span style=color:#f92672>import</span> d
-</span></span><span style=display:flex><span>d<span style=color:#f92672>.</span>dd()
+</span></span></code></pre></div><p>又在<code>cc.py</code>中写以下代码意欲导入此文件：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> ..b.d <span style=color:#f92672>import</span> dd
+</span></span><span style=display:flex><span>dd<span style=color:#f92672>.</span>TestFuncInDD()
 </span></span></code></pre></div><p>但是运行之后出现以下错误：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>Traceback (most recent call last):
 </span></span><span style=display:flex><span>  File &#34;\a\c\cc.py&#34;, line 2, in &lt;module&gt;    
 </span></span><span style=display:flex><span>    from ..b import d
 </span></span><span style=display:flex><span>ImportError: attempted relative import with no known parent package
-</span></span></code></pre></div><p>该如何做才能够正确导入<code>dd.py</code>？</p></div><br></div><br><div class=cnt><script>var idcomments_post_id,idcomments_post_url,idcomments_acct="ac62fc037019c315b1b48a7494e77f84"</script><span id=IDCommentsPostTitle style=display:none></span>
+</span></span></code></pre></div><p>该如何做才能够在必须运行<code>cc.py</code>的情况下在其中正确导入<code>dd.py</code>？</p><blockquote><p>类似情况见以下链接：
+<a href=https://stackoverflow.com/questions/10059002/python-packages-relative-imports>《Python 包：相对导入》来自StackOverflow</a></p></blockquote></div><br></div><br><div class=cnt><script>var idcomments_post_id,idcomments_post_url,idcomments_acct="ac62fc037019c315b1b48a7494e77f84"</script><span id=IDCommentsPostTitle style=display:none></span>
 <script type=text/javascript src=https://www.intensedebate.com/js/genericCommentWrapperV2.js></script></div><br></div></main></body></html>

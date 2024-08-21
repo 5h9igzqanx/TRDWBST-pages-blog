@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/</link><description>Recent content in Posts on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Aug 2024 20:08:51 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/index.xml" rel="self" type="application/rss+xml"/><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>关于python相对导入的问题 问题重现 我有以下文件：
 a │ aa.py │ __init__.py │ ├─b │ │ bb.py │ │ __init__.py │ │ │ └─d │ dd.py │ __init__.py │ └─c cc.py __init__.py 现我在dd.py中写下以下函数：
 def TestFuncInDD(): print(&amp;#34;在dd.py中的函数&amp;#34;) 又在cc.py中写以下代码意欲导入此文件：
-from ..b import d d.dd() 但是运行之后出现以下错误：
-Traceback (most recent call last): File &amp;#34;\a\c\cc.py&amp;#34;, line 2, in &amp;lt;module&amp;gt; from ..b import d ImportError: attempted relative import with no known parent package 该如何做才能够正确导入dd.py？</description></item><item><title>空调下的手</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</link><pubDate>Tue, 20 Aug 2024 20:05:03 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</guid><description>空调下的手 每当夏天，当我在空调下玩游戏玩腻了，
+from ..b.d import dd dd.TestFuncInDD() 但是运行之后出现以下错误：
+Traceback (most recent call last): File &amp;#34;\a\c\cc.py&amp;#34;, line 2, in &amp;lt;module&amp;gt; from ..b import d ImportError: attempted relative import with no known parent package 该如何做才能够在必须运行cc.py的情况下在其中正确导入dd.py？
+类似情况见以下链接： 《Python 包：相对导入》来自StackOverflow</description></item><item><title>空调下的手</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</link><pubDate>Tue, 20 Aug 2024 20:05:03 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</guid><description>空调下的手 每当夏天，当我在空调下玩游戏玩腻了，
 我都会看向我的手。
 此时我不敢乱动，
 因为我害怕我手上的寒气把我冻亖。
