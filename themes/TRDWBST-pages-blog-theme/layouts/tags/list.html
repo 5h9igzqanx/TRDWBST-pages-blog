@@ -1,6 +1,54 @@
 {{ define "main" }}
-  <p>标签页面测试 list</p>
-  {{ range .Pages }}
-    <p><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></p>
-  {{ end }}
+    {{ $style := resources.Get "css/postList.css" | minify | fingerprint }}
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+    <style>
+    .bigTitle{
+        padding: 10px;
+        background-color: #a3c6da;
+        border-radius: 25px;
+    }
+    .bgImgInBigTitle{
+        margin: 10px;
+        margin-bottom: -40px !important;
+        width: calc(100% - 20px);
+        position: relative;
+        z-index: 1;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    .bgImgIn1st>img{
+        width: 100%;
+    }
+    .bigTitleChild{
+        padding: 20px;
+        margin: 10px;
+        background-color: #cadeea;
+        border-radius: 25px;
+        position: relative;
+        z-index: 2;
+    }
+    .tags span{
+        border-radius: 25px;
+        margin: 5px;
+        background-color: #a3c6da;
+    }
+    </style>
+    <div class="bigTitle">
+        <div class="bgImgInBigTitle">
+            <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" alt="" title="">
+        </div>
+        <div class="bigTitleChild">
+            <h2>{{.Title}}</h2>
+            <p>1行</p>
+            <p>2行</p>
+            <p>3行</p>
+        </div>
+    </div>
+    <br>
+    <div class="tags">
+        {{ range .Pages }}
+            <span><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
+        {{ end }}
+    </div>
 {{ end }}

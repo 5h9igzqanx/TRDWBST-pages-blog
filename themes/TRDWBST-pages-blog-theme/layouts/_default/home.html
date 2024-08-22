@@ -1,74 +1,74 @@
 {{ define "main" }}
-  {{ $style := resources.Get "css/postList.css" | minify | fingerprint }}
-  <meta name="robots" content="noindex,nofollow">
-  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
-  <style>
-    .selfIntroduction{
-      padding: 10px;
-      background-color: #a3c6da;
-      border-radius: 25px;
-    }
-    .bgImgIn1st{
-      margin: 10px;
-      margin-bottom: -40px !important;
-      width: calc(100% - 20px);
-      position: relative;
-      z-index: 1;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-    }
-    .bgImgIn1st>img{
-      width: 100%;
-    }
-    .selfIntroductionChild{
-      padding: 20px;
-      margin: 10px;
-      background-color: #cadeea;
-      border-radius: 25px;
-      position: relative;
-      z-index: 2;
-    }
-    .tagsBox ul{
-      display: flex;list-style-type: none;
-    }
-    .tagsBox ul>li{
-      /* padding-left: 10px; */
-      margin-right: 10px;
-      padding-left: 5px;
-      padding-right: 5px;
-      border: solid 1px #75aac8;
-      border-radius: 25px;
-      background-color: #cadeea;
-    }
-    .tagsBox ul>li:hover{
-      background-color: #75aac8;
-    }
-  </style>
-  <div class="selfIntroduction">
-    <div class="bgImgIn1st">
-      <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" alt="" title="">
+    {{ $style := resources.Get "css/postList.css" | minify | fingerprint }}
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+    <style>
+        .bigTitle{
+            padding: 10px;
+            background-color: #a3c6da;
+            border-radius: 25px;
+        }
+        .bgImgInBigTitle{
+            margin: 10px;
+            margin-bottom: -40px !important;
+            width: calc(100% - 20px);
+            position: relative;
+            z-index: 1;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+        .bgImgIn1st>img{
+            width: 100%;
+        }
+        .bigTitleChild{
+            padding: 20px;
+            margin: 10px;
+            background-color: #cadeea;
+            border-radius: 25px;
+            position: relative;
+            z-index: 2;
+        }
+        .tagsBox ul{
+            display: flex;list-style-type: none;
+        }
+        .tagsBox ul>li{
+            /* padding-left: 10px; */
+            margin-right: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border: solid 1px #75aac8;
+            border-radius: 25px;
+            background-color: #cadeea;
+        }
+        .tagsBox ul>li:hover{
+            background-color: #75aac8;
+        }
+    </style>
+    <div class="bigTitle">
+        <div class="bgImgInBigTitle">
+            <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" alt="" title="">
+        </div>
+        <div class="bigTitleChild">
+            <h2>{{site.Title}}</h2>
+            <p>这块儿地是我自己开垦出来的，只许看，不许删。</p>
+            <p>什么？你问用什么开垦的？废话，<span style="text-decoration: line-through red;color: gray;font-weight: bold;">手</span><b>hugo</b>呗。</p>
+            <p>算了，随便看看吧，我出去一趟。对了，可以评论，不许嘴臭嗷！</p>
+        </div>
     </div>
-    <div class="selfIntroductionChild">
-      <h2>{{site.Title}}</h2>
-      <p>这块儿地是我自己开垦出来的，只许看，不许删。</p>
-      <p>什么？你问用什么开垦的？废话，<span style="text-decoration: line-through red;color: gray;font-weight: bold;">手</span><b>hugo</b>呗。</p>
-      <p>算了，随便看看吧，我出去一趟。对了，可以评论，不许嘴臭嗷！</p>
+    <br>
+    <div class="PostListParent">
+        {{ range site.RegularPages }}
+            <div class="postList">
+              <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+              {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+              {{ $dateHuman := .Date | time.Format ":date_long" }}
+              {{ $description := .Params.description | default (printf "%s" (.Plain | truncate 150))}}
+              {{ $author := .Params.author |default "佚名"}}
+              <p>{{$description}}</p>
+              <p>日期:&emsp;<span>{{ $dateHuman }}</span>&emsp;&emsp;作者:&ensp;<span>{{$author}}</span></p>
+              <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
+            </div>
+            <br>
+        {{ end }}
     </div>
-  </div>
-  <br>
-  <div class="PostListParent">
-    {{ range site.RegularPages }}
-      <div class="postList">
-        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-        {{ $dateHuman := .Date | time.Format ":date_long" }}
-        {{ $description := .Params.description | default (printf "%s" (.Plain | truncate 150))}}
-        {{ $author := .Params.author |default "佚名"}}
-        <p>{{$description}}</p>
-        <p>日期:&emsp;<span>{{ $dateHuman }}</span>&emsp;&emsp;作者:&ensp;<span>{{$author}}</span></p>
-        <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
-      </div>
-      <br>
-    {{ end }}
-  </div>
 {{ end }}
