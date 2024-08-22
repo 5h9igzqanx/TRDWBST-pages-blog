@@ -19,22 +19,24 @@
       background-color: #75aac8;
     }
   </style>
-  {{ range .Pages }}
-    <div class="postList">
-      {{ if eq .Section "post" }}
-        <br>
-      {{ end }}
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-      {{ $dateHuman := .Date | time.Format ":date_long" }}
-      {{ $description := .Params.description | default (printf "%s" (.Plain | truncate 150))}}
-      {{ $author := .Params.author |default "佚名"}}
-      {{ if eq .Section "post" }}
-        <p>{{$description}}</p>
-        <p><span>{{ $dateHuman }}</span>&emsp;作者:&ensp;<span>{{$author}}</span></p>
-        <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
-      {{ end }}
-    </div>
-    <br>
-  {{ end }}
+  <div class="PostListParent">
+    {{ range .Pages }}
+      <div class="postList">
+        {{ if eq .Section "post" }}
+          <br>
+        {{ end }}
+        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{ $dateHuman := .Date | time.Format ":date_long" }}
+        {{ $description := .Params.description | default (printf "%s" (.Plain | truncate 150))}}
+        {{ $author := .Params.author |default "佚名"}}
+        {{ if eq .Section "post" }}
+          <p>{{$description}}</p>
+          <p>日期:&emsp;<span>{{ $dateHuman }}</span>&emsp;&emsp;作者:&ensp;<span>{{$author}}</span></p>
+          <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
+        {{ end }}
+      </div>
+      <br>
+    {{ end }}
+  </div>
 {{ end }}
