@@ -1,0 +1,1 @@
+.tagsBox ul{display:flex;list-style-type:none}.tagsBox ul>li{margin-right:10px;padding-left:5px;padding-right:5px;border:solid 1px #75aac8;border-radius:10px;background-color:#cadeea}.tagsBox ul>li::before{content:"#"}.tagsBox ul>li:hover{background-color:#75aac8}
