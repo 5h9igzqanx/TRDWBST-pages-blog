@@ -80,10 +80,11 @@
       color: #75aac8 !important;
       text-decoration-color: #75aac8;
     }
-    /**/
+    /*行内代码元素*/
     .cntBody p code{
       border: solid 1px #75aac8;
       background-color: #cadeea;
+      font-family: "ZX-E-SourceCodePro","ZX-E-FiraCode","monospace" !important;
       border-radius: 6px;
       padding-left: 2px;
       padding-right: 2px;
@@ -114,7 +115,7 @@
       display: block;
       width: calc(100% + 25px);
       height: 35px;
-      text-align: center;
+      text-align: left;
     }
     .cntBody pre code>span{
       font-family: "ZX-E-SourceCodePro","ZX-E-FiraCode","monospace" !important;
@@ -124,7 +125,7 @@
       content: counter(codeLineNumber);
       counter-increment: codeLineNumber;
       border-right: solid 1px gray;
-      font-family: "ZX-E-SourceCodePro";
+      font-family: "ZX-E-SourceCodePro" !important;
       color: gray;
       width: 24px;
       text-align: right;
