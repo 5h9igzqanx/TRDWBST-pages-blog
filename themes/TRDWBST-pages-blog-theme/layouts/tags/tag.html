@@ -51,9 +51,9 @@
         {{ $dateHuman := .Date | time.Format ":date_long" }}
         {{ $description := .Params.description | default (printf "%s" (.Plain | truncate 150))}}
         {{ $author := .Params.author |default "佚名"}}
-        <p>{{$description}}</p>
         <p>日期:&emsp;<span>{{ $dateHuman }}</span>&emsp;&emsp;作者:&ensp;<span>{{$author}}</span></p>
         <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
+        <p>{{$description}}</p>
     </div>
     <br>
     {{ end }}

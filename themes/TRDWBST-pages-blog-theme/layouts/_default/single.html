@@ -168,9 +168,9 @@
       {{ $dateHuman := .Date | time.Format ":date_long" }}
       {{ $author := .Params.author |default "佚名"}}
       <h1>{{ .Title }}</h1>
-      <p>{{ .Params.description }}</p>
       <p><span>{{ $dateHuman }}</span>&emsp;作者:&ensp;<span>{{ $author }}</span></p>
       <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
+      <p>{{ .Params.description }}</p>
     </header>
   </div>
   <br>
