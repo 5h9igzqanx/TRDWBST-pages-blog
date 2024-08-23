@@ -28,8 +28,14 @@
         position: relative;
         z-index: 2;
     }
-    .tags span{
+    .tags{
+        text-align: left;
+        white-space: normal;
+    }
+    .tags .tag{
+        display: inline-block;
         border-radius: 25px;
+        font-size: 1.3rem;
         margin: 5px;
         padding: 5px;
         background-color: #a3c6da;
@@ -49,7 +55,7 @@
     <br>
     <div class="tags">
         {{ range .Pages }}
-            <span><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
+            <div class="tag"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
         {{ end }}
     </div>
 {{ end }}
