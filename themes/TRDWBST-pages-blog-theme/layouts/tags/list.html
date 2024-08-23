@@ -3,43 +3,51 @@
     <link rel="stylesheet" href="{{ $stylePostList.Permalink }}" integrity="{{ $stylePostList.Data.Integrity }}" crossorigin="anonymous">
     <meta name="robots" content="noindex,nofollow">
     <style>
-    .bigTitle{
-        padding: 10px;
-        background-color: #a3c6da;
-        border-radius: 25px;
-    }
-    .bgImgInBigTitle{
-        margin: 10px;
-        margin-bottom: -40px !important;
-        width: calc(100% - 20px);
-        position: relative;
-        z-index: 1;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-    }
-    .bgImgInBigTitle>img{
-        width: 100%;
-    }
-    .bigTitleChild{
-        padding: 20px;
-        margin: 10px;
-        background-color: #cadeea;
-        border-radius: 25px;
-        position: relative;
-        z-index: 2;
-    }
-    .tags{
-        text-align: left;
-        white-space: normal;
-    }
-    .tags .tag{
-        display: inline-block;
-        border-radius: 25px;
-        font-size: 1.3rem;
-        margin: 5px;
-        padding: 5px;
-        background-color: #a3c6da;
-    }
+        .bigTitle{
+            padding: 10px;
+            margin: 5px;
+            box-shadow: 0px 0px 5px 1px gray;
+            background-color: #a3c6da;
+            border-radius: 25px;
+        }
+        .bgImgInBigTitle{
+            margin: 10px;
+            margin-bottom: -40px !important;
+            width: calc(100% - 20px);
+            position: relative;
+            z-index: 1;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+        .bgImgInBigTitle>img{
+            width: 100%;
+        }
+        .bigTitleChild{
+            padding: 20px;
+            margin: 10px;
+            background-color: #cadeea;
+            border-radius: 25px;
+            position: relative;
+            z-index: 2;
+        }
+        .tags{
+            text-align: left;
+            white-space: normal;
+        }
+        .tags .tag{
+            display: inline-block;
+            border-radius: 25px;
+            font-size: 1.3rem;
+            margin: 5px;
+            padding: 5px;
+            background-color: #a3c6da;
+        }
+        .tags .tag::before{
+            content: "#";
+        }
+        .tags .tag:hover{
+            color: #75aac8;
+        }
     </style>
     <div class="bigTitle">
         <div class="bgImgInBigTitle">
