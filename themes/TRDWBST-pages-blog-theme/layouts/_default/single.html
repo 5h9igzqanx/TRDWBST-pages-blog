@@ -24,6 +24,7 @@
     }
     .cntTitle{
       background-color: #cadeea;
+      font-family: Arial,'楷体';
       position: relative;
       z-index: 2;
       border-radius: 25px;
@@ -185,7 +186,7 @@
       {{ $dateHuman := .Date | time.Format ":date_long" }}
       {{ $author := .Params.author |default "佚名"}}
       <h1>{{ .Title }}</h1>
-      <p><span>{{ $dateHuman }}</span>&emsp;作者:&ensp;<span>{{ $author }}</span></p>
+      <p>日期:&emsp;<span>{{ $dateHuman }}</span>&emsp;&emsp;作者:&ensp;<span>{{ $author }}</span></p>
       <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
       <p>{{ .Params.description }}</p>
     </header>
