@@ -1,7 +1,7 @@
 {{ define "main" }}
-    {{ $style := resources.Get "css/postList.css" | minify | fingerprint }}
+    {{ $stylePostList := resources.Get "css/postList.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $stylePostList.Permalink }}" integrity="{{ $stylePostList.Data.Integrity }}" crossorigin="anonymous">
     <meta name="robots" content="noindex,nofollow">
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
     <style>
     .bigTitle{
         padding: 10px;

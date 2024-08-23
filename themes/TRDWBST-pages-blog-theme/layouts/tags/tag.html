@@ -1,6 +1,8 @@
 {{ define "main" }}
-    <link rel="stylesheet" href="{{ `css/tagsBox.css` | relURL }}">
-    <link rel="stylesheet" href="{{ `css/postList.css` | relURL }}">
+    {{ $stylePostList := resources.Get "css/postList.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $stylePostList.Permalink }}" integrity="{{ $stylePostList.Data.Integrity }}" crossorigin="anonymous">
+    {{ $styleTagsBox := resources.Get "css/tagsBox.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styleTagsBox.Permalink }}" integrity="{{ $styleTagsBox.Data.Integrity }}" crossorigin="anonymous">
     <style>
     .bigTitle{
         padding: 10px;
