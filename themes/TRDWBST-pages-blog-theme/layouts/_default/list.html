@@ -1,24 +1,8 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ $style := resources.Get "css/postList.css" | minify | fingerprint }}
+  {{ $style := resources.Get "css/tagsBox.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
-  <style>
-    .tagsBox ul{
-      display: flex;list-style-type: none;
-    }
-    .tagsBox ul>li{
-      /* padding-left: 10px; */
-      margin-right: 10px;
-      padding-left: 5px;
-      padding-right: 5px;
-      border: solid 1px #75aac8;
-      border-radius: 25px;
-      background-color: #cadeea;
-    }
-    .tagsBox ul>li:hover{
-      background-color: #75aac8;
-    }
-  </style>
   <div class="PostListParent">
     {{ range .Pages }}
       <div class="postList">
