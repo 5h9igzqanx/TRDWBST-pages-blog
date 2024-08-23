@@ -28,7 +28,7 @@ weight = 40
 
 [blackfriday]
 toc=true
-toc_depth=6
+toc_depth=9
 
 [module]
   [module.hugoVersion]
