@@ -140,6 +140,6 @@ TRDWBST
 他只能在角落哭泣，
 哭泣他没有听话的奴隶。</description></item><item><title>测试用文档</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</link><pubDate>Sat, 01 Jan 2000 08:00:00 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</guid><description>测试用文档 标题测试 以下是标题测试
 标题3 标题4 标题5 标题6 文本标记测试 以下是文本标记测试（中文）：
-正常文本用来显示正常内容；粗体文本用来显示着重；斜体文本用来显示引用、强调或者专有名词；加粗的斜体文本则同时包括粗体文本和斜体文本的作用。下划线用来将短意群连接为长意群;删除线用来标注审阅批注中删掉的部分。现在你已经大概了解了文本标记的用法，来试试吧。
+正常文本用来显示正常内容；粗体文本用来显示着重；斜体文本用来显示引用、强调或者专有名词；加粗的斜体文本则同时包括粗体文本和斜体文本的作用。下划线用来将短意群连接为长意群（Markdown本土语法不支持，或许使用HTML标签可以做到）;删除线用来标注审阅批注中删掉的部分。现在你已经大概了解了文本标记的用法，来试试吧。
 The following is a text tagging test(English):
-Normal text is used to display normal content;Bold text is used to display emphasis;Italicized text is used to display references, emphasis, or proper nouns;Bold italic text includes both bold and italic text. The underline is used to connect short meaning groups into long meaning groups;The strikethrough is used to mark the deleted parts in the review comments.</description></item></channel></rss>
+Normal text is used to display normal content;Bold text is used to display emphasis;Italicized text is used to display references, emphasis, or proper nouns;Bold italic text includes both bold and italic text. The underline is used to connect short meaning groups into long meaning groups(Markdown native syntax is not supported, perhaps using HTML tags can achieve it);The strikethrough is used to mark the deleted parts in the review comments.</description></item></channel></rss>
