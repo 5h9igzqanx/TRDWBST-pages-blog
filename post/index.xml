@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/</link><description>Recent content in Posts on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Aug 2024 20:08:51 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/index.xml" rel="self" type="application/rss+xml"/><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>关于python相对导入的问题 问题重现 我有以下文件：
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/</link><description>Recent content in Posts on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 27 Aug 2024 11:10:01 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/index.xml" rel="self" type="application/rss+xml"/><item><title>简介-角色「岱莫」</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082702/</link><pubDate>Tue, 27 Aug 2024 11:10:01 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082702/</guid><description>简介-角色「岱莫」 基本信息 基础基本信息 姓名：岱莫
+曾用名：无
+性别：女
+种族：伊洱
+所属国家：「珑」
+出生日期：「笔尖」1年1月1日
+籍贯：无
+常驻地点：「珑」国「峠」州「乐沣」市主城区
+受教育程度：未知 大学或其以上
+高级基本信息 特殊身份：神造物 无
+宗教信仰：无
+政治观点：社会主义
+政治面貌：群众
+外观 暂略
+生平简介 随着异变突然诞生的少女。
+创世之夸克「笔尖」下祖神「Demo」之产物，用以「体验其世界」。
+备注 “现在大概是我出生——应该叫诞生——以前，也就是「笔尖」纪元前1年的12月31日，，我留下了这些话来阐释我的身世。
+有神创造了我，于是我回应了祂——「Demo」。
+在此之前，我也不知道我是谁，我大概是世界中一丝游离的意识，或许我有不少前世吧。
+「Demo」是创世神「笔尖」的造物，我是祂的造物，我在诞生之前也见到了「笔尖」。
+‘作为我的第一个产物，你将拥有我的一切名誉——这容不得你决定——但是你可以决定的是：拥有我的能力，即改变世界的能力和权力。’祂如是说道。
+我不认可我拥有祂的一切名誉，*但是确实这不是我能决定的，*我只同意使用祂权能的1/1024——即刚刚能够创造一架人的躯体的权能，仅此而已。
+我就是我自己，我为什么非得扮演别人呢？如果祂想让我扮演祂，那就让祂钻进我的脑袋来控制我的躯体好了。
+然后祂为我创造了一副躯壳——一副八九岁少女的躯壳，让我降临在属于「珑」国的禁忌区域「祖」那里，让另两个少女发现我并让我和她们一同生活。
+最后，我问祂：‘我的意义是什么？’
+祂叹了口气：‘只是当我的「沉思域」。’”</description></item><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>关于python相对导入的问题 问题重现 我有以下文件：
 a │ aa.py │ __init__.py │ ├─b │ │ bb.py │ │ __init__.py │ │ │ └─d │ dd.py │ __init__.py │ └─c cc.py __init__.py 现我在dd.py中写下以下函数：
 def TestFuncInDD(): print(&amp;#34;在dd.py中的函数&amp;#34;) 又在cc.py中写以下代码意欲导入此文件：
 from ..b.d import dd dd.TestFuncInDD() 但是运行之后出现以下错误：
