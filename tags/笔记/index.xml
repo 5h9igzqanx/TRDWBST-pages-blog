@@ -40,8 +40,8 @@ hugo new site your-sites-name 其中的“your-sites-name”要换成你的站�
 . │ .hintrc │ .hugo_build.lock │ hugo.toml │ ├─archetypes │ default.md │ ├─assets ├─content ├─data ├─i18n ├─layouts ├─public ├─static └─themes 现在你已经创建好了本地站点，来看看下一步吧。
 选择并加载主题 首先，你需要前往Hugo主题页面相中一个主题，点击那个主题，点“Download”，
 在跳转到的Github仓库点击Code按钮，点击&amp;quot;Download ZIP&amp;quot;，
-下载解压后，把解压后得到的目录复制到刚刚你创建的站点目录下的“themes”目录里，
-返回上一个目录，找到“hugo.toml”并打开，在里面按照以下例子来设置
+下载解压后，把解压后得到的目录复制到刚刚你创建的站点目录下的themes目录里，
+返回上一个目录，找到hugo.toml并打开，在里面按照以下例子来设置
 baseURL = &amp;#34;your site&amp;#39;s URL&amp;#34; #你网站的网址 languageCode = &amp;#34;en-us&amp;#34; #你网站的语言代码（这里显示了默认值“英语-美国”） title = &amp;#34;your site&amp;#39;s name&amp;#34; #你网站的名字 theme = &amp;#34;the name of the downloaded theme&amp;#34; #你网站使用的主题，直接把刚刚复制到“themes”的目录名字写上去就行 把第一、三、四行等号后的内容按照实际情况来设置。</description></item><item><title>测试用文档</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</link><pubDate>Sat, 01 Jan 2000 08:00:00 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</guid><description>测试用文档 标题测试 以下是标题测试
 标题3 标题4 标题5 标题6 文本标记测试 以下是文本标记测试（中文）：
 正常文本用来显示正常内容；粗体文本用来显示着重；斜体文本用来显示引用、强调或者专有名词；加粗的斜体文本则同时包括粗体文本和斜体文本的作用。下划线用来将短意群连接为长意群（Markdown本土语法不支持，或许使用HTML标签可以做到）;删除线用来标注审阅批注中删掉的部分。现在你已经大概了解了文本标记的用法，来试试吧。
