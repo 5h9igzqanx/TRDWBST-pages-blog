@@ -31,6 +31,11 @@ toc=true
 toc_depth=12
 
 [markup]
+  [markup.tableOfContents]
+    endLevel = 6
+    ordered = false
+    startLevel = 2
+
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
