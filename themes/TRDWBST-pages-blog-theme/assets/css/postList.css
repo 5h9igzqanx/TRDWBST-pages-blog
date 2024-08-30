@@ -6,7 +6,7 @@
     background-color: #cadeea;
     margin: 5px;
     box-shadow: 0px 0px 5px 1px gray;
-    font-family: Arial,'楷体';
+    font-family: 'Times New Roman','Arial','楷体';
 }
 .postList p {
     color: rgb(0, 0, 0, 0.6);

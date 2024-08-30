@@ -28,7 +28,12 @@ weight = 40
 
 [blackfriday]
 toc=true
-toc_depth=9
+toc_depth=12
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [module]
   [module.hugoVersion]
