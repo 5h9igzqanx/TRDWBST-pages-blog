@@ -200,6 +200,23 @@
       overflow-y: hidden;
       pointer-events: none;
     }
+    /* 使用代码块组件实现的提示、警告框 */
+    .cntBody pre code[data-lang="ZX-TIP"]{
+      background-color: #caebca;
+      font-family: 'Times New Roman','Arial','楷体' !important;
+    }
+    .cntBody pre code::before[data-lang="ZX-TIP"]{
+      content: "提示";
+      background-color: #a3d9a3;
+    }
+    .cntBody pre code[data-lang="ZX-WARNING"]{
+      background-color: #ebebca;
+      font-family: 'Times New Roman','Arial','楷体' !important;
+    }
+    .cntBody pre code::before[data-lang="ZX-WARNING"]{
+      content: "注意";
+      background-color: #c7c775;
+    }
   </style>
   <div class="cnt">
     <div class="backgroundImg">
