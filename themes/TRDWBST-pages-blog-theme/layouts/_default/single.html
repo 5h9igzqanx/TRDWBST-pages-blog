@@ -201,10 +201,12 @@
       pointer-events: none;
     }
     /* 使用代码块组件实现的提示、警告框 */
+    .cntBody pre code[data-lang="ZX-TIP"],.cntBody pre code[data-lang="ZX-TIP"]{
+      font-family: 'Times New Roman','Arial','楷体' !important;
+    }
     .cntBody pre:has(code[data-lang="ZX-TIP"]){
       background-color: #caebca;
       border: solid 1px #75c775;
-      font-family: 'Times New Roman','Arial','楷体' !important;
       font-weight: bold;
     }
     .cntBody pre code[data-lang="ZX-TIP"]::before{
@@ -215,7 +217,6 @@
     .cntBody pre:has(code[data-lang="ZX-WARNING"]){
       background-color: #ebebca;
       border: solid 1px #c7c775;
-      font-family: 'Times New Roman','Arial','楷体' !important;
       font-weight: bold;
     }
     .cntBody pre code[data-lang="ZX-WARNING"]::before{
