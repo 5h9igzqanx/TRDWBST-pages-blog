@@ -1,6 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>求助 on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E6%B1%82%E5%8A%A9/</link><description>Recent content in 求助 on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Aug 2024 20:08:51 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E6%B1%82%E5%8A%A9/index.xml" rel="self" type="application/rss+xml"/><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>关于python相对导入的问题 问题重现 我有以下文件：
-a │ aa.py │ __init__.py │ ├─b │ │ bb.py │ │ __init__.py │ │ │ └─d │ dd.py │ __init__.py │ └─c cc.py __init__.py 现我在dd.py中写下以下函数：
-def TestFuncInDD(): print(&amp;#34;在dd.py中的函数&amp;#34;) 又在cc.py中写以下代码意欲导入此文件：
-from ..b.d import dd dd.TestFuncInDD() 但是运行之后出现以下错误：
-Traceback (most recent call last): File &amp;#34;\a\c\cc.py&amp;#34;, line 1, in &amp;lt;module&amp;gt; from ..b.d import dd ImportError: attempted relative import with no known parent package 该如何做才能够在必须运行cc.py的情况下在其中正确导入dd.py？
-类似情况见以下链接： 《Python 包：相对导入》来自Stack Overflow</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>求助 on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E6%B1%82%E5%8A%A9/</link><description>Recent content in 求助 on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Aug 2024 20:08:51 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E6%B1%82%E5%8A%A9/index.xml" rel="self" type="application/rss+xml"/><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>&lt;h1 id="关于python相对导入的问题">关于python相对导入的问题&lt;/h1>
+&lt;h2 id="问题重现">问题重现&lt;/h2>
+&lt;p>我有以下文件：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>a
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ aa.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ __init__.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─b
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ │ bb.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ │ __init__.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ │
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └─d
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ dd.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ __init__.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└─c
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cc.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> __init__.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item></channel></rss>

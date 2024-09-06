@@ -1,49 +1,89 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>笔记 on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E7%AC%94%E8%AE%B0/</link><description>Recent content in 笔记 on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Aug 2024 20:08:51 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>关于python相对导入的问题 问题重现 我有以下文件：
-a │ aa.py │ __init__.py │ ├─b │ │ bb.py │ │ __init__.py │ │ │ └─d │ dd.py │ __init__.py │ └─c cc.py __init__.py 现我在dd.py中写下以下函数：
-def TestFuncInDD(): print(&amp;#34;在dd.py中的函数&amp;#34;) 又在cc.py中写以下代码意欲导入此文件：
-from ..b.d import dd dd.TestFuncInDD() 但是运行之后出现以下错误：
-Traceback (most recent call last): File &amp;#34;\a\c\cc.py&amp;#34;, line 1, in &amp;lt;module&amp;gt; from ..b.d import dd ImportError: attempted relative import with no known parent package 该如何做才能够在必须运行cc.py的情况下在其中正确导入dd.py？
-类似情况见以下链接： 《Python 包：相对导入》来自Stack Overflow</description></item><item><title>化学元素周期表</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</link><pubDate>Wed, 14 Aug 2024 12:40:48 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</guid><description>化学元素周期表 全表 全表暂略，先看图
-口诀 青海离皮蓬，叹淡养夫奈
-那美女贵林，留绿芽加盖
-扛胎凡个猛，铁骨捏通心
-家者身洗袖，客如四亿高
-泥木得了老，把银隔音吸
-踢弟点先色，惫懒（镧系）和贪污
-来我衣钵金，拱坨千百坡
-挨冻放雷啊（锕系），陆渡稀薄黑
-麦打伦格尔，附魔力天傲</description></item><item><title>如何使用Lua语言</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072901/</link><pubDate>Mon, 29 Jul 2024 21:40:38 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072901/</guid><description>如何使用Lua语言 简介 Lua 是一种强大、高效、轻量级、可嵌入的脚本语言。 它支持 程序规划， 面向对象编程， 函数式编程， 数据驱动的编程，以及 数据描述。
-Lua 将简单的过程语法与 基于的强大数据描述构造 关联数组和可扩展语义。 卢阿 是动态类型的， 通过使用基于寄存器的虚拟机解释字节码来运行， 并具有自动内存管理与增量垃圾回收， 使其成为理想的选择 配置 脚本 和 快速原型制作。
-Lua 的设计、实现和维护由 PUC-Rio的一个团队， 巴西里约热内卢天主教大学。 Lua在Tecgraf出生和长大， 前身为PUC-Rio的计算机图形技术组。 Lua 现在被安置在 LabLua， 里约热内卢大学计算机科学系的实验室。
-（来自Lua官网）
-总而言之，Lua是一种快速轻量的脚本语言，而且很适合嵌入到其他程序中。
-Lua的学习难度很小（只有21个关键字和1种数据结构机制），并且生态系统相对完善。 反正，比Python简单。
-教程 前期准备 首先，我们要下载Lua，转到Lua的Github仓库获取Lua的安装包（Windows）或者直接在其官网下载源码
-安装它，路径尽量不要有中文，中文路径是编程的大忌！
-在命令行中输入lua，如果出现以下信息就代表你成功安装了Lua
-Lua 5.1.5 Copyright (C) 1994-2012 Lua.org, PUC-Rio &amp;gt; 于是你就可以在“&amp;gt;”后直接运行代码了，例如
-print(&amp;#34;Hello world!&amp;#34;) 开始吧 变量设置 Lua的变量设置遵循“变量名=变量值”的语法，如果你想创建局部函数，使用“local”关键字放在变量名前，就像这样
-QuanJvBianLiang1=&amp;#34;全局变量1&amp;#34; QuanJvBianLiang2=114514 function SheZhiJvBuBianLiang() local jvBuBianLiang1=&amp;#34;局部变量1，只能在这个函数内使用&amp;#34; local jvBuBianLiang2=1919810 QuanJvBianLiang2=jvBuBianLiang2 print(jvBuBianLiang1) print(QuanJvBianLiang1) end SheZhiJvBuBianLiang() print(jvBuBianLiang1) print(QuanJvBianLiang2) 运行结果是</description></item><item><title>通过Hugo建造博客网站</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</link><pubDate>Sat, 20 Jul 2024 12:09:17 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</guid><description>通过Hugo建造博客网站 概述 大家好，因为这个网站的建成，我终于可以在属于我自己的地方写东西了。
-但是，在看文章的大家又该怎么办呢？
-不用担心！这不，我就把教程放出来了
-不啰嗦了，开始吧
-教程-制作本地网站 材料准备 一台搭载任意系统的电脑 the Internet Hugo软件（如果没有请看下面） Visual Studio Code（或其他任意代码编辑器和能编写Markdown文件的编辑器） 能加速Github的任意加速器（如果不用加速可以跳过） 配置Hugo环境 如果是MacOS或Linux系统且安装了Homebrew包管理器的话，直接在命令行输入
-brew install hugo 如果像我一样是Windows系统的话，可以先去Hugo的Github仓库下载Hugo主程序，然后把这个程序放在一个容易记住的目录里（放在你经常安装软件的那个目录就行，建议路径不要有中文名），复制这个目录的绝对路径，
-接着右键任务栏上的Windows徽标，点击“系统”，在弹出的设置界面选择“高级系统设置”（没有的往下拉），点击“环境变量”，
-在“系统变量”中选中“Path”并点击“编辑”，在弹出窗口中点击“新建”，把刚刚复制的路径粘贴进去，点击“确定”、“确定”和“确定”，
-最后，如果你想验证你安装好了没有的话，可以在命令行输入
-hugo version 如果你在命令行看到了他的版本号，说明你已经跨过了创建博客网站的第一道坎儿，恭喜你！
-创建本地站点 在你想创建站点的上一个目录下打开命令行，或使用cd命令跳转到那里。但是要确保这个目录下没有和你想创建的站点名字一样的目录。即使有也要保证里面什么也没有，否则会出现错误。
-然后在命令行里输入
-hugo new site your-sites-name 其中的“your-sites-name”要换成你的站点的名字。
-然后你就会发现目录下面出现了很多文件，具体如下
-. │ .hintrc │ .hugo_build.lock │ hugo.toml │ ├─archetypes │ default.md │ ├─assets ├─content ├─data ├─i18n ├─layouts ├─public ├─static └─themes 现在你已经创建好了本地站点，来看看下一步吧。
-选择并加载主题 首先，你需要前往Hugo主题页面相中一个主题，点击那个主题，点“Download”，
-在跳转到的Github仓库点击Code按钮，点击&amp;quot;Download ZIP&amp;quot;，
-下载解压后，把解压后得到的目录复制到刚刚你创建的站点目录下的themes目录里，
-返回上一个目录，找到hugo.toml并打开，在里面按照以下例子来设置
-baseURL = &amp;#34;your site&amp;#39;s URL&amp;#34; #你网站的网址 languageCode = &amp;#34;en-us&amp;#34; #你网站的语言代码（这里显示了默认值“英语-美国”） title = &amp;#34;your site&amp;#39;s name&amp;#34; #你网站的名字 theme = &amp;#34;the name of the downloaded theme&amp;#34; #你网站使用的主题，直接把刚刚复制到“themes”的目录名字写上去就行 把第一、三、四行等号后的内容按照实际情况来设置。</description></item><item><title>测试用文档</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</link><pubDate>Sat, 01 Jan 2000 08:00:00 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</guid><description>测试用文档 标题测试 以下是标题测试
-标题3 标题4 标题5 标题6 文本标记测试 以下是文本标记测试（中文）：
-正常文本用来显示正常内容；粗体文本用来显示着重；斜体文本用来显示引用、强调或者专有名词；加粗的斜体文本则同时包括粗体文本和斜体文本的作用。下划线用来将短意群连接为长意群（Markdown本土语法不支持，或许使用HTML标签可以做到）;删除线用来标注审阅批注中删掉的部分。现在你已经大概了解了文本标记的用法，来试试吧。
-The following is a text tagging test(English):
-Normal text is used to display normal content;Bold text is used to display emphasis;Italicized text is used to display references, emphasis, or proper nouns;Bold italic text includes both bold and italic text. The underline is used to connect short meaning groups into long meaning groups(Markdown native syntax is not supported, perhaps using HTML tags can achieve it);The strikethrough is used to mark the deleted parts in the review comments.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>笔记 on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E7%AC%94%E8%AE%B0/</link><description>Recent content in 笔记 on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Aug 2024 20:08:51 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>&lt;h1 id="关于python相对导入的问题">关于python相对导入的问题&lt;/h1>
+&lt;h2 id="问题重现">问题重现&lt;/h2>
+&lt;p>我有以下文件：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>a
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ aa.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ __init__.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─b
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ │ bb.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ │ __init__.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ │
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └─d
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ dd.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ __init__.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└─c
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cc.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> __init__.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>化学元素周期表</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</link><pubDate>Wed, 14 Aug 2024 12:40:48 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</guid><description>&lt;h1 id="化学元素周期表">化学元素周期表&lt;/h1>
+&lt;h2 id="全表">全表&lt;/h2>
+&lt;p>全表暂略，先看图&lt;/p>
+&lt;p>&lt;img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/contentRes/2024081401-01.png" alt="化学元素周期表全表">&lt;/p>
+&lt;h2 id="口诀">口诀&lt;/h2>
+&lt;p>青海离皮蓬，叹淡养夫奈&lt;br>
+那美女贵林，留绿芽加盖&lt;br>
+扛胎凡个猛，铁骨捏通心&lt;br>
+家者身洗袖，客如四亿高&lt;br>
+泥木得了老，把银隔音吸&lt;br>
+踢弟点先色，惫懒（镧系）和贪污&lt;br>
+来我衣钵金，拱坨千百坡&lt;br>
+挨冻放雷啊（锕系），陆渡稀薄黑&lt;br>
+麦打伦格尔，附魔力天傲&lt;/p></description></item><item><title>如何使用Lua语言</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072901/</link><pubDate>Mon, 29 Jul 2024 21:40:38 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072901/</guid><description>&lt;h1 id="如何使用lua语言">如何使用Lua语言&lt;/h1>
+&lt;h2 id="简介">简介&lt;/h2>
+&lt;blockquote>
+&lt;p>Lua 是一种强大、高效、轻量级、可嵌入的脚本语言。 它支持 程序规划， 面向对象编程， 函数式编程， 数据驱动的编程，以及 数据描述。&lt;br>
+Lua 将简单的过程语法与 基于的强大数据描述构造 关联数组和可扩展语义。 卢阿 是动态类型的， 通过使用基于寄存器的虚拟机解释字节码来运行， 并具有自动内存管理与增量垃圾回收， 使其成为理想的选择 配置 脚本 和 快速原型制作。&lt;br>
+Lua 的设计、实现和维护由 PUC-Rio的一个团队， 巴西里约热内卢天主教大学。 Lua在Tecgraf出生和长大， 前身为PUC-Rio的计算机图形技术组。 Lua 现在被安置在 LabLua， 里约热内卢大学计算机科学系的实验室。&lt;br>
+（来自&lt;a href="https://www.lua.org/">Lua官网&lt;/a>）&lt;/p>
+&lt;/blockquote>
+&lt;p>总而言之，Lua是一种快速轻量的脚本语言，而且很适合嵌入到其他程序中。&lt;br>
+Lua的学习难度很小（只有21个关键字和1种数据结构机制），并且生态系统相对完善。
+反正，比Python简单。&lt;/p>
+&lt;h2 id="教程">教程&lt;/h2>
+&lt;h3 id="前期准备">前期准备&lt;/h3>
+&lt;p>首先，我们要下载Lua，转到&lt;a href="https://github.com/rjpcomputing/luaforwindows">Lua的Github仓库&lt;/a>获取Lua的安装包（Windows）或者直接在&lt;a href="https://www.lua.org/download.html">其官网&lt;/a>下载源码&lt;br>
+安装它，路径尽量不要有中文，中文路径是编程的大忌！&lt;br>
+在命令行中输入lua，如果出现以下信息就代表你成功安装了Lua&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>Lua 5.1.5 Copyright (C) 1994-2012 Lua.org, PUC-Rio
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>通过Hugo建造博客网站</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</link><pubDate>Sat, 20 Jul 2024 12:09:17 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</guid><description>&lt;h1 id="通过hugo建造博客网站">通过Hugo建造博客网站&lt;/h1>
+&lt;h2 id="概述">概述&lt;/h2>
+&lt;p>大家好，因为这个网站的建成，我终于可以在属于我自己的地方写东西了。&lt;br>
+但是，在看文章的大家又该怎么办呢？&lt;br>
+不用担心！这不，我就把教程放出来了&lt;br>
+不啰嗦了，开始吧&lt;/p>
+&lt;h2 id="教程-制作本地网站">教程-制作本地网站&lt;/h2>
+&lt;h3 id="材料准备">材料准备&lt;/h3>
+&lt;ol>
+&lt;li>一台搭载任意系统的电脑&lt;/li>
+&lt;li>the Internet&lt;/li>
+&lt;li>Hugo软件（如果没有请看下面）&lt;/li>
+&lt;li>Visual Studio Code（或其他任意代码编辑器和能编写Markdown文件的编辑器）&lt;/li>
+&lt;li>能加速Github的任意加速器（如果不用加速可以跳过）&lt;/li>
+&lt;/ol>
+&lt;h3 id="配置hugo环境">配置Hugo环境&lt;/h3>
+&lt;p>如果是MacOS或Linux系统且安装了Homebrew包管理器的话，直接在命令行输入&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>brew install hugo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果像我一样是Windows系统的话，可以先去&lt;a href="https://github.com/gohugoio/hugo/releases">Hugo的Github仓库&lt;/a>下载Hugo主程序，然后把这个程序放在一个容易记住的目录里（放在你经常安装软件的那个目录就行，建议路径不要有中文名），复制这个目录的绝对路径，&lt;br>
+接着右键任务栏上的Windows徽标，点击“系统”，在弹出的设置界面选择“高级系统设置”（没有的往下拉），点击“环境变量”，&lt;br>
+在“系统变量”中选中“Path”并点击“编辑”，在弹出窗口中点击“新建”，把刚刚复制的路径粘贴进去，点击“确定”、“确定”和“确定”，&lt;br>
+最后，如果你想验证你安装好了没有的话，可以在命令行输入&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>hugo version
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果你在命令行看到了他的版本号，说明你已经跨过了创建博客网站的第一道坎儿，恭喜你！&lt;/p>
+&lt;h3 id="创建本地站点">创建本地站点&lt;/h3>
+&lt;p>在你想创建站点的上一个目录下打开命令行，或使用&lt;code>cd&lt;/code>命令跳转到那里。但是要确保这个目录下没有和你想创建的站点名字一样的目录。即使有也要保证里面什么也没有，否则会出现错误。&lt;br>
+然后在命令行里输入&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>hugo new site your-sites-name
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>测试用文档</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</link><pubDate>Sat, 01 Jan 2000 08:00:00 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</guid><description>&lt;h1 id="测试用文档">测试用文档&lt;/h1>
+&lt;h2 id="标题测试">标题测试&lt;/h2>
+&lt;p>以下是标题测试&lt;/p>
+&lt;h3 id="标题3">标题3&lt;/h3>
+&lt;h4 id="标题4">标题4&lt;/h4>
+&lt;h5 id="标题5">标题5&lt;/h5>
+&lt;h6 id="标题6">标题6&lt;/h6>
+&lt;h2 id="文本标记测试">文本标记测试&lt;/h2>
+&lt;p>以下是文本标记测试（中文）：&lt;br>
+正常文本用来显示正常内容；&lt;strong>粗体文本&lt;/strong>用来显示着重；&lt;em>斜体文本&lt;/em>用来显示引用、强调或者专有名词；&lt;em>&lt;strong>加粗的斜体文本&lt;/strong>&lt;/em>则同时包括粗体文本和斜体文本的作用。&lt;!-- raw HTML omitted -->下划线&lt;!-- raw HTML omitted -->用来将短意群连接为长意群（Markdown本土语法不支持，或许使用HTML标签可以做到）;&lt;del>删除线&lt;/del>用来标注审阅批注中删掉的部分。现在你已经大概了解了文本标记的用法，来试试吧。&lt;br>
+The following is a text tagging test(English):&lt;br>
+Normal text is used to display normal content;&lt;strong>Bold text&lt;/strong> is used to display emphasis;&lt;em>Italicized text&lt;/em> is used to display references, emphasis, or proper nouns;&lt;em>&lt;strong>Bold italic text&lt;/strong>&lt;/em> includes both bold and italic text. &lt;!-- raw HTML omitted -->The underline&lt;!-- raw HTML omitted --> is used to connect short meaning groups into long meaning groups(Markdown native syntax is not supported, perhaps using HTML tags can achieve it);&lt;del>The strikethrough&lt;/del> is used to mark the deleted parts in the review comments. Now that you have a general understanding of the usage of text tags, let&amp;rsquo;s give it a try.&lt;/p></description></item></channel></rss>

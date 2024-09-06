@@ -1,146 +1,209 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/</link><description>Recent content in Posts on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Aug 2024 20:08:51 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/index.xml" rel="self" type="application/rss+xml"/><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>关于python相对导入的问题 问题重现 我有以下文件：
-a │ aa.py │ __init__.py │ ├─b │ │ bb.py │ │ __init__.py │ │ │ └─d │ dd.py │ __init__.py │ └─c cc.py __init__.py 现我在dd.py中写下以下函数：
-def TestFuncInDD(): print(&amp;#34;在dd.py中的函数&amp;#34;) 又在cc.py中写以下代码意欲导入此文件：
-from ..b.d import dd dd.TestFuncInDD() 但是运行之后出现以下错误：
-Traceback (most recent call last): File &amp;#34;\a\c\cc.py&amp;#34;, line 1, in &amp;lt;module&amp;gt; from ..b.d import dd ImportError: attempted relative import with no known parent package 该如何做才能够在必须运行cc.py的情况下在其中正确导入dd.py？
-类似情况见以下链接： 《Python 包：相对导入》来自Stack Overflow</description></item><item><title>空调下的手</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</link><pubDate>Tue, 20 Aug 2024 20:05:03 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</guid><description>空调下的手 每当夏天，当我在空调下玩游戏玩腻了，
-我都会看向我的手。
-此时我不敢乱动，
-因为我害怕我手上的寒气把我冻亖。
-附 我准备在上面放视频试试，但是我目前没学会画画，所以再等等吧。</description></item><item><title>人生要开心</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081801/</link><pubDate>Sun, 18 Aug 2024 16:44:06 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081801/</guid><description>人生要开心 人生就像一面镜子，你对它笑，它就对你笑；你对它哭，它就对你哭。
-如果你也把自己变成一面镜子：人生对你笑时你也笑，人生对你哭时你也哭，那么当你一点不顺心，你的愤怒就会通过人生这面镜子反弹回去，最终变成无休止的内耗。
-朋友，不要再内耗自己了。试着笑一笑，就仅仅是咧开嘴而已，没有多难的。笑着面对人生，那么人生就会一直对你微笑。</description></item><item><title>化学元素周期表</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</link><pubDate>Wed, 14 Aug 2024 12:40:48 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</guid><description>化学元素周期表 全表 全表暂略，先看图
-口诀 青海离皮蓬，叹淡养夫奈
-那美女贵林，留绿芽加盖
-扛胎凡个猛，铁骨捏通心
-家者身洗袖，客如四亿高
-泥木得了老，把银隔音吸
-踢弟点先色，惫懒（镧系）和贪污
-来我衣钵金，拱坨千百坡
-挨冻放雷啊（锕系），陆渡稀薄黑
-麦打伦格尔，附魔力天傲</description></item><item><title>如何更快地为西红柿剥皮</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081201/</link><pubDate>Mon, 12 Aug 2024 21:58:14 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081201/</guid><description>如何更快地为西红柿剥皮 如果我们想给西红柿剥皮来制作一些菜肴，只需要将其放入水中煮到其外皮裂开即可更快地剥皮。
-如果感到烫手，只需要把西红柿放在流动的冷水下片刻即可。</description></item><item><title>如何使用Lua语言</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072901/</link><pubDate>Mon, 29 Jul 2024 21:40:38 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072901/</guid><description>如何使用Lua语言 简介 Lua 是一种强大、高效、轻量级、可嵌入的脚本语言。 它支持 程序规划， 面向对象编程， 函数式编程， 数据驱动的编程，以及 数据描述。
-Lua 将简单的过程语法与 基于的强大数据描述构造 关联数组和可扩展语义。 卢阿 是动态类型的， 通过使用基于寄存器的虚拟机解释字节码来运行， 并具有自动内存管理与增量垃圾回收， 使其成为理想的选择 配置 脚本 和 快速原型制作。
-Lua 的设计、实现和维护由 PUC-Rio的一个团队， 巴西里约热内卢天主教大学。 Lua在Tecgraf出生和长大， 前身为PUC-Rio的计算机图形技术组。 Lua 现在被安置在 LabLua， 里约热内卢大学计算机科学系的实验室。
-（来自Lua官网）
-总而言之，Lua是一种快速轻量的脚本语言，而且很适合嵌入到其他程序中。
-Lua的学习难度很小（只有21个关键字和1种数据结构机制），并且生态系统相对完善。 反正，比Python简单。
-教程 前期准备 首先，我们要下载Lua，转到Lua的Github仓库获取Lua的安装包（Windows）或者直接在其官网下载源码
-安装它，路径尽量不要有中文，中文路径是编程的大忌！
-在命令行中输入lua，如果出现以下信息就代表你成功安装了Lua
-Lua 5.1.5 Copyright (C) 1994-2012 Lua.org, PUC-Rio &amp;gt; 于是你就可以在“&amp;gt;”后直接运行代码了，例如
-print(&amp;#34;Hello world!&amp;#34;) 开始吧 变量设置 Lua的变量设置遵循“变量名=变量值”的语法，如果你想创建局部函数，使用“local”关键字放在变量名前，就像这样
-QuanJvBianLiang1=&amp;#34;全局变量1&amp;#34; QuanJvBianLiang2=114514 function SheZhiJvBuBianLiang() local jvBuBianLiang1=&amp;#34;局部变量1，只能在这个函数内使用&amp;#34; local jvBuBianLiang2=1919810 QuanJvBianLiang2=jvBuBianLiang2 print(jvBuBianLiang1) print(QuanJvBianLiang1) end SheZhiJvBuBianLiang() print(jvBuBianLiang1) print(QuanJvBianLiang2) 运行结果是</description></item><item><title>心境与情绪</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072401/</link><pubDate>Wed, 24 Jul 2024 21:00:34 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072401/</guid><description>心境与情绪 人之心境，若空杯焉。人之交际，或喜，或怒，或哀，或怨，皆存于心。其中喜若C₂H₆O（酒精），快而易逝；而怒则如塘底石块，积少成多而无法排解。然杯之容，非无限也，故杯满则溢。或一瞬，心中怒全出，伤人损己。故人需控心。
-人之控心，在于扩容，在于排淤。容者，心也；淤者，怒也。故扩容在于养性，排淤在于发泄。使怒有所去，心有所广，而使人之表现有所和也。若人心满而不加控，生活何以乏味乎？</description></item><item><title>心的面具</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024030601/</link><pubDate>Sun, 21 Jul 2024 20:57:33 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024030601/</guid><description>心的面具 哦，孩子，
-你为什么要戴着面具？
-为何要把你的一切， 都藏进心的阴霾？
-唉，孩子，
-你为何不肯摘下面具？
-为何不让和煦春风，
-去吹散心的阴霾？
-啊，孩子，
-让我们来帮助你吧！
-不要再用那面具，
-遮住心中的伤疤了。</description></item><item><title>通过Hugo建造博客网站</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</link><pubDate>Sat, 20 Jul 2024 12:09:17 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</guid><description>通过Hugo建造博客网站 概述 大家好，因为这个网站的建成，我终于可以在属于我自己的地方写东西了。
-但是，在看文章的大家又该怎么办呢？
-不用担心！这不，我就把教程放出来了
-不啰嗦了，开始吧
-教程-制作本地网站 材料准备 一台搭载任意系统的电脑 the Internet Hugo软件（如果没有请看下面） Visual Studio Code（或其他任意代码编辑器和能编写Markdown文件的编辑器） 能加速Github的任意加速器（如果不用加速可以跳过） 配置Hugo环境 如果是MacOS或Linux系统且安装了Homebrew包管理器的话，直接在命令行输入
-brew install hugo 如果像我一样是Windows系统的话，可以先去Hugo的Github仓库下载Hugo主程序，然后把这个程序放在一个容易记住的目录里（放在你经常安装软件的那个目录就行，建议路径不要有中文名），复制这个目录的绝对路径，
-接着右键任务栏上的Windows徽标，点击“系统”，在弹出的设置界面选择“高级系统设置”（没有的往下拉），点击“环境变量”，
-在“系统变量”中选中“Path”并点击“编辑”，在弹出窗口中点击“新建”，把刚刚复制的路径粘贴进去，点击“确定”、“确定”和“确定”，
-最后，如果你想验证你安装好了没有的话，可以在命令行输入
-hugo version 如果你在命令行看到了他的版本号，说明你已经跨过了创建博客网站的第一道坎儿，恭喜你！
-创建本地站点 在你想创建站点的上一个目录下打开命令行，或使用cd命令跳转到那里。但是要确保这个目录下没有和你想创建的站点名字一样的目录。即使有也要保证里面什么也没有，否则会出现错误。
-然后在命令行里输入
-hugo new site your-sites-name 其中的“your-sites-name”要换成你的站点的名字。
-然后你就会发现目录下面出现了很多文件，具体如下
-. │ .hintrc │ .hugo_build.lock │ hugo.toml │ ├─archetypes │ default.md │ ├─assets ├─content ├─data ├─i18n ├─layouts ├─public ├─static └─themes 现在你已经创建好了本地站点，来看看下一步吧。
-选择并加载主题 首先，你需要前往Hugo主题页面相中一个主题，点击那个主题，点“Download”，
-在跳转到的Github仓库点击Code按钮，点击&amp;quot;Download ZIP&amp;quot;，
-下载解压后，把解压后得到的目录复制到刚刚你创建的站点目录下的themes目录里，
-返回上一个目录，找到hugo.toml并打开，在里面按照以下例子来设置
-baseURL = &amp;#34;your site&amp;#39;s URL&amp;#34; #你网站的网址 languageCode = &amp;#34;en-us&amp;#34; #你网站的语言代码（这里显示了默认值“英语-美国”） title = &amp;#34;your site&amp;#39;s name&amp;#34; #你网站的名字 theme = &amp;#34;the name of the downloaded theme&amp;#34; #你网站使用的主题，直接把刚刚复制到“themes”的目录名字写上去就行 把第一、三、四行等号后的内容按照实际情况来设置。</description></item><item><title>热烈庆祝TRDWBST-Pages-Blog建成</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024071901/</link><pubDate>Fri, 19 Jul 2024 18:09:42 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024071901/</guid><description>热烈庆祝TRDWBST-Pages-Blog建成 概述 Never gonna give you up
-never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-never gonna say goodbye
-Never gonna tell a lie and hurt you
-呸呸呸，这都什么鬼话
-反正就是欢迎来的我的第一个博客网站
-“第一个？不应该是第三个吗？”
-漏漏漏，前两个算个啥东西？这可是正儿八经用Hugo生成出来的网站！
-“那么这里都有什么呢？”
-答：好康的，好玩的，以及KNOWLEDGES
-哈哈，就这些，去看看吧，祝你看到你想看的
-这个网站用到的工具:
-Hugo IntenseDebate Github</description></item><item><title>TRDWBST正式启用</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024050501/</link><pubDate>Sun, 05 May 2024 10:00:00 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024050501/</guid><description>TRDWBST正式启用 概述 时隔2年半，我们的网站终于完成了！
-经过了我们（其实只有我hhhh）的反复捶打这里终于算竣工了！
-好的就这些了
-背景 首先吧，我闲的没事了刷抖音，刷到了一个挂载网站的方法，就是Github Pages了，
-我想，闲着也是闲着，不如试试？
-于是，在我这个萌新的一顿捯饬下，在2022年11月15日，wz-zx诞生了。。
-虽然有点粗制滥造，但是也算一个helloworld了哈哈哈。
-此时，我也了解了一些HTML知识，开始给我的朋友们制作他们的个人的网站，
-比如刘某的（估计他自己都忘了他还托我存着他的黑历史了哈哈哈）。
-然后呢，我感觉这个网站太粗制滥造了，于是，又一顿捯饬，在2022年11月25日，SCDWBST诞生了.
-什么？你问SCDWBST什么意思？那不就是“my second website”的缩写吗？
-那么这个网站名字就是“my third website”的缩写咯。
-好了好了，言归正传。
-在这个网站，我接触到了CSS，然后就学了一些浅显的知识，
-我以前甚至想制作一个评论系统，但是——这！是！2022！年！啊！，2022！年！我！还！在！上！小！学！啊！
-你认为一个小学生能够做到真正的评论系统吗？所以我用了最简单的方法——人工添加评论。
-到最后吧，我还是感觉太简陋了，于是我参考了一个教程，在既遥远又接近的2022年12月，又开始制作了一个网站，
-附：《【网页设计与制作13】完整的网页布局，一张完整的网页结构，网页设计与制作，网页制作，网页设计。》来自Bilibili
-没猜错——就是这里了！
-TRDWBST
-为什么时间这么接近？因为当时是新冠疫情啊，度日如年的时期啊！
-然后就是摸鱼摸出来了一个基本框架，于是雏形出来了。
-过程 书接上回，我做出了一个雏形，于是我就就着这个雏形丰富内容了。
-曾经，我放了很多占位符（不少“内容”），多到以至于Git报错说大于2个G他推送不了，为此我甚至曾经还在主页写了一个栏目来diss他（92f32ff）,
-嗨害嗨，当时我实在是太天真了。
-再然后我有参考了一个教程制作了一个公告栏，
-附：《HTML+CSS还能做轮播图？嗯~学到了》来自Bilibili
-但是，这个公告栏有点不太行，于是——我在2023年7月22日又参考了一个教程，重新做了，就是现在的样子了。
-附：《图片轮播，按钮点击控制图片轮播练习，html+js来实现》
-附：53d5306
-明眼人估计都能看出来这是模仿了B站的公告栏，宾狗，确实。
-以及在后面有不少小工具的加减，但是最令我满意的一个更改是在2023年6月23日的更改——又建了2个存储库来存放其他页面和媒体资源，这样就非常可以管理了。
-当然，在今年春天我还是停更了，原因有俩：
-开学了 没什么值得更新的了 然后——在5月，我认为确实没什么了，所以就发了这篇文章宣布启用。
-但是——转机又出现了，
-在2024年7月17日，我使用Hugo创建了一个博客网站，把他挂在了Github Pages上，放在了TRDWBST下，于是我就重写了这篇公告，加了这几十行，
-而现在，这个网站算是彻底建成了！
-现在，容我再次介绍一下这个网站。
-介绍 TRDWBST是5h9igzqanx在拥有了2次建站经历之后制作的第三个静态网站，
-包含了博客、专题、资源、项目等子页面，融合了多个功能，
-现在作为uttd和一锅乱炖的聚集地，
-其作者表示：“我不道啊，那祝你们玩得愉快吧”
-卷末语 那么，祝你们玩得愉快吧！</description></item><item><title>农场主</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2023042701/</link><pubDate>Thu, 27 Apr 2023 12:50:43 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2023042701/</guid><description>农场主 有一个自认聪明的农场主，
-他有一群只会干活的奴隶。
-农场主把他们集合起来，
-要求他们给他算数。
-那群奴隶只懂怎么干活,
-只能呆滞地站在这里。
-农场主就拿起他的鞭子，
-像往常一样斥责他们：
-“你们干什么吃的？
-为什么不给我算数？
-你们是从土里长的，
-还是从水里长的？”
-“我们不是土里长的，
-也不是水里长的。
-只是我们不知道
-怎么做这项工作”
-农场主怎么样？
-他依然没有听。
-他拿他的鞭子来抽，
-抽得他们皮开肉绽。
-奴隶都死去了，
-他的算数还没完成。
-他只能在角落哭泣，
-哭泣他没有听话的奴隶。</description></item><item><title>测试用文档</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</link><pubDate>Sat, 01 Jan 2000 08:00:00 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</guid><description>测试用文档 标题测试 以下是标题测试
-标题3 标题4 标题5 标题6 文本标记测试 以下是文本标记测试（中文）：
-正常文本用来显示正常内容；粗体文本用来显示着重；斜体文本用来显示引用、强调或者专有名词；加粗的斜体文本则同时包括粗体文本和斜体文本的作用。下划线用来将短意群连接为长意群（Markdown本土语法不支持，或许使用HTML标签可以做到）;删除线用来标注审阅批注中删掉的部分。现在你已经大概了解了文本标记的用法，来试试吧。
-The following is a text tagging test(English):
-Normal text is used to display normal content;Bold text is used to display emphasis;Italicized text is used to display references, emphasis, or proper nouns;Bold italic text includes both bold and italic text. The underline is used to connect short meaning groups into long meaning groups(Markdown native syntax is not supported, perhaps using HTML tags can achieve it);The strikethrough is used to mark the deleted parts in the review comments.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/</link><description>Recent content in Posts on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Aug 2024 20:08:51 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/index.xml" rel="self" type="application/rss+xml"/><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>&lt;h1 id="关于python相对导入的问题">关于python相对导入的问题&lt;/h1>
+&lt;h2 id="问题重现">问题重现&lt;/h2>
+&lt;p>我有以下文件：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>a
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ aa.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ __init__.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─b
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ │ bb.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ │ __init__.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ │
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └─d
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ dd.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ __init__.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└─c
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cc.py
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> __init__.py
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>空调下的手</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</link><pubDate>Tue, 20 Aug 2024 20:05:03 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</guid><description>&lt;h1 id="空调下的手">空调下的手&lt;/h1>
+&lt;p>每当夏天，当我在空调下玩游戏玩腻了，&lt;br>
+我都会看向我的手。&lt;br>
+此时我不敢乱动，&lt;br>
+因为我害怕我手上的寒气把我冻亖。&lt;/p>
+&lt;h2 id="附">附&lt;/h2>
+&lt;p>我准备在上面放视频试试，但是我目前没学会画画，所以再等等吧。&lt;/p></description></item><item><title>人生要开心</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081801/</link><pubDate>Sun, 18 Aug 2024 16:44:06 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081801/</guid><description>&lt;h1 id="人生要开心">人生要开心&lt;/h1>
+&lt;p>人生就像一面镜子，你对它笑，它就对你笑；你对它哭，它就对你哭。&lt;br>
+如果你也把自己变成一面镜子：人生对你笑时你也笑，人生对你哭时你也哭，那么当你一点不顺心，你的愤怒就会通过人生这面镜子反弹回去，最终变成无休止的内耗。&lt;br>
+朋友，不要再内耗自己了。试着笑一笑，就仅仅是咧开嘴而已，没有多难的。笑着面对人生，那么人生就会一直对你微笑。&lt;/p></description></item><item><title>化学元素周期表</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</link><pubDate>Wed, 14 Aug 2024 12:40:48 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</guid><description>&lt;h1 id="化学元素周期表">化学元素周期表&lt;/h1>
+&lt;h2 id="全表">全表&lt;/h2>
+&lt;p>全表暂略，先看图&lt;/p>
+&lt;p>&lt;img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/contentRes/2024081401-01.png" alt="化学元素周期表全表">&lt;/p>
+&lt;h2 id="口诀">口诀&lt;/h2>
+&lt;p>青海离皮蓬，叹淡养夫奈&lt;br>
+那美女贵林，留绿芽加盖&lt;br>
+扛胎凡个猛，铁骨捏通心&lt;br>
+家者身洗袖，客如四亿高&lt;br>
+泥木得了老，把银隔音吸&lt;br>
+踢弟点先色，惫懒（镧系）和贪污&lt;br>
+来我衣钵金，拱坨千百坡&lt;br>
+挨冻放雷啊（锕系），陆渡稀薄黑&lt;br>
+麦打伦格尔，附魔力天傲&lt;/p></description></item><item><title>如何更快地为西红柿剥皮</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081201/</link><pubDate>Mon, 12 Aug 2024 21:58:14 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081201/</guid><description>&lt;h1 id="如何更快地为西红柿剥皮">如何更快地为西红柿剥皮&lt;/h1>
+&lt;p>如果我们想给西红柿剥皮来制作一些菜肴，只需要将其放入水中煮到其外皮裂开即可更快地剥皮。&lt;/p>
+&lt;p>如果感到烫手，只需要把西红柿放在流动的冷水下片刻即可。&lt;/p></description></item><item><title>如何使用Lua语言</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072901/</link><pubDate>Mon, 29 Jul 2024 21:40:38 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072901/</guid><description>&lt;h1 id="如何使用lua语言">如何使用Lua语言&lt;/h1>
+&lt;h2 id="简介">简介&lt;/h2>
+&lt;blockquote>
+&lt;p>Lua 是一种强大、高效、轻量级、可嵌入的脚本语言。 它支持 程序规划， 面向对象编程， 函数式编程， 数据驱动的编程，以及 数据描述。&lt;br>
+Lua 将简单的过程语法与 基于的强大数据描述构造 关联数组和可扩展语义。 卢阿 是动态类型的， 通过使用基于寄存器的虚拟机解释字节码来运行， 并具有自动内存管理与增量垃圾回收， 使其成为理想的选择 配置 脚本 和 快速原型制作。&lt;br>
+Lua 的设计、实现和维护由 PUC-Rio的一个团队， 巴西里约热内卢天主教大学。 Lua在Tecgraf出生和长大， 前身为PUC-Rio的计算机图形技术组。 Lua 现在被安置在 LabLua， 里约热内卢大学计算机科学系的实验室。&lt;br>
+（来自&lt;a href="https://www.lua.org/">Lua官网&lt;/a>）&lt;/p>
+&lt;/blockquote>
+&lt;p>总而言之，Lua是一种快速轻量的脚本语言，而且很适合嵌入到其他程序中。&lt;br>
+Lua的学习难度很小（只有21个关键字和1种数据结构机制），并且生态系统相对完善。
+反正，比Python简单。&lt;/p>
+&lt;h2 id="教程">教程&lt;/h2>
+&lt;h3 id="前期准备">前期准备&lt;/h3>
+&lt;p>首先，我们要下载Lua，转到&lt;a href="https://github.com/rjpcomputing/luaforwindows">Lua的Github仓库&lt;/a>获取Lua的安装包（Windows）或者直接在&lt;a href="https://www.lua.org/download.html">其官网&lt;/a>下载源码&lt;br>
+安装它，路径尽量不要有中文，中文路径是编程的大忌！&lt;br>
+在命令行中输入lua，如果出现以下信息就代表你成功安装了Lua&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>Lua 5.1.5 Copyright (C) 1994-2012 Lua.org, PUC-Rio
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>心境与情绪</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072401/</link><pubDate>Wed, 24 Jul 2024 21:00:34 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072401/</guid><description>&lt;h1 id="心境与情绪">心境与情绪&lt;/h1>
+&lt;p>人之心境，若空杯焉。人之交际，或喜，或怒，或哀，或怨，皆存于心。其中喜若C₂H₆O（酒精），快而易逝；而怒则如塘底石块，积少成多而无法排解。然杯之容，非无限也，故杯满则溢。或一瞬，心中怒全出，伤人损己。故人需控心。&lt;br>
+人之控心，在于扩容，在于排淤。容者，心也；淤者，怒也。故扩容在于养性，排淤在于发泄。使怒有所去，心有所广，而使人之表现有所和也。若人心满而不加控，生活何以乏味乎？&lt;/p></description></item><item><title>心的面具</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024030601/</link><pubDate>Sun, 21 Jul 2024 20:57:33 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024030601/</guid><description>&lt;h1 id="心的面具">心的面具&lt;/h1>
+&lt;p>哦，孩子，&lt;br>
+你为什么要戴着面具？&lt;br>
+为何要把你的一切，
+都藏进心的阴霾？&lt;br>
+&lt;!-- raw HTML omitted -->&lt;br>
+唉，孩子，&lt;br>
+你为何不肯摘下面具？&lt;br>
+为何不让和煦春风，&lt;br>
+去吹散心的阴霾？&lt;br>
+&lt;!-- raw HTML omitted -->&lt;br>
+啊，孩子，&lt;br>
+让我们来帮助你吧！&lt;br>
+不要再用那面具，&lt;br>
+遮住心中的伤疤了。&lt;/p></description></item><item><title>通过Hugo建造博客网站</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</link><pubDate>Sat, 20 Jul 2024 12:09:17 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</guid><description>&lt;h1 id="通过hugo建造博客网站">通过Hugo建造博客网站&lt;/h1>
+&lt;h2 id="概述">概述&lt;/h2>
+&lt;p>大家好，因为这个网站的建成，我终于可以在属于我自己的地方写东西了。&lt;br>
+但是，在看文章的大家又该怎么办呢？&lt;br>
+不用担心！这不，我就把教程放出来了&lt;br>
+不啰嗦了，开始吧&lt;/p>
+&lt;h2 id="教程-制作本地网站">教程-制作本地网站&lt;/h2>
+&lt;h3 id="材料准备">材料准备&lt;/h3>
+&lt;ol>
+&lt;li>一台搭载任意系统的电脑&lt;/li>
+&lt;li>the Internet&lt;/li>
+&lt;li>Hugo软件（如果没有请看下面）&lt;/li>
+&lt;li>Visual Studio Code（或其他任意代码编辑器和能编写Markdown文件的编辑器）&lt;/li>
+&lt;li>能加速Github的任意加速器（如果不用加速可以跳过）&lt;/li>
+&lt;/ol>
+&lt;h3 id="配置hugo环境">配置Hugo环境&lt;/h3>
+&lt;p>如果是MacOS或Linux系统且安装了Homebrew包管理器的话，直接在命令行输入&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>brew install hugo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果像我一样是Windows系统的话，可以先去&lt;a href="https://github.com/gohugoio/hugo/releases">Hugo的Github仓库&lt;/a>下载Hugo主程序，然后把这个程序放在一个容易记住的目录里（放在你经常安装软件的那个目录就行，建议路径不要有中文名），复制这个目录的绝对路径，&lt;br>
+接着右键任务栏上的Windows徽标，点击“系统”，在弹出的设置界面选择“高级系统设置”（没有的往下拉），点击“环境变量”，&lt;br>
+在“系统变量”中选中“Path”并点击“编辑”，在弹出窗口中点击“新建”，把刚刚复制的路径粘贴进去，点击“确定”、“确定”和“确定”，&lt;br>
+最后，如果你想验证你安装好了没有的话，可以在命令行输入&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>hugo version
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果你在命令行看到了他的版本号，说明你已经跨过了创建博客网站的第一道坎儿，恭喜你！&lt;/p>
+&lt;h3 id="创建本地站点">创建本地站点&lt;/h3>
+&lt;p>在你想创建站点的上一个目录下打开命令行，或使用&lt;code>cd&lt;/code>命令跳转到那里。但是要确保这个目录下没有和你想创建的站点名字一样的目录。即使有也要保证里面什么也没有，否则会出现错误。&lt;br>
+然后在命令行里输入&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>hugo new site your-sites-name
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>热烈庆祝TRDWBST-Pages-Blog建成</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024071901/</link><pubDate>Fri, 19 Jul 2024 18:09:42 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024071901/</guid><description>&lt;h1 id="热烈庆祝trdwbst-pages-blog建成">热烈庆祝TRDWBST-Pages-Blog建成&lt;/h1>
+&lt;h2 id="概述">概述&lt;/h2>
+&lt;blockquote>
+&lt;p>Never gonna give you up&lt;br>
+never gonna let you down&lt;br>
+Never gonna run around and desert you&lt;br>
+Never gonna make you cry&lt;br>
+never gonna say goodbye&lt;br>
+Never gonna tell a lie and hurt you&lt;/p>
+&lt;/blockquote>
+&lt;p>呸呸呸，这都什么鬼话&lt;br>
+反正就是欢迎来的我的第一个博客网站&lt;br>
+“第一个？不应该是第三个吗？”&lt;br>
+漏漏漏，前两个算个啥东西？这可是正儿八经用&lt;a href="https://gohugo.io">Hugo&lt;/a>生成出来的网站！&lt;br>
+“那么这里都有什么呢？”&lt;br>
+答：好康的，好玩的，以及&lt;strong>KNOWLEDGES&lt;/strong>&lt;br>
+哈哈，就这些，去看看吧，祝你看到你想看的&lt;br>
+这个网站用到的工具:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://gohugo.io">Hugo&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.intensedebate.com/">IntenseDebate&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.github.com">Github&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>TRDWBST正式启用</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024050501/</link><pubDate>Sun, 05 May 2024 10:00:00 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024050501/</guid><description>&lt;h1 id="trdwbst正式启用">TRDWBST正式启用&lt;/h1>
+&lt;h2 id="概述">概述&lt;/h2>
+&lt;p>时隔2年半，我们的网站终于完成了！&lt;br>
+经过了我们（其实只有我hhhh）的反复捶打这里终于算竣工了！&lt;br>
+好的就这些了&lt;/p>
+&lt;h2 id="背景">背景&lt;/h2>
+&lt;p>首先吧，我闲的没事了刷抖音，刷到了一个挂载网站的方法，就是Github Pages了，&lt;br>
+我想，闲着也是闲着，不如试试？&lt;br>
+于是，在我这个萌新的一顿捯饬下，在2022年11月15日，&lt;a href="https://5h9igzqanx.github.io/wz-zx/">wz-zx&lt;/a>诞生了。。&lt;br>
+虽然有点粗制滥造，但是也算一个helloworld了哈哈哈。&lt;br>
+此时，我也了解了一些HTML知识，开始给我的朋友们制作他们的个人的网站，&lt;br>
+比如&lt;a href="https://liuyuwangllk.github.io/liuywllk666/">刘某的&lt;/a>（估计他自己都忘了他还托我存着他的黑历史了哈哈哈）。&lt;br>
+然后呢，我感觉这个网站太粗制滥造了，于是，又一顿捯饬，在2022年11月25日，&lt;a href="https://5h9igzqanx.github.io/SCDWBST/">SCDWBST&lt;/a>诞生了.&lt;br>
+什么？你问SCDWBST什么意思？那不就是“my &lt;strong>s&lt;/strong>e&lt;strong>c&lt;/strong>on&lt;strong>d&lt;/strong> &lt;strong>w&lt;/strong>e&lt;strong>bs&lt;/strong>i&lt;strong>t&lt;/strong>e”的缩写吗？&lt;br>
+那么这个网站名字就是“my &lt;strong>t&lt;/strong>hi&lt;strong>rd&lt;/strong> &lt;strong>w&lt;/strong>e&lt;strong>bs&lt;/strong>i&lt;strong>t&lt;/strong>e”的缩写咯。&lt;br>
+好了好了，言归正传。&lt;br>
+在这个网站，我接触到了CSS，然后就学了一些浅显的知识，&lt;br>
+我以前甚至想制作一个评论系统，但是——&lt;strong>这！是！2022！年！啊！&lt;/strong>，&lt;strong>2022！年！我！还！在！上！小！学！啊！&lt;/strong>&lt;br>
+你认为一个小学生能够做到真正的评论系统吗？所以我用了最简单的方法——人工添加评论。&lt;br>
+到最后吧，我还是感觉太简陋了，于是我参考了一个教程，在既遥远又接近的2022年12月，又开始制作了一个网站，&lt;/p>
+&lt;blockquote>
+&lt;p>附：&lt;a href="https://www.bilibili.com/video/BV1sG411x77z/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=dc8bb826ff686b2200b9b618418072a3">《【网页设计与制作13】完整的网页布局，一张完整的网页结构，网页设计与制作，网页制作，网页设计。》来自Bilibili&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>没猜错——就是这里了！&lt;br>
+&lt;a href="https://5h9igzqanx.github.io/TRDWBST">&lt;strong>TRDWBST&lt;/strong>&lt;/a>&lt;br>
+为什么时间这么接近？因为当时是&lt;strong>新冠疫情&lt;/strong>啊，&lt;strong>度日如年的时期&lt;/strong>啊！&lt;br>
+然后就是摸鱼摸出来了一个基本框架，于是雏形出来了。&lt;/p>
+&lt;h2 id="过程">过程&lt;/h2>
+&lt;p>书接上回，我做出了一个雏形，于是我就就着这个雏形丰富内容了。&lt;br>
+曾经，我放了很多占位符（不少“内容”），多到以至于Git报错说大于2个G他推送不了，为此我甚至曾经还在主页写了一个栏目来diss他（&lt;a href="https://github.com/5h9igzqanx/TRDWBST/commit/92f32ff47f99cfacecaf6b4d00d149b3e76985ea">92f32ff&lt;/a>）,&lt;br>
+嗨害嗨，当时我实在是太天真了。&lt;br>
+再然后我有参考了一个教程制作了一个公告栏，&lt;/p>
+&lt;blockquote>
+&lt;p>附：&lt;a href="https://www.bilibili.com/video/BV1354y1k7gQ/">《HTML+CSS还能做轮播图？嗯~学到了》来自Bilibili&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>但是，这个公告栏有点不太行，于是——我在2023年7月22日又参考了一个教程，重新做了，就是现在的样子了。&lt;/p>
+&lt;blockquote>
+&lt;p>附：&lt;a href="https://www.bilibili.com/video/BV15D4y1s7Si/">《图片轮播，按钮点击控制图片轮播练习，html+js来实现》&lt;/a>&lt;br>
+附：&lt;a href="https://github.com/5h9igzqanx/TRDWBST/commit/53d5306dfb22f96483ea40bd4368c1afd5e974f4">53d5306&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>明眼人估计都能看出来这是模仿了&lt;a href="https://www.bilibili.com">B站&lt;/a>的公告栏，宾狗，确实。&lt;br>
+以及在后面有不少小工具的加减，但是最令我满意的一个更改是在2023年6月23日的更改——又建了2个存储库来存放其他页面和媒体资源，这样就非常可以管理了。&lt;br>
+当然，在今年春天我还是停更了，原因有俩：&lt;/p></description></item><item><title>农场主</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2023042701/</link><pubDate>Thu, 27 Apr 2023 12:50:43 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2023042701/</guid><description>&lt;h1 id="农场主">农场主&lt;/h1>
+&lt;p>有一个自认聪明的农场主，&lt;br>
+他有一群只会干活的奴隶。&lt;br>
+农场主把他们集合起来，&lt;br>
+要求他们给他算数。&lt;br>
+&lt;!-- raw HTML omitted -->&lt;br>
+那群奴隶只懂怎么干活,&lt;br>
+只能呆滞地站在这里。&lt;br>
+农场主就拿起他的鞭子，&lt;br>
+像往常一样斥责他们：&lt;br>
+&lt;!-- raw HTML omitted -->&lt;br>
+“你们干什么吃的？&lt;br>
+为什么不给我算数？&lt;br>
+你们是从土里长的，&lt;br>
+还是从水里长的？”&lt;br>
+&lt;!-- raw HTML omitted -->&lt;br>
+“我们不是土里长的，&lt;br>
+也不是水里长的。&lt;br>
+只是我们不知道&lt;br>
+怎么做这项工作”&lt;br>
+&lt;!-- raw HTML omitted -->&lt;br>
+农场主怎么样？&lt;br>
+他依然没有听。&lt;br>
+他拿他的鞭子来抽，&lt;br>
+抽得他们皮开肉绽。&lt;br>
+&lt;!-- raw HTML omitted -->&lt;br>
+奴隶都死去了，&lt;br>
+他的算数还没完成。&lt;br>
+他只能在角落哭泣，&lt;br>
+哭泣他没有听话的奴隶。&lt;/p></description></item><item><title>测试用文档</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</link><pubDate>Sat, 01 Jan 2000 08:00:00 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</guid><description>&lt;h1 id="测试用文档">测试用文档&lt;/h1>
+&lt;h2 id="标题测试">标题测试&lt;/h2>
+&lt;p>以下是标题测试&lt;/p>
+&lt;h3 id="标题3">标题3&lt;/h3>
+&lt;h4 id="标题4">标题4&lt;/h4>
+&lt;h5 id="标题5">标题5&lt;/h5>
+&lt;h6 id="标题6">标题6&lt;/h6>
+&lt;h2 id="文本标记测试">文本标记测试&lt;/h2>
+&lt;p>以下是文本标记测试（中文）：&lt;br>
+正常文本用来显示正常内容；&lt;strong>粗体文本&lt;/strong>用来显示着重；&lt;em>斜体文本&lt;/em>用来显示引用、强调或者专有名词；&lt;em>&lt;strong>加粗的斜体文本&lt;/strong>&lt;/em>则同时包括粗体文本和斜体文本的作用。&lt;!-- raw HTML omitted -->下划线&lt;!-- raw HTML omitted -->用来将短意群连接为长意群（Markdown本土语法不支持，或许使用HTML标签可以做到）;&lt;del>删除线&lt;/del>用来标注审阅批注中删掉的部分。现在你已经大概了解了文本标记的用法，来试试吧。&lt;br>
+The following is a text tagging test(English):&lt;br>
+Normal text is used to display normal content;&lt;strong>Bold text&lt;/strong> is used to display emphasis;&lt;em>Italicized text&lt;/em> is used to display references, emphasis, or proper nouns;&lt;em>&lt;strong>Bold italic text&lt;/strong>&lt;/em> includes both bold and italic text. &lt;!-- raw HTML omitted -->The underline&lt;!-- raw HTML omitted --> is used to connect short meaning groups into long meaning groups(Markdown native syntax is not supported, perhaps using HTML tags can achieve it);&lt;del>The strikethrough&lt;/del> is used to mark the deleted parts in the review comments. Now that you have a general understanding of the usage of text tags, let&amp;rsquo;s give it a try.&lt;/p></description></item></channel></rss>
