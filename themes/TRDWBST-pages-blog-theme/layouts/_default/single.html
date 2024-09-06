@@ -205,7 +205,7 @@
       background-color: #caebca;
       font-family: 'Times New Roman','Arial','楷体' !important;
     }
-    .cntBody pre code::before[data-lang="ZX-TIP"]{
+    .cntBody pre code[data-lang="ZX-TIP"]::before{
       content: "提示";
       background-color: #a3d9a3;
     }
@@ -213,9 +213,12 @@
       background-color: #ebebca;
       font-family: 'Times New Roman','Arial','楷体' !important;
     }
-    .cntBody pre code::before[data-lang="ZX-WARNING"]{
+    .cntBody pre code[data-lang="ZX-WARNING"]::before{
       content: "注意";
       background-color: #c7c775;
+    }
+    .cntBody pre:has(code[data-lang="ZX-TIP"]){
+      background-color: #caebca;
     }
   </style>
   <div class="cnt">
