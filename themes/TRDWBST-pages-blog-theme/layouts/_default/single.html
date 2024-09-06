@@ -178,6 +178,9 @@
       padding-right: 10px;
       border-top-right-radius: 25px;
     }
+    .cntBody table tbody tr td{
+      background-color: #cadeea;
+    }
     .cntBody table tbody>tr:last-child>td:first-child{
       padding-left: 10px;
       border-bottom-left-radius: 25px;
@@ -193,9 +196,6 @@
       padding-right: 10px;
     }
     /* 使用MathJax渲染的LaTeX数学公式 */
-    mjx-container{
-      text-align: left !important;
-    }
     mjx-container,mjx-container *{
       overflow-y: hidden;
       pointer-events: none;
@@ -203,6 +203,7 @@
     /* 使用代码块组件实现的提示、警告框 */
     .cntBody pre:has(code[data-lang="ZX-TIP"]){
       background-color: #caebca;
+      border: solid 1px #75c775;
       font-family: 'Times New Roman','Arial','楷体' !important;
       font-weight: bold;
     }
@@ -213,6 +214,7 @@
     }
     .cntBody pre:has(code[data-lang="ZX-WARNING"]){
       background-color: #ebebca;
+      border: solid 1px #c7c775;
       font-family: 'Times New Roman','Arial','楷体' !important;
       font-weight: bold;
     }
