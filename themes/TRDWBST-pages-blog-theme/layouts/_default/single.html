@@ -201,7 +201,7 @@
       pointer-events: none;
     }
     /* 使用代码块组件实现的提示、警告框 */
-    .cntBody pre code[data-lang="ZX-TIP"]{
+    .cntBody pre:has(code[data-lang="ZX-TIP"]){
       background-color: #caebca;
       font-family: 'Times New Roman','Arial','楷体' !important;
     }
@@ -209,7 +209,7 @@
       content: "提示";
       background-color: #a3d9a3;
     }
-    .cntBody pre code[data-lang="ZX-WARNING"]{
+    .cntBody pre:has(code[data-lang="ZX-WARNING"]){
       background-color: #ebebca;
       font-family: 'Times New Roman','Arial','楷体' !important;
     }
@@ -217,9 +217,7 @@
       content: "注意";
       background-color: #c7c775;
     }
-    .cntBody pre:has(code[data-lang="ZX-TIP"]){
-      background-color: #caebca;
-    }
+    
   </style>
   <div class="cnt">
     <div class="backgroundImg">
