@@ -206,25 +206,27 @@
     .cntBody pre code[data-lang="ZX-TIP"],.cntBody pre code[data-lang="ZX-TIP"]::before,.cntBody pre code[data-lang="ZX-WARNING"],.cntBody pre code[data-lang="ZX-WARNING"]::before{
       font-family: 'Times New Roman','Arial','楷体' !important;
     }
+    .cntBody pre code[data-lang="ZX-TIP"],.cntBody pre code[data-lang="ZX-WARNING"]{
+      font-weight: bold;
+    }
+    .cntBody pre:has(code[data-lang="ZX-TIP"]),.cntBody pre:has(code[data-lang="ZX-WARNING"]){
+      font-size: medium;
+    }
     .cntBody pre:has(code[data-lang="ZX-TIP"]){
       background-color: #caebca;
       border: solid 1px #75c775;
-      font-size: medium;
     }
     .cntBody pre code[data-lang="ZX-TIP"]::before{
       content: "💬 提示";
-      font-weight: bold;
       background-color: #a3d9a3;
       border-bottom: solid 1px #75c775;
     }
     .cntBody pre:has(code[data-lang="ZX-WARNING"]){
       background-color: #ebebca;
       border: solid 1px #c7c775;
-      font-size: medium;
     }
     .cntBody pre code[data-lang="ZX-WARNING"]::before{
       content: "⚠ 注意";
-      font-weight: bold;
       background-color: #d9d9a3;
       border-bottom: solid 1px #c7c775;
     }
