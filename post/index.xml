@@ -11,7 +11,7 @@
 受教育程度：&lt;del>未知&lt;/del> &lt;em>&lt;strong>大学或其以上&lt;/strong>&lt;/em>&lt;br>
 婚姻状况：未婚&lt;/p>
 &lt;h3 id="高级基本信息">高级基本信息&lt;/h3>
-&lt;p>特殊身份：&lt;del>神造物&lt;/del> &lt;em>&lt;strong>「联合联盟」副秘书长&lt;/strong>&lt;/em>&lt;br>
+&lt;p>特殊身份：&lt;del>神造物&lt;/del> &lt;em>&lt;strong>「联合联盟」特邀顾问&lt;/strong>&lt;/em>&lt;br>
 政治面貌：群众&lt;br>
 宗教信仰：无&lt;/p>
 &lt;h2 id="外观">外观&lt;/h2>
@@ -42,7 +42,7 @@
 最后，我问「笔尖」：‘我的意义是什么？’&lt;br>
 祂叹了口气：‘只是当我的「沉思域」。’”&lt;/p>
 &lt;pre tabindex="0">&lt;code class="language-ZX-TIP" data-lang="ZX-TIP">这是我制作的第一个oc，如有遗漏请帮忙指出，别喷。
-&lt;/code>&lt;/pr</description></item><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>&lt;h1 id="关于python相对导入的问题">关于python相对导入的问题&lt;/h1>
+&lt;/code>&lt;/pre></description></item><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>&lt;h1 id="关于python相对导入的问题">关于python相对导入的问题&lt;/h1>
 &lt;h2 id="问题重现">问题重现&lt;/h2>
 &lt;p>我有以下文件：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>a
@@ -60,11 +60,26 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└─c
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cc.py
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> __init__.py
-&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>空调下的手</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</link><pubDate>Tue, 20 Aug 2024 20:05:03 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</guid><description>&lt;h1 id="空调下的手">空调下的手&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>现我在&lt;code>dd.py&lt;/code>中写下以下函数：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">TestFuncInDD&lt;/span>():
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#34;在dd.py中的函数&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>又在&lt;code>cc.py&lt;/code>中写以下代码意欲导入此文件：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> ..b.d &lt;span style="color:#f92672">import&lt;/span> dd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dd&lt;span style="color:#f92672">.&lt;/span>TestFuncInDD()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>但是运行之后出现以下错误：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>Traceback (most recent call last):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> File &amp;#34;\a\c\cc.py&amp;#34;, line 1, in &amp;lt;module&amp;gt; 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> from ..b.d import dd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ImportError: attempted relative import with no known parent package
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>该如何做才能够在必须运行&lt;code>cc.py&lt;/code>的情况下在其中正确导入&lt;code>dd.py&lt;/code>？&lt;/p>
+&lt;blockquote>
+&lt;p>类似情况见以下链接：
+&lt;a href="https://stackoverflow.com/questions/10059002/python-packages-relative-imports">《Python 包：相对导入》来自Stack Overflow&lt;/a>&lt;/p></description></item><item><title>夏·20240820</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</link><pubDate>Tue, 20 Aug 2024 20:05:03 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</guid><description>&lt;h1 id="夏20240820">夏·20240820&lt;/h1>
 &lt;p>每当夏天，当我在空调下玩游戏玩腻了，&lt;br>
 我都会看向我的手。&lt;br>
-此时我不敢乱动，&lt;br>
-因为我害怕我手上的寒气把我冻亖。&lt;/p>
+我似乎看见手上的寒气形成了一簇火苗。&lt;br>
+“铥！”&lt;br>
+&lt;img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/contentRes/2024082001-01.png" alt="夏·20240820">&lt;/p>
 &lt;h2 id="附">附&lt;/h2>
 &lt;p>我准备在上面放视频试试，但是我目前没学会画画，所以再等等吧。&lt;/p></description></item><item><title>人生要开心</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081801/</link><pubDate>Sun, 18 Aug 2024 16:44:06 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081801/</guid><description>&lt;h1 id="人生要开心">人生要开心&lt;/h1>
 &lt;p>人生就像一面镜子，你对它笑，它就对你笑；你对它哭，它就对你哭。&lt;br>
@@ -102,7 +117,24 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 在命令行中输入lua，如果出现以下信息就代表你成功安装了Lua&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>Lua 5.1.5 Copyright (C) 1994-2012 Lua.org, PUC-Rio
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>心境与情绪</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072401/</link><pubDate>Wed, 24 Jul 2024 21:00:34 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072401/</guid><description>&lt;h1 id="心境与情绪">心境与情绪&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>于是你就可以在“&amp;gt;”后直接运行代码了，例如&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-lua" data-lang="lua">&lt;span style="display:flex;">&lt;span>print(&lt;span style="color:#e6db74">&amp;#34;Hello world!&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="开始吧">开始吧&lt;/h3>
+&lt;h4 id="变量设置">变量设置&lt;/h4>
+&lt;p>Lua的变量设置遵循“变量名=变量值”的语法，如果你想创建局部函数，使用“local”关键字放在变量名前，就像这样&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-lua" data-lang="lua">&lt;span style="display:flex;">&lt;span>QuanJvBianLiang1&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;全局变量1&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>QuanJvBianLiang2&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">114514&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">function&lt;/span> &lt;span style="color:#a6e22e">SheZhiJvBuBianLiang&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">local&lt;/span> jvBuBianLiang1&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;局部变量1，只能在这个函数内使用&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">local&lt;/span> jvBuBianLiang2&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1919810&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> QuanJvBianLiang2&lt;span style="color:#f92672">=&lt;/span>jvBuBianLiang2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(jvBuBianLiang1)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(QuanJvBianLiang1)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">end&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>SheZhiJvBuBianLiang()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(jvBuBianLiang1)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(QuanJvBianLiang2)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>运行结果是&lt;/p></description></item><item><title>心境与情绪</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072401/</link><pubDate>Wed, 24 Jul 2024 21:00:34 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072401/</guid><description>&lt;h1 id="心境与情绪">心境与情绪&lt;/h1>
 &lt;p>人之心境，若空杯焉。人之交际，或喜，或怒，或哀，或怨，皆存于心。其中喜若$C_{2}H_{6}O$（酒精），快而易逝；而怒则如塘底石块，积少成多而无法排解。然杯之容，非无限也，故杯满则溢。或一瞬，心中怒全出，伤人损己。故人需控心。&lt;br>
 人之控心，在于扩容，在于排淤。容者，心也；淤者，怒也。故扩容在于养性，排淤在于发泄。使怒有所去，心有所广，而使人之表现有所和也。若人心满而不加控，生活何以乏味乎？&lt;/p></description></item><item><title>世界「笔尖」介绍</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072002/</link><pubDate>Sat, 20 Jul 2024 20:08:03 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072002/</guid><description>&lt;h1 id="世界笔尖介绍">世界「笔尖」介绍&lt;/h1>
 &lt;h2 id="前言">前言&lt;/h2>
@@ -306,7 +338,7 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 &lt;/ol>
 &lt;/li>
 &lt;li>祖神「黛莫」承认其肉身所属为国家「珑」公民&lt;/li>
-&lt;li>祖神「黛莫」被推选为「联合联盟」副秘书长&lt;/li>
+&lt;li>祖神「黛莫」被推选为「联合联盟」特邀顾问&lt;/li>
 &lt;/ol>
 &lt;/li>
 &lt;/ul>
@@ -338,7 +370,38 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 &lt;p>在你想创建站点的上一个目录下打开命令行，或使用&lt;code>cd&lt;/code>命令跳转到那里。但是要确保这个目录下没有和你想创建的站点名字一样的目录。即使有也要保证里面什么也没有，否则会出现错误。&lt;br>
 然后在命令行里输入&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>hugo new site your-sites-name
-&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>热烈庆祝TRDWBST-Pages-Blog建成</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024071901/</link><pubDate>Fri, 19 Jul 2024 18:09:42 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024071901/</guid><description>&lt;h1 id="热烈庆祝trdwbst-pages-blog建成">热烈庆祝TRDWBST-Pages-Blog建成&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>但是&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-ZX-WARNING" data-lang="ZX-WARNING">其中的“your-sites-name”要换成你的站点的名字。
+&lt;/code>&lt;/pre>&lt;p>然后你就会发现目录下面出现了很多文件，具体如下&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ .hintrc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ .hugo_build.lock
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ hugo.toml
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─archetypes
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ default.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─assets
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─content
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─data
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─i18n
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─layouts
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─public
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─static
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└─themes
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>现在你已经创建好了本地站点，来看看下一步吧。&lt;/p>
+&lt;h3 id="选择并加载主题">选择并加载主题&lt;/h3>
+&lt;p>首先，你需要前往&lt;a href="https://themes.gohugo.io/">Hugo主题页面&lt;/a>相中一个主题，点击那个主题，点“Download”，&lt;br>
+在跳转到的Github仓库点击Code按钮，点击&amp;quot;Download ZIP&amp;quot;，&lt;br>
+下载解压后，把解压后得到的目录复制到刚刚你创建的站点目录下的&lt;code>themes&lt;/code>目录里，&lt;br>
+返回上一个目录，找到&lt;code>hugo.toml&lt;/code>并打开，在里面按照以下例子来设置&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-toml" data-lang="toml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">baseURL&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;your site&amp;#39;s URL&amp;#34;&lt;/span> &lt;span style="color:#75715e">#你网站的网址&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">languageCode&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;en-us&amp;#34;&lt;/span> &lt;span style="color:#75715e">#你网站的语言代码（这里显示了默认值“英语-美国”）&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">title&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;your site&amp;#39;s name&amp;#34;&lt;/span> &lt;span style="color:#75715e">#你网站的名字&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">theme&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;the name of the downloaded theme&amp;#34;&lt;/span> &lt;span style="color:#75715e">#你网站使用的主题，直接把刚刚复制到“themes”的目录名字写上去就行&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-ZX-WARNING" data-lang="ZX-WARNING">把第一、三、四行等号后的内容按照实际情况来设置。 
+&lt;/code>&lt;/pre>&lt;blockquote>
+&lt;p>附：&lt;a href="http://www.lingoes.cn/zh/translator/langcode.htm">语言代码表&lt;/a>&lt;/p></description></item><item><title>热烈庆祝TRDWBST-Pages-Blog建成</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024071901/</link><pubDate>Fri, 19 Jul 2024 18:09:42 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024071901/</guid><description>&lt;h1 id="热烈庆祝trdwbst-pages-blog建成">热烈庆祝TRDWBST-Pages-Blog建成&lt;/h1>
 &lt;h2 id="概述">概述&lt;/h2>
 &lt;blockquote>
 &lt;p>Never gonna give you up&lt;br>
@@ -402,7 +465,23 @@ Never gonna tell a lie and hurt you&lt;/p>
 &lt;/blockquote>
 &lt;p>明眼人估计都能看出来这是模仿了&lt;a href="https://www.bilibili.com">B站&lt;/a>的公告栏，宾狗，确实。&lt;br>
 以及在后面有不少小工具的加减，但是最令我满意的一个更改是在2023年6月23日的更改——又建了2个存储库来存放其他页面和媒体资源，这样就非常可以管理了。&lt;br>
-当然，在今年春天我还是停更了，原因有俩：&lt;/p></description></item><item><title>心的面具</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024030601/</link><pubDate>Wed, 06 Mar 2024 09:57:33 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024030601/</guid><description>&lt;h1 id="心的面具">心的面具&lt;/h1>
+当然，在今年春天我还是停更了，原因有俩：&lt;/p>
+&lt;ol>
+&lt;li>开学了&lt;/li>
+&lt;li>没什么值得更新的了&lt;/li>
+&lt;/ol>
+&lt;p>然后——在5月，我认为确实没什么了，所以就发了这篇文章宣布启用。&lt;br>
+但是——转机又出现了，&lt;br>
+在2024年7月17日，我使用Hugo创建了一个博客网站，把他挂在了Github Pages上，放在了TRDWBST下，于是我就重写了这篇公告，加了这几&lt;del>十&lt;/del>行，&lt;br>
+而现在，这个网站算是&lt;strong>彻底&lt;/strong>建成了！&lt;br>
+现在，容我再次介绍一下这个网站。&lt;/p>
+&lt;h2 id="介绍">介绍&lt;/h2>
+&lt;p>TRDWBST是5h9igzqanx在拥有了2次建站经历之后制作的第三个静态网站，&lt;br>
+包含了博客、专题、资源、项目等子页面，融合了多个功能，&lt;br>
+现在作为uttd和一锅乱炖的聚集地，&lt;br>
+其作者表示：“我不道啊，那祝你们玩得愉快吧”&lt;/p>
+&lt;h2 id="卷末语">卷末语&lt;/h2>
+&lt;p>那么，祝你们玩得愉快吧！&lt;/p></description></item><item><title>心的面具</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024030601/</link><pubDate>Wed, 06 Mar 2024 09:57:33 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024030601/</guid><description>&lt;h1 id="心的面具">心的面具&lt;/h1>
 &lt;p>哦，孩子，&lt;br>
 你为什么要戴着面具？&lt;br>
 为何要把你的一切，

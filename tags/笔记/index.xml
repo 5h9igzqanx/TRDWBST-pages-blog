@@ -16,7 +16,21 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└─c
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cc.py
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> __init__.py
-&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>化学元素周期表</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</link><pubDate>Wed, 14 Aug 2024 12:40:48 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</guid><description>&lt;h1 id="化学元素周期表">化学元素周期表&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>现我在&lt;code>dd.py&lt;/code>中写下以下函数：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">TestFuncInDD&lt;/span>():
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#34;在dd.py中的函数&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>又在&lt;code>cc.py&lt;/code>中写以下代码意欲导入此文件：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> ..b.d &lt;span style="color:#f92672">import&lt;/span> dd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dd&lt;span style="color:#f92672">.&lt;/span>TestFuncInDD()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>但是运行之后出现以下错误：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>Traceback (most recent call last):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> File &amp;#34;\a\c\cc.py&amp;#34;, line 1, in &amp;lt;module&amp;gt; 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> from ..b.d import dd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ImportError: attempted relative import with no known parent package
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>该如何做才能够在必须运行&lt;code>cc.py&lt;/code>的情况下在其中正确导入&lt;code>dd.py&lt;/code>？&lt;/p>
+&lt;blockquote>
+&lt;p>类似情况见以下链接：
+&lt;a href="https://stackoverflow.com/questions/10059002/python-packages-relative-imports">《Python 包：相对导入》来自Stack Overflow&lt;/a>&lt;/p></description></item><item><title>化学元素周期表</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</link><pubDate>Wed, 14 Aug 2024 12:40:48 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</guid><description>&lt;h1 id="化学元素周期表">化学元素周期表&lt;/h1>
 &lt;h2 id="全表">全表&lt;/h2>
 &lt;p>全表暂略，先看图&lt;/p>
 &lt;p>&lt;img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/contentRes/2024081401-01.png" alt="化学元素周期表全表">&lt;/p>
@@ -47,7 +61,24 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 在命令行中输入lua，如果出现以下信息就代表你成功安装了Lua&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>Lua 5.1.5 Copyright (C) 1994-2012 Lua.org, PUC-Rio
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>通过Hugo建造博客网站</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</link><pubDate>Sat, 20 Jul 2024 12:09:17 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</guid><description>&lt;h1 id="通过hugo建造博客网站">通过Hugo建造博客网站&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>于是你就可以在“&amp;gt;”后直接运行代码了，例如&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-lua" data-lang="lua">&lt;span style="display:flex;">&lt;span>print(&lt;span style="color:#e6db74">&amp;#34;Hello world!&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="开始吧">开始吧&lt;/h3>
+&lt;h4 id="变量设置">变量设置&lt;/h4>
+&lt;p>Lua的变量设置遵循“变量名=变量值”的语法，如果你想创建局部函数，使用“local”关键字放在变量名前，就像这样&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-lua" data-lang="lua">&lt;span style="display:flex;">&lt;span>QuanJvBianLiang1&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;全局变量1&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>QuanJvBianLiang2&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">114514&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">function&lt;/span> &lt;span style="color:#a6e22e">SheZhiJvBuBianLiang&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">local&lt;/span> jvBuBianLiang1&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;局部变量1，只能在这个函数内使用&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">local&lt;/span> jvBuBianLiang2&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1919810&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> QuanJvBianLiang2&lt;span style="color:#f92672">=&lt;/span>jvBuBianLiang2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(jvBuBianLiang1)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(QuanJvBianLiang1)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">end&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>SheZhiJvBuBianLiang()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(jvBuBianLiang1)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(QuanJvBianLiang2)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>运行结果是&lt;/p></description></item><item><title>通过Hugo建造博客网站</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</link><pubDate>Sat, 20 Jul 2024 12:09:17 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</guid><description>&lt;h1 id="通过hugo建造博客网站">通过Hugo建造博客网站&lt;/h1>
 &lt;h2 id="概述">概述&lt;/h2>
 &lt;p>大家好，因为这个网站的建成，我终于可以在属于我自己的地方写东西了。&lt;br>
 但是，在看文章的大家又该怎么办呢？&lt;br>
@@ -75,7 +106,38 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 &lt;p>在你想创建站点的上一个目录下打开命令行，或使用&lt;code>cd&lt;/code>命令跳转到那里。但是要确保这个目录下没有和你想创建的站点名字一样的目录。即使有也要保证里面什么也没有，否则会出现错误。&lt;br>
 然后在命令行里输入&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>hugo new site your-sites-name
-&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>测试用文档</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</link><pubDate>Sat, 01 Jan 2000 08:00:00 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</guid><description>&lt;h1 id="测试用文档">测试用文档&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>但是&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-ZX-WARNING" data-lang="ZX-WARNING">其中的“your-sites-name”要换成你的站点的名字。
+&lt;/code>&lt;/pre>&lt;p>然后你就会发现目录下面出现了很多文件，具体如下&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ .hintrc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ .hugo_build.lock
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ hugo.toml
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─archetypes
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ default.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─assets
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─content
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─data
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─i18n
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─layouts
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─public
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─static
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└─themes
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>现在你已经创建好了本地站点，来看看下一步吧。&lt;/p>
+&lt;h3 id="选择并加载主题">选择并加载主题&lt;/h3>
+&lt;p>首先，你需要前往&lt;a href="https://themes.gohugo.io/">Hugo主题页面&lt;/a>相中一个主题，点击那个主题，点“Download”，&lt;br>
+在跳转到的Github仓库点击Code按钮，点击&amp;quot;Download ZIP&amp;quot;，&lt;br>
+下载解压后，把解压后得到的目录复制到刚刚你创建的站点目录下的&lt;code>themes&lt;/code>目录里，&lt;br>
+返回上一个目录，找到&lt;code>hugo.toml&lt;/code>并打开，在里面按照以下例子来设置&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-toml" data-lang="toml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">baseURL&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;your site&amp;#39;s URL&amp;#34;&lt;/span> &lt;span style="color:#75715e">#你网站的网址&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">languageCode&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;en-us&amp;#34;&lt;/span> &lt;span style="color:#75715e">#你网站的语言代码（这里显示了默认值“英语-美国”）&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">title&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;your site&amp;#39;s name&amp;#34;&lt;/span> &lt;span style="color:#75715e">#你网站的名字&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">theme&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;the name of the downloaded theme&amp;#34;&lt;/span> &lt;span style="color:#75715e">#你网站使用的主题，直接把刚刚复制到“themes”的目录名字写上去就行&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-ZX-WARNING" data-lang="ZX-WARNING">把第一、三、四行等号后的内容按照实际情况来设置。 
+&lt;/code>&lt;/pre>&lt;blockquote>
+&lt;p>附：&lt;a href="http://www.lingoes.cn/zh/translator/langcode.htm">语言代码表&lt;/a>&lt;/p></description></item><item><title>测试用文档</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</link><pubDate>Sat, 01 Jan 2000 08:00:00 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</guid><description>&lt;h1 id="测试用文档">测试用文档&lt;/h1>
 &lt;h2 id="标题测试">标题测试&lt;/h2>
 &lt;p>以下是标题测试&lt;/p>
 &lt;h3 id="标题3">标题3&lt;/h3>

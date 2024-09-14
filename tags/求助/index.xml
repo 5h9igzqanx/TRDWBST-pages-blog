@@ -16,4 +16,18 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└─c
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cc.py
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> __init__.py
-&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>现我在&lt;code>dd.py&lt;/code>中写下以下函数：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">TestFuncInDD&lt;/span>():
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#34;在dd.py中的函数&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>又在&lt;code>cc.py&lt;/code>中写以下代码意欲导入此文件：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> ..b.d &lt;span style="color:#f92672">import&lt;/span> dd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dd&lt;span style="color:#f92672">.&lt;/span>TestFuncInDD()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>但是运行之后出现以下错误：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>Traceback (most recent call last):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> File &amp;#34;\a\c\cc.py&amp;#34;, line 1, in &amp;lt;module&amp;gt; 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> from ..b.d import dd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ImportError: attempted relative import with no known parent package
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>该如何做才能够在必须运行&lt;code>cc.py&lt;/code>的情况下在其中正确导入&lt;code>dd.py&lt;/code>？&lt;/p>
+&lt;blockquote>
+&lt;p>类似情况见以下链接：
+&lt;a href="https://stackoverflow.com/questions/10059002/python-packages-relative-imports">《Python 包：相对导入》来自Stack Overflow&lt;/a>&lt;/p></description></item></channel></rss>
