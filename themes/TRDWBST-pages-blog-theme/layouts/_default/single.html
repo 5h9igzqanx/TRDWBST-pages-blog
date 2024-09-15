@@ -31,6 +31,9 @@
       margin: 10px;
       padding: 10px;
     }
+    .cntTitle .disclaimer{
+      color: red;
+    }
     .cntBody{
       margin: 10px;
     }
@@ -245,6 +248,7 @@
       <p>日期:&emsp;<span>{{ $dateHuman }}</span>&emsp;&emsp;作者:&ensp;<span>{{ $author }}</span></p>
       <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
       <p>{{ .Params.description }}</p>
+      <p class="disclaimer">本文仅代表作者观点，如有负面影响其将被删除！</p>
     </header>
   </div>
   <br>
