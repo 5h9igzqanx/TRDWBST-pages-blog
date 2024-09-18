@@ -1,79 +1,79 @@
 <!DOCTYPE html>
 <html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
-  <head>
-    <meta charset="utf-8">
-    {{ partial "head.html" . }}
-    <style>
-      .backGroundImg{
-        position: fixed;
-        z-index: 3;
-        bottom: 0px;
-        right: 0px;
-        width: 250px;
-        height: 500px;
-        overflow: hidden;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-        pointer-events: none;
-      }
-      .backGroundImg>img{
-        width: 250px;
-        height: 500px;
-        opacity: 0.6;
-        filter: alpha(opacity=60);
-      }
-      .leftMain{
-        /* float:left; */
-        position:absolute;
-        left:0px;
-        top: 90px;
-        width: 300px;
-        height: auto;
-      }
-      .rightCnt{
-        /* width: calc(100vw-120px); */
-        position: absolute;
-        /* top:30px; */
-        left: 300px;
-        right: 10px;
-        top: 90px;
-      }
-      @media screen and (max-width:1000px){
-        .leftMain{
-          /* width: 150px; */
-          /* display: none; */
-          position:static;
-          left: 0;
-          width: 100%;
-        }
-        .leftMainBox{
-          margin-right: 0px !important;
-          margin-left: 0px !important;
-          padding-left: 8px !important;
-          padding-right: 8px !important;
-          border-radius: 25px;
-        }
-        .rightCnt{
-          position: static !important;
-          /* left: 190px; */
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <iframe src="https://5h9igzqanx.github.io/TRDWBST-pages/header/nav.htm" title="nav" width="100%" height="64px" frameborder="0" scrolling="no" style="position: fixed;z-index: 9999;top:0px;left:0px"></iframe>
-      <br>
-      <br>
-      <!-- {{ partial "header.html" . }} -->
-    </header>
-    <main>
-      <div class="backGroundImg">
-        <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/fun/pic-mascot/zhanWeiFu.png" alt="这回真没了">
-      </div>
-      <div class="leftMain" id="leftMain">{{ partial "leftmain.html" . }}</div>
-      <div class="rightCnt">{{ block "main" . }}{{ end }}</div>
-    </main>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        {{ partial "head.html" . }}
+        <style>
+            .backGroundImg{
+                position: fixed;
+                z-index: 3;
+                bottom: 0px;
+                right: 0px;
+                width: 250px;
+                height: 500px;
+                overflow: hidden;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+                pointer-events: none;
+            }
+            .backGroundImg>img{
+                width: 250px;
+                height: 500px;
+                opacity: 0.6;
+                filter: alpha(opacity=60);
+            }
+            .leftMain{
+                /* float:left; */
+                position:absolute;
+                left:0px;
+                top: 90px;
+                width: 300px;
+                height: auto;
+            }
+            .rightCnt{
+                /* width: calc(100vw-120px); */
+                position: absolute;
+                /* top:30px; */
+                left: 300px;
+                right: 10px;
+                top: 90px;
+            }
+            @media screen and (max-width:1000px){
+                .leftMain{
+                    /* width: 150px; */
+                    /* display: none; */
+                    position:static;
+                    left: 0;
+                    width: 100%;
+                }
+                .leftMainBox{
+                    margin-right: 0px !important;
+                    margin-left: 0px !important;
+                    padding-left: 8px !important;
+                    padding-right: 8px !important;
+                    border-radius: 25px;
+                }
+                .rightCnt{
+                    position: static !important;
+                    /* left: 190px; */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <iframe src="https://5h9igzqanx.github.io/TRDWBST-pages/header/nav.htm" title="nav" width="100%" height="64px" frameborder="0" scrolling="no" style="position: fixed;z-index: 9999;top:0px;left:0px"></iframe>
+            <br>
+            <br>
+            <!-- {{ partial "header.html" . }} -->
+        </header>
+        <main>
+            <div class="backGroundImg">
+                <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/fun/pic-mascot/zhanWeiFu.png" alt="这回真没了">
+            </div>
+            <div class="leftMain" id="leftMain">{{ partial "leftmain.html" . }}</div>
+            <div class="rightCnt">{{ block "main" . }}{{ end }}</div>
+        </main>
+    </body>
 </html>

@@ -1,271 +1,270 @@
 {{ define "main" }}
-  <meta name="robots" content="noindex,nofollow">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  {{ $styleTagsBox := resources.Get "css/tagsBox.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $styleTagsBox.Permalink }}" integrity="{{ $styleTagsBox.Data.Integrity }}" crossorigin="anonymous">
-  <style>
-    .cnt{
-      background-color:#a3c6da;
-      border-radius: 25px;
-      padding: 10px;
-    }
-    .backgroundImg{
-      margin: 10px;
-      margin-bottom: -40px !important;
-      width: calc(100% - 20px);/* 256:81 */
-      position: relative;
-      z-index: 1;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-    }
-    .backgroundImg>img{
-      width: 100%;
-    }
-    .cntTitle{
-      background-color: #cadeea;
-      font-family: 'Times New Roman','Arial','楷体';
-      position: relative;
-      z-index: 2;
-      border-radius: 25px;
-      margin: 10px;
-      padding: 10px;
-    }
-    .cntTitle .disclaimer{
-      color: red;
-    }
-    .cntBody{
-      margin: 10px;
-    }
-    .cntBody *{
-      -webkit-user-select: text !important;
-      -moz-user-select: text !important;
-      -ms-user-select: text !important;
-      user-select: text !important;
-    }
-  </style>
-  <style>
-    /* 全局字体 */
-    .cntBody{
-      font-family: 'Times New Roman','Arial','楷体';
-    }
-    .cntBody h1,.cntBody h2,.cntBody h3,.cntBody h4,.cntBody h5,.cntBody h6{
-      font-weight: bold;
-    }
-    /* 引用 */
-    .cntBody blockquote{
-      border: solid 1px #75aac8;
-      position: relative;
-      margin: 0;
-      padding-left: 10px;
-      border-top-right-radius: 25px;
-      border-bottom-right-radius: 25px; 
-      font-style: italic;
-    }
-    .cntBody blockquote blockquote{
-      border: none;
-      border-left: solid 1px #75aac8;
-    }
-    .cntBody blockquote *{
-      color: rgba(0, 0, 0, 0.6) !important;
-    }
-    .cntBody blockquote::before{
-      content: "";
-      display: inline-block;
-      width: 10px;
-      background-color: #75aac8;
-      position: absolute;
-      top: 0; 
-      left: 0;
-      bottom: 0;
-    }
-    /* 超链接 */
-    .cntBody a{
-      text-decoration: underline;
-    }
-    .cntBody a:hover{
-      color: #75aac8 !important;
-      text-decoration-color: #75aac8;
-    }
-    /*行内代码元素*/
-    .cntBody p code{
-      border: solid 1px #75aac8;
-      background-color: #cadeea;
-      font-family: "ZX-E-SourceCodePro","ZX-E-FiraCode","monospace" !important;
-      border-radius: 6px;
-      padding-left: 2px;
-      padding-right: 2px;
-      font-weight: bold;
-    }
-    /* 代码片段 */
-    .cntBody pre{
-      border: solid 1px #75aac8;
-      border-radius: 25px;
-      font-family: "ZX-E-SourceCodePro","ZX-E-FiraCode","monospace" !important;
-      padding-bottom: 10px;
-      padding-left: 10px;
-      padding-right: 10px;
-      -webkit-user-select:text;
-      user-select:all;
-      white-space-collapse: break-spaces;
-      text-wrap: wrap;
-      counter-reset: codeLineNumber;
-    }
-    .cntBody pre code::before{
-      content: "code/text: " attr(data-lang) ;
-      background-color: #cadeea;
-      border-bottom: solid 1px #75aac8;
-      color: black;
-      margin-left: -10px;
-      margin-bottom: 10px;
-      padding-top: 10px;
-      padding-left: 35px;
-      font-family: "sans-serif" !important;
-      display: block;
-      width: calc(100% + 25px);
-      height: 35px;
-      text-align: left;
-    }
-    .cntBody pre code>span{
-      font-family: "ZX-E-SourceCodePro","ZX-E-FiraCode","monospace" !important;
-      font-size: small;
-    }
-    .cntBody pre code>span::before{
-      content: counter(codeLineNumber);
-      counter-increment: codeLineNumber;
-      border-right: solid 1px gray;
-      font-family: "ZX-E-SourceCodePro" !important;
-      color: gray;
-      min-width: 24px;
-      text-align: right;
-      padding-right: 2px;
-      margin-right: 2px;
-    }
-    /* 图片 */
-    .cntBody img{
-      width: calc(100% - 20px);
-      border: solid 10px #75aac8;
-      border-radius: 25px;
-    }
-    /* 列表 */
-    .cntBody ul{
-      list-style: none;
-      list-style-type: circle;
-      list-style-position: inside;
-    }
-    .cntBody ol{
-      list-style: none;
-      list-style-type: decimal;
-      list-style-position: inside;
-    }
-    .cntBody li ul,.cntBody li ol{
-      margin-left: 20px;
-    }
-    .cntBody li::marker{
-      color: gray;
-    }
-    /* 表格 */
-    .cntBody table{
-      border-collapse: separate;
-      border: solid 1px #75aac8;
-      width: 100%;
-      border-radius: 25px;
-    }
-    .cntBody table th,table td{
-      border: solid 1px #75aac8;
-      text-align: left;
-    }
-    .cntBody table thead>tr:first-child>th:first-child{
-      padding-left: 10px;
-      border-top-left-radius: 23px;
-    }
-    .cntBody table thead>tr:first-child>th:last-child{
-      padding-right: 10px;
-      border-top-right-radius: 23px;
-    }
-    .cntBody table tbody tr td{
-      background-color: #cadeea;
-    }
-    .cntBody table tbody>tr:last-child>td:first-child{
-      padding-left: 10px;
-      border-bottom-left-radius: 23px;
-    }
-    .cntBody table tbody>tr:last-child>td:last-child{
-      padding-right: 10px;
-      border-bottom-right-radius: 23px;
-    }
-    .cntBody table tbody>tr>td:first-child{
-      padding-left: 10px;
-    }
-    .cntBody table tbody>tr>td:last-child{
-      padding-right: 10px;
-    }
-    /* 使用MathJax渲染的LaTeX数学公式 */
-    mjx-container,mjx-container *{
-      overflow-y: hidden;
-      pointer-events: none;
-    }
-    /* 使用代码块组件实现的提示、警告框 */
-    .cntBody pre code[data-lang="ZX-TIP"],.cntBody pre code[data-lang="ZX-TIP"]::before,.cntBody pre code[data-lang="ZX-WARNING"],.cntBody pre code[data-lang="ZX-WARNING"]::before{
-      font-family: 'Times New Roman','Arial','楷体' !important;
-    }
-    .cntBody pre code[data-lang="ZX-TIP"]::before,.cntBody pre code[data-lang="ZX-WARNING"]::before{
-      font-weight: bold3
-    }
-    .cntBody pre:has(code[data-lang="ZX-TIP"]),.cntBody pre:has(code[data-lang="ZX-WARNING"]){
-      font-size: medium;
-    }
-    .cntBody pre:has(code[data-lang="ZX-TIP"]){
-      background-color: #caebca;
-      border: solid 1px #75c775;
-    }
-    .cntBody pre code[data-lang="ZX-TIP"]::before{
-      content: "💬 提示";
-      background-color: #a3d9a3;
-      border-bottom: solid 1px #75c775;
-    }
-    .cntBody pre:has(code[data-lang="ZX-WARNING"]){
-      background-color: #ebebca;
-      border: solid 1px #c7c775;
-    }
-    .cntBody pre code[data-lang="ZX-WARNING"]::before{
-      content: "⚠ 注意";
-      background-color: #d9d9a3;
-      border-bottom: solid 1px #c7c775;
-    }
-    
-  </style>
-  <div class="cnt">
-    <div class="backgroundImg">
-      {{ $bgImgSrc := .Params.backgroundImage |default "https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" }}
-      <img src="{{ $bgImgSrc }}" alt="" title="">
+    <meta name="robots" content="noindex,nofollow">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    {{ $styleTagsBox := resources.Get "css/tagsBox.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styleTagsBox.Permalink }}" integrity="{{ $styleTagsBox.Data.Integrity }}" crossorigin="anonymous">
+    <style>
+        .cnt{
+            background-color:#a3c6da;
+            border-radius: 25px;
+            padding: 10px;
+        }
+        .backgroundImg{
+            margin: 10px;
+            margin-bottom: -40px !important;
+            width: calc(100% - 20px);/* 256:81 */
+            position: relative;
+            z-index: 1;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+        .backgroundImg>img{
+            width: 100%;
+        }
+        .cntTitle{
+            background-color: #cadeea;
+            font-family: 'Times New Roman','Arial','楷体';
+            position: relative;
+            z-index: 2;
+            border-radius: 25px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .cntTitle .disclaimer{
+            color: red;
+        }
+        .cntBody{
+            margin: 10px;
+        }
+        .cntBody *{
+            -webkit-user-select: text !important;
+            -moz-user-select: text !important;
+            -ms-user-select: text !important;
+            user-select: text !important;
+        }
+    </style>
+    <style>
+        /* 全局字体 */
+        .cntBody{
+            font-family: 'Times New Roman','Arial','楷体';
+        }
+        .cntBody h1,.cntBody h2,.cntBody h3,.cntBody h4,.cntBody h5,.cntBody h6{
+            font-weight: bold;
+        }
+        /* 引用 */
+        .cntBody blockquote{
+            border: solid 1px #75aac8;
+            position: relative;
+            margin: 0;
+            padding-left: 10px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px; 
+            font-style: italic;
+        }
+        .cntBody blockquote blockquote{
+            border: none;
+            border-left: solid 1px #75aac8;
+        }
+        .cntBody blockquote *{
+            color: rgba(0, 0, 0, 0.6) !important;
+        }
+        .cntBody blockquote::before{
+            content: "";
+            display: inline-block;
+            width: 10px;
+            background-color: #75aac8;
+            position: absolute;
+            top: 0; 
+            left: 0;
+            bottom: 0;
+        }
+        /* 超链接 */
+        .cntBody a{
+            text-decoration: underline;
+        }
+        .cntBody a:hover{
+            color: #75aac8 !important;
+            text-decoration-color: #75aac8;
+        }
+        /*行内代码元素*/
+        .cntBody p code{
+            border: solid 1px #75aac8;
+            background-color: #cadeea;
+            font-family: "ZX-E-SourceCodePro","ZX-E-FiraCode","monospace" !important;
+            border-radius: 6px;
+            padding-left: 2px;
+            padding-right: 2px;
+            font-weight: bold;
+        }
+        /* 代码片段 */
+        .cntBody pre{
+            border: solid 1px #75aac8;
+            border-radius: 25px;
+            font-family: "ZX-E-SourceCodePro","ZX-E-FiraCode","monospace" !important;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            -webkit-user-select:text;
+            user-select:all;
+            white-space-collapse: break-spaces;
+            text-wrap: wrap;
+            counter-reset: codeLineNumber;
+        }
+        .cntBody pre code::before{
+            content: "code/text: " attr(data-lang) ;
+            background-color: #cadeea;
+            border-bottom: solid 1px #75aac8;
+            color: black;
+            margin-left: -10px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 35px;
+            font-family: "sans-serif" !important;
+            display: block;
+            width: calc(100% + 25px);
+            height: 35px;
+            text-align: left;
+        }
+        .cntBody pre code>span{
+            font-family: "ZX-E-SourceCodePro","ZX-E-FiraCode","monospace" !important;
+            font-size: small;
+        }
+        .cntBody pre code>span::before{
+            content: counter(codeLineNumber);
+            counter-increment: codeLineNumber;
+            border-right: solid 1px gray;
+            font-family: "ZX-E-SourceCodePro" !important;
+            color: gray;
+            min-width: 24px;
+            text-align: right;
+            padding-right: 2px;
+            margin-right: 2px;
+        }
+        /* 图片 */
+        .cntBody img{
+            width: calc(100% - 20px);
+            border: solid 10px #75aac8;
+            border-radius: 25px;
+        }
+        /* 列表 */
+        .cntBody ul{
+            list-style: none;
+            list-style-type: circle;
+            list-style-position: inside;
+        }
+        .cntBody ol{
+            list-style: none;
+            list-style-type: decimal;
+            list-style-position: inside;
+        }
+        .cntBody li ul,.cntBody li ol{
+            margin-left: 20px;
+        }
+        .cntBody li::marker{
+            color: gray;
+        }
+        /* 表格 */
+        .cntBody table{
+            border-collapse: separate;
+            border: solid 1px #75aac8;
+            width: 100%;
+            border-radius: 25px;
+        }
+        .cntBody table th,table td{
+            border: solid 1px #75aac8;
+            text-align: left;
+        }
+        .cntBody table thead>tr:first-child>th:first-child{
+            padding-left: 10px;
+            border-top-left-radius: 23px;
+        }
+        .cntBody table thead>tr:first-child>th:last-child{
+            padding-right: 10px;
+            border-top-right-radius: 23px;
+        }
+        .cntBody table tbody tr td{
+            background-color: #cadeea;
+        }
+        .cntBody table tbody>tr:last-child>td:first-child{
+            padding-left: 10px;
+            border-bottom-left-radius: 23px;
+        }
+        .cntBody table tbody>tr:last-child>td:last-child{
+            padding-right: 10px;
+            border-bottom-right-radius: 23px;
+        }
+        .cntBody table tbody>tr>td:first-child{
+            padding-left: 10px;
+        }
+        .cntBody table tbody>tr>td:last-child{
+            padding-right: 10px;
+        }
+        /* 使用MathJax渲染的LaTeX数学公式 */
+        mjx-container,mjx-container *{
+            overflow-y: hidden;
+            pointer-events: none;
+        }
+        /* 使用代码块组件实现的提示、警告框 */
+        .cntBody pre code[data-lang="ZX-TIP"],.cntBody pre code[data-lang="ZX-TIP"]::before,.cntBody pre code[data-lang="ZX-WARNING"],.cntBody pre code[data-lang="ZX-WARNING"]::before{
+            font-family: 'Times New Roman','Arial','楷体' !important;
+        }
+        .cntBody pre code[data-lang="ZX-TIP"]::before,.cntBody pre code[data-lang="ZX-WARNING"]::before{
+            font-weight: bold3
+        }
+        .cntBody pre:has(code[data-lang="ZX-TIP"]),.cntBody pre:has(code[data-lang="ZX-WARNING"]){
+            font-size: medium;
+        }
+        .cntBody pre:has(code[data-lang="ZX-TIP"]){
+            background-color: #caebca;
+            border: solid 1px #75c775;
+        }
+        .cntBody pre code[data-lang="ZX-TIP"]::before{
+            content: "💬 提示";
+            background-color: #a3d9a3;
+            border-bottom: solid 1px #75c775;
+        }
+        .cntBody pre:has(code[data-lang="ZX-WARNING"]){
+            background-color: #ebebca;
+            border: solid 1px #c7c775;
+        }
+        .cntBody pre code[data-lang="ZX-WARNING"]::before{
+            content: "⚠ 注意";
+            background-color: #d9d9a3;
+            border-bottom: solid 1px #c7c775;
+        }
+    </style>
+    <div class="cnt">
+        <div class="backgroundImg">
+            {{ $bgImgSrc := .Params.backgroundImage |default "https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" }}
+            <img src="{{ $bgImgSrc }}" alt="" title="">
+        </div>
+        <header class="cntTitle">
+            {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+            {{ $dateHuman := .Date | time.Format ":date_long" }}
+            {{ $author := .Params.author |default "佚名"}}
+            <h1>{{ .Title }}</h1>
+            <p>日期:&emsp;<span>{{ $dateHuman }}</span>&emsp;&emsp;作者:&ensp;<span>{{ $author }}</span></p>
+            <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
+            <p>{{ .Params.description }}</p>
+            <p class="disclaimer">本文仅代表作者观点，如有负面影响其将被删除！</p>
+        </header>
     </div>
-    <header class="cntTitle">
-      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-      {{ $dateHuman := .Date | time.Format ":date_long" }}
-      {{ $author := .Params.author |default "佚名"}}
-      <h1>{{ .Title }}</h1>
-      <p>日期:&emsp;<span>{{ $dateHuman }}</span>&emsp;&emsp;作者:&ensp;<span>{{ $author }}</span></p>
-      <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
-      <p>{{ .Params.description }}</p>
-      <p class="disclaimer">本文仅代表作者观点，如有负面影响其将被删除！</p>
-    </header>
-  </div>
-  <br>
-  <div class="cnt">
     <br>
-    <div class="cntBody">{{ .Content }}</div>
+    <div class="cnt">
+        <br>
+        <div class="cntBody">{{ .Content }}</div>
+        <br>
+    </div>
     <br>
-  </div>
-  <br>
-  <div class="cnt">
-    <script>
-      var idcomments_acct = 'ac62fc037019c315b1b48a7494e77f84';
-      var idcomments_post_id;
-      var idcomments_post_url;
-    </script>
-    <span id="IDCommentsPostTitle" style="display:none"></span>
-    <script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
-  </div>
-  <br>
+    <div class="cnt">
+        <script>
+            var idcomments_acct = 'ac62fc037019c315b1b48a7494e77f84';
+            var idcomments_post_id;
+            var idcomments_post_url;
+        </script>
+        <span id="IDCommentsPostTitle" style="display:none"></span>
+        <script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+    </div>
+    <br>
 {{ end }}
