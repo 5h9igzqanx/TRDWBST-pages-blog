@@ -29,7 +29,7 @@
 &lt;h3 id="安装字体">安装字体&lt;/h3>
 &lt;p>在Oh My Posh中，显示一些特殊符号需要使用另一种叫做“Nerd”的字体，下面讲解如何安装和使用。&lt;br>
 打开&lt;a href="https://www.nerdfonts.com/">Nerd官网&lt;/a>，点击Downloads，在其中相中一个其与另一种等宽字体结合的字形包，点击Download。&lt;/p>
-&lt;pre tabindex="0">&lt;code class="language-ZX-tip" data-lang="ZX-tip">官方文档中建议使用MesloLG Nerd Font这款字体。
+&lt;pre tabindex="0">&lt;code class="language-ZX-TIP" data-lang="ZX-TIP">官方文档中建议使用MesloLG Nerd Font这款字体。
 &lt;/code>&lt;/pre>&lt;p>下载好后解压，打开目录，全选，安装。&lt;br>
 打开终端，点击标签栏上的倒三角，选择设置。
 在“配置文件”栏选择“默认值”，在右边点击“外观”，然后在“字体”栏选择带有“Nerd”字样的字体，保存就行了。&lt;/p>
