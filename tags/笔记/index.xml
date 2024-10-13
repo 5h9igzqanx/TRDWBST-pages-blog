@@ -17,7 +17,7 @@
 其次，打开&lt;a href="https://github.com/jandedobbeleer/oh-my-posh">Oh My Posh的Github仓库&lt;/a>下载相应版本的安装包。&lt;br>
 下载好之后，打开安装包，根据提示安装。&lt;/p>
 &lt;pre tabindex="0">&lt;code class="language-ZX-WARNING" data-lang="ZX-WARNING">安装路径尽量只有英文
-&lt;/code>&lt;/pre>&lt;p>安装完成之后，可以打开终端，输入&lt;code>oh-my-posh&lt;/code>查看是否安装完成，如果提示其不是一个命令，你需要手动将Oh My Posh的目录添加进环境变量。
+&lt;/code>&lt;/pre>&lt;p>安装完成之后，可以打开终端，输入&lt;code>oh-my-posh&lt;/code>查看是否安装完成，如果提示其不是一个命令，你需要手动将Oh My Posh的目录添加进环境变量。&lt;br>
 你可以选择在PowerShell中输入&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$env:Path +&lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;;C:\你安装OhMyPosh的路径\...\oh-my-posh\bin&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>来添加。&lt;/p>
