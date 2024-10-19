@@ -69,11 +69,11 @@
             <!-- {{ partial "header.html" . }} -->
         </header>
         <main>
+            <div class="leftMain" id="leftMain">{{ partial "leftmain.html" . }}</div>
+            <div class="rightCnt">{{ block "main" . }}{{ end }}</div>
             <div class="backGroundImg">
                 <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/fun/pic-mascot/zhanWeiFu.png" alt="这回真没了">
             </div>
-            <div class="leftMain" id="leftMain">{{ partial "leftmain.html" . }}</div>
-            <div class="rightCnt">{{ block "main" . }}{{ end }}</div>
         </main>
     </body>
 </html>
