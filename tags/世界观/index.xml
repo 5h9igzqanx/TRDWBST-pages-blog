@@ -3,14 +3,14 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">colo&lt;/td>
- &lt;td style="text-align: left">颜色&lt;/td>
+ &lt;td>colo&lt;/td>
+ &lt;td>颜色&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -18,34 +18,34 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">dade&lt;/td>
- &lt;td style="text-align: left">时间日期&lt;/td>
+ &lt;td>dade&lt;/td>
+ &lt;td>时间日期&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">dage&lt;/td>
- &lt;td style="text-align: left">固体&lt;/td>
+ &lt;td>dage&lt;/td>
+ &lt;td>固体&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">de&lt;/td>
- &lt;td style="text-align: left">阴性\女性&lt;/td>
+ &lt;td>de&lt;/td>
+ &lt;td>阴性\女性&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">desa&lt;/td>
- &lt;td style="text-align: left">日（时间日期）&lt;/td>
+ &lt;td>desa&lt;/td>
+ &lt;td>日（时间日期）&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">deto&lt;/td>
- &lt;td style="text-align: left">暗的&lt;/td>
+ &lt;td>deto&lt;/td>
+ &lt;td>暗的&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">duse&lt;/td>
- &lt;td style="text-align: left">从上往下&lt;/td>
+ &lt;td>duse&lt;/td>
+ &lt;td>从上往下&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -53,14 +53,14 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">ease&lt;/td>
- &lt;td style="text-align: left">「伊洱」族的&lt;/td>
+ &lt;td>ease&lt;/td>
+ &lt;td>「伊洱」族的&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -68,22 +68,22 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">fage&lt;/td>
- &lt;td style="text-align: left">气体&lt;/td>
+ &lt;td>fage&lt;/td>
+ &lt;td>气体&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">fyse&lt;/td>
- &lt;td style="text-align: left">从下往上&lt;/td>
+ &lt;td>fyse&lt;/td>
+ &lt;td>从下往上&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">fuse&lt;/td>
- &lt;td style="text-align: left">未来的&lt;/td>
+ &lt;td>fuse&lt;/td>
+ &lt;td>未来的&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -91,26 +91,26 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">helo&lt;/td>
- &lt;td style="text-align: left">有的&lt;/td>
+ &lt;td>helo&lt;/td>
+ &lt;td>有的&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">ho&lt;/td>
- &lt;td style="text-align: left">阳性\男性&lt;/td>
+ &lt;td>ho&lt;/td>
+ &lt;td>阳性\男性&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">hosa&lt;/td>
- &lt;td style="text-align: left">小时（时间日期）&lt;/td>
+ &lt;td>hosa&lt;/td>
+ &lt;td>小时（时间日期）&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">hunu&lt;/td>
- &lt;td style="text-align: left">人&lt;/td>
+ &lt;td>hunu&lt;/td>
+ &lt;td>人&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -118,14 +118,14 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">iste&lt;/td>
- &lt;td style="text-align: left">近的&lt;/td>
+ &lt;td>iste&lt;/td>
+ &lt;td>近的&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -133,22 +133,22 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">lese&lt;/td>
- &lt;td style="text-align: left">「黎」族的&lt;/td>
+ &lt;td>lese&lt;/td>
+ &lt;td>「黎」族的&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">lito&lt;/td>
- &lt;td style="text-align: left">亮的&lt;/td>
+ &lt;td>lito&lt;/td>
+ &lt;td>亮的&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">lote&lt;/td>
- &lt;td style="text-align: left">远的&lt;/td>
+ &lt;td>lote&lt;/td>
+ &lt;td>远的&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -156,22 +156,22 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">mesa&lt;/td>
- &lt;td style="text-align: left">分（时间日期）&lt;/td>
+ &lt;td>mesa&lt;/td>
+ &lt;td>分（时间日期）&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">mosa&lt;/td>
- &lt;td style="text-align: left">月（时间日期）&lt;/td>
+ &lt;td>mosa&lt;/td>
+ &lt;td>月（时间日期）&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">muse&lt;/td>
- &lt;td style="text-align: left">缓慢移动&lt;/td>
+ &lt;td>muse&lt;/td>
+ &lt;td>缓慢移动&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -179,22 +179,22 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">ne&lt;/td>
- &lt;td style="text-align: left">第一人称&lt;/td>
+ &lt;td>ne&lt;/td>
+ &lt;td>第一人称&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">nilo&lt;/td>
- &lt;td style="text-align: left">无的&lt;/td>
+ &lt;td>nilo&lt;/td>
+ &lt;td>无的&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">nose&lt;/td>
- &lt;td style="text-align: left">现在的&lt;/td>
+ &lt;td>nose&lt;/td>
+ &lt;td>现在的&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -202,14 +202,14 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">os&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://baike.baidu.com/item/%E5%A4%8D%E6%95%B0/13131232">复数&lt;/a>（非彼&lt;a href="https://baike.baidu.com/item/%E5%A4%8D%E6%95%B0/254365">复数&lt;/a>）&lt;/td>
+ &lt;td>os&lt;/td>
+ &lt;td>&lt;a href="https://baike.baidu.com/item/%E5%A4%8D%E6%95%B0/13131232">复数&lt;/a>（非彼&lt;a href="https://baike.baidu.com/item/%E5%A4%8D%E6%95%B0/254365">复数&lt;/a>）&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -217,14 +217,14 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">pose&lt;/td>
- &lt;td style="text-align: left">过去的&lt;/td>
+ &lt;td>pose&lt;/td>
+ &lt;td>过去的&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -232,14 +232,14 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">ruse&lt;/td>
- &lt;td style="text-align: left">快速移动&lt;/td>
+ &lt;td>ruse&lt;/td>
+ &lt;td>快速移动&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -247,26 +247,26 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">sage&lt;/td>
- &lt;td style="text-align: left">液体&lt;/td>
+ &lt;td>sage&lt;/td>
+ &lt;td>液体&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">sodu&lt;/td>
- &lt;td style="text-align: left">使命&lt;/td>
+ &lt;td>sodu&lt;/td>
+ &lt;td>使命&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">sosa&lt;/td>
- &lt;td style="text-align: left">秒（时间日期）&lt;/td>
+ &lt;td>sosa&lt;/td>
+ &lt;td>秒（时间日期）&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">su&lt;/td>
- &lt;td style="text-align: left">不分性别（男\女性）\性质（阴\阳性）&lt;/td>
+ &lt;td>su&lt;/td>
+ &lt;td>不分性别（男\女性）\性质（阴\阳性）&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -274,18 +274,18 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">tade&lt;/td>
- &lt;td style="text-align: left">拿取&lt;/td>
+ &lt;td>tade&lt;/td>
+ &lt;td>拿取&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">te&lt;/td>
- &lt;td style="text-align: left">第三人称&lt;/td>
+ &lt;td>te&lt;/td>
+ &lt;td>第三人称&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -293,14 +293,14 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">词缀&lt;/th>
- &lt;th style="text-align: left">释义&lt;/th>
+ &lt;th>词缀&lt;/th>
+ &lt;th>释义&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">yesa&lt;/td>
- &lt;td style="text-align: left">年（时间日期）&lt;/td>
+ &lt;td>yesa&lt;/td>
+ &lt;td>年（时间日期）&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table></description></item><item><title>简介-角色「黛莫」</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082702/</link><pubDate>Tue, 27 Aug 2024 11:10:01 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082702/</guid><description>&lt;h1 id="简介-角色黛莫">简介-角色「黛莫」&lt;/h1>
@@ -361,8 +361,12 @@
 祂带给了人们光明和希望，人们纷纷追随祂，命其为「笔尖」，即创世神。&lt;br>
 当此夸克开始有了意识，故事便开始了。&lt;/p>
 &lt;h2 id="世界原理">世界原理&lt;/h2>
-&lt;p>整个「世界」实际上只有一个夸克，即前文提到的「笔尖」（你也可以认为祂是作者（也就是这篇文章的笔者我）的抽象化身）。这个夸克以非常快的速度从一个位置移动到另一个位置，当这个夸克在几刻移动到特定的几个位置，便可以认为形成了原子。以此类推组成了世界。&lt;br>
-如果不理解，其实就是类似&lt;a href="https://baike.baidu.com/item/%E8%A7%86%E8%A7%89%E6%9A%82%E7%95%99/5125149">视觉暂留现象&lt;/a>的原理，如果还不理解，你就当整个世界就是个大屁股电视机（&lt;a href="https://baike.baidu.com/item/CRT%E6%98%BE%E7%A4%BA%E5%99%A8/331814#3">CRT显示器&lt;/a>）的屏幕好了。&lt;/p>
+&lt;p>整个「世界」实际上只有一个夸克，即前文提到的「笔尖」（你也可以认为祂是作者（也就是这篇文章的笔者我）的抽象化身）。这个夸克以非常快的速度从一个位置移动到另一个位置，当这个夸克在几刻移动到特定的几个位置，便可以认为形成了原子。以此类推组成了世界。&lt;/p>
+&lt;p>如果不理解，其实就是类似&lt;a href="https://baike.baidu.com/item/%E8%A7%86%E8%A7%89%E6%9A%82%E7%95%99/5125149">视觉暂留现象&lt;/a>的原理，如果还不理解，你就当整个世界就是个大屁股电视机（&lt;a href="https://baike.baidu.com/item/CRT%E6%98%BE%E7%A4%BA%E5%99%A8/331814#3">CRT显示器&lt;/a>）的屏幕好了。&lt;/p>
+&lt;p>以及——即使世界是我模拟出来的，但是故事结束之后其仍然在运行，故我以此为基础的小说都是截取了某个时间片段来写的。&lt;/p>
+&lt;blockquote>
+&lt;p>附：&lt;a href="https://v.douyin.com/iSRw73Rv/">《有没有一种可能， 梦境是另一种现实？》来自抖音&lt;/a>&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="世界历史">世界历史&lt;/h2>
 &lt;h3 id="大致时间轴">大致时间轴&lt;/h3>
 &lt;ul>
@@ -424,7 +428,11 @@
 &lt;li>人类之间出现语言&lt;/li>
 &lt;li>人类种族分为「维」和「馁兹」&lt;/li>
 &lt;li>人类获得火种&lt;/li>
+&lt;li>「笔尖」的使者降临
+&lt;ol>
 &lt;li>人类开始信仰「笔尖」为创世神&lt;/li>
+&lt;/ol>
+&lt;/li>
 &lt;/ol>
 &lt;/li>
 &lt;li>元前870,000年
@@ -453,6 +461,7 @@
 &lt;ol>
 &lt;li>人类种族「维」更名为「黎」&lt;/li>
 &lt;li>人类开始探索区域「零熵海」&lt;/li>
+&lt;li>「笔尖」的使者降临&lt;/li>
 &lt;li>国家「珑」成立&lt;/li>
 &lt;li>国家「赤阶」成立&lt;/li>
 &lt;li>组织「联合联盟」成立
@@ -535,11 +544,10 @@
 &lt;/li>
 &lt;li>元前1年
 &lt;ol>
-&lt;li>祖神「Demo」于禁忌区域「峠」创造祖神「黛莫」&lt;/li>
+&lt;li>「笔尖」的使者降临&lt;/li>
 &lt;li>世界遭遇以太能量袭击&lt;/li>
-&lt;li>祖神「Demo」命夸克「笔尖」停止运动
+&lt;li>「笔尖」的使者命夸克「笔尖」停止运动
 &lt;ol>
-&lt;li>祖神「Demo」神位崩坏&lt;/li>
 &lt;li>世界崩坏
 &lt;ol>
 &lt;li>人类突破世界极限，进入更高维度「作者思想」&lt;/li>
@@ -556,7 +564,6 @@
 &lt;li>人类退出维度「作者思想」，重新进入世界&lt;/li>
 &lt;/ol>
 &lt;/li>
-&lt;li>祖神「黛莫」承认其肉身所属为国家「珑」公民&lt;/li>
 &lt;/ol>
 &lt;/li>
 &lt;/ul>
