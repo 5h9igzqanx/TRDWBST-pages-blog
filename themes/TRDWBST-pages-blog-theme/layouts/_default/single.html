@@ -24,7 +24,7 @@
         }
         .cntTitle{
             background-color: #cadeea;
-            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
+            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体' !important;
             position: relative;
             z-index: 2;
             border-radius: 25px;
@@ -47,7 +47,7 @@
     <style>
         /* 全局字体 */
         .cntBody{
-            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
+            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体' !important;
         }
         .cntBody h1,.cntBody h2,.cntBody h3,.cntBody h4,.cntBody h5,.cntBody h6{
             font-weight: bold;
@@ -120,7 +120,7 @@
             margin-bottom: 10px;
             padding-top: 10px;
             padding-left: 35px;
-            font-family: "sans-serif" !important;
+            font-family: "Arial" !important;
             display: block;
             width: calc(100% + 25px);
             height: 35px;
@@ -134,7 +134,7 @@
             content: counter(codeLineNumber);
             counter-increment: codeLineNumber;
             border-right: solid 1px gray;
-            font-family: "ZX-E-SourceCodePro" !important;
+            font-family: "ZX-E-FiraCode","ZX-E-SourceCodePro","monospace" !important;
             color: gray;
             min-width: 24px;
             text-align: right;
@@ -207,7 +207,7 @@
         }
         /* 使用代码块组件实现的提示、警告框 */
         .cntBody pre code[data-lang="ZX-TIP"],.cntBody pre code[data-lang="ZX-TIP"]::before,.cntBody pre code[data-lang="ZX-WARNING"],.cntBody pre code[data-lang="ZX-WARNING"]::before{
-            font-family: 'Times New Roman','Arial','楷体' !important;
+            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体' !important;
         }
         .cntBody pre code[data-lang="ZX-TIP"]::before,.cntBody pre code[data-lang="ZX-WARNING"]::before{
             font-weight: bold3
