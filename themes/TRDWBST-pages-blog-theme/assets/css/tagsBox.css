@@ -9,7 +9,7 @@
     border: solid 1px #75aac8;
     border-radius: 10px;
     background-color: #cadeea;
-    font-family: 'Times New Roman','Arial','楷体';
+    font-family: "ZX-C-霞鹭文楷",'Times New Roman','Arial','楷体','宋体';
 }
 .tagsBox ul>li::before{
     content: "#";
