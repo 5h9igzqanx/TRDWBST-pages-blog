@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>笔记 on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E7%AC%94%E8%AE%B0/</link><description>Recent content in 笔记 on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 13 Oct 2024 13:20:47 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Oh My Posh美化Windows终端</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024101301/</link><pubDate>Sun, 13 Oct 2024 13:20:47 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024101301/</guid><description>&lt;h1 id="使用oh-my-posh美化windows终端">使用Oh My Posh美化Windows终端&lt;/h1>
 &lt;h2 id="概述">概述&lt;/h2>
-&lt;p>不知道你们使用Windows终端的时候有没有羡慕那些使用MacOS或者Linux终端的朋友屏幕上花花绿绿的样式，即使是巨硬推出了改良版终端。&lt;br>
-但是，现在你们可以不用羡慕了，因为Windows终端也可以被美化了，那就是——Oh My Posh。&lt;br>
-话不多说，上教程。&lt;/p>
+&lt;p>不知道你们使用Windows终端的时候有没有羡慕那些使用MacOS或者Linux终端的朋友屏幕上花花绿绿的样式，即使是巨硬推出了改良版终端。&lt;/p>
+&lt;p>但是，现在你们可以不用羡慕了，因为Windows终端也可以被美化了，那就是——Oh My Posh。&lt;/p>
+&lt;p>话不多说，上教程。&lt;/p>
 &lt;h2 id="教程-安装并配置oh-my-posh">教程-安装并配置Oh My Posh&lt;/h2>
 &lt;h3 id="材料准备">材料准备&lt;/h3>
 &lt;ol>
@@ -13,34 +13,33 @@
 &lt;li>Clink软件（如果没有请看下面）&lt;/li>
 &lt;/ol>
 &lt;h3 id="安装oh-my-posh">安装Oh My Posh&lt;/h3>
-&lt;p>首先，你需要确保你安装了新版Windows终端，如果没有你可以去Microsoft Store搜索&lt;strong>Terminal&lt;/strong>并下载。&lt;br>
-其次，打开&lt;a href="https://github.com/jandedobbeleer/oh-my-posh">Oh My Posh的Github仓库&lt;/a>下载相应版本的安装包。&lt;br>
-下载好之后，打开安装包，根据提示安装。&lt;/p>
+&lt;p>首先，你需要确保你安装了新版Windows终端，如果没有你可以去Microsoft Store搜索&lt;strong>Terminal&lt;/strong>并下载。&lt;/p>
+&lt;p>其次，打开&lt;a href="https://github.com/jandedobbeleer/oh-my-posh">Oh My Posh的Github仓库&lt;/a>下载相应版本的安装包。&lt;/p>
+&lt;p>下载好之后，打开安装包，根据提示安装。&lt;/p>
 &lt;pre tabindex="0">&lt;code class="language-ZX-WARNING" data-lang="ZX-WARNING">安装路径尽量只有英文
-&lt;/code>&lt;/pre>&lt;p>安装完成之后，可以打开终端，输入&lt;code>oh-my-posh&lt;/code>查看是否安装完成，如果提示其不是一个命令，你需要手动将Oh My Posh的目录添加进环境变量。&lt;br>
-你可以选择在PowerShell中输入&lt;/p>
+&lt;/code>&lt;/pre>&lt;p>安装完成之后，可以打开终端，输入&lt;code>oh-my-posh&lt;/code>查看是否安装完成，如果提示其不是一个命令，你需要手动将Oh My Posh的目录添加进环境变量。&lt;/p>
+&lt;p>你可以选择在PowerShell中输入&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$env:Path +&lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;;C:\你安装OhMyPosh的路径\...\oh-my-posh\bin&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>来添加。&lt;/p>
 &lt;h3 id="安装clink">安装Clink&lt;/h3>
-&lt;p>在cmd中，Oh My Posh需要Clink来辅助实现美化，所以你也得下载Clink。&lt;br>
-首先，打开&lt;a href="https://github.com/chrisant996/clink">Clink的Github仓库&lt;/a>下载相应版本的安装包。&lt;br>
-下载好之后，打开安装包，根据提示安装。&lt;br>
-安装完成之后，可以打开终端，输入&lt;code>clink info&lt;/code>查看是否安装完成。&lt;/p>
+&lt;p>在cmd中，Oh My Posh需要Clink来辅助实现美化，所以你也得下载Clink。&lt;/p>
+&lt;p>首先，打开&lt;a href="https://github.com/chrisant996/clink">Clink的Github仓库&lt;/a>下载相应版本的安装包。&lt;/p>
+&lt;p>下载好之后，打开安装包，根据提示安装。&lt;/p>
+&lt;p>安装完成之后，可以打开终端，输入&lt;code>clink info&lt;/code>查看是否安装完成。&lt;/p>
 &lt;h3 id="安装字体">安装字体&lt;/h3>
-&lt;p>在Oh My Posh中，显示一些特殊符号需要使用另一种叫做“Nerd”的字体，下面讲解如何安装和使用。&lt;br>
-打开&lt;a href="https://www.nerdfonts.com/">Nerd官网&lt;/a>，点击Downloads，在其中相中一个其与另一种等宽字体结合的字形包，点击Download。&lt;/p>
+&lt;p>在Oh My Posh中，显示一些特殊符号需要使用另一种叫做“Nerd”的字体，下面讲解如何安装和使用。&lt;/p>
+&lt;p>打开&lt;a href="https://www.nerdfonts.com/">Nerd官网&lt;/a>，点击Downloads，在其中相中一个其与另一种等宽字体结合的字形包，点击Download。&lt;/p>
 &lt;pre tabindex="0">&lt;code class="language-ZX-TIP" data-lang="ZX-TIP">官方文档中建议使用MesloLG Nerd Font这款字体。
-&lt;/code>&lt;/pre>&lt;p>下载好后解压，打开目录，全选，安装。&lt;br>
-打开终端，点击标签栏上的倒三角，选择设置。
-在“配置文件”栏选择“默认值”，在右边点击“外观”，然后在“字体”栏选择带有“Nerd”字样的字体，保存就行了。&lt;/p>
+&lt;/code>&lt;/pre>&lt;p>下载好后解压，打开目录，全选，安装。&lt;/p>
+&lt;p>打开终端，点击标签栏上的倒三角，选择设置。&lt;/p>
+&lt;p>在“配置文件”栏选择“默认值”，在右边点击“外观”，然后在“字体”栏选择带有“Nerd”字样的字体，保存就行了。&lt;/p>
 &lt;h3 id="在clink中配置oh-my-posh并且设置主题">在Clink中配置Oh My Posh并且设置主题&lt;/h3>
 &lt;p>安装完成之后，打开Clink的软件目录，新建&lt;code>oh-my-posh.lua&lt;/code>文件，在其中输入&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-lua" data-lang="lua">&lt;span style="display:flex;">&lt;span>load(io.popen(&lt;span style="color:#e6db74">&amp;#39;oh-my-posh init cmd&amp;#39;&lt;/span>):read(&lt;span style="color:#e6db74">&amp;#34;*a&amp;#34;&lt;/span>))()
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使其支持cmd的美化。&lt;br>
-此时打开cmd，可以看到终端已经被美化。&lt;br>
-如果你就待见他的默认主题，那你就没事了；但是如果你还想再进一步美化，那么接着往下看。&lt;br>
-首先，你需要前往&lt;a href="https://www.ohmyposh.dev/docs/themes">Oh My Posh的主题页面&lt;/a>中相中一个主题，点击跳转到相应的文件的Github页面，点击右上角的Download raw file下载其对应的json文件，然后记住他的路径。&lt;br>
-然后，打开你刚刚在Clink目录创建的&lt;code>oh-my-posh.lua&lt;/code>文件，把内容改成&lt;/p></description></item><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>&lt;h1 id="关于python相对导入的问题">关于python相对导入的问题&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使其支持cmd的美化。&lt;/p>
+&lt;p>此时打开cmd，可以看到终端已经被美化。&lt;/p>
+&lt;p>如果你就待见他的默认主题，那你就没事了；但是如果你还想再进一步美化，那么接着往下看。&lt;/p>
+&lt;p>首先，你需要前往&lt;a href="https://www.ohmyposh.dev/docs/themes">Oh My Posh的主题页面&lt;/a>中相中一个主题，点击跳转到相应的文件的Github页面，点击右上角的Download raw file下载其对应的json文件，然后记住他的路径。&lt;/p></description></item><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>&lt;h1 id="关于python相对导入的问题">关于python相对导入的问题&lt;/h1>
 &lt;h2 id="问题重现">问题重现&lt;/h2>
 &lt;p>我有以下文件：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>a
