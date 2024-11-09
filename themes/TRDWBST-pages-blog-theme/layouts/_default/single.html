@@ -236,6 +236,14 @@
             border-bottom: solid 1px #c7c775;
         }
     </style>
+    <script>
+        window.MathJax={
+            tex:{
+                inlineMath:[['$','$'],['\\(','\\)']],
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            },
+        };
+    </script>
     <div class="cnt">
         <div class="backgroundImg">
             {{ $bgImgSrc := .Params.backgroundImage |default "https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" }}
