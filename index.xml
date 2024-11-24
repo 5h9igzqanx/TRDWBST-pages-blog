@@ -420,17 +420,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>该如何做才能够在必须运行&lt;code>cc.py&lt;/code>的情况下在其中正确导入&lt;code>dd.py&lt;/code>？&lt;/p>
 &lt;blockquote>
 &lt;p>类似情况见以下链接：
-&lt;a href="https://stackoverflow.com/questions/10059002/python-packages-relative-imports">《Python 包：相对导入》来自Stack Overflow&lt;/a>&lt;/p></description></item><item><title>夏·20240820</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</link><pubDate>Tue, 20 Aug 2024 20:05:03 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082001/</guid><description>&lt;h1 id="夏20240820">夏·20240820&lt;/h1>
-&lt;h2 id="正文">正文&lt;/h2>
-&lt;p>每当夏天，当我在空调下玩游戏玩腻了，&lt;br>
-我都会看向我的手。&lt;br>
-我似乎看见手上的寒气形成了一簇火苗。&lt;br>
-“铥！”&lt;br>
-&lt;img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/contentRes/2024082001-01.png" alt="夏·20240820">&lt;/p>
-&lt;h2 id="附">附&lt;/h2>
-&lt;p>文为2024年8月20日所作，配图为2024年9月14日画。&lt;br>
-头发画得像shit😅，没事反正是课间摸鱼时画的（😓）&lt;br>
-4格漫画用体块的话挺好画的&lt;/p></description></item><item><title>人生要开心</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081801/</link><pubDate>Sun, 18 Aug 2024 16:44:06 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081801/</guid><description>&lt;h1 id="人生要开心">人生要开心&lt;/h1>
+&lt;a href="https://stackoverflow.com/questions/10059002/python-packages-relative-imports">《Python 包：相对导入》来自Stack Overflow&lt;/a>&lt;/p></description></item><item><title>人生要开心</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081801/</link><pubDate>Sun, 18 Aug 2024 16:44:06 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081801/</guid><description>&lt;h1 id="人生要开心">人生要开心&lt;/h1>
 &lt;p>人生就像一面镜子，你对它笑，它就对你笑；你对它哭，它就对你哭。&lt;br>
 如果你也把自己变成一面镜子：人生对你笑时你也笑，人生对你哭时你也哭，那么当你一点不顺心，你的愤怒就会通过人生这面镜子反弹回去，最终变成无休止的内耗。&lt;br>
 朋友，不要再内耗自己了。试着笑一笑，就仅仅是咧开嘴而已，没有多难的。笑着面对人生，那么人生就会一直对你微笑。&lt;/p></description></item><item><title>化学元素周期表</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</link><pubDate>Wed, 14 Aug 2024 12:40:48 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</guid><description>&lt;h1 id="化学元素周期表">化学元素周期表&lt;/h1>
@@ -502,9 +492,11 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 &lt;h2 id="世界原理">世界原理&lt;/h2>
 &lt;p>整个「世界」实际上只有一个小微粒，即前文提到的「笔尖」（你也可以认为祂是作者（也就是这篇文章的笔者我）的抽象化身）。这个微粒以非常快的速度从一个位置移动到另一个位置，当这个微粒在几刻移动到特定的几个位置，便可以认为形成了原子。以此类推组成了世界。&lt;/p>
 &lt;p>如果不理解，其实就是类似&lt;a href="https://baike.baidu.com/item/%E8%A7%86%E8%A7%89%E6%9A%82%E7%95%99/5125149">视觉暂留现象&lt;/a>的原理，如果还不理解，你就当整个世界就是个大屁股电视机（&lt;a href="https://baike.baidu.com/item/CRT%E6%98%BE%E7%A4%BA%E5%99%A8/331814#3">CRT显示器&lt;/a>）的屏幕好了。&lt;/p>
-&lt;p>以及——即使世界是我模拟出来的，但是故事结束之后其仍然在运行，故我以此为基础的小说都是截取了某个时间片段来写的。&lt;/p>
+&lt;p>而且——世界观里所有的生物的意识都是我在脑海里（即「笔尖」在「内因网络」里）模拟出来的，所以世界中的创世神「笔尖」的意识其实不在那个微粒中，而是在「内因网络」中。&lt;/p>
+&lt;p>即使世界是我模拟出来的，但是故事结束之后其仍然在运行，故我以此为基础的小说都是截取了某个时间片段来写的。&lt;/p>
 &lt;blockquote>
 &lt;p>附：&lt;a href="https://v.douyin.com/iSRw73Rv/">《有没有一种可能， 梦境是另一种现实？》来自抖音&lt;/a>&lt;/p>
+&lt;p>附：&lt;a href="https://v.douyin.com/iAsgdbx3/">《人的意识到底从何而来？》来自抖音&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="世界历史">世界历史&lt;/h2>
 &lt;h3 id="大致时间轴">大致时间轴&lt;/h3>
