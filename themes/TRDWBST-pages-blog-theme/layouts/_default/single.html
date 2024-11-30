@@ -43,6 +43,47 @@
             -ms-user-select: text !important;
             user-select: text !important;
         }
+        #imageFullScreenDisplay{
+            display: none;
+            background-color: rgba(0,0,0,0.3);
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            pointer-events: none;
+            z-index: 0;
+            /* justify-content: center;
+            align-items: center; */
+        }
+        #imageFullScreenDisplay>#imageFullScreenDisplay_ClickToClose{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: 1px solid #75aac8;
+            background-color: #cadeea;
+            border-radius: 25px;
+            padding: 0px 10px;
+            width: auto;
+            height: 25px;
+            text-align: center;
+            z-index: 50;
+            cursor: pointer;
+            pointer-events: fill;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        #imageFullScreenDisplay>#imageFullScreenDisplay_Img{
+            /* max-width: calc(100%-10px);
+            max-height: calc(100%-10px); */
+            /* width: auto;
+            height: auto; */
+            object-fit: contain;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: 100%; */
+        }
     </style>
     <style>
         /* 全局字体 */
@@ -264,11 +305,11 @@
         </header>
     </div>
     <br>
-    <div class="cnt">
+    <article class="cnt">
         <br>
         <div class="cntBody">{{ .Content }}</div>
         <br>
-    </div>
+    </article>
     <br>
     <div class="cnt">
         <script>
@@ -280,4 +321,53 @@
         <script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
     </div>
     <br>
+    <div id="imageFullScreenDisplay">
+        <div id="imageFullScreenDisplay_ClickToClose" onclick="imageFullScreenDisplay_Close()">关闭全屏显示图片X</div>
+        <img src="" alt="" id="imageFullScreenDisplay_Img">
+        <script>
+            function imageFullScreenDisplay_Close(){
+            document.getElementById("imageFullScreenDisplay").style.display="none"
+            // console.log('meile')
+            document.getElementById("imageFullScreenDisplay_Img").style.width="auto"
+            document.getElementById("imageFullScreenDisplay_Img").style.height="auto"
+        }
+        function imageFullScreenDisplay_Open(srcURL){
+            document.getElementById("imageFullScreenDisplay").style.display="flex"
+            // console.log(1)
+            document.getElementById("imageFullScreenDisplay_Img").setAttribute("src",srcURL)
+            // console.log(2)
+            var imgsrc=new Image()
+            imgsrc.src=srcURL
+            // console.log(3)
+            imgsrc.onload=function(){
+                var imgW=this.width
+                var imgH=this.height
+                if(imgW/imgH>=window.innerWidth/window.innerHeight){
+                    document.getElementById("imageFullScreenDisplay_Img").style.width="calc(100% - 20px)"
+                    // document.getElementById("tupianfangdaxiao").style.marginLeft="10px"
+                    document.getElementById("imageFullScreenDisplay_Img").style.margin="auto 10px"
+                    // console.log("kuan95")
+                }else if(imgW/imgH<=window.innerWidth/window.innerHeight){
+                    document.getElementById("imageFullScreenDisplay_Img").style.height="calc(100% - 20px)"
+                    // document.getElementById("tupianfangdaxiao").style.marginTop="10px"
+                    document.getElementById("imageFullScreenDisplay_Img").style.margin="10px auto"
+                    // console.log("gao95")
+                }
+                // console.log(41)
+            }
+            imgsrc.onerror=function(){
+                document.getElementById("imageFullScreenDisplay_Img").style.width="calc(100% - 20px)"
+                document.getElementById("imageFullScreenDisplay_Img").style.margin="auto 10px"
+                // console.log("kuan95,wu")
+                // console.log(42)
+            }
+        }
+        document.querySelector(".cntBody").addEventListener("click",function(event){
+            if(event.target.tagName.toLowerCase()=="img"){
+                imageFullScreenDisplay_Open(event.target.src)
+                // console.log("youle")
+            }
+        })
+        </script>
+    </div>
 {{ end }}
