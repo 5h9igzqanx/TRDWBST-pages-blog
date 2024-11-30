@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/</link><description>Recent content in Home on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 13 Oct 2024 13:20:47 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Oh My Posh美化Windows终端</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024101301/</link><pubDate>Sun, 13 Oct 2024 13:20:47 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024101301/</guid><description>&lt;h1 id="使用oh-my-posh美化windows终端">使用Oh My Posh美化Windows终端&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/</link><description>Recent content in Home on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 28 Nov 2024 09:54:32 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/index.xml" rel="self" type="application/rss+xml"/><item><title>简单拓印图画技术的实现</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024112801/</link><pubDate>Thu, 28 Nov 2024 09:54:32 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024112801/</guid><description>&lt;h1 id="简单拓印图画技术的实现">简单拓印图画技术的实现&lt;/h1>
+&lt;h2 id="概述">概述&lt;/h2>
+&lt;blockquote>
+&lt;p>“在学校我们除了作业什么都能做出来。”——请输入文本&lt;/p>
+&lt;/blockquote>
+&lt;p>我曾经有个同桌，他曾经收到过一些印有图画的明信片，于是他拿出了他带有透明塑料壳的笔记本，把图画描摹了下来当作封面。我看到了，想：“牛逼！”于是我也拿出了我的人造革硬面抄笔记本，也想描摹一幅图画当作扉页。什么？你问我为什么不再画一遍？因为——&lt;/p>
+&lt;blockquote>
+&lt;p>“有些画是一次性的，画不来第二遍。”——麦瑟奥夫（沃兹基）&lt;/p>
+&lt;/blockquote>
+&lt;p>但是我的纸不是透明的，比较厚，2张纸之间如果没有背光，图画线条根本透不过去来让我描摹，而且隔着2张纸难免会抖动产生误差，所以——经过我的&lt;del>自习课&lt;/del>仔细&lt;del>溜号&lt;/del>科研下，我终于在教室环境下攻克了&lt;strong>拓印&lt;/strong>这一传统技术并为其赋予了新生！&lt;/p>
+&lt;h2 id="教程">教程&lt;/h2>
+&lt;p>如果你也想使用拓印技术来复印图画的话，接着看吧。&lt;/p>
+&lt;h3 id="材料准备">材料准备&lt;/h3>
+&lt;p>如果你有图画草稿而且纸比较透的话请直接&lt;a href="#%E6%9C%89%E5%9B%BE%E7%94%BB%E8%8D%89%E7%A8%BF%E8%80%8C%E4%B8%94%E7%BA%B8%E6%AF%94%E8%BE%83%E9%80%8F%E7%9A%84%E6%83%85%E5%86%B5">往下看&lt;/a>，如果你的图画在明信片或厚卡纸的话请点&lt;a href="#%E6%98%AF%E6%98%8E%E4%BF%A1%E7%89%87%E6%88%96%E5%8E%9A%E5%8D%A1%E7%BA%B8%E7%9A%84%E6%83%85%E5%86%B5">这里&lt;/a>&lt;/p>
+&lt;h3 id="有图画草稿而且纸比较透的情况">有图画草稿而且纸比较透的情况&lt;/h3>
+&lt;p>首先，翻到对面，描摹一遍图画的翻转版，然后翻过来，使正面对着自己，在其上覆盖一张纸，在其下（翻版的下面）垫上你想把图画拓印在上面的纸。&lt;/p>
+&lt;p>从文具盒里掏出笔或者杨二嫂（圆规），使用比较钝的一面找准图画使劲用力地蹭，在此期间要保证纸与纸之间不要有移动，如果保证不了就固定住（最好使用图钉或燕尾夹）。翻开最上面的纸，如果看见其上有完整的图画那么完成了，如果没有就继续保持纸与纸之间不要有移动，持续上述动作直到看见最上面的纸上有完整的图画。&lt;/p>
+&lt;p>那么恭喜你完成了拓印。&lt;/p>
+&lt;h3 id="是明信片或厚卡纸的情况">是明信片或厚卡纸的情况&lt;/h3>
+&lt;p>如果你的图画在明信片或厚卡纸的话，那么请找一张比较透的纸描摹一遍然后&lt;a href="#%E6%9C%89%E5%9B%BE%E7%94%BB%E8%8D%89%E7%A8%BF%E8%80%8C%E4%B8%94%E7%BA%B8%E6%AF%94%E8%BE%83%E9%80%8F%E7%9A%84%E6%83%85%E5%86%B5">重复上述动作&lt;/a>。&lt;/p>
+&lt;h2 id="后记">后记&lt;/h2>
+&lt;p>本文结束，感谢你的观看，再见。&lt;/p></description></item><item><title>使用Oh My Posh美化Windows终端</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024101301/</link><pubDate>Sun, 13 Oct 2024 13:20:47 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024101301/</guid><description>&lt;h1 id="使用oh-my-posh美化windows终端">使用Oh My Posh美化Windows终端&lt;/h1>
 &lt;h2 id="概述">概述&lt;/h2>
 &lt;p>不知道你们使用Windows终端的时候有没有羡慕那些使用MacOS或者Linux终端的朋友屏幕上花花绿绿的样式，即使是巨硬推出了改良版终端。&lt;/p>
 &lt;p>但是，现在你们可以不用羡慕了，因为Windows终端也可以被美化了，那就是——Oh My Posh。&lt;/p>
