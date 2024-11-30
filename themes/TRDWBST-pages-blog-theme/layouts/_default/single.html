@@ -349,13 +349,11 @@
             }
             function imageFullScreenDisplay_Open(srcURL){
                 document.getElementById("imageFullScreenDisplay").style.display="flex"
-                var imageFullScreenDisplay_Img=document.getElementById("imageFullScreenDisplay_Img")
+                var imageFullScreenDisplay_Img=document.getElementById("imageFullScreenDisplay_Img"),imgsrc=new Image()
                 imageFullScreenDisplay_Img.setAttribute("src",srcURL)
-                var imgsrc=new Image()
                 imgsrc.src=srcURL
                 imgsrc.onload=function(){
-                    var imgW=this.width
-                    var imgH=this.height
+                    var imgW=this.width,imgH=this.height
                     if(imgW/imgH>=window.innerWidth/window.innerHeight){
                         imageFullScreenDisplay_Img.style.width="calc(100% - 20px)"
                         imageFullScreenDisplay_Img.style.margin="auto 10px"
