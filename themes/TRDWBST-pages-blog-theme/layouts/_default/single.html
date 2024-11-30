@@ -344,45 +344,34 @@
         <script>
             function imageFullScreenDisplay_Close(){
             document.getElementById("imageFullScreenDisplay").style.display="none"
-            // console.log('meile')
             document.getElementById("imageFullScreenDisplay_Img").style.width="auto"
             document.getElementById("imageFullScreenDisplay_Img").style.height="auto"
             }
             function imageFullScreenDisplay_Open(srcURL){
                 document.getElementById("imageFullScreenDisplay").style.display="flex"
-                // console.log(1)
-                document.getElementById("imageFullScreenDisplay_Img").setAttribute("src",srcURL)
-                // console.log(2)
+                var imageFullScreenDisplay_Img=document.getElementById("imageFullScreenDisplay_Img")
+                imageFullScreenDisplay_Img.setAttribute("src",srcURL)
                 var imgsrc=new Image()
                 imgsrc.src=srcURL
-                // console.log(3)
                 imgsrc.onload=function(){
                     var imgW=this.width
                     var imgH=this.height
                     if(imgW/imgH>=window.innerWidth/window.innerHeight){
-                        document.getElementById("imageFullScreenDisplay_Img").style.width="calc(100% - 20px)"
-                        // document.getElementById("tupianfangdaxiao").style.marginLeft="10px"
-                        document.getElementById("imageFullScreenDisplay_Img").style.margin="auto 10px"
-                        // console.log("kuan95")
+                        imageFullScreenDisplay_Img.style.width="calc(100% - 20px)"
+                        imageFullScreenDisplay_Img.style.margin="auto 10px"
                     }else if(imgW/imgH<=window.innerWidth/window.innerHeight){
-                        document.getElementById("imageFullScreenDisplay_Img").style.height="calc(100% - 20px)"
-                        // document.getElementById("tupianfangdaxiao").style.marginTop="10px"
-                        document.getElementById("imageFullScreenDisplay_Img").style.margin="10px auto"
-                        // console.log("gao95")
+                        imageFullScreenDisplay_Img.style.height="calc(100% - 20px)"
+                        imageFullScreenDisplay_Img.style.margin="10px auto"
                     }
-                    // console.log(41)
                 }
                 imgsrc.onerror=function(){
-                    document.getElementById("imageFullScreenDisplay_Img").style.width="calc(100% - 20px)"
-                    document.getElementById("imageFullScreenDisplay_Img").style.margin="auto 10px"
-                    // console.log("kuan95,wu")
-                    // console.log(42)
+                    imageFullScreenDisplay_Img.style.width="calc(100% - 20px)"
+                    imageFullScreenDisplay_Img.style.margin="auto 10px"
                 }
             }
             document.querySelector(".cntBody").addEventListener("click",function(event){
                 if(event.target.tagName.toLowerCase()=="img"){
                     imageFullScreenDisplay_Open(event.target.src)
-                    // console.log("youle")
                 }
             })
             document.addEventListener("keydown",function(event){
