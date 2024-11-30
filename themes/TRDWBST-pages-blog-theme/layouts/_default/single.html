@@ -45,7 +45,7 @@
         }
         #imageFullScreenDisplay{
             display: none;
-            background-color: rgba(0,0,0,0.3);
+            background-color: rgba(0,0,0,0.6);
             position: fixed;
             top: 0px;
             bottom: 0px;
@@ -366,6 +366,11 @@
             if(event.target.tagName.toLowerCase()=="img"){
                 imageFullScreenDisplay_Open(event.target.src)
                 // console.log("youle")
+            }
+        })
+        document.addEventListener("keydown",function(event){
+            if(event.keyCode==27 && document.getElementById("imageFullScreenDisplay").style.display=="flex"){
+                imageFullScreenDisplay_Close()
             }
         })
         </script>
