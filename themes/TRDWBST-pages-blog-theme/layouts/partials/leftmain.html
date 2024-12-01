@@ -104,7 +104,6 @@
                 color: gray !important;
                 padding-left: 8px;
                 padding-right: 8px;
-
             }
             .toc ul{
                 list-style-type: none;
@@ -141,18 +140,17 @@
 <script>
     let url=window.location.href;
     if(url.indexOf("post")===-1){
-        if(document.getElementById("ParentBoxOfContentOfPost")){
-            document.getElementById("ParentBoxOfContentOfPost").remove();};}
-    var contentEle=document.getElementById("ParentBoxOfContentOfPost");
-    var parentOfcnt=contentEle.parentElement;
-    var stickyTop=contentEle.getBoundingClientRect().top + window.pageYOffset;
-    window.addEventListener("scroll",function(){
-        var scrollPosition=(window.pageYOffset||document.documentElement.scrollTop)+90;
-        if((scrollPosition>stickyTop)&&(window.innerWidth>1000)){
-            contentEle.style.position='fixed';contentEle.style.top='90px';contentEle.style.width=(String((document.getElementById("leftMain").offsetWidth)-46)+"px");
-        }else{
-            contentEle.style.position='';contentEle.style.top='';contentEle.style.width='';
-        };
-    });
+        if(document.getElementById("ParentBoxOfContentOfPost")){document.getElementById("ParentBoxOfContentOfPost").remove();};
+    }else{
+        var contentEle=document.getElementById("ParentBoxOfContentOfPost"),parentOfcnt=contentEle.parentElement,stickyTop=contentEle.getBoundingClientRect().top + window.pageYOffset;//FIXME 出错过
+        window.addEventListener("scroll",function(){
+            var scrollPosition=(window.pageYOffset||document.documentElement.scrollTop)+90;
+            if((scrollPosition>stickyTop)&&(window.innerWidth>1000)){
+                contentEle.style.position='fixed';contentEle.style.top='90px';contentEle.style.width=(String((document.getElementById("leftMain").offsetWidth)-46)+"px");
+            }else{
+                contentEle.style.position='';contentEle.style.top='';contentEle.style.width='';
+            };
+        });
+    }
 </script>
 <br>

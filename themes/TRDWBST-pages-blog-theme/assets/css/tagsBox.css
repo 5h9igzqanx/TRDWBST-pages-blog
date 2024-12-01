@@ -15,5 +15,8 @@
     content: "#";
 }
 .tagsBox ul>li:hover{
+    background-color: #a3c6da;
+}
+.tagsBox ul>li:active{
     background-color: #75aac8;
 }

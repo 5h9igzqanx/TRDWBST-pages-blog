@@ -338,9 +338,7 @@
     <br>
     <div class="cnt">
         <script>
-            var idcomments_acct = 'ac62fc037019c315b1b48a7494e77f84';
-            var idcomments_post_id;
-            var idcomments_post_url;
+            var idcomments_acct = 'ac62fc037019c315b1b48a7494e77f84',idcomments_post_id,idcomments_post_url;
         </script>
         <span id="IDCommentsPostTitle" style="display:none"></span>
         <script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
@@ -350,41 +348,21 @@
         <div id="imageFullScreenDisplay_ClickToClose" onclick="imageFullScreenDisplay_Close()">关闭全屏显示图片X</div>
         <img src="" alt="" id="imageFullScreenDisplay_Img">
         <script>
-            function imageFullScreenDisplay_Close(){
-            document.getElementById("imageFullScreenDisplay").style.display="none"
-            document.getElementById("imageFullScreenDisplay_Img").style.width="auto"
-            document.getElementById("imageFullScreenDisplay_Img").style.height="auto"
-            }
+            function imageFullScreenDisplay_Close(){document.getElementById("imageFullScreenDisplay").style.display="none";document.getElementById("imageFullScreenDisplay_Img").style.width="auto";document.getElementById("imageFullScreenDisplay_Img").style.height="auto"};
             function imageFullScreenDisplay_Open(srcURL){
-                document.getElementById("imageFullScreenDisplay").style.display="flex"
-                var imageFullScreenDisplay_Img=document.getElementById("imageFullScreenDisplay_Img"),imgsrc=new Image()
-                imageFullScreenDisplay_Img.setAttribute("src",srcURL)
-                imgsrc.src=srcURL
+                document.getElementById("imageFullScreenDisplay").style.display="flex";
+                var imageFullScreenDisplay_Img=document.getElementById("imageFullScreenDisplay_Img"),imgsrc=new Image();
+                imageFullScreenDisplay_Img.setAttribute("src",srcURL);
+                imgsrc.src=srcURL;
                 imgsrc.onload=function(){
-                    var imgW=this.width,imgH=this.height
-                    if(imgW/imgH>=window.innerWidth/window.innerHeight){
-                        imageFullScreenDisplay_Img.style.width="calc(100% - 20px)"
-                        imageFullScreenDisplay_Img.style.margin="auto 10px"
-                    }else if(imgW/imgH<=window.innerWidth/window.innerHeight){
-                        imageFullScreenDisplay_Img.style.height="calc(100% - 20px)"
-                        imageFullScreenDisplay_Img.style.margin="10px auto"
-                    }
-                }
-                imgsrc.onerror=function(){
-                    imageFullScreenDisplay_Img.style.width="calc(100% - 20px)"
-                    imageFullScreenDisplay_Img.style.margin="auto 10px"
-                }
-            }
-            document.querySelector(".cntBody").addEventListener("click",function(event){
-                if(event.target.tagName.toLowerCase()=="img"){
-                    imageFullScreenDisplay_Open(event.target.src)
-                }
-            })
-            document.addEventListener("keydown",function(event){
-                if(event.keyCode==27 && document.getElementById("imageFullScreenDisplay").style.display=="flex"){
-                    imageFullScreenDisplay_Close()
-                }
-            })
+                    var imgW=this.width,imgH=this.height;
+                    if(imgW/imgH>=window.innerWidth/window.innerHeight){imageFullScreenDisplay_Img.style.width="calc(100% - 20px)";imageFullScreenDisplay_Img.style.margin="auto 10px"}
+                    else if(imgW/imgH<=window.innerWidth/window.innerHeight){imageFullScreenDisplay_Img.style.height="calc(100% - 20px)";imageFullScreenDisplay_Img.style.margin="10px auto"};
+                };
+                imgsrc.onerror=function(){imageFullScreenDisplay_Img.style.width="calc(100% - 20px)";imageFullScreenDisplay_Img.style.margin="auto 10px"};
+            };
+            document.querySelector(".cntBody").addEventListener("click",function(event){if(event.target.tagName.toLowerCase()=="img"){imageFullScreenDisplay_Open(event.target.src) }});
+            document.addEventListener("keydown",function(event){if(event.keyCode==27 && document.getElementById("imageFullScreenDisplay").style.display=="flex"){imageFullScreenDisplay_Close()}});
         </script>
     </div>
 {{ end }}
