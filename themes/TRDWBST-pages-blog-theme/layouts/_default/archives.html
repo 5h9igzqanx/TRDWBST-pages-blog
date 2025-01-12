@@ -34,6 +34,12 @@
             font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
         }
         .postList{
+            background-color: #dae9f2;
+            border-radius: 25px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            margin: 5px;
             display: flex;
             list-style-type: none;
         }
@@ -59,6 +65,5 @@
             {{ $dateHuman := .Date | time.Format ":date_long" }}
             <span>{{ $dateMachine }}</span><a href="{{ .RelPermalink }}" target="_blank">{{ .LinkTitle }}</a>
         </div>
-        <br>
     {{ end }}
 {{ end }}
