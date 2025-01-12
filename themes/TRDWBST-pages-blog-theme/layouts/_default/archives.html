@@ -48,6 +48,7 @@
         .postDate{
             width: 80px;
             color:gray;
+            text-align: right;
         }
         .line{
             display: flex;
@@ -55,20 +56,20 @@
         }
         .line::before{
             content: "";
-            width: 10%;
-            height: 100%;
-            border: 2px solid gray;
+            width: 0px;
+            height: 53px;
+            border: 1px solid gray;
             position: absolute;
-            left: calc(50% - 1px);
-            top: -50%;
+            left: 99px;/* 别改，这可是有来历的 */
             pointer-events: none;
         }
         .line .dot{
-            width: 4px;
-            height: 4px;
-            border-radius: 2px;
+            width: 16px;
+            height: 16px;
+            border-radius: 16px;
             background-color: #cee5f2;
-            outline: 8px solid white;
+            /* outline: 8px solid white; */
+            border: 2px solid white;
         }
         .postTitle{
             width: calc(100% - 160px);
