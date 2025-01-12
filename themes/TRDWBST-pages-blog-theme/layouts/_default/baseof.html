@@ -4,7 +4,10 @@
         <meta charset="utf-8">
         {{ partial "head.html" . }}
         <style>
-            .backGroundImg{
+            body{
+                background-color: #e6eef2;
+            }
+            /* .backGroundImg{
                 position: fixed;
                 z-index: 3;
                 bottom: 0px;
@@ -22,7 +25,7 @@
                 height: 500px;
                 opacity: 0.6;
                 filter: alpha(opacity=60);
-            }
+            } */
             .leftMain{
                 /* float:left; */
                 position:absolute;
@@ -72,7 +75,7 @@
             <div class="leftMain" id="leftMain">{{ partial "leftmain.html" . }}</div>
             <div class="rightCnt">{{ block "main" . }}{{ end }}</div>
             <div class="backGroundImg">
-                <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/fun/pic-mascot/zhanWeiFu.png" alt="这回真没了">
+                <!-- <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/fun/pic-mascot/zhanWeiFu.png" alt="这回真没了"> -->
             </div>
         </main>
     </body>

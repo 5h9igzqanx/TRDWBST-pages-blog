@@ -1,6 +1,6 @@
 <style>
     .leftMainBox{
-        background-color:#a3c6da;
+        background-color:#dae9f2;
         border-radius:25px;
         margin-left:10px;
         margin-right:20px;
@@ -22,7 +22,7 @@
     .avatar img{
         width: 90%;
         height: auto;
-        border: 4px solid #75aac8;
+        border: 4px solid #cee5f2;
         border-radius: 50%;
         object-fit: cover;
     }
@@ -39,10 +39,10 @@
         content: "· ";
     }
     .navList li::before:hover{
-        color: #75aac8;
+        color: #cee5f2;
     }
     .navList li a:hover{
-        color: #75aac8;
+        color: #cee5f2;
     }
     /* .navList li a{
         width: 100%;
@@ -78,7 +78,7 @@
     <div class="navList">{{ partial "menu.html" (dict "menuID" "main" "page" .) }}</div>
 </div>
 <br>
-<div class="leftMainBox">
+<!-- <div class="leftMainBox">
     <footer>
         <div class="center">
             <h2>版权声明</h2>
@@ -93,7 +93,7 @@
         </div>
     </footer>
 </div>
-<br>
+<br> -->
 <div class="leftMainBox" id="ParentBoxOfContentOfPost">
     {{ if .TableOfContents }}
         <h2 class="center">本篇目录</h2>

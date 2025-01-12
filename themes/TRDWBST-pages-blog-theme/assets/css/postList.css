@@ -3,7 +3,7 @@
     /* margin-bottom: 10px; */
     padding: 20px;
     border-radius: 25px;
-    background-color: #cadeea;
+    background-color: #e6eef2;
     margin: 5px;
     box-shadow: 0px 0px 5px 1px gray;
     font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
@@ -20,7 +20,7 @@
     text-overflow: ellipsis;
 }
 .postList h2 a:hover {
-    color: #75aac8;
+    color: #cee5f2;
 }
 .postList time {
     font-size: small;
