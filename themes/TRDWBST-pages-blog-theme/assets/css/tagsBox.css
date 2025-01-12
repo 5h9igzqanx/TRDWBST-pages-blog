@@ -8,14 +8,14 @@
     padding-right: 5px;
     border: solid 1px #cee5f2;
     border-radius: 10px;
-    background-color: #e6eef2;
+    background-color: #dae9f2;
     font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
 }
 .tagsBox ul>li::before{
     content: "#";
 }
 .tagsBox ul>li:hover{
-    background-color: #dae9f2;
+    background-color: #e6eef2;
 }
 .tagsBox ul>li:active{
     background-color: #cee5f2;
