@@ -15,9 +15,9 @@ url = 'https://github.com/5h9igzqanx/TRDWBST-pages-blog'
 weight = 20
 
 [[menus.main]]
-name = '投稿'
-pageRef = '/'
-url = '/'
+name = '归档'
+pageRef = '/archives'
+url = '/archives'
 weight = 30
 
 [[menus.main]]
