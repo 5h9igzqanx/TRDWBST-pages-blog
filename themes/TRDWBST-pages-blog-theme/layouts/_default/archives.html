@@ -37,8 +37,8 @@
             overflow: hidden;
         }
         .postList{
-            background-color: #dae9f2;
-            border-radius: 25px;
+            /* background-color: #dae9f2; */
+            /* border-radius: 25px; */
             padding-top: 5px;
             padding-bottom: 5px;
             padding-left: 5px;
@@ -47,6 +47,7 @@
             align-items: center;
             height: 40px;
             font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
+            overflow: visible;
         }
         .postDate{
             width: 100px;
@@ -62,17 +63,20 @@
             width: 0px;
             height: 53px;
             border: 1px solid gray;
-            position: absolute;
-            left: 119px;/* 别改，这可是有来历的 */
+            position: relative;
+            /* left: 119px;别改，这可是有来历的 */
+            left: 11px;
             pointer-events: none;
         }
         .line .dot{
-            width: 16px;
-            height: 16px;
+            width: 12px;
+            height: 12px;
             border-radius: 16px;
             background-color: #cee5f2;
             /* outline: 8px solid white; */
-            border: 2px solid white;
+            border: 4px solid white;
+            position: relative;
+            top: 19.5px;
             z-index: 2;
         }
         .postTitle{
@@ -88,14 +92,14 @@
         </div>
         <div class="bigTitleChild">
             <h2>归档 | {{site.Title}}</h2>
-            <p>这里是归档页面，我先试试哈</p>
+            <p>这里是归档页面，正在施工</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo molestias, ad nihil alias consectetur necessitatibus temporibus quos doloremque optio quia nisi quisquam. Ad, et! Mollitia soluta ipsam quis eum ad.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam impedit sequi, nam quisquam qui maxime nostrum vero at corporis incidunt assumenda aliquid eos. Blanditiis harum suscipit reiciendis consequuntur eius voluptate!</p>
+            <p>20250113，试试能否只遍历文章。</p>
         </div>
     </div>
     <br>
     <div class="postAll">
-        {{ range site.RegularPages }}
+        {{ range (where .Site.Pages "Section" "post") }}
             <a href="{{ .RelPermalink }}" target="_blank" class="postList">
                 {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
                 {{ $dateHuman := .Date | time.Format "2006-01-02" }}
