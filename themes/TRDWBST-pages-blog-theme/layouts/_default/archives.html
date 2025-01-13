@@ -105,12 +105,13 @@
             <h2>归档 | {{site.Title}}</h2>
             <p>这里是归档页面，正在施工</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo molestias, ad nihil alias consectetur necessitatibus temporibus quos doloremque optio quia nisi quisquam. Ad, et! Mollitia soluta ipsam quis eum ad.</p>
-            <p>20250113，试试能否只遍历文章。</p>
+            <p>20250113，试试能否去掉Posts的页面，其实我打算用这个页面代替Posts。</p>
         </div>
     </div>
     <br>
     <div class="postAll">
-        {{ range (where .Site.Pages "Section" "post") }}
+        {{ $pageWhere1 := (where .Site.Pages "Section" "post") }}
+        {{ range (where $pageWhere1 "Title" "ne" "Posts" ) }}
             <a href="{{ .RelPermalink }}" target="_blank" class="postList">
                 {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
                 {{ $dateHuman := .Date | time.Format "2006-01-02" }}
