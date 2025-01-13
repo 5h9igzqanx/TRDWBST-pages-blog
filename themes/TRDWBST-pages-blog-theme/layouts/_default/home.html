@@ -24,14 +24,16 @@
         .bgImgInBigTitle>img{
             width: 100%;
         }
-        .bigTitleChild{
+        .bigTitleChild,.homeCnt .homeChtChild{
             padding: 20px;
             margin: 10px;
             background-color: #e6eef2;
             border-radius: 25px;
             position: relative;
-            z-index: 2;
             font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
+        }
+        .bigTitleChild{
+            z-index: 2;
         }
         .homeFeature{
             background-color: #dae9f2;
@@ -94,13 +96,15 @@
     </div>
     <br>
     <div class="homeCnt">
-        <h2>首页 | {{site.Title}}</h2>
-        <p>欢迎回来。</p>
-        <p>在座的有认识我的有不认识我的，认识我的可以先去看别的文章了，我在这儿给不认识的先介绍一下这儿。</p>
-        <p>欸，看见这大标题了吗？这儿啊，是TRDWBST-pages-blog<strong>改</strong></p>
-        <p>为什么这名字既带字母又带数字？欸这可真不怪我。这得怪我，我之前做之前的网站的时候因为不会取名字索性直接按顺序排了，像什么SCDWBST啊、TRDWBST啊……</p>
-        <p>什么？那还是怪我？欸话可没你这么说的，你还确实说对了嘿。因为我纯粹是懒。</p>
-        <p>而且吧，这个网站本来是附属于TRDWBST的，然后独立了（不是跟美国的独立一样，是形散而神不散的那种哈哈），然后懒得改名了。</p>
-        <p>未完待续，而且在这时，Visual Studio Code已经支持Github Copilot了，用这个填充重复的代码片段还行，但要用它写文案……我只能说：我不外包我的思维</p>
+        <div class="homeChtChild">
+            <h2>首页 | {{site.Title}}</h2>
+            <p>欢迎回来。</p>
+            <p>在座的有认识我的有不认识我的，认识我的可以先去看别的文章了，我在这儿给不认识的先介绍一下这儿。</p>
+            <p>欸，看见这大标题了吗？这儿啊，是TRDWBST-pages-blog<strong>改</strong></p>
+            <p>为什么这名字既带字母又带数字？欸这可真不怪我。这得怪我，我之前做之前的网站的时候因为不会取名字索性直接按顺序排了，像什么SCDWBST啊、TRDWBST啊……</p>
+            <p>什么？那还是怪我？欸话可没你这么说的，你还确实说对了嘿。因为我纯粹是懒。</p>
+            <p>而且吧，这个网站本来是附属于TRDWBST的，然后独立了（不是跟美国的独立一样，是形散而神不散的那种哈哈），然后懒得改名了。</p>
+            <p>未完待续，而且在这时，Visual Studio Code已经支持Github Copilot了，用这个填充重复的代码片段还行，但要用它写文案……我只能说：我不外包我的思维</p>
+        </div>
     </div>
 {{ end }}
