@@ -3,28 +3,40 @@ languageCode = 'zh-cn'
 title = 'TRDWBST-pages-blog'
 
 [[menus.main]]
-name = '主页'
+name = '回到TRDWBST'
 pageRef = 'https://5h9igzqanx.github.io/TRDWBST/'
 url = 'https://5h9igzqanx.github.io/TRDWBST/'
 weight =10
 
 [[menus.main]]
+name = '主页'
+pageRef = '/'
+url = '/'
+weight = 20
+
+[[menus.main]]
 name = '仓库'
 pageRef = 'https://github.com/5h9igzqanx/TRDWBST-pages-blog'
 url = 'https://github.com/5h9igzqanx/TRDWBST-pages-blog'
-weight = 20
+weight = 30
 
 [[menus.main]]
 name = '归档'
 pageRef = '/archives'
 url = '/archives'
-weight = 30
+weight = 40
 
 [[menus.main]]
 name = '标签'
 pageRef = '/tags'
 url   = '/tags'
-weight = 40
+weight = 50
+
+[[menus.main]]
+name = '关于'
+pageRef = '/about'
+url = '/about'
+weight = 60
 
 [blackfriday]
 toc=true
