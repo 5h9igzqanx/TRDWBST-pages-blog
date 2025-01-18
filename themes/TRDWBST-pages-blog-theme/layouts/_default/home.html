@@ -1,14 +1,10 @@
 {{ define "main" }}
     <meta name="robots" content="noindex,nofollow">
-    <!-- {{ $stylePostList := resources.Get "css/postList.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $stylePostList.Permalink }}" integrity="{{ $stylePostList.Data.Integrity }}" crossorigin="anonymous">
-    {{ $styleTagsBox := resources.Get "css/tagsBox.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $styleTagsBox.Permalink }}" integrity="{{ $styleTagsBox.Data.Integrity }}" crossorigin="anonymous"> -->
+    {{ $styleBigTitle := resources.Get "css/bigTitle.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styleBigTitle.Permalink }}" integrity="{{ $styleBigTitle.Data.Integrity }}" crossorigin="anonymous">
     <style>
-        .bigTitle{
+        /* .bigTitle{
             padding: 10px;
-            /* margin: 5px; */
-            /* box-shadow: 0px 0px 5px 1px gray; */
             background-color: #dae9f2;
             border-radius: 25px;
         }
@@ -24,7 +20,15 @@
         .bgImgInBigTitle>img{
             width: 100%;
         }
-        .bigTitleChild,.homeCnt .homeChtChild{
+        .bigTitleChild{
+            padding: 20px;
+            margin: 10px;
+            background-color: #e6eef2;
+            border-radius: 25px;
+            position: relative;
+            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
+        } */
+        .homeCnt .homeChtChild{
             padding: 20px;
             margin: 10px;
             background-color: #e6eef2;
