@@ -1,0 +1,50 @@
+{{ define "main" }}
+    <meta name="robots" content="noindex,nofollow">
+    {{ $stylePostList := resources.Get "css/postList.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $stylePostList.Permalink }}" integrity="{{ $stylePostList.Data.Integrity }}" crossorigin="anonymous">
+    {{ $styleBigTitle := resources.Get "css/bigTitle.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styleBigTitle.Permalink }}" integrity="{{ $styleBigTitle.Data.Integrity }}" crossorigin="anonymous">
+    <style>
+        .bigTitleChild{
+            z-index: 2;
+        }
+        .tags{
+            text-align: left;
+            white-space: normal;
+        }
+        .tags .tag{
+            display: inline-block;
+            border-radius: 25px;
+            font-size: 1.3rem;
+            margin: 5px;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #dae9f2;
+            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
+        }
+        .tags .tag::before{
+            content: "#";
+        }
+        .tags .tag a:hover{
+            color: #cee5f2;
+        }
+    </style>
+    <div class="bigTitle">
+        <div class="bgImgInBigTitle">
+            <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" alt="" title="">
+        </div>
+        <div class="bigTitleChild">
+            <h2>分类 | {{ site.Title }}</h2>
+            <p>这里是这块地的指示牌。</p>
+            <p>你想找什么？点他所属的分类就行了。</p>
+            <p>还是那句话：可以评论，不许嘴臭嗷！&emsp;p.s.正在施工</p>
+        </div>
+    </div>
+    <br>
+    <div class="tags">
+        {{ range .Pages }}
+            <div class="tag"><a href="{{ .RelPermalink }}" target="_blank">{{ .LinkTitle }}</a></div>
+        {{ end }}
+    </div>
+{{ end }}
