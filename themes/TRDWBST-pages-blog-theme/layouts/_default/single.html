@@ -2,8 +2,8 @@
     <meta name="robots" content="noindex,nofollow">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    {{ $styleTagsBox := resources.Get "css/tagsBox.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $styleTagsBox.Permalink }}" integrity="{{ $styleTagsBox.Data.Integrity }}" crossorigin="anonymous">
+    {{ $styleTagsBoxAndCategoriesBox := resources.Get "css/tagsBoxAndCategoriesBox.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styleTagsBoxAndCategoriesBox.Permalink }}" integrity="{{ $styleTagsBox.Data.Integrity }}" crossorigin="anonymous">
     <style>
         .cnt{
             background-color:#dae9f2;
@@ -322,7 +322,38 @@
             {{ $author := .Params.author |default "佚名"}}
             <h1>{{ .Title }}</h1>
             <p>日期:&emsp;<span>{{ $dateHuman }}</span>&emsp;&emsp;作者:&ensp;<span>{{ $author }}</span></p>
-            <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
+            <div class="categoriesAndTagsBoxAll">
+                <div class="categoriesBox">{{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}</div>
+                <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
+            </div>
+            <!-- <style>
+                .categoriesAndTagsBoxAll{
+                    display: flex;
+                    /* justify-content: space-between; */
+                }
+                .categoriesBox ul{
+                    display: flex;list-style-type: none;
+                }
+                .categoriesBox ul>li{
+                    /* padding-left: 10px; */
+                    margin-right: 10px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    border: solid 1px #cee5f2;
+                    border-radius: 10px;
+                    background-color: #dae9f2;
+                    font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
+                }
+                .categoriesBox ul>li::before{
+                    content: "*";
+                }
+                .categoriesBox ul>li:hover{
+                    background-color: #e6eef2;
+                }
+                .categoriesBox ul>li:active{
+                    background-color: #cee5f2;
+                }
+            </style> -->
             <p>{{ .Params.description }}</p>
             <p class="disclaimer">本文仅代表作者观点，如有负面影响其将被删除！</p>
         </header>

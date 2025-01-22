@@ -27,16 +27,22 @@ url = '/archives'
 weight = 40
 
 [[menus.main]]
+name = '分类'
+pageRef = '/categories'
+url   = '/categories'
+weight = 50
+
+[[menus.main]]
 name = '标签'
 pageRef = '/tags'
 url   = '/tags'
-weight = 50
+weight = 60
 
 [[menus.main]]
 name = '关于'
 pageRef = '/about'
 url = '/about'
-weight = 60
+weight = 70
 
 [blackfriday]
 toc=true
