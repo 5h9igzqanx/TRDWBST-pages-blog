@@ -2,7 +2,7 @@
     {{ $stylePostList := resources.Get "css/postList.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $stylePostList.Permalink }}" integrity="{{ $stylePostList.Data.Integrity }}" crossorigin="anonymous">
     {{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox := resources.Get "css/tagsBoxAndCategoriesBox.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox.Permalink }}" integrity="{{ $styleTagsBoxAndCategoriesBox.Data.Integrity }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox.Permalink }}" integrity="{{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox.Data.Integrity }}" crossorigin="anonymous">
     {{ $styleBigTitle := resources.Get "css/bigTitle.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styleBigTitle.Permalink }}" integrity="{{ $styleBigTitle.Data.Integrity }}" crossorigin="anonymous">
     <style>
