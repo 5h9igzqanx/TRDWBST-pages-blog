@@ -326,34 +326,6 @@
                 <div class="categoriesBox">{{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}</div>
                 <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
             </div>
-            <!-- <style>
-                .categoriesAndTagsBoxAll{
-                    display: flex;
-                    /* justify-content: space-between; */
-                }
-                .categoriesBox ul{
-                    display: flex;list-style-type: none;
-                }
-                .categoriesBox ul>li{
-                    /* padding-left: 10px; */
-                    margin-right: 10px;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    border: solid 1px #cee5f2;
-                    border-radius: 10px;
-                    background-color: #dae9f2;
-                    font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
-                }
-                .categoriesBox ul>li::before{
-                    content: "*";
-                }
-                .categoriesBox ul>li:hover{
-                    background-color: #e6eef2;
-                }
-                .categoriesBox ul>li:active{
-                    background-color: #cee5f2;
-                }
-            </style> -->
             <p>{{ .Params.description }}</p>
             <p class="disclaimer">本文仅代表作者观点，如有负面影响其将被删除！</p>
         </header>
