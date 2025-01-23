@@ -79,15 +79,15 @@
         </header>
         <main>
             <div class="leftMain" id="leftMain">{{ partial "leftmain.html" . }}</div>
-            <div class="rightCnt">{{ block "main" . }}{{ end }}</div>
+            <div class="rightCnt">
+                {{ block "main" . }}{{ end }}
+                <br>
+                <footer class="footer">
+                    Copyrignt© 2024 - 2025 5h9igzqanx 版权所有
+                    技术栈：CSS GithubPages HTML Hugo IntenseDebate JavaScript MathJax等（按照首字母顺序排列）
+                </footer>
+            </div>
             <br>
-            <!-- <div class="backGroundImg">
-                <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/fun/pic-mascot/zhanWeiFu.png" alt="这回真没了">
-            </div> -->
-            <footer class="footer">
-                Copyrignt© 2024 - 2025 5h9igzqanx 版权所有
-                技术栈：CSS GithubPages HTML Hugo IntenseDebate JavaScript MathJax等（按照首字母顺序排列）
-            </footer>
         </main>
     </body>
 </html>
