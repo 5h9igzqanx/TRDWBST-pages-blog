@@ -384,11 +384,11 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>dage&lt;/td>
- &lt;td>固体&lt;/td>
+ &lt;td>固体的&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>de&lt;/td>
- &lt;td>阴性\女性&lt;/td>
+ &lt;td>阴性\女性的&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>desa&lt;/td>
@@ -400,7 +400,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>duse&lt;/td>
- &lt;td>从上往下&lt;/td>
+ &lt;td>从上往下的&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -430,11 +430,11 @@
  &lt;tbody>
  &lt;tr>
  &lt;td>fage&lt;/td>
- &lt;td>气体&lt;/td>
+ &lt;td>气体的&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>fise&lt;/td>
- &lt;td>从下往上&lt;/td>
+ &lt;td>从下往上的&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>fuse&lt;/td>
@@ -457,7 +457,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>ho&lt;/td>
- &lt;td>阳性\男性&lt;/td>
+ &lt;td>阳性\男性的&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>hosa&lt;/td>
@@ -465,7 +465,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>hunu&lt;/td>
- &lt;td>人&lt;/td>
+ &lt;td>人类的&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -526,7 +526,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>muse&lt;/td>
- &lt;td>缓慢移动&lt;/td>
+ &lt;td>缓慢移动的&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -541,7 +541,7 @@
  &lt;tbody>
  &lt;tr>
  &lt;td>ne&lt;/td>
- &lt;td>第一人称&lt;/td>
+ &lt;td>第一人称的&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>nilo&lt;/td>
@@ -579,7 +579,7 @@
  &lt;tbody>
  &lt;tr>
  &lt;td>ruse&lt;/td>
- &lt;td>快速移动&lt;/td>
+ &lt;td>快速移动的&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -594,7 +594,7 @@
  &lt;tbody>
  &lt;tr>
  &lt;td>sage&lt;/td>
- &lt;td>液体&lt;/td>
+ &lt;td>液体的&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>so&lt;/td>
@@ -602,7 +602,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>sodu&lt;/td>
- &lt;td>使命&lt;/td>
+ &lt;td>使命的&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>sosa&lt;/td>
@@ -610,7 +610,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>su&lt;/td>
- &lt;td>不分性别（男\女性）\性质（阴\阳性）&lt;/td>
+ &lt;td>性别（男\女性）\性质（阴\阳性）不分明的&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -629,7 +629,7 @@
  &lt;/tr>
  &lt;tr>
  &lt;td>ta&lt;/td>
- &lt;td>第三人称&lt;/td>
+ &lt;td>第三人称的&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
