@@ -490,8 +490,8 @@
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td>so&lt;/td>
- &lt;td>&lt;a href="https://baike.baidu.com/item/%E5%A4%8D%E6%95%B0/13131232">复数&lt;/a>（非彼&lt;a href="https://baike.baidu.com/item/%E5%A4%8D%E6%95%B0/254365">复数&lt;/a>）&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
@@ -537,6 +537,10 @@
  &lt;tr>
  &lt;td>sage&lt;/td>
  &lt;td>液体&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>so&lt;/td>
+ &lt;td>&lt;a href="https://baike.baidu.com/item/%E5%A4%8D%E6%95%B0/13131232">复数&lt;/a>（非彼&lt;a href="https://baike.baidu.com/item/%E5%A4%8D%E6%95%B0/254365">复数&lt;/a>）&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>sodu&lt;/td>
