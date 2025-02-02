@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>笔记 on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/categories/%E7%AC%94%E8%AE%B0/</link><description>Recent content in 笔记 on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 28 Nov 2024 09:54:32 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/categories/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>简单拓印图画技术的实现</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024112801/</link><pubDate>Thu, 28 Nov 2024 09:54:32 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024112801/</guid><description>&lt;h1 id="简单拓印图画技术的实现">简单拓印图画技术的实现&lt;/h1>
 &lt;h2 id="概述">概述&lt;/h2>
 &lt;blockquote>
-&lt;p>“在学校我们除了作业什么都能做出来。”——请输入文本&lt;/p>
-&lt;/blockquote>
+&lt;p>“在学校我们除了作业什么都能做出来。”——请输入文本&lt;/p>&lt;/blockquote>
 &lt;p>我曾经有个同桌，他曾经收到过一些印有图画的明信片，于是他拿出了他带有透明塑料壳的笔记本，把图画描摹了下来当作封面。我看到了，想：“牛逼！”于是我也拿出了我的人造革硬面抄笔记本，也想描摹一幅图画当作扉页。什么？你问我为什么不再画一遍？因为——&lt;/p>
 &lt;blockquote>
-&lt;p>“有些画是一次性的，画不来第二遍。”——麦瑟奥夫（沃兹基）&lt;/p>
-&lt;/blockquote>
+&lt;p>“有些画是一次性的，画不来第二遍。”——麦瑟奥夫（沃兹基）&lt;/p>&lt;/blockquote>
 &lt;p>但是我的纸不是透明的，比较厚，2张纸之间如果没有背光，图画线条根本透不过去来让我描摹，而且隔着2张纸难免会抖动产生误差，所以——经过我的&lt;del>自习课&lt;/del>仔细&lt;del>溜号&lt;/del>科研下，我终于在教室环境下攻克了&lt;strong>拓印&lt;/strong>这一传统技术并为其赋予了新生！&lt;/p>
 &lt;h2 id="教程">教程&lt;/h2>
 &lt;p>如果你也想使用拓印技术来复印图画的话，接着看吧。&lt;/p>
@@ -37,8 +35,18 @@
 &lt;p>首先，你需要确保你安装了新版Windows终端，如果没有你可以去Microsoft Store搜索&lt;strong>Terminal&lt;/strong>并下载。&lt;/p>
 &lt;p>其次，打开&lt;a href="https://github.com/jandedobbeleer/oh-my-posh">Oh My Posh的Github仓库&lt;/a>下载相应版本的安装包。&lt;/p>
 &lt;p>下载好之后，打开安装包，根据提示安装。&lt;/p>
-&lt;pre tabindex="0">&lt;code class="language-ZX-WARNING" data-lang="ZX-WARNING">安装路径尽量只有英文
-&lt;/code>&lt;/pre>&lt;p>安装完成之后，可以打开终端，输入&lt;code>oh-my-posh&lt;/code>查看是否安装完成，如果提示其不是一个命令，你需要手动将Oh My Posh的目录添加进环境变量。&lt;/p>
+
+&lt;div class="noticeBox" id="ZX-warning">
+ &lt;div class="noticeBoxBefore">&lt;/div>
+ &lt;div class="noticeBoxChild">
+ &lt;div class="noticeTitle">&lt;/div>
+ &lt;div class="noticeContent">
+ 安装路径尽量只有英文。
+ &lt;/div>
+ &lt;/div>
+&lt;/div>
+
+&lt;pre tabindex="0">&lt;code class="language-ZX-WARNING" data-lang="ZX-WARNING">&lt;/code>&lt;/pre>&lt;p>安装完成之后，可以打开终端，输入&lt;code>oh-my-posh&lt;/code>查看是否安装完成，如果提示其不是一个命令，你需要手动将Oh My Posh的目录添加进环境变量。&lt;/p>
 &lt;p>你可以选择在PowerShell中输入&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>$env:Path +&lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;;C:\你安装OhMyPosh的路径\...\oh-my-posh\bin&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>来添加。&lt;/p>
@@ -50,8 +58,18 @@
 &lt;h3 id="安装字体">安装字体&lt;/h3>
 &lt;p>在Oh My Posh中，显示一些特殊符号需要使用另一种叫做“Nerd”的字体，下面讲解如何安装和使用。&lt;/p>
 &lt;p>打开&lt;a href="https://www.nerdfonts.com/">Nerd官网&lt;/a>，点击Downloads，在其中相中一个其与另一种等宽字体结合的字形包，点击Download。&lt;/p>
-&lt;pre tabindex="0">&lt;code class="language-ZX-TIP" data-lang="ZX-TIP">官方文档中建议使用MesloLG Nerd Font这款字体。
-&lt;/code>&lt;/pre>&lt;p>下载好后解压，打开目录，全选，安装。&lt;/p>
+
+&lt;div class="noticeBox" id="ZX-tip">
+ &lt;div class="noticeBoxBefore">&lt;/div>
+ &lt;div class="noticeBoxChild">
+ &lt;div class="noticeTitle">&lt;/div>
+ &lt;div class="noticeContent">
+ 官方文档中建议使用MesloLG Nerd Font这款字体。
+ &lt;/div>
+ &lt;/div>
+&lt;/div>
+
+&lt;p>下载好后解压，打开目录，全选，安装。&lt;/p>
 &lt;p>打开终端，点击标签栏上的倒三角，选择设置。&lt;/p>
 &lt;p>在“配置文件”栏选择“默认值”，在右边点击“外观”，然后在“字体”栏选择带有“Nerd”字样的字体，保存就行了。&lt;/p>
 &lt;h3 id="在clink中配置oh-my-posh并且设置主题">在Clink中配置Oh My Posh并且设置主题&lt;/h3>
@@ -631,8 +649,7 @@
 &lt;p>Lua 是一种强大、高效、轻量级、可嵌入的脚本语言。 它支持 程序规划， 面向对象编程， 函数式编程， 数据驱动的编程，以及 数据描述。&lt;br>
 Lua 将简单的过程语法与 基于的强大数据描述构造 关联数组和可扩展语义。 卢阿 是动态类型的， 通过使用基于寄存器的虚拟机解释字节码来运行， 并具有自动内存管理与增量垃圾回收， 使其成为理想的选择 配置 脚本 和 快速原型制作。&lt;br>
 Lua 的设计、实现和维护由 PUC-Rio的一个团队， 巴西里约热内卢天主教大学。 Lua在Tecgraf出生和长大， 前身为PUC-Rio的计算机图形技术组。 Lua 现在被安置在 LabLua， 里约热内卢大学计算机科学系的实验室。&lt;br>
-（来自&lt;a href="https://www.lua.org/">Lua官网&lt;/a>）&lt;/p>
-&lt;/blockquote>
+（来自&lt;a href="https://www.lua.org/">Lua官网&lt;/a>）&lt;/p>&lt;/blockquote>
 &lt;p>总而言之，Lua是一种快速轻量的脚本语言，而且很适合嵌入到其他程序中。&lt;br>
 Lua的学习难度很小（只有21个关键字和1种数据结构机制），并且生态系统相对完善。
 反正，比Python简单。&lt;/p>
@@ -668,8 +685,7 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 &lt;p>由于笔者了解过一些别的科幻小说和动画，所以可能会有相似之处，请谅解。&lt;/p>
 &lt;p>（说实话，都初三了还整这些有的没的，感觉真的有点耽误学习。）&lt;/p>
 &lt;blockquote>
-&lt;p>附：&lt;a href="https://v.douyin.com/ihWRVA2c/">《很喜欢搞世界观。真的很爽，感觉对自己就是神一样，，》来自抖音&lt;/a>&lt;/p>
-&lt;/blockquote>
+&lt;p>附：&lt;a href="https://v.douyin.com/ihWRVA2c/">《很喜欢搞世界观。真的很爽，感觉对自己就是神一样，，》来自抖音&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;h2 id="概述">概述&lt;/h2>
 &lt;p>世界诞生之初，天地间仅有一物，等到此物开始了运动，世界上的物质陆续出现，世界焕发了生机。&lt;/p>
 &lt;p>祂带给了人们光明和希望，人们纷纷追随祂，命其为「笔尖」，即创世神。&lt;/p>
@@ -681,8 +697,7 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 &lt;p>即使世界是我模拟出来的，但是故事结束之后其仍然在运行，故我以此为基础的小说都是截取了某个时间片段来写的。&lt;/p>
 &lt;blockquote>
 &lt;p>附：&lt;a href="https://v.douyin.com/iSRw73Rv/">《有没有一种可能， 梦境是另一种现实？》来自抖音&lt;/a>
-附：&lt;a href="https://v.douyin.com/iAsgdbx3/">《人的意识到底从何而来？》来自抖音&lt;/a>&lt;/p>
-&lt;/blockquote>
+附：&lt;a href="https://v.douyin.com/iAsgdbx3/">《人的意识到底从何而来？》来自抖音&lt;/a>&lt;/p>&lt;/blockquote>
 &lt;h2 id="世界历史">世界历史&lt;/h2>
 &lt;h3 id="大致时间轴">大致时间轴&lt;/h3>
 &lt;ul>
@@ -972,8 +987,18 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 然后在命令行里输入&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>hugo new site your-sites-name
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>但是&lt;/p>
-&lt;pre tabindex="0">&lt;code class="language-ZX-WARNING" data-lang="ZX-WARNING">其中的“your-sites-name”要换成你的站点的名字。
-&lt;/code>&lt;/pre>&lt;p>然后你就会发现目录下面出现了很多文件，具体如下&lt;/p>
+
+&lt;div class="noticeBox" id="ZX-warning">
+ &lt;div class="noticeBoxBefore">&lt;/div>
+ &lt;div class="noticeBoxChild">
+ &lt;div class="noticeTitle">&lt;/div>
+ &lt;div class="noticeContent">
+ 其中的“your-sites-name”要换成你的站点的名字。
+ &lt;/div>
+ &lt;/div>
+&lt;/div>
+
+&lt;p>然后你就会发现目录下面出现了很多文件，具体如下&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>.
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ .hintrc
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ .hugo_build.lock
@@ -1000,8 +1025,18 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">languageCode&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;en-us&amp;#34;&lt;/span> &lt;span style="color:#75715e">#你网站的语言代码（这里显示了默认值“英语-美国”）&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">title&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;your site&amp;#39;s name&amp;#34;&lt;/span> &lt;span style="color:#75715e">#你网站的名字&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">theme&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;the name of the downloaded theme&amp;#34;&lt;/span> &lt;span style="color:#75715e">#你网站使用的主题，直接把刚刚复制到“themes”的目录名字写上去就行&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-ZX-WARNING" data-lang="ZX-WARNING">把第一、三、四行等号后的内容按照实际情况来设置。 
-&lt;/code>&lt;/pre>&lt;blockquote>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;div class="noticeBox" id="ZX-warning">
+ &lt;div class="noticeBoxBefore">&lt;/div>
+ &lt;div class="noticeBoxChild">
+ &lt;div class="noticeTitle">&lt;/div>
+ &lt;div class="noticeContent">
+ 把第一、三、四行等号后的内容按照实际情况来设置。
+ &lt;/div>
+ &lt;/div>
+&lt;/div>
+
+&lt;blockquote>
 &lt;p>附：&lt;a href="http://www.lingoes.cn/zh/translator/langcode.htm">语言代码表&lt;/a>&lt;/p></description></item><item><title>测试用文档</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</link><pubDate>Sat, 01 Jan 2000 08:00:00 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</guid><description>&lt;h1 id="测试用文档">测试用文档&lt;/h1>
 &lt;h2 id="标题测试">标题测试&lt;/h2>
 &lt;p>以下是标题测试&lt;/p>
