@@ -1,0 +1,10 @@
+<!-- ZX-noticeBox -->
+<div class="noticeBox" id="ZX-{{ (.Get "type") }}">
+    <div class="noticeBoxBefore"></div>
+    <div class="noticeBoxChild">
+        <div class="noticeTitle"></div>
+        <div class="noticeContent">
+            {{ .Inner | .Page.RenderString }}
+        </div>
+    </div>
+</div>
