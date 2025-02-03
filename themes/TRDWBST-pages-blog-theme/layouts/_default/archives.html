@@ -68,7 +68,10 @@
             overflow: hidden;
             display: flex;
             align-items: center;
+        }
+        .postTitle p{
             overflow: hidden;
+            white-space: nowrap;
             text-overflow: ellipsis;
             -webkit-line-clamp: 1;
             line-clamp: 1;
@@ -107,7 +110,7 @@
                 {{ $dateHuman := .Date | time.Format "01-02" }}
                 <div class="postDate">{{ $dateHuman }}&emsp;</div>
                 <div class="line"><div class="dot"></div></div>
-                <div class="postTitle">{{ .LinkTitle }}</div>
+                <div class="postTitle"><p>{{ .LinkTitle }}</p></div>
             </a>
         {{ end }}
     </div>
