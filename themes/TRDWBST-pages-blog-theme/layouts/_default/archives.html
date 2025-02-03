@@ -32,13 +32,13 @@
             border-radius: 25px;
         }
         .postDate{
-            width: 100px;
+            width: 80px;
             color:gray;
             text-align: right;
         }
         .line{
             display: flex;
-            width: 80px;
+            width: 40px;
         }
         .line::before{
             content: "";
@@ -62,12 +62,16 @@
             z-index: 2;
         }
         .postTitle{
-            width: calc(100% - 160px);
+            width: calc(100% - 100px);
             height: 100%;
             text-align: left;
             overflow: hidden;
             display: flex;
             align-items: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+            line-clamp: 1;
         }
         .postAll .year{
             margin: 5px;
