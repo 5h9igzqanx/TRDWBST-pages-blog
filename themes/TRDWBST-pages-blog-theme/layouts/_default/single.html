@@ -428,6 +428,14 @@
                 <button title="反馈内容" onclick="fanKuiNeiRong()">反馈内容</button>
             </div>
             <br>
+            <div style="display: flex;align-items: center;">
+                <script>
+                    var idcomments_acct = 'ac62fc037019c315b1b48a7494e77f84',idcomments_post_id,idcomments_post_url;
+                </script>
+                <span id="IDCommentsPostTitle" style="display:none"></span>
+                <script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+            </div>
+            <br>
             <script>
                 function fuZhiLianJie(){
                     try{
@@ -438,7 +446,11 @@
                     }
                 }
                 function faBiaoKanFa(){
-                    alert("请下滑找到评论区发表您独特的看法。")
+                    try{
+                        document.getElementById("IDCommentNewThreadText").focus()
+                    }catch(errors){
+                        alert("请下滑找到评论区发表您独特的看法。")
+                    }
                 }
                 function fanKuiNeiRong(){
                     alert("正在开发，您目前可以通过电子邮件进行反馈。")
@@ -448,11 +460,7 @@
     </div>
     <br>
     <div class="cnt">
-        <script>
-            var idcomments_acct = 'ac62fc037019c315b1b48a7494e77f84',idcomments_post_id,idcomments_post_url;
-        </script>
-        <span id="IDCommentsPostTitle" style="display:none"></span>
-        <script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+        
     </div>
     <div id="imageFullScreenDisplay">
         <div id="imageFullScreenDisplay_ClickToClose" onclick="imageFullScreenDisplay_Close()">关闭全屏显示图片X</div>
