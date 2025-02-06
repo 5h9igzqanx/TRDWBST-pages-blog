@@ -49,7 +49,7 @@
             padding: 10px;
         }
         .cntTitle,.toolBarUnderCnt *{
-            font-family: var(--wenZhang-ZiTi-wenZi) !important;
+            font-family: var(--wenZhang-ZiTi-wenZi);
         }
         .cntBody *{
             -webkit-user-select: text !important;
@@ -75,6 +75,9 @@
         }
         .toolBarUnderCnt .toolBarChild button:active{
             background-color: var(--wenZhang-peiSe-shen);
+        }
+        .commentsBoxGrandparent *{
+            font-family: unset !important;
         }
         #imageFullScreenDisplay{
             display: none;
@@ -428,7 +431,7 @@
                 <button title="反馈内容" onclick="fanKuiNeiRong()">反馈内容</button>
             </div>
             <br>
-            <div style="display: flex;align-items: center;font-family: Arial, Helvetica, sans-serif !important;">
+            <div class="commentsBoxGrandparent">
                 <script>
                     var idcomments_acct = 'ac62fc037019c315b1b48a7494e77f84',idcomments_post_id,idcomments_post_url;
                 </script>
