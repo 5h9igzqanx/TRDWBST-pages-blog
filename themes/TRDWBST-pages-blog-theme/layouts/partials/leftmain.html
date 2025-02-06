@@ -51,7 +51,7 @@
         .siteName{
             font-size:medium;
         }
-        #owner{
+        #owner,#hidInMobile{
             display: none;
         }
     }
@@ -72,28 +72,12 @@
     <br>
     <br>
 </div>
-<br>
+<br id="hidInMobile">
 <div class="leftMainBox">
     <h2 class="center">本页目录</h2>
     <div class="navList">{{ partial "menu.html" (dict "menuID" "main" "page" .) }}</div>
 </div>
 <br>
-<!-- <div class="leftMainBox">
-    <footer>
-        <div class="center">
-            <h2>版权声明</h2>
-            <br>
-            <p>Copyrignt© 2024 - 2025 5h9igzqanx</p>
-            <p>版权所有</p>
-            <br>
-            <p>5h9igzqanx&emsp;TRDWBST-pages-blog</p>
-            <p>托管平台:<a href="https://www.github.com">GitHub</a>&emsp;使用<a href="https://gohugo.io">Hugo</a>制作</p>
-            <br>
-            <p><a href="https://5h9igzqanx.github.io/TRDWBST/">联系方式见主页</a></p>
-        </div>
-    </footer>
-</div>
-<br> -->
 <div class="leftMainBox" id="ParentBoxOfContentOfPost">
     {{ if .TableOfContents }}
         <h2 class="center">本篇目录</h2>
@@ -136,11 +120,11 @@
         </div>
     {{ end }}
 </div>
-<br>
+<br id="brUnderContentOfPost">
 <script>
     let url=window.location.href;
     if(url.indexOf("post")===-1){
-        if(document.getElementById("ParentBoxOfContentOfPost")){document.getElementById("ParentBoxOfContentOfPost").remove();};
+        if(document.getElementById("ParentBoxOfContentOfPost")){document.getElementById("ParentBoxOfContentOfPost").remove();document.getElementById("brUnderContentOfPost").remove();};
     }else{
         var contentEle=document.getElementById("ParentBoxOfContentOfPost"),parentOfcnt=contentEle.parentElement,stickyTop=contentEle.getBoundingClientRect().top + window.pageYOffset;//FIXME 出错过
         window.addEventListener("scroll",function(){
