@@ -5,6 +5,14 @@
     {{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox := resources.Get "css/tagsBoxAndCategoriesBox.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox.Permalink }}" integrity="{{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox.Data.Integrity }}" crossorigin="anonymous">
     <style>
+        /* 设定一些变量 */
+        :root{
+            --wenZhang-ZiTi-wenZi:"ZX-C-霞鹜文楷","Times New Roman","Arial","楷体","宋体";
+            --wenZhang-ZiTi-DaiMa:"ZX-E-FiraCode","ZX-E-SourceCodePro","monospace";
+            --wenZhang-peiSe-qian: #e6eef2;
+            --wenZhang-peiSe-zhong: #dae9f2;
+            --wenZhang-peiSe-shen: #cee5f2;
+        }
         .cnt{
             background-color:#dae9f2;
             border-radius: 25px;
@@ -24,7 +32,7 @@
         }
         .cntTitle{
             /* background-color: #e6eef2; */
-            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体' !important;
+            font-family: var(--wenZhang-ZiTi-wenZi) !important;
             position: relative;
             z-index: 2;
             /* border-radius: 25px; */
@@ -35,7 +43,7 @@
             color: red;
         }
         .cntTitle,.cntBody,.toolBarUnderCnt{
-            background-color: #e6eef2;
+            background-color: var(--wenZhang-peiSe-qian);
             border-radius: 25px;
             margin: 10px;
             padding: 10px;
@@ -47,23 +55,24 @@
             user-select: text !important;
         }
         .toolBarUnderCnt .toolBarChild{
+            font-family: var(--wenZhang-ZiTi-wenZi) !important;
             display: flex;
             align-items: center;
         }
         .toolBarUnderCnt .toolBarChild button{
             text-align: center;
-            width: calc((100%-2em)/3);
+            width: calc(100%/3);
             font-size: large;
-            border: solid 1px #cee5f2;
-            background-color: #dae9f2;
+            border: solid 1px var(--wenZhang-peiSe-shen);
+            background-color: var(--wenZhang-peiSe-zhong);
             border-radius: 10px;
             padding: 5px;
         }
         .toolBarUnderCnt .toolBarChild button:hover{
-            background-color: #e6eef2;
+            background-color: var(--wenZhang-peiSe-qian);
         }
         .toolBarUnderCnt .toolBarChild button:active{
-            background-color: #cee5f2;
+            background-color: var(--wenZhang-peiSe-shen);
         }
         #imageFullScreenDisplay{
             display: none;
@@ -82,8 +91,8 @@
             position: absolute;
             top: 10px;
             right: 10px;
-            border: 1px solid #cee5f2;
-            background-color: #e6eef2;
+            border: 1px solid var(--wenZhang-peiSe-shen);
+            background-color: var(--wenZhang-peiSe-qian);
             border-radius: 25px;
             padding: 0px 10px;
             width: auto;
@@ -96,34 +105,29 @@
             user-select: none;
         }
         #imageFullScreenDisplay>#imageFullScreenDisplay_ClickToClose:hover{
-            background-color: #dae9f2;
+            background-color: var(--wenZhang-peiSe-zhong);
         }
         #imageFullScreenDisplay>#imageFullScreenDisplay_ClickToClose:active{
-            background-color: #cee5f2;
+            background-color: var(--wenZhang-peiSe-shen);
         }
         #imageFullScreenDisplay>#imageFullScreenDisplay_Img{
-            /* max-width: calc(100%-10px);
-            max-height: calc(100%-10px); */
-            /* width: auto;
-            height: auto; */
             object-fit: contain;
             display: flex;
             align-items: center;
             justify-content: center;
-            /* height: 100%; */
         }
     </style>
     <style>
         /* 全局字体 */
         .cntBody{
-            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体' !important;
+            font-family: var(--wenZhang-ZiTi-wenZi) !important;
         }
         .cntBody h1,.cntBody h2,.cntBody h3,.cntBody h4,.cntBody h5,.cntBody h6{
             margin: 5px auto;
         }
         /* 引用 */
         .cntBody blockquote{
-            border: solid 1px #cee5f2;
+            border: solid 1px var(--wenZhang-peiSe-shen);
             position: relative;
             padding-left: 10px;
             border-top-right-radius: 25px;
@@ -133,7 +137,7 @@
         }
         .cntBody blockquote blockquote{
             border: none;
-            border-left: solid 1px #cee5f2;
+            border-left: solid 1px var(--wenZhang-peiSe-shen);
             margin: 0px;
         }
         .cntBody blockquote *{
@@ -143,7 +147,7 @@
             content: "";
             display: inline-block;
             width: 10px;
-            background-color: #cee5f2;
+            background-color: var(--wenZhang-peiSe-shen);
             position: absolute;
             top: 0; 
             left: 0;
@@ -159,14 +163,14 @@
             text-decoration: underline;
         }
         .cntBody a:hover{
-            color: #cee5f2 !important;
-            text-decoration-color: #cee5f2;
+            color: var(--wenZhang-peiSe-shen) !important;
+            text-decoration-color: var(--wenZhang-peiSe-shen);
         }
         /*行内代码元素*/
         .cntBody p code,.cntBody .noticeBox .noticeContent code{
-            border: solid 1px #cee5f2;
-            background-color: #dae9f2;
-            font-family: "ZX-E-FiraCode","ZX-E-SourceCodePro","monospace" !important;
+            border: solid 1px var(--wenZhang-peiSe-shen);
+            background-color: var(--wenZhang-peiSe-zhong);
+            font-family: var(--wenZhang-ZiTi-DaiMa) !important;
             border-radius: 6px;
             padding-left: 2px;
             padding-right: 2px;
@@ -174,10 +178,10 @@
         }
         /* 代码片段 */
         .cntBody pre{
-            border: solid 1px #cee5f2;
+            border: solid 1px var(--wenZhang-peiSe-shen);
             border-radius: 25px;
             margin: 5px auto;
-            font-family: "ZX-E-FiraCode","ZX-E-SourceCodePro","monospace" !important;
+            font-family: var(--wenZhang-ZiTi-DaiMa) !important;
             padding-bottom: 10px;
             padding-left: 10px;
             padding-right: 10px;
@@ -189,28 +193,28 @@
         }
         .cntBody pre code::before{
             content: "代码语言: " attr(data-lang) ;
-            background-color: #dae9f2;
-            border-bottom: solid 1px #cee5f2;
+            background-color: var(--wenZhang-peiSe-zhong);
+            border-bottom: solid 1px var(--wenZhang-peiSe-shen);
             color: gray;
             margin-left: -10px;
             margin-bottom: 10px;
             padding-top: 10px;
             padding-left: 30px;
-            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体' !important;
+            font-family: var(--wenZhang-ZiTi-wenZi) !important;
             display: block;
             width: calc(100% + 25px);
             height: 30px;
             text-align: left;
         }
         .cntBody pre code>span{
-            font-family: "ZX-E-FiraCode","ZX-E-SourceCodePro","monospace" !important;
+            font-family: var(--wenZhang-ZiTi-DaiMa) !important;
             font-size: small;
         }
         .cntBody pre code>span::before{
             content: counter(codeLineNumber);
             counter-increment: codeLineNumber;
             border-right: solid 1px gray;
-            font-family: "ZX-E-FiraCode","ZX-E-SourceCodePro","monospace" !important;
+            font-family: var(--wenZhang-ZiTi-DaiMa) !important;
             color: gray;
             min-width: 24px;
             text-align: right;
@@ -220,7 +224,7 @@
         /* 图片 */
         .cntBody img{
             width: calc(75% - 20px);
-            border: solid 10px #cee5f2;
+            border: solid 10px var(--wenZhang-peiSe-shen);
             border-radius: 25px;
             display: flex;
             justify-content: center;
@@ -249,13 +253,13 @@
         /* 表格 */
         .cntBody table{
             border-collapse: separate;
-            border: solid 1px #cee5f2;
+            border: solid 1px var(--wenZhang-peiSe-shen);
             width: 100%;
             border-radius: 25px;
             margin: 5px auto;
         }
         .cntBody table th,table td{
-            border: solid 1px #cee5f2;
+            border: solid 1px var(--wenZhang-peiSe-shen);
             text-align: left;
         }
         .cntBody table thead>tr:first-child>th:first-child{
@@ -267,7 +271,7 @@
             border-top-right-radius: 22px;
         }
         .cntBody table thead tr th{
-            background-color: #dae9f2;
+            background-color: var(--wenZhang-peiSe-zhong);
         }
         .cntBody table tbody>tr:last-child>td:first-child{
             padding-left: 10px;
@@ -291,11 +295,12 @@
             user-select: text;
         }
         /* 使用代码块组件实现的提示、警告框 */
+        /*
         .cntBody pre code[data-lang="ZX-TIP"],.cntBody pre code[data-lang="ZX-TIP"]::before,.cntBody pre code[data-lang="ZX-WARNING"],.cntBody pre code[data-lang="ZX-WARNING"]::before{
-            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体' !important;
+            font-family: var(--wenZhang-ZiTi-wenZi) !important;
         }
         .cntBody pre code[data-lang="ZX-TIP"]::before,.cntBody pre code[data-lang="ZX-WARNING"]::before{
-            font-weight: bold3
+            font-weight: bold;
         }
         .cntBody pre:has(code[data-lang="ZX-TIP"]),.cntBody pre:has(code[data-lang="ZX-WARNING"]){
             font-size: medium;
@@ -320,6 +325,7 @@
             background-color: #f2f2da;
             border-bottom: solid 1px #f2f2ce;
         }
+        */
         /* 使用Hugo短代码组件实现的告示框 */
         .cntBody .noticeBox{
             margin-top: 5px;
@@ -411,6 +417,7 @@
     <div class="cnt">
         <div class="toolBarUnderCnt">
             <p>您可以对此文章：</p>
+            <br>
             <div class="toolBarChild">
                 <button title="复制链接" onclick="fuZhiLianJie()">复制链接</button>
                 &emsp;
@@ -428,10 +435,10 @@
                     }
                 }
                 function faBiaoKanFa(){
-                    alert("请下滑找到评论区发表你独特的看法。")
+                    alert("请下滑找到评论区发表您独特的看法。")
                 }
                 function fanKuiNeiRong(){
-                    alert("正在开发，你可以先通过电子邮件进行反馈。")
+                    alert("正在开发，您目前可以通过电子邮件进行反馈。")
                 }
             </script>
         </div>
