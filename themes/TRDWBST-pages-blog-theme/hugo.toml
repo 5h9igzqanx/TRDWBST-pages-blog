@@ -53,10 +53,11 @@ toc_depth=12
     endLevel = 4
     ordered = false
     startLevel = 2
-
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.asciidocExt]
+    safeMode = "unsafe"
 
 [module]
   [module.hugoVersion]
