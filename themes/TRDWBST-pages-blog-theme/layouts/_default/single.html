@@ -431,12 +431,12 @@
                 <button title="反馈内容" onclick="fanKuiNeiRong()">反馈内容</button>
             </div>
             <div class="toolBarChild2">
-                {{ with .PrevPage }}
+                {{ with .Page.Prev }}
                     <a href="{{ .Permalink }}"><button><p>前往上一篇文章</p><p>{{ .Title }}</p></button></a>
                 {{ else }}
                     <button disabled><p>前往上一篇文章</p><p style="color: red;">呃，这是第一篇了</p></button>
                 {{ end }}
-                {{ with .NextPage }}
+                {{ with .Page.Next }}
                     <a href="{{ .Permalink }}"><button><p>前往下一篇文章</p><p>{{ .Title }}</p></button></a>
                 {{ else }}
                     <button disabled><p>前往下一篇文章</p><p style="color: red;">呃，这是最后一篇了</p></button>
