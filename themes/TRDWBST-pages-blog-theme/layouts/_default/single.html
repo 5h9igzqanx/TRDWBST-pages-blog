@@ -52,23 +52,28 @@
             -ms-user-select: text !important;
             user-select: text !important;
         }
-        .toolBarUnderCnt .toolBarChild{
+        .toolBarUnderCnt .toolBarChild1,.toolBarUnderCnt .toolBarChild2{
             display: flex;
             align-items: center;
         }
-        .toolBarUnderCnt .toolBarChild button{
+        .toolBarUnderCnt .toolBarChild1 button,.toolBarUnderCnt .toolBarChild2 button{
             text-align: center;
-            width: calc(100%/3);
             font-size: medium;
             border: solid 1px var(--wenZhang-peiSe-shen);
             background-color: var(--wenZhang-peiSe-zhong);
             border-radius: 10px;
             padding: 5px;
         }
-        .toolBarUnderCnt .toolBarChild button:hover{
+        .toolBarUnderCnt .toolBarChild1 button{
+            width: calc(100%/3);
+        }
+        .toolBarUnderCnt .toolBarChild2 button{
+            width: calc(100%/2);
+        }
+        .toolBarUnderCnt .toolBarChild1 button:hover,.toolBarUnderCnt .toolBarChild2 button:hover{
             background-color: var(--wenZhang-peiSe-qian);
         }
-        .toolBarUnderCnt .toolBarChild button:active{
+        .toolBarUnderCnt .toolBarChild button:active,.toolBarUnderCnt .toolBarChild2 button:active{
             background-color: var(--wenZhang-peiSe-shen);
         }
         .commentsBoxGrandparent *{
@@ -418,14 +423,14 @@
         <div class="toolBarUnderCnt">
             <h3>您可以在此页面/对此文章：</h3>
             <br>
-            <div class="toolBarChild">
+            <div class="toolBarChild1">
                 <button title="复制链接" onclick="fuZhiLianJie()">复制链接</button>
                 &emsp;
                 <button title="发表看法" onclick="faBiaoKanFa()">发表看法</button>
                 &emsp;
                 <button title="反馈内容" onclick="fanKuiNeiRong()">反馈内容</button>
             </div>
-            <div class="toolBarChild">
+            <div class="toolBarChild2">
                 {{ with .PrevPage }}
                     <a href="{{ .Permalink }}"><button><p>前往上一篇文章</p><p>{{ .Title }}</p></button></a>
                 {{ else }}
