@@ -394,7 +394,7 @@
         <header class="cntTitle">
             {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
             {{ $dateHuman := .Date | time.Format "2006年1月2日15:04" }}
-            {{ $author := .Params.author |default "佚名"}}
+            {{ $author := .Params.author | default "佚名"}}
             <h1>{{ .Title }}</h1>
             <p>⏰:<span>{{ $dateHuman }}</span>&emsp;&emsp;📝:<span>{{ $author }}</span></p>
             <div class="categoriesAndTagsBoxAll">
@@ -416,7 +416,7 @@
     <br>
     <div class="cnt">
         <div class="toolBarUnderCnt">
-            <h3>您可以对此文章：</h3>
+            <h3>您可以在此页面/对此文章：</h3>
             <br>
             <div class="toolBarChild">
                 <button title="复制链接" onclick="fuZhiLianJie()">复制链接</button>
@@ -424,6 +424,10 @@
                 <button title="发表看法" onclick="faBiaoKanFa()">发表看法</button>
                 &emsp;
                 <button title="反馈内容" onclick="fanKuiNeiRong()">反馈内容</button>
+            </div>
+            <div class="toolBarChild">
+                <a href="{{ .PrevPage.Permalink | default "#" }}"><button><p>前往上一篇文章</p><p>{{ .PrevPage.Title | default "呃，这是第一篇了" }}</p></button></a>
+                <a href="{{ .NextPage.Permalink | default "#" }}"><button><p>前往上一篇文章</p><p>{{ .NextPage.Title | default "呃，这是第一篇了" }}</p></button></a>
             </div>
             <br>
             <div class="commentsBoxGrandparent">
