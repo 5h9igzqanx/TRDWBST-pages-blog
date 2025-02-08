@@ -393,10 +393,10 @@
         </div>
         <header class="cntTitle">
             {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-            {{ $dateHuman := .Date | time.Format ":date_long" }}
+            {{ $dateHuman := .Date | time.Format ":2006年1月2日15:04" }}
             {{ $author := .Params.author |default "佚名"}}
             <h1>{{ .Title }}</h1>
-            <p>日期:&emsp;<span>{{ $dateHuman }}</span>&emsp;&emsp;作者:&ensp;<span>{{ $author }}</span></p>
+            <p>⏰<span>{{ $dateHuman }}</span>&emsp;&emsp;✒<span>{{ $author }}</span></p>
             <div class="categoriesAndTagsBoxAll">
                 <div class="categoriesBox">{{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}</div>
                 <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
