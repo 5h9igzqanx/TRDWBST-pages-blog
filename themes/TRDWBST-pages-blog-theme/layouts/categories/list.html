@@ -8,11 +8,11 @@
         .bigTitleChild{
             z-index: 2;
         }
-        .tags{
+        .categories{
             text-align: left;
             white-space: normal;
         }
-        .tags .tag{
+        .categories .category{
             display: inline-block;
             border-radius: 25px;
             font-size: 1.3rem;
@@ -23,10 +23,10 @@
             background-color: #dae9f2;
             font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
         }
-        .tags .tag::before{
-            content: "#";
+        .categories .category::before{
+            content: "*";
         }
-        .tags .tag a:hover{
+        .categories .category a:hover{
             color: #cee5f2;
         }
     </style>
@@ -42,9 +42,10 @@
         </div>
     </div>
     <br>
-    <div class="tags">
+    <div class="categories">
         {{ range .Pages }}
-            <div class="tag"><a href="{{ .RelPermalink }}" target="_blank">{{ .LinkTitle }}</a></div>
+            <div class="category"><a href="{{ .RelPermalink }}" target="_blank">{{ .LinkTitle }}</a></div>
         {{ end }}
     </div>
+    <div></div>
 {{ end }}
