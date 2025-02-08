@@ -2,3 +2,12 @@ baseURL = 'https://5h9igzqanx.github.io/TRDWBST-pages-blog'
 languageCode = 'zh-cn'
 title = 'TRDWBST-pages-blog'
 theme = 'TRDWBST-pages-blog-theme'
+
+[markup]
+    [markup.tableOfContents]
+        endLevel = 4
+        ordered = false
+        startLevel = 2
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
