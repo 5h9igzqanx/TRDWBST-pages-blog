@@ -57,7 +57,6 @@
             align-items: center;
         }
         .toolBarUnderCnt .toolBarChild1 button,.toolBarUnderCnt .toolBarChild2 button{
-            text-align: center;
             font-size: medium;
             border: solid 1px var(--wenZhang-peiSe-shen);
             background-color: var(--wenZhang-peiSe-zhong);
@@ -66,6 +65,7 @@
         }
         .toolBarUnderCnt .toolBarChild1 button{
             width: calc(100%/3);
+            text-align: center;
         }
         .toolBarUnderCnt .toolBarChild2 a{
             width: calc(100%/2);
@@ -435,14 +435,14 @@
             </div>
             <div class="toolBarChild2">
                 {{ with .Page.Prev }}
-                    <a href="{{ .Permalink }}"><button><p>前往上一篇文章</p><p>{{ .Title }}</p></button></a>
+                    <a href="{{ .Permalink }}"><button style="text-align: left;"><p>前往上一篇文章</p><p>{{ .Title }}</p></button></a>
                 {{ else }}
-                    <button disabled><p>前往上一篇文章</p><p style="color: red;">呃，这是第一篇了</p></button>
+                    <button style="text-align: left;" disabled><p>前往上一篇文章</p><p style="color: red;">呃，这是第一篇了</p></button>
                 {{ end }}&emsp;
                 {{ with .Page.Next }}
-                    <a href="{{ .Permalink }}"><button><p>前往下一篇文章</p><p>{{ .Title }}</p></button></a>
+                    <a href="{{ .Permalink }}"><button style="text-align: right;"><p>前往下一篇文章</p><p>{{ .Title }}</p></button></a>
                 {{ else }}
-                    <button disabled><p>前往下一篇文章</p><p style="color: red;">呃，这是最后一篇了</p></button>
+                    <button style="text-align: right;" disabled><p>前往下一篇文章</p><p style="color: red;">呃，这是最后一篇了</p></button>
                 {{ end }}
             </div>
             <br>
