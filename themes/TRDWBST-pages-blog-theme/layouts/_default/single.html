@@ -234,9 +234,10 @@
         }
         /* 按键 */
         .cntBody kbd{
-            border: solid 1px var(--wenZhang-peiSe-shen);
-            border-radius: 2px;
-            border-bottom: 3px;
+            background-color: var(--wenZhang-peiSe-qian);
+            border: solid 2px var(--wenZhang-peiSe-shen);
+            border-radius: 4px;
+            border-bottom: 4px;
         }
         /* 图片 */
         .cntBody img{
@@ -446,7 +447,7 @@
             {{ if ne .Page.Permalink "https://5h9igzqanx.github.io/TRDWBST-pages-blog/about/" }}
                 <div class="toolBarChild2">
                     {{ with .Page.Next }}
-                        <a href="{{ .Permalink }}" target="_blank"><button style="text-align: left;"><p>&ensp;&lt;前往上一篇文章</p><p>&ensp;<strong>{{ .Title }}</strong></p></button></a>
+                        <a href="{{ .Permalink }}" target="_blank"><button style="text-align: left;"><p>&ensp;&lt;前往上一篇文章</p><p>&ensp;<strong>《{{ .Title }}》</strong></p></button></a>
                     {{ else }}
                         <a href="#"><button style="text-align: left;" disabled><p>&ensp;&lt;前往上一篇文章</p><p>&ensp;呃，这是<span style="color: red;">第一篇</span>了</p></button></a>
                     {{ end }}&emsp;
@@ -454,7 +455,7 @@
                         {{ if eq .Permalink "https://5h9igzqanx.github.io/TRDWBST-pages-blog/archives/" }}
                             <a href="#"><button style="text-align: right;" disabled><p>前往下一篇文章&gt;&ensp;</p><p>呃，这是<span style="color: red;">最后一篇</span>了&ensp;</p></button></a>
                         {{ else }}
-                            <a href="{{ .Permalink }}" target="_blank"><button style="text-align: right;"><p>前往下一篇文章&gt;&ensp;</p><p><strong>{{ .Title }}</strong>&ensp;</p></button></a>
+                            <a href="{{ .Permalink }}" target="_blank"><button style="text-align: right;"><p>前往下一篇文章&gt;&ensp;</p><p><strong>《{{ .Title }}》</strong>&ensp;</p></button></a>
                         {{ end }}
                     {{ else }}
                         <a href="#"><button style="text-align: right;" disabled><p>前往下一篇文章&gt;&ensp;</p><p>呃，这是<span style="color: red;">最后一篇</span>了&ensp;</p></button></a>
