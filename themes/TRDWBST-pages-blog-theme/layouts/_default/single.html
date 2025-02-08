@@ -426,8 +426,18 @@
                 <button title="反馈内容" onclick="fanKuiNeiRong()">反馈内容</button>
             </div>
             <div class="toolBarChild">
-                <a href="{{ .PrevPage.Permalink | default "#" }}"><button><p>前往上一篇文章</p><p>{{ .PrevPage.Title | default "呃，这是第一篇了" }}</p></button></a>
-                <a href="{{ .NextPage.Permalink | default "#" }}"><button><p>前往上一篇文章</p><p>{{ .NextPage.Title | default "呃，这是第一篇了" }}</p></button></a>
+                {{ with .PrevPage }}
+                    <a href="{{ .Permalink }}"><button><p>前往上一篇文章</p><p>{{ .Title }}</p></button></a>
+                {{ else }}
+                    <button><p>前往上一篇文章</p><p style="color: red;">呃，这是第一篇了</p></button>
+                {{ end }}
+                {{ with .NextPage }}
+                    <a href="{{ .Permalink }}"><button><p>前往下一篇文章</p><p>{{ .Title }}</p></button></a>
+                {{ else }}
+                    <button><p>前往下一篇文章</p><p style="color: red;">呃，这是最后一篇了</p></button>
+                {{ end }}
+                <!-- <a href="{{ .PrevPage.Permalink | default "#" }}"><button><p>前往上一篇文章</p><p>{{ .PrevPage.Title | default "呃，这是第一篇了" }}</p></button></a>
+                <a href="{{ .NextPage.Permalink | default "#" }}"><button><p>前往上一篇文章</p><p>{{ .NextPage.Title | default "呃，这是第一篇了" }}</p></button></a> -->
             </div>
             <br>
             <div class="commentsBoxGrandparent">
