@@ -437,23 +437,25 @@
                 <button title="反馈内容" onclick="fanKuiNeiRong()">反馈内容</button>
             </div>
             <br>
-            <div class="toolBarChild2">
-                {{ with .Page.Next }}
-                    <a href="{{ .Permalink }}" target="_blank"><button style="text-align: left;"><p>&ensp;&lt;前往上一篇文章</p><p>&ensp;{{ .Title }}</p></button></a>
-                {{ else }}
-                    <a href="#"><button style="text-align: left;" disabled><p>&ensp;&lt;前往上一篇文章</p><p>&ensp;呃，这是<span style="color: red;">第一篇</span>了</p></button></a>
-                {{ end }}&emsp;
-                {{ with .Page.Prev }}
-                    {{ if eq .Permalink "https://5h9igzqanx.github.io/TRDWBST-pages-blog/archives/" }}
-                        <a href="#"><button style="text-align: right;" disabled><p>前往下一篇文章&gt;&ensp;</p><p>呃，这是<span style="color: red;">最后一篇</span>了&ensp;</p></button></a>
+            {{ if ne Page.Permalink "https://5h9igzqanx.github.io/TRDWBST-pages-blog/about/" }}
+                <div class="toolBarChild2">
+                    {{ with .Page.Next }}
+                        <a href="{{ .Permalink }}" target="_blank"><button style="text-align: left;"><p>&ensp;&lt;前往上一篇文章</p><p>&ensp;{{ .Title }}</p></button></a>
                     {{ else }}
-                        <a href="{{ .Permalink }}" target="_blank"><button style="text-align: right;"><p>前往下一篇文章&gt;&ensp;</p><p>{{ .Title }}&ensp;</p></button></a>
+                        <a href="#"><button style="text-align: left;" disabled><p>&ensp;&lt;前往上一篇文章</p><p>&ensp;呃，这是<span style="color: red;">第一篇</span>了</p></button></a>
+                    {{ end }}&emsp;
+                    {{ with .Page.Prev }}
+                        {{ if eq .Permalink "https://5h9igzqanx.github.io/TRDWBST-pages-blog/archives/" }}
+                            <a href="#"><button style="text-align: right;" disabled><p>前往下一篇文章&gt;&ensp;</p><p>呃，这是<span style="color: red;">最后一篇</span>了&ensp;</p></button></a>
+                        {{ else }}
+                            <a href="{{ .Permalink }}" target="_blank"><button style="text-align: right;"><p>前往下一篇文章&gt;&ensp;</p><p>{{ .Title }}&ensp;</p></button></a>
+                        {{ end }}
+                    {{ else }}
+                        <a href="#"><button style="text-align: right;" disabled><p>前往下一篇文章&gt;&ensp;</p><p>呃，这是<span style="color: red;">最后一篇</span>了&ensp;</p></button></a>
                     {{ end }}
-                {{ else }}
-                    <a href="#"><button style="text-align: right;" disabled><p>前往下一篇文章&gt;&ensp;</p><p>呃，这是<span style="color: red;">最后一篇</span>了&ensp;</p></button></a>
-                {{ end }}
-            </div>
-            <br>
+                </div>
+                <br>
+            {{ end }}
             <div class="commentsBoxGrandparent">
                 <script>
                     var idcomments_acct = 'ac62fc037019c315b1b48a7494e77f84',idcomments_post_id,idcomments_post_url;
