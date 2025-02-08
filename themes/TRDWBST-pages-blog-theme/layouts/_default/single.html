@@ -396,7 +396,7 @@
             {{ $dateHuman := .Date | time.Format ":2006年1月2日15:04" }}
             {{ $author := .Params.author |default "佚名"}}
             <h1>{{ .Title }}</h1>
-            <p>⏰<span>{{ $dateHuman }}</span>&emsp;&emsp;✏<span>{{ $author }}</span></p>
+            <p>⏰<span>{{ $dateHuman }}</span>&emsp;&emsp;📝<span>{{ $author }}</span></p>
             <div class="categoriesAndTagsBoxAll">
                 <div class="categoriesBox">{{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}</div>
                 <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
