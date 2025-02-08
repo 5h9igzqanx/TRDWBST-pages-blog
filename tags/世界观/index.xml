@@ -382,21 +382,7 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h3 id="i">I&lt;/h3>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>词缀&lt;/th>
- &lt;th>释义&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>iste&lt;/td>
- &lt;td>近的&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
+&lt;h1 id="heading">&lt;/h1>
 &lt;h3 id="l">L&lt;/h3>
 &lt;table>
  &lt;thead>
@@ -508,6 +494,10 @@
  &lt;tr>
  &lt;td>sage&lt;/td>
  &lt;td>液体的&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>sete&lt;/td>
+ &lt;td>近的&lt;/td>
  &lt;/tr>
  &lt;tr>
  &lt;td>so&lt;/td>

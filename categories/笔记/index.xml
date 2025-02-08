@@ -414,21 +414,7 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;h3 id="i">I&lt;/h3>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>词缀&lt;/th>
- &lt;th>释义&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>iste&lt;/td>
- &lt;td>近的&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
+&lt;h1 id="heading">&lt;/h1>
 &lt;h3 id="l">L&lt;/h3>
 &lt;table>
  &lt;thead>
@@ -542,6 +528,10 @@
  &lt;td>液体的&lt;/td>
  &lt;/tr>
  &lt;tr>
+ &lt;td>sete&lt;/td>
+ &lt;td>近的&lt;/td>
+ &lt;/tr>
+ &lt;tr>
  &lt;td>so&lt;/td>
  &lt;td>&lt;a href="https://baike.baidu.com/item/%E5%A4%8D%E6%95%B0/13131232">复数&lt;/a>（非彼&lt;a href="https://baike.baidu.com/item/%E5%A4%8D%E6%95%B0/254365">复数&lt;/a>）&lt;/td>
  &lt;/tr>
@@ -633,15 +623,15 @@
 &lt;p>全表暂略，先看图&lt;/p>
 &lt;p>&lt;img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/contentRes/2024081401-01.png" alt="化学元素周期表全表">&lt;/p>
 &lt;h2 id="口诀">口诀&lt;/h2>
-&lt;p>青海离皮蓬，叹淡养夫奈&lt;br>
-那美女贵林，留绿芽加盖&lt;br>
-扛胎凡个猛，铁骨捏通心&lt;br>
-家者身洗袖，客如四亿高&lt;br>
-泥木得了老，把银隔音吸&lt;br>
-踢弟点先色，惫懒（镧系）和贪污&lt;br>
-来我衣钵金，拱坨千百坡&lt;br>
-挨冻放雷啊（锕系），陆渡稀薄黑&lt;br>
-麦打伦格尔，附魔力天傲&lt;/p></description></item><item><title>如何更快地为西红柿剥皮</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081201/</link><pubDate>Mon, 12 Aug 2024 21:58:14 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081201/</guid><description>&lt;h1 id="如何更快地为西红柿剥皮">如何更快地为西红柿剥皮&lt;/h1>
+&lt;p>青海离皮蓬，叹淡养夫奈；&lt;/p>
+&lt;p>那美女贵林，留绿芽加盖；&lt;/p>
+&lt;p>扛胎凡个猛，铁骨捏通心；&lt;/p>
+&lt;p>家者身洗袖，客如四亿高；&lt;/p>
+&lt;p>泥木得了老，把银隔音吸；&lt;/p>
+&lt;p>踢弟点先色，惫懒（镧系）和贪污；&lt;/p>
+&lt;p>来鹅衣钵金，拱它千百坡；&lt;/p>
+&lt;p>挨冻放雷啊（锕系），陆渡稀薄黑；&lt;/p>
+&lt;p>麦打伦格尔，附魔力天傲。&lt;/p></description></item><item><title>如何更快地为西红柿剥皮</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081201/</link><pubDate>Mon, 12 Aug 2024 21:58:14 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081201/</guid><description>&lt;h1 id="如何更快地为西红柿剥皮">如何更快地为西红柿剥皮&lt;/h1>
 &lt;p>如果我们想给西红柿剥皮来制作一些菜肴，只需要将其放入水中煮到其外皮裂开即可更快地剥皮。&lt;/p>
 &lt;p>如果感到烫手，只需要把西红柿放在流动的冷水下片刻即可。&lt;/p></description></item><item><title>如何使用Lua语言</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072901/</link><pubDate>Mon, 29 Jul 2024 21:40:38 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072901/</guid><description>&lt;h1 id="如何使用lua语言">如何使用Lua语言&lt;/h1>
 &lt;h2 id="简介">简介&lt;/h2>
@@ -655,9 +645,9 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 反正，比Python简单。&lt;/p>
 &lt;h2 id="教程">教程&lt;/h2>
 &lt;h3 id="前期准备">前期准备&lt;/h3>
-&lt;p>首先，我们要下载Lua，转到&lt;a href="https://github.com/rjpcomputing/luaforwindows">Lua的Github仓库&lt;/a>获取Lua的安装包（Windows）或者直接在&lt;a href="https://www.lua.org/download.html">其官网&lt;/a>下载源码&lt;br>
-安装它，路径尽量不要有中文，中文路径是编程的大忌！&lt;br>
-在命令行中输入lua，如果出现以下信息就代表你成功安装了Lua&lt;/p>
+&lt;p>首先，我们要下载Lua，转到&lt;a href="https://github.com/rjpcomputing/luaforwindows">Lua的Github仓库&lt;/a>获取Lua的安装包（Windows）或者直接在&lt;a href="https://www.lua.org/download.html">其官网&lt;/a>下载源码&lt;/p>
+&lt;p>安装它，路径尽量不要有中文，中文路径是编程的大忌！&lt;/p>
+&lt;p>在命令行中输入lua，如果出现以下信息就代表你成功安装了Lua。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>Lua 5.1.5 Copyright (C) 1994-2012 Lua.org, PUC-Rio
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>于是你就可以在“&amp;gt;”后直接运行代码了，例如&lt;/p>
@@ -960,31 +950,32 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 &lt;/ul>
 &lt;p>未完待续……&lt;/p></description></item><item><title>通过Hugo建造博客网站</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</link><pubDate>Sat, 20 Jul 2024 12:09:17 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024072001/</guid><description>&lt;h1 id="通过hugo建造博客网站">通过Hugo建造博客网站&lt;/h1>
 &lt;h2 id="概述">概述&lt;/h2>
-&lt;p>大家好，因为这个网站的建成，我终于可以在属于我自己的地方写东西了。&lt;br>
-但是，在看文章的大家又该怎么办呢？&lt;br>
-不用担心！这不，我就把教程放出来了&lt;br>
-不啰嗦了，开始吧&lt;/p>
+&lt;p>大家好，因为这个网站的建成，我终于可以在属于我自己的地方写东西了。&lt;/p>
+&lt;p>但是，在看文章的大家又该怎么办呢？&lt;/p>
+&lt;p>不用担心！这不，我就把教程放出来了，大家可以通过这个自己动手建造一个博客网站。&lt;/p>
+&lt;p>不啰嗦了，开始吧。&lt;/p>
 &lt;h2 id="教程-制作本地网站">教程-制作本地网站&lt;/h2>
 &lt;h3 id="材料准备">材料准备&lt;/h3>
 &lt;ol>
 &lt;li>一台搭载任意系统的电脑&lt;/li>
 &lt;li>the Internet&lt;/li>
 &lt;li>Hugo软件（如果没有请看下面）&lt;/li>
-&lt;li>Visual Studio Code（或其他任意代码编辑器和能编写Markdown文件的编辑器）&lt;/li>
-&lt;li>能加速Github的任意加速器（如果不用加速可以跳过）&lt;/li>
+&lt;li>Visual Studio Code软件（或其他任意代码编辑器）&lt;/li>
+&lt;li>MarkText软件（或其他能编写Markdown文档的编辑器）&lt;/li>
+&lt;li>能加速Github的任意加速器（如果不需要加速可以跳过）&lt;/li>
 &lt;/ol>
 &lt;h3 id="配置hugo环境">配置Hugo环境&lt;/h3>
 &lt;p>如果是MacOS或Linux系统且安装了Homebrew包管理器的话，直接在命令行输入&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>brew install hugo
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果像我一样是Windows系统的话，可以先去&lt;a href="https://github.com/gohugoio/hugo/releases">Hugo的Github仓库&lt;/a>下载Hugo主程序，然后把这个程序放在一个容易记住的目录里（放在你经常安装软件的那个目录就行，建议路径不要有中文名），复制这个目录的绝对路径，&lt;br>
-接着右键任务栏上的Windows徽标，点击“系统”，在弹出的设置界面选择“高级系统设置”（没有的往下拉），点击“环境变量”，&lt;br>
-在“系统变量”中选中“Path”并点击“编辑”，在弹出窗口中点击“新建”，把刚刚复制的路径粘贴进去，点击“确定”、“确定”和“确定”，&lt;br>
-最后，如果你想验证你安装好了没有的话，可以在命令行输入&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果像我一样是Windows系统的话，可以先去&lt;a href="https://github.com/gohugoio/hugo/releases">Hugo的Github仓库&lt;/a>下载Hugo主程序，然后把这个程序放在一个容易记住的目录里（放在你经常安装软件的那个目录就行，建议路径不要有中文名），复制这个目录的绝对路径，&lt;/p>
+&lt;p>接着右键任务栏上的Windows徽标，点击“系统”，在弹出的设置界面选择“高级系统设置”（没有的往下拉），点击“环境变量”，&lt;/p>
+&lt;p>在“系统变量”中选中“Path”并点击“编辑”，在弹出窗口中点击“新建”，把刚刚复制的路径粘贴进去，点击“确定”、“确定”和“确定”，&lt;/p>
+&lt;p>最后，如果你想验证你安装好了没有的话，可以在命令行输入&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>hugo version
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果你在命令行看到了他的版本号，说明你已经跨过了创建博客网站的第一道坎儿，恭喜你！&lt;/p>
 &lt;h3 id="创建本地站点">创建本地站点&lt;/h3>
-&lt;p>在你想创建站点的上一个目录下打开命令行，或使用&lt;code>cd&lt;/code>命令跳转到那里。但是要确保这个目录下没有和你想创建的站点名字一样的目录。即使有也要保证里面什么也没有，否则会出现错误。&lt;br>
-然后在命令行里输入&lt;/p>
+&lt;p>在你想创建站点的上一个目录下打开命令行，或使用&lt;code>cd&lt;/code>命令跳转到那里。但是要确保这个目录下没有和你想创建的站点名字一样的目录。即使有也要保证里面什么也没有，否则会出现错误。&lt;/p>
+&lt;p>然后在命令行里输入&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>hugo new site your-sites-name
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>但是&lt;/p>
 
@@ -1017,10 +1008,10 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└─themes
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>现在你已经创建好了本地站点，来看看下一步吧。&lt;/p>
 &lt;h3 id="选择并加载主题">选择并加载主题&lt;/h3>
-&lt;p>首先，你需要前往&lt;a href="https://themes.gohugo.io/">Hugo主题页面&lt;/a>相中一个主题，点击那个主题，点“Download”，&lt;br>
-在跳转到的Github仓库点击Code按钮，点击&amp;quot;Download ZIP&amp;quot;，&lt;br>
-下载解压后，把解压后得到的目录复制到刚刚你创建的站点目录下的&lt;code>themes&lt;/code>目录里，&lt;br>
-返回上一个目录，找到&lt;code>hugo.toml&lt;/code>并打开，在里面按照以下例子来设置&lt;/p>
+&lt;p>首先，你需要前往&lt;a href="https://themes.gohugo.io/">Hugo主题页面&lt;/a>相中一个主题，点击那个主题，点“Download”，&lt;/p>
+&lt;p>在跳转到的Github仓库点击Code按钮，点击&amp;quot;Download ZIP&amp;quot;，&lt;/p>
+&lt;p>下载解压后，把解压后得到的目录复制到刚刚你创建的站点目录下的&lt;code>themes&lt;/code>目录里，&lt;/p>
+&lt;p>返回上一个目录，找到&lt;code>hugo.toml&lt;/code>并打开，在里面按照以下例子来设置&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-toml" data-lang="toml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">baseURL&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;your site&amp;#39;s URL&amp;#34;&lt;/span> &lt;span style="color:#75715e">#你网站的网址&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">languageCode&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;en-us&amp;#34;&lt;/span> &lt;span style="color:#75715e">#你网站的语言代码（这里显示了默认值“英语-美国”）&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">title&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;your site&amp;#39;s name&amp;#34;&lt;/span> &lt;span style="color:#75715e">#你网站的名字&lt;/span>
