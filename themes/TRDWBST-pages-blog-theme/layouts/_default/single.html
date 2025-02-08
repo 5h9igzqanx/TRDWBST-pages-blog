@@ -437,7 +437,7 @@
                 <button title="反馈内容" onclick="fanKuiNeiRong()">反馈内容</button>
             </div>
             <br>
-            {{ if ne Page.Permalink "https://5h9igzqanx.github.io/TRDWBST-pages-blog/about/" }}
+            {{ if ne .Page.Permalink "https://5h9igzqanx.github.io/TRDWBST-pages-blog/about/" }}
                 <div class="toolBarChild2">
                     {{ with .Page.Next }}
                         <a href="{{ .Permalink }}" target="_blank"><button style="text-align: left;"><p>&ensp;&lt;前往上一篇文章</p><p>&ensp;{{ .Title }}</p></button></a>
