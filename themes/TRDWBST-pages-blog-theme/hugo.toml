@@ -57,7 +57,7 @@ toc_depth=12
     [markup.goldmark.renderer]
       unsafe = true
   [markup.asciidocExt]
-    safeMode = "unsafe"
+    safeMode = "safe"
 
 [module]
   [module.hugoVersion]
