@@ -104,7 +104,8 @@
     <br>
     <div class="postAll">
         {{ $pageWhere1 := (where .Site.Pages "Section" "post") }}
-        {{ range (where $pageWhere1 "Title" "ne" "Posts" ) }}
+        {{ $pageWhere2 := (where $pageWhere1 "Title" "ne" "Posts" ) }}
+        {{ range $pageWhere2 }}
             {{ $dateMachine := .Date | time.Format "20060102" }}
             <a href="{{ .RelPermalink }}" target="_blank" class="postList" id="{{ $dateMachine }}">
                 {{ $dateHuman := .Date | time.Format "01-02" }}
@@ -123,14 +124,14 @@
             if (currentId !== nextId) {
                 const newElement = document.createElement('div');
                 newElement.className = 'year';
-                newElement.textContent = nextId+"年↓";
+                newElement.textContent = nextId+"年↓  共{{ len (where $pageWhere2 'Date.Year' "+nextId+" ) }}篇";
                 parentElement.insertBefore(newElement, children[i + 1]);
             }
         }
         // 下面是添加第一个年份元素的功能
         the1stYear=document.createElement('div');
         the1stYear.className = 'year';
-        the1stYear.textContent = children[0].id.substring(0,4)+"年↓";
+        the1stYear.textContent = children[0].id.substring(0,4)+"年↓  共{{ len (where $pageWhere2 'Date.Year' "+children[0].id.substring(0,4)+" ) }}篇";
         parentElement.insertBefore(the1stYear, children[0]);
     </script>
 {{ end }}
