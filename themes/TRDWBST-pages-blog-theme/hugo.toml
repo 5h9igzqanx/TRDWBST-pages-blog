@@ -9,40 +9,34 @@ url = 'https://5h9igzqanx.github.io/TRDWBST/'
 weight =10
 
 [[menus.main]]
-name = '主页'
-pageRef = '/'
-url = '/'
-weight = 20
-
-[[menus.main]]
 name = '仓库'
 pageRef = 'https://github.com/5h9igzqanx/TRDWBST-pages-blog'
 url = 'https://github.com/5h9igzqanx/TRDWBST-pages-blog'
-weight = 30
+weight = 20
 
 [[menus.main]]
 name = '归档'
 pageRef = '/archives'
 url = '/archives'
-weight = 40
+weight = 30
 
 [[menus.main]]
 name = '分类'
 pageRef = '/categories'
 url   = '/categories'
-weight = 50
+weight = 40
 
 [[menus.main]]
 name = '标签'
 pageRef = '/tags'
 url   = '/tags'
-weight = 60
+weight = 50
 
 [[menus.main]]
 name = '关于'
 pageRef = '/about'
 url = '/about'
-weight = 70
+weight = 60
 
 [blackfriday]
 toc=true
