@@ -56,12 +56,6 @@
         }
     }
 </style>
-<div class="leftMainBox">
-    <br>
-    <h3 class="center">{{site.Title}}</h3>
-    <br>
-</div>
-<br>
 <div class="leftMainBox" id="owner">
     <br>
     <div class="avatar">
@@ -73,11 +67,6 @@
     <br>
 </div>
 <br id="hidInMobile">
-<!-- <div class="leftMainBox">
-    <h2 class="center">本页目录</h2>
-    <div class="navList"> partial "menu.html" (dict "menuID" "main" "page" .) </div>
-</div>
-<br> -->
 <div class="leftMainBox" id="ParentBoxOfContentOfPost">
     {{ if .TableOfContents }}
         <h2 class="center">本篇目录</h2>
@@ -128,9 +117,9 @@
     }else{
         var contentEle=document.getElementById("ParentBoxOfContentOfPost"),parentOfcnt=contentEle.parentElement,stickyTop=contentEle.getBoundingClientRect().top + window.pageYOffset;//FIXME 出错过
         window.addEventListener("scroll",function(){
-            var scrollPosition=(window.pageYOffset||document.documentElement.scrollTop)+90;
+            var scrollPosition=(window.pageYOffset||document.documentElement.scrollTop)+100;
             if((scrollPosition>stickyTop)&&(window.innerWidth>1000)){
-                contentEle.style.position='fixed';contentEle.style.top='90px';contentEle.style.width=(String((document.getElementById("leftMain").offsetWidth)-46)+"px");
+                contentEle.style.position='fixed';contentEle.style.top='100px';contentEle.style.width=(String((document.getElementById("leftMain").offsetWidth)-46)+"px");
             }else{
                 contentEle.style.position='';contentEle.style.top='';contentEle.style.width='';
             };
