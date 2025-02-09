@@ -73,10 +73,17 @@
         .toolBarUnderCnt .toolBarChild2 a button{
             width: 100%;
         }
+        .toolBarUnderCnt .toolBarChild1 button,.toolBarUnderCnt .toolBarChild2 a button p{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+            line-clamp: 1;
+        }
         .toolBarUnderCnt .toolBarChild1 button:hover,.toolBarUnderCnt .toolBarChild2 button:hover{
             background-color: var(--wenZhang-peiSe-qian);
         }
-        .toolBarUnderCnt .toolBarChild button:active,.toolBarUnderCnt .toolBarChild2 button:active{
+        .toolBarUnderCnt .toolBarChild1 button:active,.toolBarUnderCnt .toolBarChild2 button:active{
             background-color: var(--wenZhang-peiSe-shen);
         }
         .toolBarUnderCnt .toolBarChild2 button:disabled,.toolBarUnderCnt .toolBarChild2 button:disabled:hover,.toolBarUnderCnt .toolBarChild2 button:disabled:active{
