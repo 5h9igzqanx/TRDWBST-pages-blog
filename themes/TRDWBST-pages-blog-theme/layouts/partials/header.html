@@ -4,8 +4,8 @@
         &emsp;&emsp;
         <h2>{{ site.Title }}</h2>
         &emsp;&emsp;&emsp;&emsp;
-        <!-- <div class="menuList">{{ partial "menu.html" (dict "menuID" "main" "page" .) }}</div> -->
-        <div class="menuList"><ul><li>啊啊aaaaaaaaaaaaaaaaa</li><li>啊啊</li><li>啊啊</li><li>啊啊</li><li>啊啊</li><li>啊啊</li><li>啊啊</li></ul></div>
+        <div class="menuList">{{ partial "menu.html" (dict "menuID" "main" "page" .) }}</div>
+        <!-- <div class="menuList"><ul><li>啊啊aaaaaaaaaaaaaaaaa</li><li>啊啊</li><li>啊啊</li><li>啊啊</li><li>啊啊</li><li>啊啊</li><li>啊啊</li></ul></div> -->
         <div class="openTheMobileMenu" id="openTheMobileMenu" onclick="document.getElementById('mobileMenu').style.display='block'">导航</div>
     </div>
 </div>
@@ -14,7 +14,8 @@
         <div id="closeTheMobileMenu" onclick="document.getElementById('mobileMenu').style.display='none'">X</div>
         <h2>导航</h2>
         <br>
-        <ul><li>啊啊aaaaaaaaaaaaaaaaa</li><li>啊啊</li><li>啊啊</li><li>啊啊</li><li>啊啊</li><li>啊啊</li><li>啊啊</li></ul>
+        <!-- <ul><li>啊啊aaaaaaaaaaaaaaaaa</li><li>啊啊</li><li>啊啊</li><li>啊啊</li><li>啊啊</li><li>啊啊</li><li>啊啊</li></ul> -->
+        {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
     </div>
 </div>
 <style>
