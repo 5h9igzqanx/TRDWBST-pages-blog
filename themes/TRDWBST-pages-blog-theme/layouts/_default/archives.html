@@ -115,9 +115,9 @@
             </a>
         {{ end }}
     </div>
-    {{ define "showYearsPostNumbers" }}
-        {{ len (where $pageWhere2 '.Date.Year' .theYear ) }}
-    {{ end}}
+    {{- define "showYearsPostNumbers" }}
+        {{- len (where $pageWhere2 '.Date.Year' .theYear ) }}
+    {{- end}}
     <script>
         const parentElement = document.querySelector('.postAll');
         const children = Array.from(parentElement.children);
