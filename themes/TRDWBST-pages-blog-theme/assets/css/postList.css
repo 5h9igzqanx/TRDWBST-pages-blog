@@ -1,12 +1,18 @@
+:root{
+    --postListCss-ZiTi-wenZi:"ZX-C-霞鹜文楷","Times New Roman","Arial","楷体","宋体";
+    --postListCss-peiSe-qian: #e6eef2;
+    --postListCss-peiSe-zhong: #dae9f2;
+    --postListCss-peiSe-shen: #cee5f2;
+}
 .postList {
     /* margin-top: 10px; */
     /* margin-bottom: 10px; */
     padding: 20px;
     border-radius: 25px;
-    background-color: #dae9f2;
+    background-color: var(--postList-peiSe-zhong);
     margin: 5px;
     /* box-shadow: 0px 0px 5px 1px gray; */
-    font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
+    font-family: var(--postListCss-ZiTi-wenZi);
 }
 .postList p {
     color: rgb(0, 0, 0, 0.6);
@@ -20,7 +26,7 @@
     text-overflow: ellipsis;
 }
 .postList h2 a:hover {
-    color: #cee5f2;
+    color: var(--postListCss-peiSe-shen);
 }
 .postList time {
     font-size: small;

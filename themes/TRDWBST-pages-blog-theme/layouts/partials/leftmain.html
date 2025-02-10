@@ -1,6 +1,14 @@
 <style>
+    :root{
+        --zuoLan-ZiTi-wenZi:"ZX-C-霞鹜文楷","Times New Roman","Arial","楷体","宋体";
+        --zuoLan-peiSe-qian: #e6eef2;
+        --zuoLan-peiSe-zhong: #dae9f2;
+        --zuoLan-peiSe-shen: #cee5f2;
+    }
+</style>
+<style>
     .leftMainBox{
-        background-color:#dae9f2;
+        background-color:var(--zuoLan-peiSe-zhong);
         border-radius:25px;
         margin-left:10px;
         margin-right:20px;
@@ -9,7 +17,7 @@
         padding-top:20px;
         padding-bottom:20px;
         overflow-y:auto;
-        font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体' !important;
+        font-family: var(--zuoLan-ZiTi-wenZi);
     }
     .avatar{
         overflow: hidden;
@@ -22,35 +30,14 @@
     .avatar img{
         width: 90%;
         height: auto;
-        border: 4px solid #cee5f2;
+        border: 4px solid var(--zuoLan-peiSe-shen);
         border-radius: 50%;
         object-fit: cover;
     }
     .center{
         text-align: center;
     }
-    .navList{
-        font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体' !important;
-        font-weight: bold;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .navList li::before{
-        content: "· ";
-    }
-    .navList li::before:hover{
-        color: #cee5f2;
-    }
-    .navList li a:hover{
-        color: #cee5f2;
-    }
-    /* .navList li a{
-        width: 100%;
-    } */
     @media screen and (max-width:1000px) {
-        .siteName{
-            font-size:medium;
-        }
         #owner,#hidInMobile{
             display: none;
         }
@@ -72,7 +59,6 @@
         <h2 class="center">本篇目录</h2>
         <style>
             .toc{
-                /* height: 350px; */
                 font-weight: bold;
                 color: gray !important;
                 padding-left: 8px;

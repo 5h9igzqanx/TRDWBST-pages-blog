@@ -5,6 +5,14 @@
     {{ $styleBigTitle := resources.Get "css/bigTitle.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styleBigTitle.Permalink }}" integrity="{{ $styleBigTitle.Data.Integrity }}" crossorigin="anonymous">
     <style>
+        :root{
+            --categoriesList-ZiTi-wenZi:"ZX-C-霞鹜文楷","Times New Roman","Arial","楷体","宋体";
+            --categoriesList-peiSe-qian: #e6eef2;
+            --categoriesList-peiSe-zhong: #dae9f2;
+            --categoriesList-peiSe-shen: #cee5f2;
+        }
+    </style>
+    <style>
         .bigTitleChild{
             z-index: 2;
         }
@@ -20,14 +28,14 @@
             padding: 5px;
             padding-left: 10px;
             padding-right: 10px;
-            background-color: #dae9f2;
-            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
+            background-color: var(--categoriesList-peiSe-zhong);
+            font-family: var(--categoriesList-ZiTi-wenZi);
         }
         .categories .category::before{
             content: "*";
         }
         .categories .category a:hover{
-            color: #cee5f2;
+            color: var(--categoriesList-peiSe-shen);
         }
     </style>
     <div class="bigTitle">

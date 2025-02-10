@@ -3,11 +3,19 @@
     {{ $styleBigTitle := resources.Get "css/bigTitle.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styleBigTitle.Permalink }}" integrity="{{ $styleBigTitle.Data.Integrity }}" crossorigin="anonymous">
     <style>
+        :root{
+            --archives-ZiTi-wenZi:"ZX-C-霞鹜文楷","Times New Roman","Arial","楷体","宋体";
+            --archives-peiSe-qian: #e6eef2;
+            --archives-peiSe-zhong: #dae9f2;
+            --archives-peiSe-shen: #cee5f2;
+        }
+    </style>
+    <style>
         .bigTitleChild{
             z-index: 2;
         }
         .postAll{
-            background-color: #dae9f2;
+            background-color: var(--archives-peiSe-zhong);
             border-radius: 25px;
             padding: 10px;
             overflow: hidden;
@@ -20,15 +28,15 @@
             display: flex;
             align-items: center;
             height: 40px;
-            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
+            font-family: var(--archives-ZiTi-wenZi);
             overflow: visible;
         }
         .postList:hover{
-            background-color: #e6eef2;
+            background-color: var(--archives-peiSe-qian);
             border-radius: 25px;
         }
         .postList:active{
-            background-color: #cee5f2;
+            background-color: var(--archives-peiSe-shen);
             border-radius: 25px;
         }
         .postDate{
@@ -54,7 +62,7 @@
             width: 12px;
             height: 12px;
             border-radius: 16px;
-            background-color: #cee5f2;
+            background-color: var(--archives-peiSe-shen);
             /* outline: 8px solid white; */
             border: 4px solid white;
             position: relative;
@@ -80,11 +88,11 @@
             margin: 5px;
             padding: 5px;
             border-radius: 25px;
-            border: solid 5px #cee5f2;
-            background-color: #e6eef2;
+            border: solid 5px var(--archives-peiSe-shen);
+            background-color: var(--archives-peiSe-qian);
             padding-left: 120px;
             height: 30px;
-            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
+            font-family: var(--archives-ZiTi-wenZi);
             display: flex;
             align-items: center;
             font-weight: 700;
