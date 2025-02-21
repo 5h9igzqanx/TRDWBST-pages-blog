@@ -1,8 +1,9 @@
 ---
-title : '{{ replace .File.ContentBaseName "-" " " | title }}'
+title : '标题'
 date : {{ .Date }}
 tags : []
-author : "5h9igzqanx"
-description :
+categories : []
+author : '5h9igzqanx'
+description : ''
 draft : true
 ---
