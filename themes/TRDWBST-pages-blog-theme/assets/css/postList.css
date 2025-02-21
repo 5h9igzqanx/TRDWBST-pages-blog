@@ -9,7 +9,7 @@
     /* margin-bottom: 10px; */
     padding: 20px;
     border-radius: 25px;
-    background-color: var(--postList-peiSe-zhong);
+    background-color: var(--postListCss-peiSe-zhong);
     margin: 5px;
     /* box-shadow: 0px 0px 5px 1px gray; */
     font-family: var(--postListCss-ZiTi-wenZi);
