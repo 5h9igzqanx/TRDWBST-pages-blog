@@ -45,6 +45,22 @@
             text-decoration-color: #cee5f2;
         }
     </style>
+    <style>
+        .leftMain,.rightCnt{
+            top: calc(100vw + 20px)
+        }
+    </style>
+    <script>
+        function addHeroImg(){
+            var HeroImgDiv=document.createElement("div")
+            HeroImgDiv.id="heroImg"
+            var HeroImg=document.createElement("img")
+            HeroImg.src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg"
+            HeroImgDiv.appendChild(HeroImg)
+            document.getElementsByTagName("main")[0].appendChild(HeroImgDiv)
+        }
+        window.onload=addHeroImg
+    </script>
     <div class="bigTitle">
         <div class="bgImgInBigTitle">
             <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" alt="" title="">
