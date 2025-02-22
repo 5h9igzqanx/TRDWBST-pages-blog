@@ -49,6 +49,16 @@
         .leftMain,.rightCnt{
             top: calc(100vh - 80px)
         }
+        #heroImg{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        #heroImg img{
+            height: 100vh;
+            width: 100vw;
+            object-fit: cover;
+        }
         @media  screen and (max-width:1000px){
             #heroImg{
                 position: absolute;
@@ -59,16 +69,6 @@
             .rightCnt{
                 margin-top: calc(100vh + 20px);
             }
-        }
-        #heroImg{
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-        }
-        #heroImg img{
-            height: 100vh;
-            width: 100vw;
-            object-fit: cover;
         }
     </style>
     <script>
