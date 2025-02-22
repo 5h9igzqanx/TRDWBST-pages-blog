@@ -460,12 +460,21 @@
             </div>
             <script>
                 function fuZhiLianJie(){
+                    var lianJie=window.location.href
                     try{
-                        navigator.clipboard.writeText(window.location.href)
-                        alert("复制成功，去分享吧。")
-                    }catch(errors){
-                        alert("复制失败，请手动复制或检查浏览器版本。")
+                        navigator.clipboard.writeText()
+                        console.log("11")
+                    }catch{
+                        const lianJieEle=document.createElement("textarea")
+                        lianJieEle.value=lianJie
+                        document.body.appendChild(lianJieEle)
+                        lianJieEle.select()
+                        document.execCommand("copy")
+                        document.body.removeChild(lianJieEle)
+                        lianJieEle.remove()
+                        console.log("12")
                     }
+                    alert("复制成功，去分享吧。")
                 }
                 function faBiaoKanFa(){
                     try{
