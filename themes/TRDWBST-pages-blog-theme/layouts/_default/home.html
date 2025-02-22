@@ -56,6 +56,7 @@
         }
         #heroImg img{
             height: 100%;
+            object-fit: cover;
         }
     </style>
     <script>
@@ -63,7 +64,11 @@
             var HeroImgDiv=document.createElement("div")
             HeroImgDiv.id="heroImg"
             var HeroImg=document.createElement("img")
-            HeroImg.src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg"
+            if(window.innerWidth>=window.innerHeight){
+                HeroImg.src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/res/homeHeroWide.png"
+            }else{
+                HeroImg.src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/res/homeHeroLong.png"
+            }
             HeroImgDiv.appendChild(HeroImg)
             document.getElementsByTagName("main")[0].appendChild(HeroImgDiv)
         }
