@@ -462,8 +462,7 @@
                 function fuZhiLianJie(){
                     var lianJie=window.location.href
                     try{
-                        navigator.clipboard.writeText()
-                        console.log("11")
+                        navigator.clipboard.writeText(lianJie)
                     }catch{
                         const lianJieEle=document.createElement("textarea")
                         lianJieEle.value=lianJie
@@ -472,9 +471,9 @@
                         document.execCommand("copy")
                         document.body.removeChild(lianJieEle)
                         lianJieEle.remove()
-                        console.log("12")
+                    }finally{
+                        alert("复制成功，去分享吧。")
                     }
-                    alert("复制成功，去分享吧。")
                 }
                 function faBiaoKanFa(){
                     try{
