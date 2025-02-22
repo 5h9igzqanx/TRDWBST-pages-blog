@@ -59,6 +59,10 @@
             width: 100vw;
             object-fit: cover;
         }
+        #heroImg h1{
+            position: absolute;
+            top:67vh;
+        }
         @media  screen and (max-width:1000px){
             #heroImg{
                 position: absolute;
@@ -77,12 +81,14 @@
             HeroImgDiv.id="heroImg"
             var HeroImg=document.createElement("img")
             var HeroTitle=document.createElement("h1")
+            HeroTitle.innerHTML="{{ site.Title }}"
             if(window.innerWidth>=window.innerHeight){
                 HeroImg.src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/res/homeHeroWide.png"
             }else{
                 HeroImg.src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/res/homeHeroLong.png"
             }
             HeroImgDiv.appendChild(HeroImg)
+            HeroImgDiv.appendChild(HeroTitle)
             document.getElementsByTagName("main")[0].appendChild(HeroImgDiv)
         }
         window.onload=addHeroImg
@@ -92,7 +98,7 @@
             <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" alt="" title="">
         </div>
         <div class="bigTitleChild">
-            <h2>{{site.Title}}</h2>
+            <h2>{{ site.Title }}</h2>
             <p>这块儿地是我自己开垦出来的，只许看，不许删。</p>
             <p>什么？你问用什么开垦的？废话，<del>手</del><b>hugo</b>呗。</p>
             <p>算了，随便看看吧，我出去一趟。如果不认识这里那你就往下翻。对了，可以评论，不许嘴臭嗷！</p>
