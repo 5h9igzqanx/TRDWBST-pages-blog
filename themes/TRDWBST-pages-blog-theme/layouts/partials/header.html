@@ -1,8 +1,7 @@
 <div class="navBoxAll">
     <div class="navBoxChild">
-        <a href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/"><img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/LOGO/LOGO.gif" alt="logo"></a>
-        &emsp;&emsp;
-        <a href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/"><h2>{{ site.Title }}</h2></a>
+        <a href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/"><img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/LOGO/LOGO.gif" alt="logo">&emsp;&emsp;<h2>{{ site.Title }}</h2></a>
+        
         &emsp;&emsp;&emsp;&emsp;
         <div class="menuList">{{ partial "menu.html" (dict "menuID" "main" "page" .) }}</div>
         <div class="openTheMobileMenu" id="openTheMobileMenu" onclick="document.getElementById('mobileMenu').style.display='block'">导航</div>
@@ -50,10 +49,11 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        width: 100%;
         white-space: nowrap;
     }
     .navBoxAll .navBoxChild img{
-        height: 60px;
+        height: 50px;
         border: solid 5px #cee5f2;
         border-radius: 50%;
     }
