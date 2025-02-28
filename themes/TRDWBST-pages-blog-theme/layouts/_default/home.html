@@ -59,9 +59,11 @@
             width: 100vw;
             object-fit: cover;
         }
-        #heroImg h1{
+        #heroImg #heroTitleParent{
             position: absolute;
             top:33vh;
+        }
+        #heroImg #heroTitleParent h1{
             font-size: xx-large;
         }
         @media  screen and (max-width:1000px){
@@ -78,19 +80,23 @@
     </style>
     <script>
         function addHeroImg(){
-            var HeroImgDiv=document.createElement("div")
-            HeroImgDiv.id="heroImg"
-            var HeroImg=document.createElement("img")
-            var HeroTitle=document.createElement("h1")
-            HeroTitle.innerHTML="{{ site.Title }}"
+            var heroImgDiv=document.createElement("div")
+            heroImgDiv.id="heroImg"
+            var heroImg=document.createElement("img")
+            var heroTitleParent=document.createElement("div")
+            // var heroTitle=document.createElement("h1")
+            heroTitleParent.id="heroTitleParent"
+            heroTitleParent.innerHTML="<h1>{{ site.Title }}</h1><p>我灵感的菜园子，没熟的先别摘"
+            // heroTitle.innerHTML=""
+            // heroTitleParent.appendChild(heroTitle)
             if(window.innerWidth>=window.innerHeight){
-                HeroImg.src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/res/homeHeroWide.png"
+                heroImg.src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/res/homeHeroWide.png"
             }else{
-                HeroImg.src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/res/homeHeroLong.png"
+                heroImg.src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/res/homeHeroLong.png"
             }
-            HeroImgDiv.appendChild(HeroImg)
-            HeroImgDiv.appendChild(HeroTitle)
-            document.getElementsByTagName("main")[0].appendChild(HeroImgDiv)
+            heroImgDiv.appendChild(heroImg)
+            heroImgDiv.appendChild(heroTitleParent)
+            document.getElementsByTagName("main")[0].appendChild(heroImgDiv)
         }
         window.onload=addHeroImg
     </script>
