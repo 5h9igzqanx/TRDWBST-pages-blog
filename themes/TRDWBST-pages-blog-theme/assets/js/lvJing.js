@@ -6,4 +6,3 @@ if(ZHONGDASHIJIANJINIANRI.includes(today)){
         ele.style.filter='grayscale(1)'
     })
 }
-console.log("正常工作。缅怀先烈，珍惜和平。")
