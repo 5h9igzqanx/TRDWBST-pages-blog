@@ -59,6 +59,15 @@
             width: 100vw;
             object-fit: cover;
         }
+        #heroImg #heroImgMask{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 100vh;
+            background-color: hsla(200, 32%, 93%, 50%);
+            z-index: 5;
+        }
         #heroImg #heroTitleParent{
             position: absolute;
             top:33vh;
@@ -86,12 +95,14 @@
             var heroImgDiv=document.createElement("div")
             heroImgDiv.id="heroImg"
             var heroImg=document.createElement("img")
+            var HeroImgMask=document.createElement("div")
             var heroTitleParent=document.createElement("div")
-            // var heroTitle=document.createElement("h1")
             heroTitleParent.id="heroTitleParent"
             heroTitleParent.innerHTML="<h1>{{ site.Title }}</h1><p>我灵感的菜园子，没熟的先别摘"
             heroImg.src=window.innerWidth>=window.innerHeight?"https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/res/homeHeroWide.png":"https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/res/homeHeroLong.png"
+            HeroImgMask.id="heroImgMask"
             heroImgDiv.appendChild(heroImg)
+            heroImgDiv.appendChild(HeroImgMask)
             heroImgDiv.appendChild(heroTitleParent)
             document.getElementsByTagName("main")[0].appendChild(heroImgDiv)
         }
