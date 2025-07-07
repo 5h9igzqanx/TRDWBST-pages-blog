@@ -1,0 +1,1 @@
+var date=new Date,today=String(date.getMonth()+1)+","+String(date.getDate()),ZHONGDASHIJIANJINIANRI=["07,07","09,18","12,13"];ZHONGDASHIJIANJINIANRI.includes(today)&&document.querySelectorAll("*").forEach(function(e){e.style.filter="grayscale(1)"})
