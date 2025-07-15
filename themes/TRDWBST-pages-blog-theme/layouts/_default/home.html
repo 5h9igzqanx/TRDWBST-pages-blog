@@ -3,33 +3,41 @@
     {{ $styleBigTitle := resources.Get "css/bigTitle.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styleBigTitle.Permalink }}" integrity="{{ $styleBigTitle.Data.Integrity }}" crossorigin="anonymous">
     <style>
+        :root{
+                --zhuYe-ZiTi-wenZi:"ZX-C-霞鹜文楷","Times New Roman","Arial","宋体","楷体";
+                --zhuYe-peiSe-qian: #e6eef2;
+                --zhuYe-peiSe-zhong: #dae9f2;
+                --zhuYe-peiSe-shen: #cee5f2;
+            }
+    </style>
+    <style>
         .homeCnt .homeChtChild{
             padding: 10px;
             margin: 10px;
-            background-color: #e6eef2;
+            background-color: var(--zhuYe-peiSe-qian);
             border-radius: 25px;
             position: relative;
-            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
+            font-family: var(--zhuYe-ZiTi-wenZi);
         }
         .bigTitleChild{
             z-index: 2;
         }
         .homeFeature{
-            background-color: #dae9f2;
+            background-color: var(--zhuYe-peiSe-zhong);
             border-radius: 25px;
             padding: 10px;
             display: flex;
-            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
+            font-family: var(--zhuYe-ZiTi-wenZi);
         }
         .homeFeature .homeFeatureChild{
             width: calc(100% / 3);
-            border-left: 0.5px solid #e6eef2;
-            border-right: 0.5px solid #e6eef2;
+            border-left: 0.5px solid var(--zhuYe-peiSe-qian);
+            border-right: 0.5px solid var(--zhuYe-peiSe-qian);
             padding-left: 5px;
             padding-right: 5px;
         }
         .homeCnt{
-            background-color: #dae9f2;
+            background-color: var(--zhuYe-peiSe-zhong);
             border-radius: 25px;
             padding: 10px;
         }
@@ -41,8 +49,8 @@
             text-decoration: underline;
         }
         .homeCnt a:hover{
-            color: #cee5f2 !important;
-            text-decoration-color: #cee5f2;
+            color: var(--zhuYe-peiSe-shen) !important;
+            text-decoration-color: var(--zhuYe-peiSe-shen);
         }
         @media screen and (max-width:1000px) {
             .homeFeature{
@@ -50,8 +58,8 @@
             }
             .homeFeature .homeFeatureChild{
                 width: 100%;
-                border-top: 0.5px solid #e6eef2;
-                border-bottom: 0.5px solid #e6eef2;
+                border-top: 0.5px solid var(--zhuYe-peiSe-qian);
+                border-bottom: 0.5px solid var(--zhuYe-peiSe-qian);
                 padding-top: 5px;
                 padding-bottom: 5px;
             }
@@ -77,14 +85,14 @@
             left: 0px;
             width: 100vw;
             height: 100vh;
-            background-color: rgba(0, 0, 0, .5);
+            background-color: #cee5f2cc;
             z-index: 5;
         }
         #heroImg #heroTitleParent{
             position: absolute;
             top:33vh;
             z-index: 6;
-            color: white;
+            color: black;
         }
         #heroImg #heroTitleParent h1{
             font-size: xx-large;
