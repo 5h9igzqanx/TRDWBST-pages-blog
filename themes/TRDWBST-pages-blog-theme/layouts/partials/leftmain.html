@@ -99,7 +99,9 @@
 <script>
     let url=window.location.href;
     if(url.indexOf("post")===-1){
-        if(document.getElementById("ParentBoxOfContentOfPost")){document.getElementById("ParentBoxOfContentOfPost").remove();document.getElementById("brUnderContentOfPost").remove();};
+        function deleteTOCEle(){document.getElementById("ParentBoxOfContentOfPost").remove();document.getElementById("brUnderContentOfPost").remove();}
+        if(document.getElementById("ParentBoxOfContentOfPost")){deleteTOCEle();};
+        if(document.getElementById("TableOfContents").childElementCount<=0){deleteTOCEle();};
     }else{
         var contentEle=document.getElementById("ParentBoxOfContentOfPost"),parentOfcnt=contentEle.parentElement,stickyTop=contentEle.getBoundingClientRect().top + window.pageYOffset;//FIXME 出错过
         window.addEventListener("scroll",function(){
@@ -110,6 +112,6 @@
                 contentEle.style.position='';contentEle.style.top='';contentEle.style.width='';
             };
         });
-    }
+    };
 </script>
 <br>
