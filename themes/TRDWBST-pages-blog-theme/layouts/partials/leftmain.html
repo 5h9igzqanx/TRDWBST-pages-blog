@@ -103,7 +103,7 @@
         if(document.getElementById("ParentBoxOfContentOfPost")){deleteTOCEle();};
     }else{
         if(document.getElementById("TableOfContents").childElementCount<=0){deleteTOCEle();};
-        var contentEle=document.getElementById("ParentBoxOfContentOfPost"),parentOfcnt=contentEle.parentElement,stickyTop=contentEle.getBoundingClientRect().top + window.pageYOffset;//FIXME 出错过
+        var contentEle=document.getElementById("ParentBoxOfContentOfPost"),parentOfcnt=contentEle.parentElement,stickyTop=contentEle.getBoundingClientRect().top + window.pageYOffset;
         window.addEventListener("scroll",function(){
             var scrollPosition=(window.pageYOffset||document.documentElement.scrollTop)+100;
             if((scrollPosition>stickyTop)&&(window.innerWidth>1000)){
