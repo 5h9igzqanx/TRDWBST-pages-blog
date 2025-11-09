@@ -1,33 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>求助 on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E6%B1%82%E5%8A%A9/</link><description>Recent content in 求助 on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Aug 2024 20:08:51 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E6%B1%82%E5%8A%A9/index.xml" rel="self" type="application/rss+xml"/><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>&lt;h1 id="关于python相对导入的问题">关于python相对导入的问题&lt;/h1>
-&lt;h2 id="问题重现">问题重现&lt;/h2>
-&lt;p>我有以下文件：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>a
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ aa.py
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ __init__.py
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├─b
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ │ bb.py
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ │ __init__.py
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ │
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ └─d
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ dd.py
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│ __init__.py
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>│
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>└─c
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cc.py
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> __init__.py
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>现我在&lt;code>dd.py&lt;/code>中写下以下函数：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">TestFuncInDD&lt;/span>():
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> print(&lt;span style="color:#e6db74">&amp;#34;在dd.py中的函数&amp;#34;&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>又在&lt;code>cc.py&lt;/code>中写以下代码意欲导入此文件：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> ..b.d &lt;span style="color:#f92672">import&lt;/span> dd
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dd&lt;span style="color:#f92672">.&lt;/span>TestFuncInDD()
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>但是运行之后出现以下错误：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>Traceback (most recent call last):
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> File &amp;#34;\a\c\cc.py&amp;#34;, line 1, in &amp;lt;module&amp;gt; 
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> from ..b.d import dd
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ImportError: attempted relative import with no known parent package
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>该如何做才能够在必须运行&lt;code>cc.py&lt;/code>的情况下在其中正确导入&lt;code>dd.py&lt;/code>？&lt;/p>
-&lt;blockquote>
-&lt;p>类似情况见以下链接：
-&lt;a href="https://stackoverflow.com/questions/10059002/python-packages-relative-imports">《Python 包：相对导入》来自Stack Overflow&lt;/a>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>求助 on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E6%B1%82%E5%8A%A9/</link><description>Recent content in 求助 on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Tue, 20 Aug 2024 20:08:51 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/tags/%E6%B1%82%E5%8A%A9/index.xml" rel="self" type="application/rss+xml"/><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>&lt;h1 id="关于python相对导入的问题"&gt;关于python相对导入的问题&lt;/h1&gt;
+&lt;h2 id="问题重现"&gt;问题重现&lt;/h2&gt;
+&lt;p&gt;我有以下文件：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;a
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│ aa.py
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│ __init__.py
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;├─b
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│ │ bb.py
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│ │ __init__.py
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│ │
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│ └─d
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│ dd.py
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│ __init__.py
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;└─c
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; cc.py
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; __init__.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;现我在&lt;code&gt;dd.py&lt;/code&gt;中写下以下函数：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;TestFuncInDD&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(&lt;span style="color:#e6db74"&gt;&amp;#34;在dd.py中的函数&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;又在&lt;code&gt;cc.py&lt;/code&gt;中写以下代码意欲导入此文件：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;from&lt;/span&gt; ..b.d &lt;span style="color:#f92672"&gt;import&lt;/span&gt; dd
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;dd&lt;span style="color:#f92672"&gt;.&lt;/span&gt;TestFuncInDD()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;但是运行之后出现以下错误：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Traceback (most recent call last):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; File &amp;#34;\a\c\cc.py&amp;#34;, line 1, in &amp;lt;module&amp;gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; from ..b.d import dd
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ImportError: attempted relative import with no known parent package
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;该如何做才能够在必须运行&lt;code&gt;cc.py&lt;/code&gt;的情况下在其中正确导入&lt;code&gt;dd.py&lt;/code&gt;？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;类似情况见以下链接：
+&lt;a href="https://stackoverflow.com/questions/10059002/python-packages-relative-imports"&gt;《Python 包：相对导入》来自Stack Overflow&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
