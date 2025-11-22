@@ -3,13 +3,13 @@ languageCode = 'zh-cn'
 title = 'TRDWBST-pages-blog'
 
 [[menus.main]]
-name = '回到TRDWBST'
+name = '回到TRDWBST↗'
 pageRef = 'https://5h9igzqanx.github.io/TRDWBST/'
 url = 'https://5h9igzqanx.github.io/TRDWBST/'
 weight =10
 
 [[menus.main]]
-name = '仓库'
+name = 'Github仓库↗'
 pageRef = 'https://github.com/5h9igzqanx/TRDWBST-pages-blog'
 url = 'https://github.com/5h9igzqanx/TRDWBST-pages-blog'
 weight = 20
