@@ -382,10 +382,7 @@
             content: "⚠ 注意";
             background-color: #f2f2da;
         }
-        .cntBody p:has(img.ZX-inlineImg){
-            display: flex;
-            align-items: center;
-        }
+        /* 使用Hugo短代码组件实现的行内图片 */
         .cntBody img.ZX-inlineImg{
             width: auto;
             border: none;
@@ -393,6 +390,10 @@
             display: flex;
             justify-content: start;
             margin: 0px;
+        }
+        .cntBody p:has(img.ZX-inlineImg){
+            display: flex;
+            align-items: center;
         }
     </style>
     <script>
