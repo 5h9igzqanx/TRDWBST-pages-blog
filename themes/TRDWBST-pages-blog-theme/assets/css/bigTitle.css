@@ -27,5 +27,6 @@
     background-color: var(--bigTitleCss-peiSe-qian);
     border-radius: 25px;
     position: relative;
+    z-index: 2;
     font-family: var(--bigTitleCss-ZiTi-wenZi);
 }
