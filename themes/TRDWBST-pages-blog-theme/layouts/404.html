@@ -1,55 +1,79 @@
 {{ define "main" }}
 {{ $style := resources.Get "css/postList.css" | minify | fingerprint }}
-  <meta name="robots" content="noindex nofollow">
-  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
-  <style>
-    .cntIR{
-        background-color: #dae9f2;
-        border-radius: 25px;
-        width: 100%;
-        padding: 10px;
-    }
-    .cntIR h2,.cntIR p{
-      font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
-    }
-    .cntIR p>span{
-      font-family: "ZX-E-FiraCode","ZX-E-SourceCodePro","monospace" !important;
-    }
-    .cntIR p>span#t404url{
-      color: gray;
-      text-decoration: line-through red;
-    }
-    .cntIR a:hover{
-      color: #cee5f2;
-      text-decoration: underline;
-    }
-  </style>
-  <div class="cntIR">
+    <meta name="robots" content="noindex nofollow">
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+    <style>
+        .cntIR{
+            background-color: #dae9f2;
+            border-radius: 25px;
+            width: 100%;
+            padding: 10px;
+        }
+        .backgroundImg{
+            margin: 10px;
+            margin-bottom: -40px !important;
+            width: calc(100% - 20px);/* 256:81 */
+            position: relative;
+            z-index: 1;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+        .backgroundImg>img{
+            width: 100%;
+        }
+        .cntIRTitleChd{
+            position: relative;
+            z-index: 2;
+        }
+        .cntIR h2,.cntIR p{
+            font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
+        }
+        .cntIR p>span{
+                font-family: "ZX-E-FiraCode","ZX-E-SourceCodePro","monospace" !important;
+        }
+        .cntIR p>span#t404url{
+                color: gray;
+                text-decoration: line-through red;
+        }
+        .cntIR a:hover{
+                color: #cee5f2;
+                text-decoration: underline;
+        }
+    </style>
+    <div class="cntIR">
+        <div class="backgroundImg">
+            <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" alt="404">
+        </div>
+        <div class="cntIRTitleChd">
+            <h2>404 页面没找到|{{site.Title}}</h2>
+        </div>
+    </div>
     <br>
-    <h2>404 页面没找到|{{site.Title}}</h2>
-    <p>很抱歉</p>
-    <p>让你遭遇了这些事</p>
-    <p>位于 <span id="t404url">某处</span> 的内容</p>
-    <p>找不到了</p>
-    <p>但是</p>
-    <p>不要灰心</p>
-    <p>不要丧气</p>
-    <p>即使是月亮有时也会有缺口</p>
-    <p>更何况是人生？</p>
-    <p>所以</p>
-    <p>保持良好的心态</p>
-    <p>放轻松</p>
-    <p>东西没了可以再找</p>
-    <p>但是良好的心态可不能丢</p>
-    <p>加油吧</p>
-    <p>为自己的人生努力！</p>
-    <br>
-    <p>现在你可以选择<a href="https://5h9igzqanx.github.io/TRDWBST/">回到主页</a>或<a href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/">回到稿件页面</a></p>
-  </div>
-  <script>
-    window.onload=function(){
-      document.getElementById("t404url").innerHTML=window.location.href;
-      document.getElementById("ParentBoxOfContentOfPost").remove();
-    }
-  </script>
+    <div class="cntIR">
+        <br>
+        <p>很抱歉</p>
+        <p>让你遭遇了这些事</p>
+        <p>位于 <span id="t404url">某处</span> 的内容</p>
+        <p>找不到了</p>
+        <p>但是</p>
+        <p>不要灰心</p>
+        <p>不要丧气</p>
+        <p>即使是月亮有时也会有缺口</p>
+        <p>更何况是人生？</p>
+        <p>所以</p>
+        <p>保持良好的心态</p>
+        <p>放轻松</p>
+        <p>东西没了可以再找</p>
+        <p>但是良好的心态可不能丢</p>
+        <p>加油吧</p>
+        <p>为自己的人生努力！</p>
+        <br>
+        <p>现在你可以选择<a href="https://5h9igzqanx.github.io/TRDWBST/">回到主页</a>或<a href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/">回到稿件页面</a></p>
+    </div>
+    <script>
+        window.onload=function(){
+            document.getElementById("t404url").innerHTML=window.location.href;
+            document.getElementById("ParentBoxOfContentOfPost").remove();
+        }
+    </script>
 {{ end }}
