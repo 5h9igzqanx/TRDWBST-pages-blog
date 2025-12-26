@@ -1,29 +1,15 @@
 {{ define "main" }}
-{{ $style := resources.Get "css/postList.css" | minify | fingerprint }}
     <meta name="robots" content="noindex nofollow">
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+    {{ $stylePostList := resources.Get "css/postList.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $stylePostList.Permalink }}" integrity="{{ $stylePostList.Data.Integrity }}" crossorigin="anonymous">
+    {{ $styleBigTitle := resources.Get "css/bigTitle.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styleBigTitle.Permalink }}" integrity="{{ $styleBigTitle.Data.Integrity }}" crossorigin="anonymous">
     <style>
         .cntIR{
             background-color: #dae9f2;
             border-radius: 25px;
             width: 100%;
             padding: 10px;
-        }
-        .backgroundImg{
-            margin: 10px;
-            margin-bottom: -40px !important;
-            width: calc(100% - 20px);/* 256:81 */
-            position: relative;
-            z-index: 1;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-        }
-        .backgroundImg>img{
-            width: 100%;
-        }
-        .cntIRTitleChd{
-            position: relative;
-            z-index: 2;
         }
         .cntIR h2,.cntIR p{
             font-family: "ZX-C-霞鹜文楷",'Times New Roman','Arial','楷体','宋体';
@@ -40,11 +26,11 @@
                 text-decoration: underline;
         }
     </style>
-    <div class="cntIR">
-        <div class="backgroundImg">
-            <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" alt="404">
+    <div class="BigTitle">
+        <div class="bgImgInBigTitle ">
+            <img src="https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/404.jpg" alt="404">
         </div>
-        <div class="cntIRTitleChd">
+        <div class="BigTitieChild">
             <h2>404 页面没找到|{{site.Title}}</h2>
         </div>
     </div>
