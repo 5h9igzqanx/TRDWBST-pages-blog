@@ -17,7 +17,7 @@
         .cntIR p>span{
                 font-family: "ZX-E-FiraCode","ZX-E-SourceCodePro","monospace" !important;
         }
-        .cntIR p>span#t404url{
+        p>span.t404url{
                 color: gray;
                 text-decoration: line-through red;
         }
@@ -32,7 +32,7 @@
         </div>
         <div class="bigTitleChild">
             <h2>404 页面没找到 | {{site.Title}}</h2>
-            <p>位于 <span id="t404url">某处</span> 的内容是找不到的</p>
+            <p>位于 <span class="t404url">某处</span> 的内容是找不到的</p>
         </div>
     </div>
     <br>
@@ -40,7 +40,7 @@
         <br>
         <p>很抱歉</p>
         <p>让你遭遇了这些事</p>
-        <p>位于 <span id="t404url">某处</span> 的内容</p>
+        <p>位于 <span class="t404url">某处</span> 的内容</p>
         <p>找不到了</p>
         <p>但是</p>
         <p>不要灰心</p>
@@ -59,7 +59,11 @@
     </div>
     <script>
         window.onload=function(){
-            document.getElementById("t404url").innerHTML=window.location.href;
+            // document.getElementById("t404url").innerHTML=window.location.href;
+            const t404urlE=document.getElementsByClassName;
+            for(let i=0;i<t404urlE.length;i++){
+                t404urlE[i].innerHTML=window.location.href;
+            }
             document.getElementById("ParentBoxOfContentOfPost").remove();
         }
     </script>
