@@ -1,6 +1,5 @@
 {{ define "main" }}
     <meta name="robots" content="noindex nofollow">
-    <title>404 页面没被我们找到 | {{site.Title}}</title>
     {{ $stylePostList := resources.Get "css/postList.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $stylePostList.Permalink }}" integrity="{{ $stylePostList.Data.Integrity }}" crossorigin="anonymous">
     {{ $styleBigTitle := resources.Get "css/bigTitle.css" | minify | fingerprint }}
