@@ -104,7 +104,8 @@
     }else{
         if(document.getElementById("TableOfContents").childElementCount<=0){deleteTOCEle();};
         var contentEle=document.getElementById("ParentBoxOfContentOfPost"),parentOfcnt=contentEle.parentElement,stickyTop=contentEle.getBoundingClientRect().top + window.pageYOffset;
-        if(contentEle.offsetHeight>(window.innerHeight-100)){contentEle.style.height=String(window.innerHeight-160)+"px";contentEle.style.overflowY="scroll"}
+        // if(contentEle.offsetHeight>(window.innerHeight-100)){contentEle.style.height=String(window.innerHeight-160)+"px";contentEle.style.overflowY="scroll"}
+        if(contentEle.offsetHeight>(window.innerHeight-100)){contentEle.style.overflowY="scroll";contentEle.style.height="calc(100vw - 160px)";console.log(114514)}
         window.addEventListener("scroll",function(){
             var scrollPosition=(window.pageYOffset||document.documentElement.scrollTop)+100;
             if((scrollPosition>stickyTop)&&(window.innerWidth>1000)){
