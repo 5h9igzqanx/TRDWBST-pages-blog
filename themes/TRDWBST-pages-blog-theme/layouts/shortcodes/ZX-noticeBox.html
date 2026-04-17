@@ -2,5 +2,5 @@
 
 <blockquote class="noticeBox" id="ZX-noticeBox-{{ (.Get "type") }}">
     <p class="noticeTitle"></p>
-    {{ .Inner | Page.RenderString }}
+    {{ .Inner | .Page.RenderString }}
 </blockquote>
