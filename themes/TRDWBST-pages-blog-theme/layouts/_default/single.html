@@ -202,6 +202,7 @@
         }
         .cntBody blockquote:not([class]) *{
             color: rgba(0, 0, 0, 0.6) !important;
+            font-style: italic;
         }
 
         /* 删除线 */
@@ -456,20 +457,20 @@
             padding: 1em 0px 1em 1em;
             margin: 5px;
         }
-        .cntBody blockquote.noticeBox p.noticeTitle{
+        .cntBody blockquote.noticeBox p.noticeBoxTitle{
             margin: 5px 0px;
-            padding: 2px;
             font-weight: bold;
-            
+            text-indent: 0em;
         }
-        .cntBody blockquote.noticeBox p.noticeTitle::before{
+        .cntBody blockquote.noticeBox p.noticeBoxTitle::before{
+            padding: 2px;
             border-radius: 10px;
         }
         .cntBody blockquote.noticeBox#ZX-noticeBox-tip{
             background-color: #e6f2e6;
             border-color: #daf2da;
         }
-        .cntBody blockquote.noticeBox#ZX-noticeBox-tip p.noticeTitle::before{
+        .cntBody blockquote.noticeBox#ZX-noticeBox-tip p.noticeBoxTitle::before{
             content: "💡 提示";
             background-color: #daf2da;
         }
@@ -477,7 +478,7 @@
             background-color: #f2f2e6;
             border-color: #f2f2da;
         }
-        .cntBody blockquote.noticeBox#ZX-noticeBox-warning p.noticeTitle::before{
+        .cntBody blockquote.noticeBox#ZX-noticeBox-warning p.noticeBoxTitle::before{
             content: "⚠ 注意";
             background-color: #f2f2da;
         }
@@ -485,7 +486,7 @@
             background-color: #f3e7e7;
             border-color: #f2d9d9;
         }
-        .cntBody blockquote.noticeBox#ZX-noticeBox-error p.noticeTitle::before{
+        .cntBody blockquote.noticeBox#ZX-noticeBox-error p.noticeBoxTitle::before{
             content: "⛔ 尤其当心";
             background-color: #f2d9d9;
         }

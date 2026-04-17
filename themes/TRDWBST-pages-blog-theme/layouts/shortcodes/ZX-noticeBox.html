@@ -1,6 +1,6 @@
 <!-- ZX-noticeBox.html -->
 
 <blockquote class="noticeBox" id="ZX-noticeBox-{{ (.Get "type") }}">
-    <p class="noticeTitle"></p>
+    <p class="noticeBoxTitle"></p>
     {{ .Inner | .Page.RenderString }}
 </blockquote>
