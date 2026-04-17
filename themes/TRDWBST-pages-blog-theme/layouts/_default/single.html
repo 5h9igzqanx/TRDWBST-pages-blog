@@ -195,7 +195,7 @@
         .cntBody blockquote:not([class]){
             border: solid 1px #e6e6e6;
             border-radius: 15px;
-            border-left: solid 1em ;
+            border-left: solid 1em #e6e6e6;
             background-color: #ededed;
             padding: 1em 0px 1em 1em;
             margin: 5px;
@@ -385,7 +385,7 @@
             user-select: text;
         }
         /* 使用Hugo短代码组件实现的告示框 */
-        
+        /*
         .cntBody .noticeBox{
             margin-top: 5px;
             margin-bottom: 5px;
@@ -446,8 +446,8 @@
             content: "⛔ 尤其注意";
             background-color: #f2d9d9;
         }
+        */
         
-        /*
         .cntBody blockquote.noticeBox{
             border: solid 1px #e6e6e6;
             border-radius: 15px;
@@ -456,12 +456,32 @@
             padding: 1em 0px 1em 1em;
             margin: 5px;
         }
-        .cntBody blockquote.noticeBox#ZX-tip p.noticeTitle{
+        .cntBody blockquote.noticeBox#ZX-noticeBox-tip{
+            background-color: #e6f2e6;
+            border-color: #daf2da;
+        }
+        .cntBody blockquote.noticeBox#ZX-noticeBox-tip p.noticeTitle{
             content: "💡 提示";
             background-color: #daf2da;
         }
+        .cntBody blockquote.noticeBox#ZX-noticeBox-warning{
+            background-color: #f2f2e6;
+            border-color: #f2f2da;
+        }
+        .cntBody blockquote.noticeBox#ZX-noticeBox-warning p.noticeTitle{
+            content: "⚠ 注意";
+            background-color: #f2f2da;
+        }
+        .cntBody blockquote.noticeBox#ZX-noticeBox-error{
+            background-color: #f3e7e7;
+            border-color: #f2d9d9;
+        }
+        .cntBody blockquote.noticeBox#ZX-noticeBox-error p.noticeTitle{
+            content: "⛔ 尤其当心";
+            background-color: #f2d9d9;
+        }
 
-        */
+        
         /* 使用Hugo短代码组件实现的行内图片 */
         .cntBody img.ZX-inlineImg{
             width: auto;
