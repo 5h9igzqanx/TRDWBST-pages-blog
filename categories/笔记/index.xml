@@ -39,16 +39,11 @@
 &lt;p&gt;其次，打开&lt;a href="https://github.com/jandedobbeleer/oh-my-posh"&gt;Oh My Posh的Github仓库&lt;/a&gt;下载相应版本的安装包。&lt;/p&gt;
 &lt;p&gt;下载好之后，打开安装包，根据提示安装。&lt;/p&gt;
 
-&lt;div class="noticeBox" id="ZX-warning"&gt;
- &lt;div class="noticeBoxBefore"&gt;&lt;/div&gt;
- &lt;div class="noticeBoxChild"&gt;
- &lt;div class="noticeTitle"&gt;&lt;/div&gt;
- &lt;div class="noticeContent"&gt;
- 安装路径尽量只有英文。
- &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
 
+&lt;blockquote class="noticeBox" id="ZX-noticeBox-warning"&gt;
+ &lt;p class="noticeTitle"&gt;&lt;/p&gt;
+ 安装路径尽量只有英文。
+&lt;/blockquote&gt;
 &lt;p&gt;安装完成之后，可以打开终端，输入&lt;code&gt;oh-my-posh&lt;/code&gt;查看是否安装完成，如果提示其不是一个命令，你需要手动将Oh My Posh的目录添加进环境变量。&lt;/p&gt;
 &lt;p&gt;你可以选择在PowerShell中输入&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;$env:Path +&lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;;C:\你安装OhMyPosh的路径\...\oh-my-posh\bin&amp;#34;&lt;/span&gt;
@@ -62,16 +57,11 @@
 &lt;p&gt;在Oh My Posh中，显示一些特殊符号需要使用另一种叫做“Nerd”的字体，下面讲解如何安装和使用。&lt;/p&gt;
 &lt;p&gt;打开&lt;a href="https://www.nerdfonts.com/"&gt;Nerd官网&lt;/a&gt;，点击Downloads，在其中相中一个其与另一种等宽字体结合的字形包，点击Download。&lt;/p&gt;
 
-&lt;div class="noticeBox" id="ZX-tip"&gt;
- &lt;div class="noticeBoxBefore"&gt;&lt;/div&gt;
- &lt;div class="noticeBoxChild"&gt;
- &lt;div class="noticeTitle"&gt;&lt;/div&gt;
- &lt;div class="noticeContent"&gt;
- 官方文档中建议使用MesloLG Nerd Font这款字体。
- &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
 
+&lt;blockquote class="noticeBox" id="ZX-noticeBox-tip"&gt;
+ &lt;p class="noticeTitle"&gt;&lt;/p&gt;
+ 官方文档中建议使用MesloLG Nerd Font这款字体。
+&lt;/blockquote&gt;
 &lt;p&gt;下载好后解压，打开目录，全选，安装。&lt;/p&gt;
 &lt;p&gt;打开终端，点击标签栏上的倒三角，选择设置。&lt;/p&gt;
 &lt;p&gt;在“配置文件”栏选择“默认值”，在右边点击“外观”，然后在“字体”栏选择带有“Nerd”字样的字体，保存就行了。&lt;/p&gt;
@@ -1038,16 +1028,11 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo new site your-sites-name
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;但是&lt;/p&gt;
 
-&lt;div class="noticeBox" id="ZX-warning"&gt;
- &lt;div class="noticeBoxBefore"&gt;&lt;/div&gt;
- &lt;div class="noticeBoxChild"&gt;
- &lt;div class="noticeTitle"&gt;&lt;/div&gt;
- &lt;div class="noticeContent"&gt;
- 其中的“your-sites-name”要换成你的站点的名字。
- &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
 
+&lt;blockquote class="noticeBox" id="ZX-noticeBox-warning"&gt;
+ &lt;p class="noticeTitle"&gt;&lt;/p&gt;
+ 其中的“your-sites-name”要换成你的站点的名字。
+&lt;/blockquote&gt;
 &lt;p&gt;然后你就会发现目录下面出现了很多文件，具体如下&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;│ .hintrc
@@ -1076,18 +1061,9 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;title&lt;/span&gt; = &lt;span style="color:#e6db74"&gt;&amp;#34;your site&amp;#39;s name&amp;#34;&lt;/span&gt; &lt;span style="color:#75715e"&gt;#你网站的名字&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;theme&lt;/span&gt; = &lt;span style="color:#e6db74"&gt;&amp;#34;the name of the downloaded theme&amp;#34;&lt;/span&gt; &lt;span style="color:#75715e"&gt;#你网站使用的主题，直接把刚刚复制到“themes”的目录名字写上去就行&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class="noticeBox" id="ZX-warning"&gt;
- &lt;div class="noticeBoxBefore"&gt;&lt;/div&gt;
- &lt;div class="noticeBoxChild"&gt;
- &lt;div class="noticeTitle"&gt;&lt;/div&gt;
- &lt;div class="noticeContent"&gt;
- 把第一、三、四行等号后的内容按照实际情况来设置。
- &lt;/div&gt;
- &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;附：&lt;a href="http://www.lingoes.cn/zh/translator/langcode.htm"&gt;语言代码表&lt;/a&gt;&lt;/p&gt;</description></item><item><title>测试用文档</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</link><pubDate>Sat, 01 Jan 2000 08:00:00 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</guid><description>&lt;h1 id="测试用文档"&gt;测试用文档&lt;/h1&gt;
+&lt;blockquote class="noticeBox" id="ZX-noticeBox-warning"&gt;
+ &lt;p class="noticeTitle"&gt;&lt;/p&gt;</description></item><item><title>测试用文档</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</link><pubDate>Sat, 01 Jan 2000 08:00:00 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</guid><description>&lt;h1 id="测试用文档"&gt;测试用文档&lt;/h1&gt;
 &lt;h2 id="标题测试"&gt;标题测试&lt;/h2&gt;
 &lt;p&gt;以下是标题测试&lt;/p&gt;
 &lt;h3 id="标题3"&gt;标题3&lt;/h3&gt;
