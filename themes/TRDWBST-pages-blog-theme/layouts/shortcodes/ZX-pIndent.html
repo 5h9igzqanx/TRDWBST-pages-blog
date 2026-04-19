@@ -1,0 +1,5 @@
+<!-- ZX-pIndent -->
+
+<blockquote class="pIndent" style="padding-left: {{ (.Get "indentNum") }};">
+    {{ .Inner | .Page.RenderString }}
+</blockquote>
