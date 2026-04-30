@@ -233,6 +233,7 @@
 
 &lt;blockquote class="noticeBox" id="ZX-noticeBox-warning"&gt;
  &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;&lt;div&gt;
+ 
 
 安装路径尽量只有英文。
 
@@ -254,6 +255,7 @@
 
 &lt;blockquote class="noticeBox" id="ZX-noticeBox-tip"&gt;
  &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;&lt;div&gt;
+ 
 
 官方文档中建议使用MesloLG Nerd Font这款字体。
 
