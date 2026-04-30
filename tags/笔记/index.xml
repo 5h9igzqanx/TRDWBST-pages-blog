@@ -41,11 +41,13 @@
 
 
 &lt;blockquote class="noticeBox" id="ZX-noticeBox-warning"&gt;
- &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;
+ &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;&lt;div&gt;
+ 
 
 安装路径尽量只有英文。
 
-&lt;div class="noticeBackground"&gt;&lt;/div&gt;
+
+ &lt;/div&gt;&lt;div class="noticeBackground"&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;安装完成之后，可以打开终端，输入&lt;code&gt;oh-my-posh&lt;/code&gt;查看是否安装完成，如果提示其不是一个命令，你需要手动将Oh My Posh的目录添加进环境变量。&lt;/p&gt;
 &lt;p&gt;你可以选择在PowerShell中输入&lt;/p&gt;
@@ -62,11 +64,13 @@
 
 
 &lt;blockquote class="noticeBox" id="ZX-noticeBox-tip"&gt;
- &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;
+ &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;&lt;div&gt;
+ 
 
 官方文档中建议使用MesloLG Nerd Font这款字体。
 
-&lt;div class="noticeBackground"&gt;&lt;/div&gt;
+
+ &lt;/div&gt;&lt;div class="noticeBackground"&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;下载好后解压，打开目录，全选，安装。&lt;/p&gt;
 &lt;p&gt;打开终端，点击标签栏上的倒三角，选择设置。&lt;/p&gt;
@@ -76,8 +80,7 @@
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-lua" data-lang="lua"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;load(io.popen(&lt;span style="color:#e6db74"&gt;&amp;#39;oh-my-posh init cmd&amp;#39;&lt;/span&gt;):read(&lt;span style="color:#e6db74"&gt;&amp;#34;*a&amp;#34;&lt;/span&gt;))()
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;使其支持cmd的美化。&lt;/p&gt;
 &lt;p&gt;此时打开cmd，可以看到终端已经被美化。&lt;/p&gt;
-&lt;p&gt;如果你就待见他的默认主题，那你就没事了；但是如果你还想再进一步美化，那么接着往下看。&lt;/p&gt;
-&lt;p&gt;首先，你需要前往&lt;a href="https://www.ohmyposh.dev/docs/themes"&gt;Oh My Posh的主题页面&lt;/a&gt;中相中一个主题，点击跳转到相应的文件的Github页面，点击右上角的Download raw file下载其对应的json文件，然后记住他的路径。&lt;/p&gt;</description></item><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>&lt;h1 id="关于python相对导入的问题"&gt;关于python相对导入的问题&lt;/h1&gt;
+&lt;p&gt;如果你就待见他的默认主题，那你就没事了；但是如果你还想再进一步美化，那么接着往下看。&lt;/p&gt;</description></item><item><title>关于python相对导入的问题</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</link><pubDate>Tue, 20 Aug 2024 20:08:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024082002/</guid><description>&lt;h1 id="关于python相对导入的问题"&gt;关于python相对导入的问题&lt;/h1&gt;
 &lt;h2 id="问题重现"&gt;问题重现&lt;/h2&gt;
 &lt;p&gt;我有以下文件：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;a
@@ -188,9 +191,10 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo new site your-sites-name
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;但是&lt;/p&gt;
 &lt;blockquote class="noticeBox" id="ZX-noticeBox-warning"&gt;
- &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;
+ &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;&lt;div&gt;
 &lt;p&gt;其中的“your-sites-name”要换成你的站点的名字。bbb&lt;/p&gt;
-&lt;div class="noticeBackground"&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;quot;noticeBackground&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;然后你就会发现目录下面出现了很多文件，具体如下&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;.
@@ -220,7 +224,7 @@ Lua的学习难度很小（只有21个关键字和1种数据结构机制），�
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;title&lt;/span&gt; = &lt;span style="color:#e6db74"&gt;&amp;#34;your site&amp;#39;s name&amp;#34;&lt;/span&gt; &lt;span style="color:#75715e"&gt;#你网站的名字&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;theme&lt;/span&gt; = &lt;span style="color:#e6db74"&gt;&amp;#34;the name of the downloaded theme&amp;#34;&lt;/span&gt; &lt;span style="color:#75715e"&gt;#你网站使用的主题，直接把刚刚复制到“themes”的目录名字写上去就行&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class="noticeBox" id="ZX-noticeBox-warning"&gt;
- &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;
+ &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;&lt;div&gt;
 &lt;p&gt;把第一、三、四行等号后的内容按照实际情况来设置。&lt;/p&gt;</description></item><item><title>测试用文档</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</link><pubDate>Sat, 01 Jan 2000 08:00:00 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2000010101/</guid><description>&lt;h1 id="测试用文档"&gt;测试用文档&lt;/h1&gt;
 &lt;h2 id="标题测试"&gt;标题测试&lt;/h2&gt;
 &lt;p&gt;以下是标题测试&lt;/p&gt;
