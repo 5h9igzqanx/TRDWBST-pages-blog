@@ -233,11 +233,13 @@
 
 &lt;blockquote class="noticeBox" id="ZX-noticeBox-warning"&gt;
  &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;&lt;div&gt;
+
  
 
 安装路径尽量只有英文。
 
 
+ 
  &lt;/div&gt;&lt;div class="noticeBackground"&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;安装完成之后，可以打开终端，输入&lt;code&gt;oh-my-posh&lt;/code&gt;查看是否安装完成，如果提示其不是一个命令，你需要手动将Oh My Posh的目录添加进环境变量。&lt;/p&gt;
@@ -256,11 +258,13 @@
 
 &lt;blockquote class="noticeBox" id="ZX-noticeBox-tip"&gt;
  &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;&lt;div&gt;
+
  
 
 官方文档中建议使用MesloLG Nerd Font这款字体。
 
 
+ 
  &lt;/div&gt;&lt;div class="noticeBackground"&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;下载好后解压，打开目录，全选，安装。&lt;/p&gt;
