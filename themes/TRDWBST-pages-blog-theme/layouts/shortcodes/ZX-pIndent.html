@@ -2,6 +2,6 @@
 
 <blockquote class="pIndent" style="padding-left: {{ (.Get "indentNum") }};">
     <div>
-        {{ .Inner | markdownify }}
+        {{ .Inner | $.Page.RenderString (dict "display" "inline") }}
     </div>
 </blockquote>
