@@ -1,7 +1,5 @@
 <!-- ZX-pIndent -->
 
 <blockquote class="pIndent" style="padding-left: {{ (.Get "indentNum") }};">
-    <div>
-        {{ .Inner | markdownify }}
-    </div>
+    {{ .Inner }}
 </blockquote>
