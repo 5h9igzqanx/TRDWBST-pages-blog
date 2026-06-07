@@ -169,42 +169,25 @@
             text-indent: 2em;
         }
         /* 引用 */
-        /*
-        .cntBody blockquote{
-            position: relative;
-            padding-left: 2em;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            font-style: italic;
-        }
-        .cntBody blockquote *{
-            color: rgba(0, 0, 0, 0.6) !important;
-        }
-        .cntBody blockquote::before{
-            content: "";
-            display: inline-block;
-            width: 0.5em;
-            background-color: var(--wenZhang-peiSe-shen);
-            position: absolute;
-            top: 0; 
-            left: 0.5em;
-            bottom: 0;
-        }
-        */
-
         .cntBody blockquote:not([class]){
-            border: solid 1px #e6e6e6;
+            border: solid 1px hsl(0, 0%, 85%);
             border-radius: 15px;
-            border-left: solid 1em #e6e6e6;
-            background-color: #ededed;
+            border-left: solid 1em hsl(0, 0%, 85%);
+            background-color: hsl(0, 0%, 93%);
             padding: 1em 0px 1em 1em;
             margin: 5px;
+        }
+        .cntBody blockquote:not([class])::before{
+                content: "“";
+                font-size: 4em;
+                margin-bottom: -0.7em;
+                display: block;
+                color: hsl(0, 0%, 70%);
         }
         .cntBody blockquote:not([class]) *{
             color: rgba(0, 0, 0, 0.6) !important;
             font-style: italic;
         }
-
         /* 删除线 */
         .cntBody del{
             text-decoration: line-through red;
@@ -404,28 +387,28 @@
             border-radius: 10px;
         }
         .cntBody blockquote.noticeBox#ZX-noticeBox-tip{
-            background-color: #e6f2e6;
-            border-color: #daf2da;
+            background-color: hsl(120, 32%, 93%);
+            border-color: hsl(120, 48%, 90%);
         }
         .cntBody blockquote.noticeBox#ZX-noticeBox-tip span.noticeBoxTitle::before{
             content: "💡 提示";
-            background-color: #daf2da;
+            background-color: hsl(120, 48%, 90%);
         }
         .cntBody blockquote.noticeBox#ZX-noticeBox-warning{
-            background-color: #f2f2e6;
-            border-color: #f2f2da;
+            background-color: hsl(60, 32%, 93%);
+            border-color: hsl(60, 48%, 90%);
         }
         .cntBody blockquote.noticeBox#ZX-noticeBox-warning span.noticeBoxTitle::before{
             content: "⚠ 注意";
-            background-color: #f2f2da;
+            background-color: hsl(60, 48%, 90%);
         }
         .cntBody blockquote.noticeBox#ZX-noticeBox-error{
-            background-color: #f3e7e7;
-            border-color: #f2d9d9;
+            background-color: hsl(0, 33%, 93%);
+            border-color: hsl(0, 48%, 90%);
         }
         .cntBody blockquote.noticeBox#ZX-noticeBox-error span.noticeBoxTitle::before{
             content: "⛔ 尤其当心";
-            background-color: #f2d9d9;
+            background-color: hsl(0, 48%, 90%);
         }
         /* 使用Hugo短代码组件实现的段落缩进 */
         .cntBody blockquote.pIndent{
