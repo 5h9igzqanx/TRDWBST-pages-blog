@@ -1,1 +1,0 @@
-document.addEventListener("visibilitychange",function(){var e=document.title;let t;document.hidden?(document.title="你干甚去啊 | "+e,clearTimeout(t)):(document.title="欢迎回来 | "+e,t=setTimeout(function(){document.title=e},5e3))})
