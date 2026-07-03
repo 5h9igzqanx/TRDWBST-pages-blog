@@ -9,3 +9,5 @@
 {{ partialCached "head/js.html" . }}
 {{ $scriptLvJing := resources.Get "js/lvJing.js" | minify | fingerprint }}
 <script src="{{ $scriptLvJing.Permalink }}"></script>
+{{ $scriptEventListeners := resources.Get "js/EventListeners.js" | minify | fingerprint }}
+<script src="{{ $scriptEventListeners.Permalink }}"></script>

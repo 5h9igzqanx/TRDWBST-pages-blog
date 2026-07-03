@@ -6,3 +6,4 @@ if(ZHONGDASHIJIANJINIANRI.includes(today)){
         ele.style.filter='grayscale(1)'
     })
 }
+// 缅怀先烈
