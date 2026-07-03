@@ -1,7 +1,7 @@
 function autoChangeTabTitieWhileLeaving(){
+    var _originTitle=document.title
+    let _time
     document.addEventListener("visibilitychange",function(){
-        var _originTitle=document.title
-        let _time
         if(document.hidden){
             document.title="你干甚去啊 | "+_originTitle
             clearTimeout(_time)
