@@ -1,8 +1,4 @@
 {{ define "main" }}
-    {{ $stylePostList := resources.Get "css/postList.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $stylePostList.Permalink }}" integrity="{{ $stylePostList.Data.Integrity }}" crossorigin="anonymous">
-    {{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox := resources.Get "css/tagsBoxAndCategoriesBox.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox.Permalink }}" integrity="{{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox.Data.Integrity }}" crossorigin="anonymous">
     {{ $styleBigTitle := resources.Get "css/bigTitle.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styleBigTitle.Permalink }}" integrity="{{ $styleBigTitle.Data.Integrity }}" crossorigin="anonymous">
     <style>
@@ -22,20 +18,5 @@
         </div>
     </div>
     <br>
-    {{ range .Pages }}
-    <div class="postList">
-        <h2><a href="{{ .RelPermalink }}" target="_blank">{{ .LinkTitle }}</a></h2>
-        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-        {{ $dateHuman := .Date | time.Format "2006年1月2日" }}
-        {{ $description := .Params.description | default (printf "%s" (.Plain | truncate 150)) }}
-        {{ $author := .Params.author |default "佚名" }}
-        <p>日期:&emsp;<span>{{ $dateHuman }}</span>&emsp;&emsp;作者:&ensp;<span>{{ $author }}</span></p>
-        <div class="categoriesAndTagsBoxAll">
-            <div class="categoriesBox">{{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}</div>
-            <div class="tagsBox">{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</div>
-        </div>
-        <p>{{ $description }}</p>
-    </div>
-    <br>
-    {{ end }}
+    {{ partial "listPosts.html" . }}
 {{ end }}
