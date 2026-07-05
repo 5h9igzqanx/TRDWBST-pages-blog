@@ -2,9 +2,7 @@
 <!-- 此处用于生成文章列表 -->
 
 
-{{- $pages := .pages }}
-
-{{- range $pages }}
+{{- range .Pages }}
     <div class="postList">
         <h2><a href="{{ .RelPermalink }}" target="_blank">{{ .LinkTitle }}</a></h2>
         {{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
