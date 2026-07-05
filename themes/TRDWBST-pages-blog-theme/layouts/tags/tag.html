@@ -23,7 +23,7 @@
     </div>
     <br>
     以下是使用模板文件
-    {{ partial "listPosts.html" (dict "Pages" .Pages .) }}
+    {{ partial "listPosts.html" . }}
     <br>
     以下是原来的
     {{ range .Pages }}
