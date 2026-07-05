@@ -22,6 +22,10 @@
         </div>
     </div>
     <br>
+    以下是使用模板文件
+    {{ partial "listPosts.html" .Pages }}
+    <br>
+    以下是原来的
     {{ range .Pages }}
     <div class="postList">
         <h2><a href="{{ .RelPermalink }}" target="_blank">{{ .LinkTitle }}</a></h2>
