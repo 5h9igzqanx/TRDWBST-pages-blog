@@ -1,6 +1,10 @@
 <!-- 测试一下模板 -->
 <!-- 此处用于生成文章列表 -->
 
+{{ $stylePostList := resources.Get "css/postList.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $stylePostList.Permalink }}" integrity="{{ $stylePostList.Data.Integrity }}" crossorigin="anonymous">
+{{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox := resources.Get "css/tagsBoxAndCategoriesBox.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox.Permalink }}" integrity="{{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox.Data.Integrity }}" crossorigin="anonymous">
 
 {{- range .Pages }}
     <div class="postList">
