@@ -1,5 +1,6 @@
 {{ define "main" }}
     <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
     {{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox := resources.Get "css/tagsBoxAndCategoriesBox.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox.Permalink }}" integrity="{{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox.Data.Integrity }}" crossorigin="anonymous">
@@ -426,7 +427,7 @@
     <script>
         window.MathJax={
             tex:{
-                package:{"[+]":["mhchem","chemfig","noerrors"]},
+                packages:{"[+]":["mhchem","chemfig","noerrors"]},
                 inlineMath:[['$','$'],['\\(','\\)']],
                 displayMath:[['$$','$$'], ['\$','\$']],
                 tags:"all"
@@ -436,8 +437,8 @@
                 displayIndent:"4em",
                 displayOverflow:"scale"
             },
-            Option:{
-                skipTags:['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            option:{
+                skipHtmlTags:['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
                 ignoreHtmlClass:'.*',
                 processHtmlClass:'mathjax-process',
                 enableMenu: true,
@@ -447,9 +448,6 @@
             },
             chtml: {
                 mtextInheritFont: true,
-                merror: {
-                    overflow: "visible"
-                }
             }
         };
     </script>
