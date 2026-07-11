@@ -426,12 +426,14 @@
     <script>
         window.MathJax={
             tex:{
-                package:{"[+]":["mhchem","chemfig"]},
+                package:{"[+]":["mhchem","chemfig","noerrors"]},
                 inlineMath:[['$','$'],['\\(','\\)']],
-                tags:'ams'
+                displayMath:[['$$','$$'], ['\$','\$']],
             },
             Option:{
                 skipTags:['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+                ignoreHtmlClass:'.*',
+                processHtmlClass:'mathjax-process'
             }
         };
     </script>
