@@ -433,7 +433,19 @@
             Option:{
                 skipTags:['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
                 ignoreHtmlClass:'.*',
-                processHtmlClass:'mathjax-process'
+                processHtmlClass:'mathjax-process',
+                enableMenu: true,
+                renderActions: {
+                    addMenu: []
+                }
+            },
+            chtml: {
+                scale: 100,
+                minScale: 50,
+                mtextInheritFont: true,
+                merror: {
+                    overflow: "visible"
+                }
             }
         };
     </script>
