@@ -430,12 +430,12 @@
                 packages:{"[+]":["mhchem","chemfig","noerrors"]},
                 inlineMath:[['$','$'],['\\(','\\)']],
                 displayMath:[['$$','$$'], ['\$','\$']],
-                tags:"all"
+                tags:"all",
             },
             output:{
                 displayAlign:"left",
                 displayIndent:"4em",
-                displayOverflow:"scale"
+                displayOverflow:"scale",
             },
             option:{
                 skipHtmlTags:['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
@@ -444,11 +444,19 @@
                 enableMenu: true,
                 renderActions: {
                     addMenu: []
-                }
+                },
+            },
+            svg:{
+                fontCache:"global"
             },
             chtml: {
                 mtextInheritFont: true,
-            }
+            },
+            startup:{
+                pageReady:()=>{
+                    return MathJax.startup.defaultPageReday();
+                },
+            },
         };
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
