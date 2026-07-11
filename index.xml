@@ -88,46 +88,46 @@ $$&lt;/p&gt;
 &lt;h2 id="诱导公式"&gt;诱导公式&lt;/h2&gt;
 &lt;p&gt;令&lt;/p&gt;
 &lt;p&gt;$$
-\alpha\in\mathbb{R}\ k\in\mathbb{Z}
+\alpha\in\mathbb{R}\\k\in\mathbb{Z}
 $$&lt;/p&gt;
 &lt;p&gt;有&lt;/p&gt;
 &lt;h3 id="一"&gt;一&lt;/h3&gt;
 &lt;p&gt;$$
-\sin(\alpha+k\cdot2\pi)=\sin\alpha\\\cos(\alpha+k\cdot2\pi)=\cos\alpha\\\tan(\alpha+k\cdot2\pi)=\tan\alpha
+\begin{align}\sin(\alpha+k\cdot2\pi)&amp;amp;=\sin\alpha\\\cos(\alpha+k\cdot2\pi)&amp;amp;=\cos\alpha\\\tan(\alpha+k\cdot2\pi)&amp;amp;=\tan\alpha\end{align}
 $$&lt;/p&gt;
 &lt;h3 id="二"&gt;二&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\sin(\pi+\alpha)&amp;amp;=-\sin\alpha\\cos(\pi+\alpha)&amp;amp;=-\cos\alpha\\tan(\pi+\alpha)&amp;amp;=\tan\alpha\end{align}
+\begin{align}\sin(\pi+\alpha)&amp;amp;=-\sin\alpha\\\cos(\pi+\alpha)&amp;amp;=-\cos\alpha\\\tan(\pi+\alpha)&amp;amp;=\tan\alpha\end{align}
 $$&lt;/p&gt;
 &lt;h3 id="三"&gt;三&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\sin(-\alpha)&amp;amp;=-\sin\alpha\\cos(-\alpha)&amp;amp;=\cos\alpha\\tan(-\alpha)&amp;amp;=-\tan\alpha\end{align}
+\begin{align}\sin(-\alpha)&amp;amp;=-\sin\alpha\\\cos(-\alpha)&amp;amp;=\cos\alpha\\\tan(-\alpha)&amp;amp;=-\tan\alpha\end{align}
 $$&lt;/p&gt;
 &lt;h3 id="四"&gt;四&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\sin(\pi-\alpha)&amp;amp;=\sin\alpha\\cos(\pi-\alpha)&amp;amp;=-\cos\alpha\\tan(\pi-\alpha)&amp;amp;=-\tan\alpha\end{align}
+\begin{align}\sin(\pi-\alpha)&amp;amp;=\sin\alpha\\\cos(\pi-\alpha)&amp;amp;=-\cos\alpha\\\tan(\pi-\alpha)&amp;amp;=-\tan\alpha\end{align}
 $$&lt;/p&gt;
 &lt;h3 id="五"&gt;五&lt;/h3&gt;
 &lt;p&gt;$$
-\sin(\frac{\pi}{2}-\alpha)=\cos\alpha\\cos(\frac{\pi}{2}-\alpha)=\sin\alpha
+\begin{align}\sin(\frac{\pi}{2}-\alpha)=\cos\alpha\\\cos(\frac{\pi}{2}-\alpha)=\sin\alpha\end{align}
 $$&lt;/p&gt;
 &lt;h3 id="六"&gt;六&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\sin(\frac{\pi}{2}+\alpha)&amp;amp;=\cos\alpha\\cos(\frac{\pi}{2}+\alpha)&amp;amp;=-\sin\alpha\end{align}
+\begin{align}\sin(\frac{\pi}{2}+\alpha)&amp;amp;=\cos\alpha\\\cos(\frac{\pi}{2}+\alpha)&amp;amp;=-\sin\alpha\end{align}
 $$&lt;/p&gt;
 &lt;h2 id="和差角"&gt;和差角&lt;/h2&gt;
 &lt;p&gt;令&lt;/p&gt;
 &lt;p&gt;$$
-\alpha\in\mathbb{R}\ \beta\in\mathbb{R}
+\alpha\in\mathbb{R}\\\beta\in\mathbb{R}
 $$&lt;/p&gt;
 &lt;p&gt;有&lt;/p&gt;
 &lt;h3 id="差角"&gt;差角&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\sin(\alpha-\beta)&amp;amp;=\sin\alpha\cos\beta-\cos\alpha\sin\beta\\cos(\alpha-\beta)&amp;amp;=\cos\alpha\cos\beta+\sin\alpha\sin\beta\\tan(\alpha-\beta)&amp;amp;=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}\end{align}
+\begin{align}\sin(\alpha-\beta)&amp;amp;=\sin\alpha\cos\beta-\cos\alpha\sin\beta\\\cos(\alpha-\beta)&amp;amp;=\cos\alpha\cos\beta+\sin\alpha\sin\beta\\\tan(\alpha-\beta)&amp;amp;=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}\end{align}
 $$&lt;/p&gt;
 &lt;h3 id="和角"&gt;和角&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\cos(\alpha+\beta)&amp;amp;=\cos\alpha\cos\beta-\sin\alpha\sin\beta\\sin(\alpha+\beta)&amp;amp;=\sin\alpha\cos\beta+\cos\alpha\sin\beta\\tan(\alpha+\beta)&amp;amp;=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\end{align}
+\begin{align}\cos(\alpha+\beta)&amp;amp;=\cos\alpha\cos\beta-\sin\alpha\sin\beta\\\sin(\alpha+\beta)&amp;amp;=\sin\alpha\cos\beta+\cos\alpha\sin\beta\\\tan(\alpha+\beta)&amp;amp;=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\end{align}
 $$&lt;/p&gt;
 &lt;h2 id="二倍角"&gt;二倍角&lt;/h2&gt;
 &lt;p&gt;令&lt;/p&gt;
@@ -136,14 +136,17 @@ $$&lt;/p&gt;
 $$&lt;/p&gt;
 &lt;p&gt;有&lt;/p&gt;
 &lt;p&gt;$$
-\begin{align}\sin2\alpha&amp;amp;=2\sin\alpha\cos\alpha\\cos2\alpha&amp;amp;=\cos^2\alpha-\sin^2\alpha\\tan2\alpha&amp;amp;=\frac{2\tan\alpha}{1-\tan^2\alpha}\end{align}
+\begin{align}\sin2\alpha&amp;amp;=2\sin\alpha\cos\alpha\\\cos2\alpha&amp;amp;=\cos^2\alpha-\sin^2\alpha\\\tan2\alpha&amp;amp;=\frac{2\tan\alpha}{1-\tan^2\alpha}\end{align}
 $$&lt;/p&gt;
 &lt;p&gt;其中&lt;/p&gt;
 &lt;p&gt;$$
-\begin{align}
-\cos2\alpha&amp;amp;=1-2\sin^2\alpha\
-&amp;amp;=2\cos^2\alpha-1
-\end{align}
+\begin{align}\cos2\alpha&amp;amp;=1-2\sin^2\alpha\\&amp;amp;=2\cos^2\alpha-1\end{align}
+$$&lt;/p&gt;
+&lt;h2 id="半角"&gt;半角&lt;/h2&gt;
+&lt;p&gt;这里的“半角”公式是由上面的“二倍角”公式化得的。&lt;/p&gt;
+&lt;p&gt;令&lt;/p&gt;
+&lt;p&gt;$$
+\alpha\in\mathbb{R}
 $$&lt;/p&gt;</description></item><item><title>与诸炖友元旦游</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2026010101/</link><pubDate>Thu, 01 Jan 2026 19:10:51 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2026010101/</guid><description>&lt;h1 id="与诸炖友元旦游"&gt;与诸炖友元旦游&lt;/h1&gt;
 &lt;p&gt;时值元旦，三假宜人。阅QQ群，始觉与“一锅乱炖”诸友别之三月有余。遂应白菜之邀，岁初出游，赏景叙旧，以共勉之。
 雪末，申时外出，踏雪而行。城中素裹银妆，萧瑟至极，而无可阻挡我之兴趣。至土豆家门以联网，方晓友期而聚于番茄家中。遂驱车移位，于17:22至。
