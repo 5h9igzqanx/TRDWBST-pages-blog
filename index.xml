@@ -123,11 +123,11 @@ $$&lt;/p&gt;
 &lt;p&gt;有&lt;/p&gt;
 &lt;h3 id="差角"&gt;差角&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\sin(\alpha-\beta)&amp;amp;=\sin\alpha\cos\beta-\cos\alpha\sin\beta\\\cos(\alpha-\beta)&amp;amp;=\cos\alpha\cos\beta+\sin\alpha\sin\beta\\\tan(\alpha-\beta)&amp;amp;=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}\end{align}
+\begin{align}\sin(\alpha-\beta)&amp;amp;=\sin\alpha\cos\beta-\cos\alpha\sin\beta\tag{差角s}\\\cos(\alpha-\beta)&amp;amp;=\cos\alpha\cos\beta+\sin\alpha\sin\beta\tag{差角c}\\\tan(\alpha-\beta)&amp;amp;=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}\tag{差角t}\end{align}
 $$&lt;/p&gt;
 &lt;h3 id="和角"&gt;和角&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\cos(\alpha+\beta)&amp;amp;=\cos\alpha\cos\beta-\sin\alpha\sin\beta\\\sin(\alpha+\beta)&amp;amp;=\sin\alpha\cos\beta+\cos\alpha\sin\beta\\\tan(\alpha+\beta)&amp;amp;=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\end{align}
+\begin{align}\cos(\alpha+\beta)&amp;amp;=\cos\alpha\cos\beta-\sin\alpha\sin\beta\tag{和角s}\\\sin(\alpha+\beta)&amp;amp;=\sin\alpha\cos\beta+\cos\alpha\sin\beta\tag{和角c}\\\tan(\alpha+\beta)&amp;amp;=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\tag{和角t}\end{align}
 $$&lt;/p&gt;
 &lt;h2 id="二倍角"&gt;二倍角&lt;/h2&gt;
 &lt;p&gt;令&lt;/p&gt;
@@ -140,7 +140,7 @@ $$&lt;/p&gt;
 $$&lt;/p&gt;
 &lt;p&gt;其中&lt;/p&gt;
 &lt;p&gt;$$
-\begin{align}\cos2\alpha&amp;amp;=1-2\sin^2\alpha\\&amp;amp;=2\cos^2\alpha-1\end{align}
+\begin{align}\cos2\alpha&amp;amp;=1-2\sin^2\alpha\tag{二倍c1}\\&amp;amp;=2\cos^2\alpha-1\tag{二倍c2}\end{align}
 $$&lt;/p&gt;
 &lt;h2 id="半角"&gt;半角&lt;/h2&gt;
 &lt;p&gt;这里的“半角”公式是由上面的“二倍角”公式化得的。&lt;/p&gt;
