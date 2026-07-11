@@ -426,6 +426,9 @@
     </style>
     <script>
         window.MathJax={
+            loader:{
+                load:["input/tex","output/svg"]
+            },
             tex:{
                 packages:{"[+]":["mhchem","chemfig","noerrors"]},
                 inlineMath:[['$','$'],['\\(','\\)']],
