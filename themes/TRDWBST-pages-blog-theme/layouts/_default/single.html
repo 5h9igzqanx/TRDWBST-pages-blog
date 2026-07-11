@@ -427,7 +427,7 @@
     <script>
         window.MathJax={
             loader:{
-                load:["input/tex","output/svg"]
+                load:['output/svg'],
             },
             tex:{
                 packages:{"[+]":["mhchem","chemfig","noerrors"]},
@@ -446,14 +446,11 @@
                 processHtmlClass:'mathjax-process',
                 enableMenu: true,
                 renderActions: {
-                    addMenu: []
+                    addMenu: [],
                 },
             },
             svg:{
                 fontCache:"global"
-            },
-            chtml: {
-                mtextInheritFont: true,
             },
         };
     </script>
