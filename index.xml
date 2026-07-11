@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>首页 on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/</link><description>Recent content in 首页 on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 09 Jul 2026 16:40:33 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/index.xml" rel="self" type="application/rss+xml"/><item><title>蝉鸣带来的暑假</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2026070901/</link><pubDate>Thu, 09 Jul 2026 16:40:33 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2026070901/</guid><description>&lt;h1 id="蝉鸣带来的暑假"&gt;蝉鸣带来的暑假&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>首页 on TRDWBST-pages-blog</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/</link><description>Recent content in 首页 on TRDWBST-pages-blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 11 Jul 2026 09:48:33 +0800</lastBuildDate><atom:link href="https://5h9igzqanx.github.io/TRDWBST-pages-blog/index.xml" rel="self" type="application/rss+xml"/><item><title>三角函数、三角形相关公式</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2026010401/</link><pubDate>Sat, 11 Jul 2026 09:48:33 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2026010401/</guid><description>&lt;h1 id="三角函数三角形相关公式"&gt;三角函数、三角形相关公式&lt;/h1&gt;
+&lt;h2 id="平方和"&gt;平方和&lt;/h2&gt;
+&lt;p&gt;令&lt;/p&gt;
+&lt;p&gt;$$
+\alpha\in\mathbb{R}
+$$&lt;/p&gt;
+&lt;p&gt;有&lt;/p&gt;
+&lt;p&gt;$$
+\sin^2\alpha+\cos^2\alpha=1
+$$&lt;/p&gt;
+&lt;h2 id="正切定义"&gt;正切定义&lt;/h2&gt;
+&lt;p&gt;令&lt;/p&gt;
+&lt;p&gt;$$
+\alpha\in\mathbb{R}
+$$&lt;/p&gt;
+&lt;p&gt;有&lt;/p&gt;
+&lt;p&gt;$$
+\tan\alpha=\frac{\sin\alpha}{\cos\alpha}
+$$&lt;/p&gt;
+&lt;h2 id="诱导公式"&gt;诱导公式&lt;/h2&gt;
+&lt;p&gt;令&lt;/p&gt;
+&lt;p&gt;$$
+\alpha\in\mathbb{R}\k\in\mathbb{Z}
+$$&lt;/p&gt;
+&lt;p&gt;有&lt;/p&gt;
+&lt;h3 id="一"&gt;一&lt;/h3&gt;
+&lt;p&gt;$$
+\sin(\alpha+k\cdot2\pi)=\sin\alpha\
+\cos(\alpha+k\cdot2\pi)=\cos\alpha\
+\tan(\alpha+k\cdot2\pi)=\tan\alpha
+$$&lt;/p&gt;
+&lt;h3 id="二"&gt;二&lt;/h3&gt;
+&lt;p&gt;$$
+\begin{align}
+\sin(\pi+\alpha)&amp;amp;=-\sin\alpha\
+\cos(\pi+\alpha)&amp;amp;=-\cos\alpha\
+\tan(\pi+\alpha)&amp;amp;=\tan\alpha
+\end{align}
+$$&lt;/p&gt;
+&lt;h3 id="三"&gt;三&lt;/h3&gt;
+&lt;p&gt;$$
+\begin{align}
+\sin(-\alpha)&amp;amp;=-\sin\alpha\
+\cos(-\alpha)&amp;amp;=\cos\alpha\
+\tan(-\alpha)&amp;amp;=-\tan\alpha
+\end{align}
+$$&lt;/p&gt;
+&lt;h3 id="四"&gt;四&lt;/h3&gt;
+&lt;p&gt;$$
+\begin{align}
+\sin(\pi-\alpha)&amp;amp;=\sin\alpha\
+\cos(\pi-\alpha)&amp;amp;=-\cos\alpha\
+\tan(\pi-\alpha)&amp;amp;=-\tan\alpha
+\end{align}
+$$&lt;/p&gt;
+&lt;h3 id="五"&gt;五&lt;/h3&gt;
+&lt;p&gt;$$
+\sin(\frac{\pi}{2}-\alpha)=\cos\alpha\
+\cos(\frac{\pi}{2}-\alpha)=\sin\alpha
+$$&lt;/p&gt;
+&lt;h3 id="六"&gt;六&lt;/h3&gt;
+&lt;p&gt;$$
+\begin{align}
+\sin(\frac{\pi}{2}+\alpha)&amp;amp;=\cos\alpha\
+\cos(\frac{\pi}{2}+\alpha)&amp;amp;=-\sin\alpha
+\end{align}
+$$&lt;/p&gt;
+&lt;h2 id="和差角"&gt;和差角&lt;/h2&gt;
+&lt;p&gt;令&lt;/p&gt;
+&lt;p&gt;$$
+\alpha\in\mathbb{R}\
+\beta\in\mathbb{R}
+$$&lt;/p&gt;
+&lt;p&gt;有&lt;/p&gt;
+&lt;h3 id="差角"&gt;差角&lt;/h3&gt;
+&lt;p&gt;$$
+\begin{align}
+\sin(\alpha-\beta)&amp;amp;=\sin\alpha\cos\beta-\cos\alpha\sin\beta\
+\cos(\alpha-\beta)&amp;amp;=\cos\alpha\cos\beta+\sin\alpha\sin\beta\
+\tan(\alpha-\beta)&amp;amp;=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}
+\end{align}
+$$&lt;/p&gt;</description></item><item><title>蝉鸣带来的暑假</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2026070901/</link><pubDate>Thu, 09 Jul 2026 16:40:33 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2026070901/</guid><description>&lt;h1 id="蝉鸣带来的暑假"&gt;蝉鸣带来的暑假&lt;/h1&gt;
 &lt;p&gt;2026年，我们学校的第一声蝉鸣，今天上午。&lt;/p&gt;
 &lt;p&gt;其实，夏天已经过去不少了。这声蝉鸣没有标志着今年夏天的开始，应该说是标志着我们这一学期的结束，&lt;/p&gt;
 &lt;p&gt;因为彼时我正在教室里，对着答题卡上密密麻麻的作文歌发呆。&lt;/p&gt;
