@@ -1,7 +1,6 @@
 {{ define "main" }}
     <meta name="robots" content="noindex,nofollow">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
     {{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox := resources.Get "css/tagsBoxAndCategoriesBox.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox.Permalink }}" integrity="{{ $styleTagsBoxAndCategoriesBoxAndCategoriesBox.Data.Integrity }}" crossorigin="anonymous">
     <style>
@@ -427,12 +426,16 @@
     <script>
         window.MathJax={
             tex:{
+                package:{"[+]":["mhchem","chemfig"]},
                 inlineMath:[['$','$'],['\\(','\\)']],
-                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
                 tags:'ams'
             },
+            Option:{
+                skipTags:['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            }
         };
     </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <div class="cnt">
         <div class="backgroundImg">
             {{ $bgImgSrc := .Params.backgroundImage |default "https://5h9igzqanx.github.io/TRDWBST-media/picture/blog/bgImg/default.jpg" }}
