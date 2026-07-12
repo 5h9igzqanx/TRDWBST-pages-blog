@@ -25,27 +25,49 @@ $$&lt;/p&gt;
 &lt;p&gt;有&lt;/p&gt;
 &lt;h3 id="一"&gt;一&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\sin(\alpha+k\cdot2\pi)&amp;amp;=\sin\alpha\tag{诱导1s}\\\cos(\alpha+k\cdot2\pi)&amp;amp;=\cos\alpha\tag{诱导1c}\\\tan(\alpha+k\cdot2\pi)&amp;amp;=\tan\alpha\tag{诱导1t}\end{align}
+\begin{align}
+\sin(\alpha+k\cdot2\pi)&amp;amp;=\sin\alpha\tag{诱导1s}\\
+\cos(\alpha+k\cdot2\pi)&amp;amp;=\cos\alpha\tag{诱导1c}\\
+\tan(\alpha+k\cdot2\pi)&amp;amp;=\tan\alpha\tag{诱导1t}
+\end{align}
 $$&lt;/p&gt;
 &lt;h3 id="二"&gt;二&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\sin(\pi+\alpha)&amp;amp;=-\sin\alpha\tag{诱导2s}\\\cos(\pi+\alpha)&amp;amp;=-\cos\alpha\tag{诱导2c}\\\tan(\pi+\alpha)&amp;amp;=\tan\alpha\tag{诱导2t}\end{align}
+\begin{align}
+\sin(\pi+\alpha)&amp;amp;=-\sin\alpha\tag{诱导2s}\\
+\cos(\pi+\alpha)&amp;amp;=-\cos\alpha\tag{诱导2c}\\
+\tan(\pi+\alpha)&amp;amp;=\tan\alpha\tag{诱导2t}
+\end{align}
 $$&lt;/p&gt;
 &lt;h3 id="三"&gt;三&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\sin(-\alpha)&amp;amp;=-\sin\alpha\tag{诱导3s}\\\cos(-\alpha)&amp;amp;=\cos\alpha\tag{诱导3c}\\\tan(-\alpha)&amp;amp;=-\tan\alpha\tag{诱导3t}\end{align}
+\begin{align}
+\sin(-\alpha)&amp;amp;=-\sin\alpha\tag{诱导3s}\\
+\cos(-\alpha)&amp;amp;=\cos\alpha\tag{诱导3c}\\
+\tan(-\alpha)&amp;amp;=-\tan\alpha\tag{诱导3t}
+\end{align}
 $$&lt;/p&gt;
 &lt;h3 id="四"&gt;四&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\sin(\pi-\alpha)&amp;amp;=\sin\alpha\tag{诱导4s}\\\cos(\pi-\alpha)&amp;amp;=-\cos\alpha\tag{诱导4c}\\\tan(\pi-\alpha)&amp;amp;=-\tan\alpha\tag{诱导4t}\end{align}
+\begin{align}
+\sin(\pi-\alpha)&amp;amp;=\sin\alpha\tag{诱导4s}\\
+\cos(\pi-\alpha)&amp;amp;=-\cos\alpha\tag{诱导4c}\\
+\tan(\pi-\alpha)&amp;amp;=-\tan\alpha\tag{诱导4t}
+\end{align}
 $$&lt;/p&gt;
 &lt;h3 id="五"&gt;五&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\sin(\frac{\pi}{2}-\alpha)=\cos\alpha\tag{诱导5s}\\\cos(\frac{\pi}{2}-\alpha)=\sin\alpha\tag{诱导5c}\end{align}
+\begin{align}
+\sin(\frac{\pi}{2}-\alpha)=\cos\alpha\tag{诱导5s}\\
+\cos(\frac{\pi}{2}-\alpha)=\sin\alpha\tag{诱导5c}
+\end{align}
 $$&lt;/p&gt;
 &lt;h3 id="六"&gt;六&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\sin(\frac{\pi}{2}+\alpha)&amp;amp;=\cos\alpha\tag{诱导6s}\\\cos(\frac{\pi}{2}+\alpha)&amp;amp;=-\sin\alpha\tag{诱导6c}\end{align}
+\begin{align}
+\sin(\frac{\pi}{2}+\alpha)&amp;amp;=\cos\alpha\tag{诱导6s}\\
+\cos(\frac{\pi}{2}+\alpha)&amp;amp;=-\sin\alpha\tag{诱导6c}
+\end{align}
 $$&lt;/p&gt;
 &lt;h2 id="和差角"&gt;和差角&lt;/h2&gt;
 &lt;p&gt;令&lt;/p&gt;
@@ -55,30 +77,10 @@ $$&lt;/p&gt;
 &lt;p&gt;有&lt;/p&gt;
 &lt;h3 id="差角"&gt;差角&lt;/h3&gt;
 &lt;p&gt;$$
-\begin{align}\sin(\alpha-\beta)&amp;amp;=\sin\alpha\cos\beta-\cos\alpha\sin\beta\tag{差角s}\\\cos(\alpha-\beta)&amp;amp;=\cos\alpha\cos\beta+\sin\alpha\sin\beta\tag{差角c}\\\tan(\alpha-\beta)&amp;amp;=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}\tag{差角t}\end{align}
-$$&lt;/p&gt;
-&lt;h3 id="和角"&gt;和角&lt;/h3&gt;
-&lt;p&gt;$$
-\begin{align}\cos(\alpha+\beta)&amp;amp;=\cos\alpha\cos\beta-\sin\alpha\sin\beta\tag{和角s}\\\sin(\alpha+\beta)&amp;amp;=\sin\alpha\cos\beta+\cos\alpha\sin\beta\tag{和角c}\\\tan(\alpha+\beta)&amp;amp;=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\tag{和角t}\end{align}
-$$&lt;/p&gt;
-&lt;h2 id="二倍角"&gt;二倍角&lt;/h2&gt;
-&lt;p&gt;令&lt;/p&gt;
-&lt;p&gt;$$
-\alpha\in\mathbb{R}
-$$&lt;/p&gt;
-&lt;p&gt;有&lt;/p&gt;
-&lt;p&gt;$$
 \begin{align}
-\sin2\alpha&amp;amp;=2\sin\alpha\cos\alpha\tag{二倍s}\\
-\cos2\alpha&amp;amp;=\cos^2\alpha-\sin^2\alpha\tag{二倍c}\\
-\tan2\alpha&amp;amp;=\frac{2\tan\alpha}{1-\tan^2\alpha}\tag{二倍t}
-\end{align}
-$$&lt;/p&gt;
-&lt;p&gt;其中，对于“二倍c”，把平方和等于1的式子带入，得&lt;/p&gt;
-&lt;p&gt;$$
-\begin{align}
-\cos2\alpha&amp;amp;=1-2\sin^2\alpha\tag{二倍c1}\\
-&amp;amp;=2\cos^2\alpha-1\tag{二倍c2}
+\sin(\alpha-\beta)&amp;amp;=\sin\alpha\cos\beta-\cos\alpha\sin\beta\tag{差角s}\\
+\cos(\alpha-\beta)&amp;amp;=\cos\alpha\cos\beta+\sin\alpha\sin\beta\tag{差角c}\\
+\tan(\alpha-\beta)&amp;amp;=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}\tag{差角t}
 \end{align}
 $$&lt;/p&gt;</description></item><item><title>化学元素周期表</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</link><pubDate>Wed, 14 Aug 2024 12:40:48 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2024081401/</guid><description>&lt;h1 id="化学元素周期表"&gt;化学元素周期表&lt;/h1&gt;
 &lt;h2 id="全表"&gt;全表&lt;/h2&gt;
