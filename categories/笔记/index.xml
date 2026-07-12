@@ -70,7 +70,7 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 \begin{align}\sin2\alpha&amp;amp;=2\sin\alpha\cos\alpha\tag{二倍s}\\\cos2\alpha&amp;amp;=\cos^2\alpha-\sin^2\alpha\tag{二倍c}\\\tan2\alpha&amp;amp;=\frac{2\tan\alpha}{1-\tan^2\alpha}\tag{二倍t}\end{align}
 $$&lt;/p&gt;
-&lt;p&gt;其中&lt;/p&gt;
+&lt;p&gt;其中，对于“二倍c”，把平方和等于1的式子带入，得&lt;/p&gt;
 &lt;p&gt;$$
 \begin{align}\cos2\alpha&amp;amp;=1-2\sin^2\alpha\tag{二倍c1}\\&amp;amp;=2\cos^2\alpha-1\tag{二倍c2}\end{align}
 $$&lt;/p&gt;
