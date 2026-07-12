@@ -431,7 +431,7 @@
             },
             tex:{
                 packages:{"[+]":["mhchem","chemfig","noerrors"]},
-                inlineMath:[['$','$'],['\\(','\\)']],
+                inlineMath:[['$','$'],['\$','\$']],
                 displayMath:[['$$','$$'], ['\$','\$']],
                 tags:"ams",
             },
@@ -446,14 +446,16 @@
             option:{
                 skipHtmlTags:['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
                 ignoreHtmlClass:'.*',
-                processHtmlClass:'mathjax-process',
+                processHtmlClass:'mathjax',
                 enableMenu: true,
                 renderActions: {
                     addMenu: [],
                 },
             },
             svg:{
-                fontCache:"global"
+                fontCache:"global",
+                displayAlign:"left",
+                displayIndent:"4em",
             },
         };
     </script>
