@@ -431,8 +431,12 @@
             },
             tex:{
                 packages:{"[+]":["mhchem","chemfig","noerrors"]},
-                inlineMath:[['$','$'],['\$','\$']],
-                displayMath:[['$$','$$'], ['\$','\$']],
+                inlineMath: {
+                    '[+]': [['$','$']]
+                },
+                displayMath:[
+                    ['$$','$$'],
+                ],
                 tags:"ams",
             },
             output:{
