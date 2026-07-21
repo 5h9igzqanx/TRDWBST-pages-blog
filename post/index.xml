@@ -109,12 +109,12 @@
 &lt;blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;左和右
+&lt;p&gt;左和右&lt;br&gt;
 左和右分别用L、R标记
 眼睛部分在图层标识和参数部分左右是相反的，因为镜像，图层标识的左右以画手（全民制作人）为准，参数的以角色为准&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;ID的命名规范
+&lt;p&gt;ID的命名规范&lt;br&gt;
 由于ID只能用英文字母和下划线，所以我在这里规定ID命名
 ID使用驼峰体，用下划线划分层级。左边部分为父，右边部分为子，最右边表示方位或别的什么（如变形器注明Wrap）
 ID使用汉语拼音全拼表示其内容
@@ -122,19 +122,19 @@ ID使用汉语拼音全拼表示其内容
 单独出现的A、B、C等大多是序号，表示衣服套装之类的&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;一些缩写
-XG表示线稿
-GYS表示固有色
-ZZ表示遮罩
-YY表示阴影，顺带一提，标有YY的图层原本是正片叠底或线性加深，这里应为软件不支持所以经过了预编译
-Fr表示前面
-Ba表示后面
-Ud表示上下移动
-Lr表示左右移动
-Angle表示旋转
-U表示上面的
-D表示下面的
-L表示左面的
+&lt;p&gt;一些缩写&lt;br&gt;
+XG表示线稿&lt;br&gt;
+GYS表示固有色&lt;br&gt;
+ZZ表示遮罩&lt;br&gt;
+YY表示阴影，顺带一提，标有YY的图层原本是正片叠底或线性加深，这里因为软件不支持所以经过了预编译&lt;br&gt;
+Fr表示前面&lt;br&gt;
+Ba表示后面&lt;br&gt;
+Ud表示上下移动&lt;br&gt;
+Lr表示左右移动&lt;br&gt;
+Angle表示旋转&lt;br&gt;
+U表示上面的&lt;br&gt;
+D表示下面的&lt;br&gt;
+L表示左面的&lt;br&gt;
 R表示右面的&lt;/p&gt;</description></item><item><title>第五章（《三角函数》）所涉及的公式</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2026010401/</link><pubDate>Sun, 04 Jan 2026 19:32:43 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2026010401/</guid><description>&lt;h1 id="三角函数三角形相关公式"&gt;三角函数、三角形相关公式&lt;/h1&gt;
 &lt;h2 id="平方和"&gt;平方和&lt;/h2&gt;
 &lt;p&gt;令&lt;/p&gt;
