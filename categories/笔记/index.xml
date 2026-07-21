@@ -17,12 +17,7 @@
 &lt;/ol&gt;
 &lt;h2 id="正文"&gt;正文&lt;/h2&gt;
 &lt;h3 id="材料处理"&gt;材料处理&lt;/h3&gt;
-&lt;p&gt;关于上一节的第三条，我在这里说一下立绘拆分的事宜。&lt;/p&gt;
-&lt;blockquote class="noticeBox" id="ZX-noticeBox-tip"&gt;
- &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;&lt;div&gt;
-&lt;p&gt;这里的拆分是对于那些人形的立绘来说的。&lt;/p&gt;
- &lt;/div&gt;&lt;div class="noticeBackground"&gt;&lt;/div&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;关于上一节的第三条，我在这里说一下立绘拆分的事宜。这里的拆分是对于那些人形的立绘来说的。&lt;/p&gt;
 &lt;p&gt;对于头部，须拆成头发、五官（眼、嘴、鼻子）和脸（耳朵可单独拆出来）。&lt;/p&gt;
 &lt;p&gt;对于眼，须拆成睫毛（眼睑）、虹膜和眼眶（眼白）。睫毛可分为上睫毛、侧睫毛（若有）和下睫毛，有分叉的最好把分叉也分别拆出来。虹膜可分为虹膜固有色和高光。&lt;/p&gt;
 &lt;blockquote class="noticeBox" id="ZX-noticeBox-tip"&gt;
@@ -32,20 +27,47 @@
  &lt;/div&gt;&lt;div class="noticeBackground"&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;对于头发，不要求把所有的发丝抠出来，只需要把需要单独运动的发片单独抠出。头发分为刘海、鬓发和后发，后发至少放在脸固有色的下面（如果是长发那么看情况，可能要放在所有图层下面），其余放在脸和五官上面，要求能够遮住脸的上面（如果设定要求如此）。&lt;/p&gt;
-&lt;p&gt;嘴分为上嘴唇、下嘴唇、口腔内部、牙齿（若有）。上、下嘴唇要分为线稿和蒙版，线稿在上，上嘴唇蒙版次之，接着是下嘴唇。&lt;/p&gt;
-&lt;blockquote class="noticeBox" id="ZX-noticeBox-tip"&gt;
+&lt;p&gt;嘴分为上嘴唇、下嘴唇、口腔内部、牙齿（若有）。上、下嘴唇要分为线稿和蒙版，线稿在上，上嘴唇蒙版次之，接着是下嘴唇。可以把嘴唇线稿复制2分当作上、下嘴唇的线稿。嘴唇蒙版要可以完全遮住口腔内部。对于口腔内部固有色，最好画得大一些，因为以后方便制作口型。&lt;/p&gt;
+&lt;p&gt;脸可分为线稿和固有色，建议把腮红拆出来单独放在一个图层（若来得及）。脸的线稿在上，嘴唇的线稿次之，然后分别是上、下嘴唇的蒙版（挡住嘴内侧的肉色矩形，上、下嘴唇各一个。其最好画的大一些，要能充分遮住口腔内部，因为后面需要制作口型。），接着是口腔（牙齿、舌头之类的），最后是脸的固有色。如果可以的话，把腮红复制一份加深一点作为“脸颊泛红”表情使用。&lt;/p&gt;
+&lt;p&gt;对于身体，若不想做身体动态可以忽略（不过一般不会有人忽略这个），但是要保证脖子要高到嘴的地方以保证仰头的动作不会穿帮。若想要稍微做一些，那么须分为上半身、下半身和手臂这几个部分（手臂和腿须分别拆违两部分（左边和右边））。若衣服上有可动的配件也一并拆出。&lt;/p&gt;
+&lt;p&gt;然后没有了。具体的要根据实际情况来定，反正就是把所有能动的拆出来。&lt;/p&gt;
+&lt;blockquote class="noticeBox" id="ZX-noticeBox-warning"&gt;
  &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;&lt;div&gt;
-&lt;p&gt;可以把嘴唇线稿复制2分当作上、下嘴唇的线稿。&lt;/p&gt;
-&lt;p&gt;嘴唇蒙版要可以完全遮住口腔内部。对于口腔内部固有色，最好画得大一些，因为以后方便制作口型。&lt;/p&gt;
+&lt;p&gt;一定要好好命名图层和图层组，一定要只使用英文字母和下划线&lt;code&gt;_&lt;/code&gt;命名，不能用下划线开头。&lt;/p&gt;
+&lt;p&gt;一定要遵循同一个命名规范，把具有父子级关系的图层的关系通过名称表现出来。&lt;/p&gt;
+&lt;p&gt;例如，我的命名规范：&lt;/p&gt;
  &lt;/div&gt;&lt;div class="noticeBackground"&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;脸可分为线稿和固有色，建议把腮红拆出来单独放在一个图层（若来得及）。脸的线稿在上，嘴唇的线稿次之，然后分别是上、下嘴唇的蒙版（挡住嘴内侧的肉色矩形，上、下嘴唇各一个。其最好画的大一些，要能充分遮住口腔内部，因为后面需要制作口型。），接着是口腔（牙齿、舌头之类的），最后是脸的固有色。&lt;/p&gt;
-&lt;blockquote class="noticeBox" id="ZX-noticeBox-tip"&gt;
- &lt;span class="noticeBoxTitle"&gt;&lt;/span&gt;&lt;div&gt;
-&lt;p&gt;如果可以的话，把腮红复制一份加深一点作为“脸颊泛红”表情使用。&lt;/p&gt;
- &lt;/div&gt;&lt;div class="noticeBackground"&gt;&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;……&lt;/p&gt;</description></item><item><title>第五章（《三角函数》）所涉及的公式</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2026010401/</link><pubDate>Sun, 04 Jan 2026 19:32:43 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2026010401/</guid><description>&lt;h1 id="三角函数三角形相关公式"&gt;三角函数、三角形相关公式&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;左和右
+左和右分别用L、R标记
+眼睛部分在图层标识和参数部分左右是相反的，因为镜像，图层标识的左右以画手（全民制作人）为准，参数的以角色为准&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ID的命名规范
+由于ID只能用英文字母和下划线，所以我在这里规定ID命名
+ID使用驼峰体，用下划线划分层级。左边部分为父，右边部分为子，最右边表示方位或别的什么（如变形器注明Wrap）
+ID使用汉语拼音全拼表示其内容
+方位如此表示，先写左右再写前后，z序用数字标注。如在物件内还分出前后左右再加上，依旧这个顺序，使用下面的缩写标注（如LU表示左上的，LUU表示左上部分的上面）
+单独出现的A、B、C等大多是序号，表示衣服套装之类的&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一些缩写
+XG表示线稿
+GYS表示固有色
+ZZ表示遮罩
+YY表示阴影，顺带一提，标有YY的图层原本是正片叠底或线性加深，这里应为软件不支持所以经过了预编译
+Fr表示前面
+Ba表示后面
+Ud表示上下移动
+Lr表示左右移动
+Angle表示旋转
+U表示上面的
+D表示下面的
+L表示左面的
+R表示右面的&lt;/p&gt;</description></item><item><title>第五章（《三角函数》）所涉及的公式</title><link>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2026010401/</link><pubDate>Sun, 04 Jan 2026 19:32:43 +0800</pubDate><guid>https://5h9igzqanx.github.io/TRDWBST-pages-blog/post/2026010401/</guid><description>&lt;h1 id="三角函数三角形相关公式"&gt;三角函数、三角形相关公式&lt;/h1&gt;
 &lt;h2 id="平方和"&gt;平方和&lt;/h2&gt;
 &lt;p&gt;令&lt;/p&gt;
 &lt;p&gt;$$
