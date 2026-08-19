@@ -587,7 +587,7 @@
                 };
                 imgsrc.onerror=function(){imageFullScreenDisplay_Img.style.width="calc(100% - 20px)";imageFullScreenDisplay_Img.style.margin="auto 10px"};
             };
-            document.querySelector(".cntBody").addEventListener("click",function(event){if(event.target.tagName.toLowerCase()=="img"){imageFullScreenDisplay_Open(event.target.src) }});
+            document.querySelector(".cntBody").addEventListener("click",function(event){if(event.target.tagName.toLowerCase()=="img"){imageFullScreenDisplay_Open(event.target.src)}});
             document.addEventListener("keydown",function(event){if(event.keyCode==27 && document.getElementById("imageFullScreenDisplay").style.display=="flex"){imageFullScreenDisplay_Close()}});
         </script>
     </div>
