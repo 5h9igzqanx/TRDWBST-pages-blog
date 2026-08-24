@@ -11,3 +11,10 @@ theme = 'TRDWBST-pages-blog-theme'
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
+    [markup.highlight]
+        style="abap"
+        noClasses = true
+        lineNos = true
+        lineNoStart = 1
+        lineNumbersInTable = false
+        guessSyntax = true
