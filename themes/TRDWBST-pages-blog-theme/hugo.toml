@@ -53,6 +53,9 @@ toc_depth=12
   [markup.highlight]
     style="autumn"
     lineNos = true
+    lineNoStart = 1
+    lineNumbersInTable = false
+    guessSyntax = true
 
 [module]
   [module.hugoVersion]
