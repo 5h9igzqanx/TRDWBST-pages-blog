@@ -51,7 +51,8 @@ toc_depth=12
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
-    style="autumn"
+    style="abap"
+    noClasses = true
     lineNos = true
     lineNoStart = 1
     lineNumbersInTable = false
