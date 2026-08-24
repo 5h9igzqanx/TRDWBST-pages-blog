@@ -50,6 +50,9 @@ toc_depth=12
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+    style="autumn"
+    lineNos = true
 
 [module]
   [module.hugoVersion]
