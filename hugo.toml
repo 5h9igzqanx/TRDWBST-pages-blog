@@ -12,7 +12,7 @@ theme = 'TRDWBST-pages-blog-theme'
         [markup.goldmark.renderer]
             unsafe = true
     [markup.highlight]
-        style="abap"
+        style="witchhazel"
         noClasses = true
         lineNos = true
         lineNoStart = 1
