@@ -17,4 +17,4 @@ theme = 'TRDWBST-pages-blog-theme'
         lineNos = true
         lineNoStart = 1
         lineNumbersInTable = false
-        guessSyntax = true
+        guessSyntax = false
