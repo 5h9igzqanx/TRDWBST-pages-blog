@@ -5,7 +5,7 @@ theme = 'TRDWBST-pages-blog-theme'
 
 [markup]
     [markup.tableOfContents]
-        endLevel = 4
+        endLevel = 6
         ordered = false
         startLevel = 2
     [markup.goldmark]
