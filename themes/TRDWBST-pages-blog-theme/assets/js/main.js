@@ -31,4 +31,4 @@ function autoChangeTabTitieWhileLeaving(){
 }
 
 rememberDeceacedCompatriots()
-if(window.location.href=="https://5h9igzqanx.github.io/TRDWBST-pages-blog/"){autoChangeTabTitieWhileLeaving()}
+// if(window.location.href=="https://5h9igzqanx.github.io/TRDWBST-pages-blog/"){autoChangeTabTitieWhileLeaving()}
