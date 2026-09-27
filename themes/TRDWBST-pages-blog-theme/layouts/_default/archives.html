@@ -115,7 +115,8 @@
         {{ $pageWhere2 := (where $pageWhere1 "Title" "ne" "Posts" ) }}
         {{ range $pageWhere2 }}
             {{ $dateMachine := .Date | time.Format "20060102" }}
-            <a href="{{ .RelPermalink }}" target="_blank" class="postList" id="{{ $dateMachine }}">
+            {{ $description := .Params.description | default (printf "%s" (.Plain | truncate 150)) }}
+            <a href="{{ .RelPermalink }}" target="_blank" class="postList" id="{{ $dateMachine }}" title="{{ $description }}">
                 {{ $dateHuman := .Date | time.Format "01-02" }}
                 <div class="postDate">{{ $dateHuman }}&emsp;</div>
                 <div class="line"><div class="dot"></div></div>
