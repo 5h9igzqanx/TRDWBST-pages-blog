@@ -4,7 +4,9 @@
     <div class="cnt">
         关于……？
         {{ .Content }}
+        {{ $contact := .Param.contact }}
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, labore, earum nihil cum adipisci voluptatem aperiam placeat eaque iusto tenetur error nemo officia illum accusantium non? Deserunt totam velit at.
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto omnis aliquid quidem in nihil cum obcaecati ducimus, dolore aut error a numquam dolorem ipsum autem voluptatibus, corporis corrupti est vel.
+        <div>{{ $contact }}</div>
     </div>
 {{ end }}
