@@ -8,11 +8,14 @@
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, labore, earum nihil cum adipisci voluptatem aperiam placeat eaque iusto tenetur error nemo officia illum accusantium non? Deserunt totam velit at.
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto omnis aliquid quidem in nihil cum obcaecati ducimus, dolore aut error a numquam dolorem ipsum autem voluptatibus, corporis corrupti est vel.
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quisquam doloremque placeat culpa deleniti? Libero, aut itaque tempore vitae error quaerat ut fugiat quos similique minima amet quia. Porro, pariatur.
-        <div>{{ $contact }}</div>
-        {{ range $contact }}
-            <a href="{{ .url }}">
-                <p>{{ .name }} {{ .content }}</p>
-            </a>
-        {{ end }}
+        <div>
+            <h2>联系方式</h2>
+            {{ range $contact }}
+                <a href="{{ .url }}">
+                    <p><b>{{ .name }}</b>:{{ .content }}</p>
+                </a>
+            {{ end }}
+        </div>
+        
     </div>
 {{ end }}
