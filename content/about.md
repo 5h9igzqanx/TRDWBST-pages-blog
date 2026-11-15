@@ -8,8 +8,10 @@ layout: about
 
 contact:
   - name: "email"
+    content: "z-5h9igzqanx@163.com"
     url: "mailto:z-5h9igzqanx@163.com"
   - name: "github"
+    content: "5h9igzqanx"
     url: "https://github.com/5h9igzqanx"
 ---
 
