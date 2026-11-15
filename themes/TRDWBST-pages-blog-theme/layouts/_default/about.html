@@ -10,8 +10,8 @@
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quisquam doloremque placeat culpa deleniti? Libero, aut itaque tempore vitae error quaerat ut fugiat quos similique minima amet quia. Porro, pariatur.
         <div>{{ $contact }}</div>
         {{ range $contact }}
-            <a href="{{ .Params.url }}">
-                <p>{{ .Params.name }} {{ .Params.content }}</p>
+            <a href="{{ .url }}">
+                <p>{{ .name }} {{ .content }}</p>
             </a>
         {{ end }}
     </div>
